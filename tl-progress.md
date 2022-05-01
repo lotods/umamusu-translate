@@ -16,7 +16,7 @@ name | progress | translator
 --- | --- | ---
 Main story Act 1 Ch 5 | Complete | [LotoDS][]
 Main story Act 1 Ch 1 | Complete | [CatNipHoarder][] & [Holo][]
-Main story Act 1 Ch 6 (Final) | In progress/Transferring | [LotoDS][] (ep 1-9, 12)
+Main story Act 1 Ch 6 (Final) | Complete | [LotoDS][]
 Half Anniversary Story | Complete | [CatNipHoarder][] & [Holo][]
 1st Anniversary Story | Complete | [CatNipHoarder][] & [Holo][]
 Brand-New Friend | Complete | [Hades of Games][] (ep 1-2, 5-8, 4 (missing parts)), [Vacxy][] (ep 3, 4 (partial)) + [noccu][] (slightly edited)
@@ -32,7 +32,7 @@ name | progress | translator
 --- | --- | ---
 Agnes Digital | Complete | deepl (contributed by CryDuringItAll)
 Air Groove | In progress/Transferring | [burritoblaster][] (ep 1-5)
-Agnes Tachyon | Complete | [Ren][] (ep 1), [noccu][] (ep 2-3), [xct][] (ep 4-7)
+Agnes Tachyon | Complete | [Ren][] (ep 1), [noccu][] + [xct][] (ep 2-3), [xct][] (ep 4-7)
 Biwa Hayahide | Complete | deepl (contributed by CryDuringItAll)
 Daiwa Scarlet | Complete | [XiantheMiguel][] (commissioned by AhriParty)
 Eishin Flash | Complete | deepl
@@ -51,6 +51,7 @@ Mejiro Dober | In progress/Transferring | [LotoDS][] (ep 1-4)
 Mejiro Ryan | Complete | deepl (contributed by CryDuringItAll)
 Mihono Bourbon | Complete | deepl
 Narita Taishin | Complete | deepl (contributed by CryDuringItAll)
+Nice Nature | In progress | [xct][] (ep 1-3)
 Rice Shower  | Complete | [Ben][] (ep 1-4), deepl
 Sakura Bakushin O | Complete | [noccu][] (ep 1-2), deepl
 Sakura Chiyono O | Complete | [LotoDS][]
@@ -61,6 +62,7 @@ Symboli Rudolf | Complete | deepl
 Taiki Shuttle | Complete | [LotoDS][]
 Tamamo Cross | Complete | [LotoDS][]
 Vodka | Complete | [robflop][]
+Yaeno Muteki | In Progress | [LotoDS][] (ep 1-4)
 
 
 # Training story/events
@@ -106,6 +108,7 @@ Blaze | Complete | [noccu][]
 BLOW my GALE | Complete | [noccu][]
 Honnou Speed | Complete | [Eight][]
 Make Debut! | Complete | Unknown (https://www.animesonglyrics.com/) + [noccu][] (missing parts)
+Next Frontier | Complete | [LotoDS][]
 Sasayaka na Inori | Complete | [Eight][]
 transforming | In progress | [noccu][]
 Umapyoi Densetsu | Complete | [ebi][], [Karimenrider][] (missing parts)
