@@ -14,21 +14,24 @@ IF %ERRORLEVEL% NEQ 0 (
 )
 ECHO Using %snek%
 %snek% --version
+%snek% -m pip show unitypy
+
 ECHO(
 
 IF [%1] NEQ [] (
     IF [%1] EQU [install] GOTO install
+    IF [%1] EQU [uninstall] GOTO uninstall
     IF [%1] EQU [mdb] GOTO mdb
-) 
+)
 
-:open 
-REM %snek% src\ui.py
+:open
+%snek% src/filecopy.py --backup
 ECHO Importing all translatable types that are present in your game files...
 ECHO Update-only mode is default. To forcefully rewrite all files, remove -U in this .bat
 REM Or manually import parts, see import.py -h
-%snek% src/import.py -FI -O -U -S
+%snek% src/import.py --full-import --overwrite --update --silent
 ECHO Copying TLG translation files...
-%snek% src/manage.py -M
+%snek% src/manage.py --move
 ECHO Imports complete!
 GOTO quit
 
@@ -45,6 +48,11 @@ GOTO quit
 :mdb
 ECHO Importing mdb text...
 %snek% src/mdb/import.py %2
+GOTO quit
+
+:uninstall
+ECHO Uninstalling patch...
+%snek% src/restore.py --uninstall
 
 :quit
 PAUSE

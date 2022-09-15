@@ -24,7 +24,7 @@ def buildSqlStmt(args):
     if not args.id:
         args.id = "____"
 
-    add(f"m = '{args.type}'") # always set
+    add(f"m = '{args.type}'")  # always set
     if args.name:
         add(f"n like '%{args.name}%'")
     if args.hash:
@@ -43,6 +43,7 @@ def buildSqlStmt(args):
 
     return None if firstExpr else stmt
 
+
 def getFiles(args):
     with sqlite3.connect(GAME_META_FILE) as db:
         stmt = buildSqlStmt(args)
@@ -51,29 +52,37 @@ def getFiles(args):
         cur = db.execute(stmt)
         return cur
 
+
 def backup(args):
-    print("Backing up extracted files...")
-    for type in common.TARGET_TYPES:
-        files = common.searchFiles(type, False, False)
+    print("Backing up non-patched & extracted files...")
+    for type in common.TARGET_TYPES if args.backup is True else [args.backup]:
+        files = common.searchFiles(type, args.group, args.id, args.idx, changed = args.changed)
         for file in files:
             file = common.TranslationFile(file)
             copy(file.bundle, args)
 
+
 def copy(hash, args):
+    asset = common.GameBundle.fromName(hash, load=False)
     dst = path.join(args.dst, hash)
-    src = path.join(GAME_ASSET_ROOT, hash[:2], hash)
-    if args.overwrite or not path.exists(dst):
-        try:
-            makedirs(path.dirname(dst), exist_ok=True)
-            shutil.copyfile(src, dst)
-            print(f"Copied {src} to {dst}")
-            return 1
-        except FileNotFoundError:
-            print(f"Couldn't find {src}, skipping...")
-            return 0
-    else:
-        print(f"Skipping existing: {src}")
+    if not asset.exists:
+        print(f"Couldn't find {asset.bundlePath}, skipping...")
         return 0
+    elif args.overwrite or not path.exists(dst):
+        asset.readPatchState()
+        if not asset.isPatched:
+            try:
+                makedirs(path.dirname(dst), exist_ok=True)
+                shutil.copyfile(asset.bundlePath, dst)
+                print(f"Copied {asset.bundlePath} to {dst}")
+                return 1
+            except Exception as e:
+                print(f"Unknown error: {repr(e)}, skipping...")
+                return 0
+    else:
+        print(f"Skipping existing: {asset.bundleName}")
+        return 0
+
 
 def main():
     ap = common.Args("Copy files for backup or testing")
@@ -81,14 +90,14 @@ def main():
     ap.add_argument("-n", "--name", help="Unity filepath wildcard")
     ap.add_argument("-dst", default="dump/")
     ap.add_argument("-O", dest="overwrite", action="store_true", help="Overwrite existing")
-    ap.add_argument("-B", "--backup", action="store_true", help="Backup all assets for which Translation Files exist")
+    ap.add_argument("-B", "--backup", nargs="?", default=False, const=True, help="Backup all assets for which Translation Files exist")
     args = ap.parse_args()
 
     if args.backup:
         backup(args)
     else:
         n = 0
-        for hash, in getFiles(args):
+        for hash, in getFiles(args):  # Sneaky one-item iterables unwrapper
             n += copy(hash, args)
         print(f"Copied {n} files.")
 

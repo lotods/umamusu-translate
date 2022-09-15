@@ -1,41 +1,61 @@
 import argparse
+import json
 import os
 from pathlib import Path, PurePath
 import sys
 from typing import Generator
 import regex
 from datetime import datetime, timezone
+
+import UnityPy
+from UnityPy.files import ObjectReader
+
 import helpers
 
 GAME_ROOT = os.path.realpath(os.path.join(os.environ['LOCALAPPDATA'], "../LocalLow/Cygames/umamusume/"))
 GAME_ASSET_ROOT = os.path.join(GAME_ROOT, "dat")
 GAME_META_FILE = os.path.join(GAME_ROOT, "meta")
 GAME_MASTER_FILE = os.path.join(GAME_ROOT, "master/master.mdb")
-SUPPORTED_TYPES =  ["story", "home", "race", "lyrics", "preview", "mdb"] # update indexing on next line
-TARGET_TYPES =  SUPPORTED_TYPES[:5]
-NAMES_BLACKLIST = ["<username>", "", "モノローグ"] # special-use game names, don't touch
+SUPPORTED_TYPES = ["story", "home", "race", "lyrics", "preview", "mdb"]  # Update indexing on next line
+TARGET_TYPES = SUPPORTED_TYPES[:-1]  # Omit mdb
+NAMES_BLACKLIST = ["<username>", "", "モノローグ"]  # Special-use game names, don't touch
 
 
-def searchFiles(targetType, targetGroup, targetId, targetIdx = False) -> list:
+def searchFiles(targetType, targetGroup, targetId, targetIdx=False, changed=False) -> list:
     found = list()
     isJson = lambda f: PurePath(f).suffix == ".json"
-    searchDir = targetType if type(targetType) is os.PathLike else os.path.join("translations", targetType)
-    for root, dirs, files in os.walk(searchDir):
-        depth = len(dirs[0]) if dirs else -1
-        if targetGroup and depth == 2:
-            dirs[:] = [d for d in dirs if d == targetGroup]
-        elif targetId:
-            if targetType in ("lyrics", "preview"):
-                found.extend(os.path.join(root, file) for file in files if PurePath(file).stem == targetId and isJson(file))
-                continue
-            elif depth == 4:
-                dirs[:] = [d for d in dirs if d == targetId]
-        if targetIdx and files:
-            found.extend(os.path.join(root, file) for file in files if file.startswith(targetIdx) and isJson(file))
-        else: found.extend(os.path.join(root, file) for file in files if isJson(file))
+    if changed:
+        from subprocess import run, PIPE
+        cmd = ["git", "status", "--short", "--porcelain"] if changed is True else ["git", "show", "--pretty=", "--name-status", changed]
+        # assumes git-config quotedPath = true, which is default I believe. :tmopera:
+        for l in run(cmd, stdout=PIPE).stdout.decode('unicode-escape').encode("latin-1").decode().splitlines():
+            m = regex.match(".?([^\s])\s*\"?([^\"]+)\"?", l)
+            state, path = m[1], PurePath(m[2])
+            if state in ("A", "M") and path.parts[0] == "translations" and path.parts[1] == targetType:
+                if not isJson(path): continue
+                if targetGroup and path.parts[2] != targetGroup: continue
+                if targetId and path.parts[3] != targetId: continue
+                found.append(str(path))
+    else:
+        searchDir = targetType if type(targetType) is os.PathLike else os.path.join("translations", targetType)
+        for root, dirs, files in os.walk(searchDir):
+            depth = len(dirs[0]) if dirs else -1
+            if targetGroup and depth == 2:
+                dirs[:] = [d for d in dirs if d == targetGroup]
+            elif targetId:
+                if targetType in ("lyrics", "preview"):
+                    found.extend(os.path.join(root, file) for file in files
+                                if PurePath(file).stem == targetId and isJson(file))
+                    continue
+                elif depth == 4:
+                    dirs[:] = [d for d in dirs if d == targetId]
+            if targetIdx and files:
+                found.extend(os.path.join(root, file) for file in files if file.startswith(targetIdx) and isJson(file))
+            else: found.extend(os.path.join(root, file) for file in files if isJson(file))
     return found
 
-def parseStoryId(t, input, fromPath = True) -> tuple:
+
+def parseStoryId(t, input, fromPath=True) -> tuple:
     if t == "home":
         if fromPath:
             input = input[-10:]
@@ -43,15 +63,15 @@ def parseStoryId(t, input, fromPath = True) -> tuple:
         else:
             return input[:2], input[2:6], input[6:]
     elif t == "lyrics":
-        if fromPath: input = input[-11:-7]
-        return None, None, input
+        return None, None, input[-11:-7] if fromPath else input
     elif t == "preview":
-        if fromPath: input = input[-4:]
-        return None, None, input
+        return None, None, input[-4:] if fromPath else input
     else:
         # story and storyrace
-        if fromPath: input = input[-9:]
-        return  input[:2], input[2:6], input[6:9]
+        if fromPath:
+            input = input[-9:]
+        return input[:2], input[2:6], input[6:9]
+
 
 def patchVersion():
     try:
@@ -62,43 +82,53 @@ def patchVersion():
         v = datetime.fromtimestamp(v, tz=timezone.utc).isoformat()
     except:
         v = "unknown"
-    finally: 
+    finally:
         return v
+
 
 class RawDefaultFormatter(argparse.ArgumentDefaultsHelpFormatter, argparse.RawTextHelpFormatter): pass
 class Args(argparse.ArgumentParser):
-    def __init__(self, desc, defaultArgs = True, types = None, **kwargs) -> None:
+    def __init__(self, desc, defaultArgs=True, types=None, **kwargs) -> None:
         if len(sys.argv) > 1 and sys.argv[1] in ("-v", "--version"):
             print(f"Patch version: {patchVersion()}")
             sys.exit()
         super().__init__(description=desc, conflict_handler='resolve', formatter_class=RawDefaultFormatter, **kwargs)
         if defaultArgs:
-            self.add_argument("-v", "--version", action="store_true", default=argparse.SUPPRESS, help="Show version and exit")
-            self.add_argument("-t", "--type", choices=types or TARGET_TYPES, default=types[0] if types else TARGET_TYPES[0], help="The type of assets to process.")
+            self.add_argument("-v", "--version", action="store_true", default=argparse.SUPPRESS,
+                              help="Show version and exit")
+            self.add_argument("-t", "--type", choices=types or TARGET_TYPES, default=types[0] if types else TARGET_TYPES[0],
+                              help="The type of assets to process.")
             self.add_argument("-g", "--group", help="The group to process")
             self.add_argument("-id", help="The id (subgroup) to process")
             self.add_argument("-idx", help="The specific asset index to process")
+            self.add_argument("--changed", nargs="?", default=False, const=True, help="Limit to changed files (requires git)")
             self.add_argument("-src", default=GAME_ASSET_ROOT)
             self.add_argument("-dst", default=Path("dat/").resolve())
         elif types:
             self.add_argument("-t", "--type", choices=types, default=types[0], help="The type of assets to process.")
 
+
 class TranslationFile:
     latestVersion = 5
     ver_offset_mdb = 100
 
-    def __init__(self, file):
-        self.file = file
-        self.name = PurePath(file).name
-        self.reload()
+    def __init__(self, file = None, load=True):
+        if load:
+            if not file: raise RuntimeError("Attempting to load tlfile but no file provided.")
+            self.setFile(file)
+            self.fileExists = True # should error if it does not
+            self.reload()
+        else:
+            self.fileExists = False
 
     class TextData:
-        def __init__(self, root: 'TranslationFile', data = None) -> None:
+        def __init__(self, root: 'TranslationFile', data=None) -> None:
             self.root = root
             self.map = None
             if not data: data = root.textBlocks
             self.data = self.toInterchange(data)
-        def get(self, key, default = None):
+
+        def get(self, key, default=None):
             if isinstance(key, str) and self.map:
                 return self.map.get(key, {}).get('enText', default)
             elif isinstance(key, int):
@@ -108,7 +138,8 @@ class TranslationFile:
                     return default
             else:
                 raise NotImplementedError
-        def set(self, key, val, idx:int = None):
+
+        def set(self, key, val, idx: int = None):
             if isinstance(key, int) and not idx or idx == key:
                 self.data[key] = val
             if idx:
@@ -117,7 +148,8 @@ class TranslationFile:
                 self.map[key]['enText'] = val
             else:
                 raise LookupError(f"No index provided for list-format file {self.root.name}")
-        def __getitem__ (self, itm):
+
+        def __getitem__(self, itm):
             return self.get(itm)
         def __setitem__(self, itm, val):
             self.set(itm, val)
@@ -127,10 +159,11 @@ class TranslationFile:
             return len(self.data)
         def __json__(self):
             return self.toNative()
+
         def find(self, key, val) -> dict:
             return next((x for x in self.data if x.get(key) == val), None)
 
-        def toInterchange(self, data = None):
+        def toInterchange(self, data=None):
             data = data or self.data
             if isinstance(data, dict):
                 self.map = dict()
@@ -140,8 +173,8 @@ class TranslationFile:
                     self.map[k] = o[-1]
                 return o
             return data
-        
-        def toNative(self, data = None):
+
+        def toNative(self, data=None):
             data = data or self.data
             if self.root.version > self.root.ver_offset_mdb and isinstance(data, list):
                 o = dict()
@@ -151,10 +184,7 @@ class TranslationFile:
             return data
 
     def _getVersion(self) -> int:
-        if 'version' in self.data:
-            return self.data['version']
-        else:
-            return 1
+        return self.data['version'] if 'version' in self.data else 1
 
     @property
     def textBlocks(self) -> TextData:
@@ -186,7 +216,7 @@ class TranslationFile:
             return self.data['bundle']
         else:
             return list(self.data.keys())[0]
-    
+
     @property
     def type(self):
         if self.version > 2:
@@ -201,7 +231,7 @@ class TranslationFile:
             return self.data['storyId']
         else:
             isN = regex.compile(r"\d+")
-            g, id, idx = PurePath(self.file).parts[-3:] # project structure provides at least 3 levels, luckily
+            g, id, idx = PurePath(self.file).parts[-3:]  # project structure provides at least 3 levels, luckily
             if not isN.match(g): g = ""
             if not isN.match(id): id = ""
             idx = isN.match(idx)[0]
@@ -209,9 +239,114 @@ class TranslationFile:
 
     def reload(self):
         self.data = helpers.readJson(self.file)
-        self.version = self._getVersion()
-        self.data['text'] = self.TextData(self)
+        self.init()
 
     def save(self):
-        self.data['modified'] = int(datetime.now(timezone.utc).timestamp())
+        if self.fileExists and self._snapshot == json.dumps(self.data, ensure_ascii=False, default=helpers._to_json): return
+        assert self.file
+        if self.version < self.ver_offset_mdb:
+            self.data['modified'] = currentTimestamp()
         helpers.writeJson(self.file, self.data)
+
+    def snapshot(self, copyFrom=None):
+        if copyFrom:
+            self._snapshot = copyFrom._snapshot
+            self.fileExists = copyFrom.fileExists
+            # Gets written correctly on save anyway but copyFrom means we're trying to "restore" a state (partially):
+            mod = copyFrom.data.get('modified')
+            if mod: self.data['modified'] = mod
+        else:
+            self._snapshot = json.dumps(self.data, ensure_ascii=False, default=helpers._to_json)
+
+    def setFile(self, file):
+        self.file = file
+        self.name = PurePath(file).name
+
+    def init(self, snapshot=True):
+        self.version = self._getVersion()
+        self.escapeNewline = self.type in ("race", "preview", "mdb")
+        self.data['text'] = self.TextData(self)
+        if snapshot: self.snapshot()
+
+    @classmethod
+    def fromData(cls, data, snapshot=False):
+        c = cls(load=False)
+        c.data = {'version': cls.latestVersion, **data}
+        c.init(snapshot)
+        return c
+
+class GameBundle:
+    editMark = b"\x08\x04"
+
+    def __init__(self, path, load=True) -> None:
+        self.bundlePath = Path(path)
+        self.bundleName = self.bundlePath.stem
+        self.exists = self.bundlePath.exists()
+        self.isPatched = False
+        self.data = None
+        self.patchData:bytes = b""
+        self._autoloaded = load
+
+        if load:
+            self.load()
+
+    def setPatchState(self, tlFile: TranslationFile):
+        m = tlFile.data.get("modified", b"")
+        if m:
+            m = m.to_bytes(5, byteorder='big', signed=False)
+            # Have a nice day and good training if you're reading this in the year 15xxx somewhere :spemini:
+        self.patchData = m + self.editMark
+
+    def readPatchState(self, customPath=None):
+        try:
+            with open(customPath or self.bundlePath, "rb") as f:
+                f.seek(-7, os.SEEK_END)
+                modified = f.read(5)
+                mark = f.read(2)
+                if mark == self.editMark:
+                    self.isPatched = True
+                    try:
+                        modified = int.from_bytes(modified, byteorder='big')
+                        self.patchedTime = modified
+                    except:
+                        self.patchedTime = None
+        except:
+            pass # defer to defaults
+
+    def load(self):
+        # UnityPy does not error and loads empty files
+        if not self.exists:
+            raise FileNotFoundError
+
+        self.data = UnityPy.load(str(self.bundlePath))
+        if self._autoloaded: self.readPatchState()
+        self.rootAsset: ObjectReader = next(iter(self.data.container.values())).get_obj()
+        self.assets: list[ObjectReader] = self.rootAsset.assets_file.files
+        return self
+
+    def save(self, dstFolder:Path=None, dstName:str=None):
+        if not self.data: return
+
+        b = self.data.file.save() + self.patchData
+        fn = dstName or self.data.file.name
+        fp = (dstFolder or self.bundlePath.parent) / fn[0:2] / fn
+        fp.parent.mkdir(parents=True, exist_ok=True)
+        with open(fp, "wb") as f:
+            f.write(b)
+        self.isPatched = True
+
+
+    @classmethod
+    def fromName(cls, name, load=True):
+        bundlePath = PurePath(GAME_ASSET_ROOT, name[0:2], name)
+        return cls(bundlePath, load)
+    
+    @staticmethod
+    def createPath(dstFolder, dstName):
+        return PurePath(dstFolder, dstName[0:2], dstName)
+
+
+
+
+def currentTimestamp():
+    return int(datetime.now(timezone.utc).timestamp())

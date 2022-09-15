@@ -1,10 +1,14 @@
 import sys
 from os.path import realpath
+import sqlite3
+from pathlib import Path
+from importlib import import_module
+
 sys.path.append(realpath("src"))
 import common
 import helpers
-import sqlite3
-from pathlib import Path
+checkPatched = import_module("import").checkPatched
+
 
 def extract(db: sqlite3.Connection, stmt: str, savePath: Path):
     # In the spirit of the original db patch, we don't modify old files to keep the db order
@@ -26,17 +30,22 @@ def extract(db: sqlite3.Connection, stmt: str, savePath: Path):
         o = {'version': 101, 'type': "mdb", 'lineLength': 0, 'text': newData}
         helpers.writeJson(savePath, o)
 
+
 def parseArgs():
-    ap = common.Args("Extracts master.mdb data for translation", False)
+    ap = common.Args("Extracts master.mdb data for translation", defaultArgs=False)
     ap.add_argument("-src", default=common.GAME_MASTER_FILE, help="Path to master.mdb file")
-    ap.add_argument("-dst", default="translations/mdb", help="Extraction path")
+    ap.add_argument("-dst", default="translations/mdb", type=Path, help="Extraction path")
     ap.add_argument("--no-skill-data", action="store_true", help="Skip extracting skill data (requires nodeJS)")
     ap.add_argument("--no-text", action="store_true", help="Skip extracting standard text data")
     ap.add_argument("-f", "--file", help="Extract specific file name (as found in index.json)")
     return ap.parse_args()
 
+
 def main():
     args = parseArgs()
+    if checkPatched(args.src):
+        print("master.mdb is patched, aborting extract.")
+        return
     index = helpers.readJson("src/mdb/index.json")
     if not args.no_text:
         print("Extracting standard text...")
@@ -51,15 +60,18 @@ def main():
                             specStmt = f"{stmt} WHERE {entry['specifier']} IN ({specval});"
                         else:
                             specStmt = f"{stmt} WHERE {entry['specifier']} = {specval};"
-                        extract(db, specStmt, Path(args.dst, filename))
+                        extract(db, specStmt, args.dst / (entry['table'] if entry.get("subdir") else "") / filename)
                 else:
                     if args.file and entry['file'] != args.file: continue
-                    extract(db, stmt, Path(args.dst, entry['file']))
+                    extract(db, stmt, args.dst / entry['file'])
         db.close()
     if not args.no_skill_data:
         print("Extracting skill data...")
+        # This is just a QoL thing
         from subprocess import run
         run(["node", "src/mdb/extract-skill-data.js", args.src], check=True)
+        run(["py", "src/textprocess.py", "-fsize", "-src", "translations/mdb/alt/skill-desc.json"]) # :tmo:
+
 
 if __name__ == '__main__':
     main()

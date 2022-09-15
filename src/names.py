@@ -1,47 +1,38 @@
-from os import path
 import common
-import csv
 import helpers
 
-def createDict(namesFile):
-    names = dict()
-    with open(namesFile, "r", newline='', encoding="utf8") as csvfile:
-        reader = csv.reader(csvfile, delimiter=',', quotechar='"')
-        for row in reader:
-            names[row[0]] = row[1]
-    names.update(helpers.readJson("src/data/names.json"))
-    return names
 
-def translate(namesDict, args):
-    if args.src: files = args.src
-    else: files = common.searchFiles(args.type, args.group, args.id, args.idx)
+NAMES_DICT = helpers.readJson("translations/mdb/uma-name.json").get("text")
+NAMES_DICT.update(helpers.readJson("translations/mdb/miscellaneous.json"))
+NAMES_DICT.update(helpers.readJson("src/data/names.json"))
 
-    for file in files:
-        file = common.TranslationFile(file)
-        for block in file.textBlocks:
-            name = block.get('jpName')
-            if name is not None:
-                if name in common.NAMES_BLACKLIST:
-                    block['enName'] = ""
-                elif name in namesDict:
-                    block['enName'] = namesDict[name]
-        file.save()
-    return len(files)
+
+def translate(file: common.TranslationFile):
+    for block in file.textBlocks:
+        name = block.get('jpName')
+        if name is not None:
+            if name in common.NAMES_BLACKLIST:
+                block['enName'] = ""
+            elif name in NAMES_DICT:
+                block['enName'] = NAMES_DICT[name]
+
 
 def main():
     ap = common.Args("Translate many enName fields in Translation Files by lookup")
-    ap.add_argument("-n", dest="namesFile", default="../umamusume-db-translate/src/data/uma-name.csv", help="Path to (external) db-translate's uma-name.csv")
     ap.add_argument("-src", nargs="*", help="Target Translation File(s), overwrites other file options")
     args = ap.parse_args()
-    
+
     if args.type in ("race", "lyrics"):
         print("No names in given type.")
         raise SystemExit
-    if not path.exists(args.namesFile):
-        raise FileNotFoundError("You must specify the uma-name.csv file.")
 
-    dict = createDict(args.namesFile)
-    n = translate(dict, args)
-    print(f"Names translated in {n} files.")
+    files = args.src or common.searchFiles(args.type, args.group, args.id, args.idx, changed = args.changed)
+    for file in files:
+        file = common.TranslationFile(file)
+        translate(file)
+        file.save()
+    print(f"Names translated in {len(files)} files.")
 
-main()
+
+if __name__ == "__main__":
+    main()

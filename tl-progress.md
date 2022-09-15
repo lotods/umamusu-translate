@@ -19,7 +19,8 @@ Main story Act 1 Ch 2 | Complete | [Hades of Games]
 Main story Act 1 Ch 3 | Complete | [Hades of Games]
 Main story Act 1 Ch 4 | Complete | [Hades of Games]
 Main story Act 1 Ch 5 | Complete | [LotoDS][]
-Main story Act 1 Ch 6 (Final) | Complete | [LotoDS][]
+Main story Act 1 Ch 6 Finale Part 1 | Complete | [LotoDS][]
+Main story Act 1 Ch 6 Finale Part 2 | Complete | [LotoDS][]
 Half Anniversary Story | Complete | [CatNipHoarder][] & [Holo][]
 1st Anniversary Story | Complete | [CatNipHoarder][] & [Holo][]
 Brand-New Friend | Complete | [Hades of Games][] (ep 1-2, 5-8, 4 (missing parts)), [Vacxy][] (ep 3, 4 (partial)) + [noccu][] (slightly edited)
@@ -29,19 +30,24 @@ Miracles of the Holy Night | Complete | [CatNipHoarder][] & [Holo][]
 Blossoming New Year's Karuta Contest | Complete, In progress | deepl, [noccu]
 Patisserie Grandeur | Complete | [noccu][]
 Flapping Run-up | Complete | [Hades of Games][]
-Tonight at the Ligne Droite | In progress | [ebi]
+Tonight at the Ligne Droite | In progress, Complete | [ebi], deepl
 A Resounding Cheer, Tracen Academy Cheerleading Squad! | In progress | [LotoDS][]
+The Promised Time: Silks & Three Riddles | In progress/Transferring, Complete | [Snep][], deepl
+Seek, Solve, Summer Walk! | In Progress, Complete | [noccu][] (ep 1-3), deepl
+The rest up to 2022/07/08 | Complete | deepl (contributed by Korgi)
 
 
 # Character stories
 name | progress | translator
 --- | --- | ---
+All not listed up to 2022/07/08 | Complete | deepl (contributed by Korgi)
 Agnes Digital | Complete | deepl (contributed by CryDuringItAll)
-Air Groove | Complete | [burritoblaster][]
 Agnes Tachyon | Complete | [Ren][] (ep 1), [noccu][] + [xct][] (ep 2-3), [xct][] (ep 4-7)
+Air Shakur | Complete | deepl (contributed by CryDuringItAll)
+Air Groove | Complete | [burritoblaster][]
 Biwa Hayahide | Complete | deepl (contributed by CryDuringItAll)
 Daiwa Scarlet | Complete | [XiantheMiguel][] (commissioned by AhriParty)
-Eishin Flash | Complete, In progress | deepl, [noccu] (ep 1)
+Eishin Flash | Complete, In progress | deepl, [noccu] (ep 1-2)
 El Condor Pasa | Complete | deepl (contributed by CryDuringItAll)
 Fine Motion | Complete | [LotoDS][]
 Gold City | Complete | [Hades of Games][]
@@ -69,11 +75,12 @@ Seiun Sky | In progress | [CatNipHoarder][] & [Holo][] (ep 1-4)
 Silence Suzuka | Complete | [LotoDS][]
 Smart Falcon | Complete | deepl (contributed by CryDuringItAll)
 Special Week | Complete | Mann
+Sweep Tosho | In Progress, Complete | FragmentalSolstice, deepl
 Symboli Rudolf | Complete | deepl
 Taiki Shuttle | Complete | [LotoDS][]
 Tamamo Cross | Complete | [LotoDS][]
 Vodka | Complete | [robflop][]
-Yaeno Muteki | In Progress | [LotoDS][] (ep 1-4)
+Yaeno Muteki | Complete | [LotoDS][] (ep 1-4), deepl
 
 
 # Training story/events
@@ -82,22 +89,37 @@ name | progress | translator
 Campaign intro | Complete | [noccu][]
 Shared events | Complete | [noccu][]
 
+## URA
+id | name (short) | progress | translator
+--- | --- | --- | ---
+All | up to 2022/07/08 | Complete | deepl (contributed by Korgi)
+
+## Aoharu
+id | name (short) | progress | translator
+--- | --- | --- | ---
+All | up to 2022/07/08 | Complete | deepl (contributed by Korgi)
+
 ## Make a New Track
 id | name (short) | progress | translator
 --- | --- | --- | ---
+All not listed | up to 2022/07/08 | Complete | deepl (contributed by Korgi)
 249 | Nyan Nyan Island | Complete | [nem]
 259 | A sudden rain | Complete | [Snep]
+
 
 ## Umas
 name | progress | translator
 --- | --- | ---
-Agnes Tachyon | Complete | deepl
-Eishin Flash | In progress | deepl
+All not listed up to 2022/07/08 | Complete | deepl (contributed by Korgi)
+Agnes Tachyon | Complete, In progress | deepl, [noccu]
+Air Shakur | Complete | deepl (contributed by CryDuringItAll)
+Daiwa Scarlet | Complete | deepl (contributed by Korgi)
+Eishin Flash | Complete | deepl
 Gold City | Complete | deepl (contributed by CryDuringItAll)
 King Halo | Complete | deepl
 Manhattan Cafe | Complete | deepl
 Maruzensky | Complete | deepl
-Mihono Bourbon | In progress | deepl
+Mihono Bourbon | Complete | deepl
 Narita Taishin | Complete | deepl (contributed by CryDuringItAll)
 Oguri Cap | Complete | deepl
 Rice Shower | Complete | deepl
@@ -107,7 +129,7 @@ Sakura Bakushin O | Complete | deepl
 ## Cards
 name | progress | translator
 --- | --- | ---
-All except the below (up to 30/12/2021) | Complete | deepl
+All not listed (Up to 2022/07/08) | Complete | deepl (contributed by redi up to 30/12/2021),<br> (contributed by Korgi up to 2022/07/08)
 Vodka (R, Tracen Academy) | Complete | [robflop][]
 Vodka (SR, Annoying Observer) | Complete | [robflop][]
 Vodka (SSR, Road of Vodka) | Complete | [robflop][]
@@ -115,19 +137,28 @@ Vodka (SSR, Road of Vodka) | Complete | [robflop][]
 # Home Dialogue
 name | progress | translator
 --- | --- | ---
+All not listed up to 2022/07/08 | Complete | deepl (contributed by Korgi)
 Maruzensky | Complete | [noccu][]
 Curren Chan | Complete | [noccu][]
+Gold Ship | Complete | [noccu][] (solo 1-2), deepl
+
+# General
+name | progress | translator
+--- | --- | ---
+Tutorial (Group 00) | Complete | deepl (contributed by Korgi)
+Tutorial (Group 01) | Complete | [ericathyz](https://twitter.com/ericathyz) + [noccu] (missing + edits)
 
 # Lyrics
 name | progress | translator
 --- | --- | ---
 Blaze | Complete | [noccu][]
 BLOW my GALE | Complete | [noccu][]
+Egao no Takaramono -Beyond the Future!- | Complete | [LotoDS][]
 Honnou Speed | Complete | [Eight][]
 Make Debut! | Complete | Unknown (https://www.animesonglyrics.com/) + [noccu][] (missing parts)
 Next Frontier | Complete | [LotoDS][]
 Sasayaka na Inori | Complete | [Eight][]
-transforming | In progress | [noccu][]
+transforming | Complete | [LotoDS][]
 Umapyoi Densetsu | Complete | [ebi][], [Karimenrider][] (missing parts)
 UNLIMITED IMPACT | Complete | [noccu][]
 We are DREAMERS!! | Complete | TR

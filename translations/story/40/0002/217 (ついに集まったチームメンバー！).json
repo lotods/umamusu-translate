@@ -1,5 +1,5 @@
 {
-    "version": 4,
+    "version": 5,
     "bundle": "I25XFYPBBMOWLXZELZFEWIVD2OFXIC57",
     "type": "story",
     "storyId": "400002217",
@@ -9,8 +9,19 @@
             "jpName": "駿川たづな",
             "enName": "Hayakawa Tazuna",
             "jpText": "おめでとうございます！\nついに、チームメンバーが集まりましたね。",
-            "enText": "",
+            "enText": "Congratulations! At last, you have gathered \nyour team members.",
             "nextBlock": 2,
+            "origClipLength": 86,
+            "animData": [
+                {
+                    "origLen": 97,
+                    "pathId": 1577841501925530001
+                },
+                {
+                    "origLen": 97,
+                    "pathId": -4040266275665762578
+                }
+            ],
             "pathId": -6288467462876556331,
             "blockIdx": 1
         },
@@ -18,8 +29,19 @@
             "jpName": "駿川たづな",
             "enName": "Hayakawa Tazuna",
             "jpText": "さっそくですが、チームのみなさんのための\n部室を用意させていただきました。",
-            "enText": "",
+            "enText": "As soon as possible, we have prepared a club \nroom for the team.",
             "nextBlock": 3,
+            "origClipLength": 93,
+            "animData": [
+                {
+                    "origLen": 73,
+                    "pathId": -3007974665217773608
+                },
+                {
+                    "origLen": 104,
+                    "pathId": -4689897867504140882
+                }
+            ],
             "pathId": -1933968761055756640,
             "blockIdx": 2
         },
@@ -27,8 +49,19 @@
             "jpName": "駿川たづな",
             "enName": "Hayakawa Tazuna",
             "jpText": "……ですが、今はまだ必要最低限の状態です。\nトレーニング器具も十分ではありません。",
-            "enText": "",
+            "enText": "…… but right now it is still in \na minimal state of need. There is \nnot enough training equipment.",
             "nextBlock": 4,
+            "origClipLength": 98,
+            "animData": [
+                {
+                    "origLen": 111,
+                    "pathId": -3536303535043863813
+                },
+                {
+                    "origLen": 109,
+                    "pathId": 8162417286259552898
+                }
+            ],
             "pathId": 4134795664060503214,
             "blockIdx": 3
         },
@@ -36,8 +69,19 @@
             "jpName": "駿川たづな",
             "enName": "Hayakawa Tazuna",
             "jpText": "でも、『アオハル杯』で勝利し、\nチームのランキングが上がっていけば、\nその分予算も沢山もらえるようになります！",
-            "enText": "",
+            "enText": "But if you win the AOHAL Cup, and your team's \nranking goes up. you will be able to get more \nbudget for your team!",
             "nextBlock": 5,
+            "origClipLength": 116,
+            "animData": [
+                {
+                    "origLen": 117,
+                    "pathId": -1771606541327755643
+                },
+                {
+                    "origLen": 127,
+                    "pathId": -5716805913835366205
+                }
+            ],
             "pathId": 99664898519322411,
             "blockIdx": 4
         },
@@ -45,8 +89,19 @@
             "jpName": "駿川たづな",
             "enName": "Hayakawa Tazuna",
             "jpText": "そうすれば、より充実したハイレベルな\nチームトレーニングができるようになるかと♪",
-            "enText": "",
+            "enText": "I thought it would make for a more complete \nand high-level team training experience.",
             "nextBlock": 6,
+            "origClipLength": 97,
+            "animData": [
+                {
+                    "origLen": 95,
+                    "pathId": -2568195140693685612
+                },
+                {
+                    "origLen": 108,
+                    "pathId": 9069591862273609339
+                }
+            ],
             "pathId": -5804041807299597388,
             "blockIdx": 5
         },
@@ -54,13 +109,24 @@
             "jpName": "駿川たづな",
             "enName": "Hayakawa Tazuna",
             "jpText": "より良いチーム活動を行うためにも、\n『アオハル杯』でのご活躍を\n目指してくださいね！",
-            "enText": "",
+            "enText": "We hope that you will be able to play an \nactive role in the \"AOHAL Cup\" for the \nbetterment of your team activities!",
             "nextBlock": 7,
+            "origClipLength": 99,
             "choices": [
                 {
                     "jpText": "わかりました！",
-                    "enText": "",
+                    "enText": "I understand!",
                     "nextBlock": 7
+                }
+            ],
+            "animData": [
+                {
+                    "origLen": 95,
+                    "pathId": -1167677162931405401
+                },
+                {
+                    "origLen": 110,
+                    "pathId": -8896680681134468201
                 }
             ],
             "pathId": -8189586536532416412,
@@ -70,8 +136,19 @@
             "jpName": "駿川たづな",
             "enName": "Hayakawa Tazuna",
             "jpText": "ではさっそく、『アオハル杯』へ出走する\nために必要な手続きを行いましょう。",
-            "enText": "",
+            "enText": "Now, let's go through the necessary \nprocedures to run in the AOHAL Cup.",
             "nextBlock": 8,
+            "origClipLength": 93,
+            "animData": [
+                {
+                    "origLen": 75,
+                    "pathId": -1874079454743457378
+                },
+                {
+                    "origLen": 104,
+                    "pathId": 1417293148654974034
+                }
+            ],
             "pathId": -2565605631030226469,
             "blockIdx": 7
         },
@@ -79,8 +156,19 @@
             "jpName": "駿川たづな",
             "enName": "Hayakawa Tazuna",
             "jpText": "出走登録の用紙をお渡ししますので、\n必要事項を記入のうえ提出をお願いします。",
-            "enText": "",
+            "enText": "Please fill out the registration form and \nsubmit it to the race organizer.",
             "nextBlock": 9,
+            "origClipLength": 94,
+            "animData": [
+                {
+                    "origLen": 83,
+                    "pathId": -7582788436281005330
+                },
+                {
+                    "origLen": 105,
+                    "pathId": -6954637460797931846
+                }
+            ],
             "pathId": 3402057697950849156,
             "blockIdx": 8
         },
@@ -88,8 +176,19 @@
             "jpName": "駿川たづな",
             "enName": "Hayakawa Tazuna",
             "jpText": "それでは、ご健闘お祈りしています。",
-            "enText": "",
+            "enText": "Well then, I wish you the best of luck.",
             "nextBlock": 10,
+            "origClipLength": 67,
+            "animData": [
+                {
+                    "origLen": 54,
+                    "pathId": -6967656223390656739
+                },
+                {
+                    "origLen": 78,
+                    "pathId": -2196191761777063502
+                }
+            ],
             "pathId": -4971310112523575224,
             "blockIdx": 9
         },
@@ -97,8 +196,19 @@
             "jpName": "モノローグ",
             "enName": "",
             "jpText": "出走登録用紙には、チーム名の欄がある。\nチーム＜キャロッツ＞なんてどうだろうか。",
-            "enText": "",
+            "enText": "On the registration form, there is a section \nfor team names. How about Team Carrots?",
             "nextBlock": 11,
+            "origClipLength": 97,
+            "animData": [
+                {
+                    "origLen": 20,
+                    "pathId": -7078068546024386006
+                },
+                {
+                    "origLen": 20,
+                    "pathId": -766292226488875866
+                }
+            ],
             "pathId": 22380453298798065,
             "blockIdx": 10
         },
@@ -106,8 +216,9 @@
             "jpName": "モノローグ",
             "enName": "",
             "jpText": "そういえば、チームメンバーからも\nいくつか案をもらっていたような……？",
-            "enText": "",
+            "enText": "By the way, I think I got some ideas from \nteam members: ……?",
             "nextBlock": 12,
+            "origClipLength": 90,
             "pathId": 7868387945937533510,
             "blockIdx": 11
         },
@@ -115,32 +226,33 @@
             "jpName": "モノローグ",
             "enName": "",
             "jpText": "チーム名は――",
-            "enText": "",
+            "enText": "The name of the team is―",
             "nextBlock": 13,
+            "origClipLength": 54,
             "choices": [
                 {
                     "jpText": "タイキの＜HOP CHEERS＞",
-                    "enText": "",
+                    "enText": "Taiki's <HOP CHEERS>.",
                     "nextBlock": 13
                 },
                 {
                     "jpText": "フクキタルの＜ハレノヒ・ランナーズ＞",
-                    "enText": "",
+                    "enText": "Harenohi Runners\" in Fukkital",
                     "nextBlock": 15
                 },
                 {
                     "jpText": "ウララの＜にんじんぷりん＞",
-                    "enText": "",
+                    "enText": "URARARA's <Carrot Purin>.",
                     "nextBlock": 17
                 },
                 {
                     "jpText": "ライスの＜ブルームス＞",
-                    "enText": "",
+                    "enText": "Rice's <Broomes>.",
                     "nextBlock": 19
                 },
                 {
                     "jpText": "チーム＜キャロッツ＞",
-                    "enText": "",
+                    "enText": "Team Carrots",
                     "nextBlock": 21
                 }
             ],
@@ -151,12 +263,13 @@
             "jpName": "モノローグ",
             "enName": "",
             "jpText": "チーム名を＜HOP CHEERS＞に決め、\n出走登録用紙に記入した！",
-            "enText": "",
+            "enText": "I decided to name my team <HOP CHEERS> and \nfilled out the registration form!",
             "nextBlock": 14,
+            "origClipLength": 89,
             "coloredText": [
                 {
                     "jpText": "HOP CHEERS",
-                    "enText": ""
+                    "enText": "HOP CHEERS"
                 }
             ],
             "pathId": 517462500347806538,
@@ -166,8 +279,9 @@
             "jpName": "モノローグ",
             "enName": "",
             "jpText": "これから、チーム一丸となって\n頑張っていきたい！",
-            "enText": "",
+            "enText": "We're going to work as a team now!",
             "nextBlock": -1,
+            "origClipLength": 76,
             "pathId": 8629373974397661445,
             "blockIdx": 14
         },
@@ -175,12 +289,13 @@
             "jpName": "モノローグ",
             "enName": "",
             "jpText": "チーム名を＜ハレノヒ・ランナーズ＞に決め、\r\n出走登録用紙に記入した！",
-            "enText": "",
+            "enText": "We decided to name our team <Halenohi \nRunners> and filled out the registration form!",
             "nextBlock": 16,
+            "origClipLength": 90,
             "coloredText": [
                 {
                     "jpText": "ハレノヒ・ランナーズ",
-                    "enText": ""
+                    "enText": "Harenohi Runners"
                 }
             ],
             "pathId": 6437327190456266862,
@@ -190,8 +305,9 @@
             "jpName": "モノローグ",
             "enName": "",
             "jpText": "これから、チーム一丸となって\n頑張っていきたい！",
-            "enText": "",
+            "enText": "We're going to work as a team now!",
             "nextBlock": -1,
+            "origClipLength": 76,
             "pathId": 2368099699219811830,
             "blockIdx": 16
         },
@@ -199,12 +315,13 @@
             "jpName": "モノローグ",
             "enName": "",
             "jpText": "チーム名を＜にんじんぷりん＞に決め、\n出走登録用紙に記入した！",
-            "enText": "",
+            "enText": "We decided to name our team <Carrot Purin> \nand filled out the registration form!",
             "nextBlock": 18,
+            "origClipLength": 85,
             "coloredText": [
                 {
                     "jpText": "にんじんぷりん",
-                    "enText": ""
+                    "enText": "Okinawan-style sweet bun similar to a carrot \nstir-fried with egg and sometimes meat or fish"
                 }
             ],
             "pathId": 196401533527503385,
@@ -214,8 +331,9 @@
             "jpName": "モノローグ",
             "enName": "",
             "jpText": "これから、チーム一丸となって\n頑張っていきたい！",
-            "enText": "",
+            "enText": "We're going to work as a team now!",
             "nextBlock": -1,
+            "origClipLength": 76,
             "pathId": -1433893292231948653,
             "blockIdx": 18
         },
@@ -223,12 +341,13 @@
             "jpName": "モノローグ",
             "enName": "",
             "jpText": "チーム名を＜ブルームス＞に決め、\n出走登録用紙に記入した！",
-            "enText": "",
+            "enText": "We decided to name our team <Blooms> and \nfilled out the registration form!",
             "nextBlock": 20,
+            "origClipLength": 82,
             "coloredText": [
                 {
                     "jpText": "ブルームス",
-                    "enText": ""
+                    "enText": "Broomes."
                 }
             ],
             "pathId": -3380287514228498215,
@@ -238,8 +357,9 @@
             "jpName": "モノローグ",
             "enName": "",
             "jpText": "これから、チーム一丸となって\n頑張っていきたい！",
-            "enText": "",
+            "enText": "We're going to work as a team now!",
             "nextBlock": -1,
+            "origClipLength": 76,
             "pathId": 6440123034723790125,
             "blockIdx": 20
         },
@@ -247,12 +367,13 @@
             "jpName": "モノローグ",
             "enName": "",
             "jpText": "チーム名をチーム＜キャロッツ＞に決め、\n出走登録用紙に記入した！",
-            "enText": "",
+            "enText": "We decided to name our team \"Carrots\" and \nfilled out the registration form!",
             "nextBlock": 22,
+            "origClipLength": 86,
             "coloredText": [
                 {
                     "jpText": "キャロッツ",
-                    "enText": ""
+                    "enText": "carrots"
                 }
             ],
             "pathId": -2615346758912518162,
@@ -262,10 +383,12 @@
             "jpName": "モノローグ",
             "enName": "",
             "jpText": "これから、チーム一丸となって\n頑張っていきたい！",
-            "enText": "",
+            "enText": "We're going to work as a team now!",
             "nextBlock": -1,
+            "origClipLength": 76,
             "pathId": 6096658338039244785,
             "blockIdx": 22
         }
-    ]
+    ],
+    "modified": 1657285620
 }

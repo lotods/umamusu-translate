@@ -146,6 +146,11 @@ function translate() {
             PFILES.factors.text[jpText] = `<size=22>${fullString}\\n</size>`; //write full name, whichever parts were found
         }
     }
+
+    for (let [jpText, enText] of Object.entries(PFILES.races.text)) {
+        if (enText) continue; //skip translated entries
+        translateSpecific("legvs", jpText, PFILES.races)
+    }
 }
 
 /**
@@ -249,11 +254,12 @@ function translateSpecific (type, jpText, file) {
     else if (type == "cmRes") {
         let enText = data[jpText]
         if (enText.length > 22) return
-        m = jpText.match(/杯で(.+)成績/)
+        m = jpText.match(/杯で(?:(\d)回)?(.+)成績/)
         if (m) {
-            let [, res] = m;
+            let [, i, res] = m;
+            i = i ? `${i}x ` : ""
             if (res && enText) {
-                data[jpText] = `Achieve ${CM_RESULT[res]} results in the ${enText}`;
+                data[jpText] = `Achieve ${i}${CM_RESULT[res]} results in the ${enText}`;
             }
         }
     }
@@ -334,12 +340,21 @@ function translateSpecific (type, jpText, file) {
             data[jpText] = `Complete training having acquired ${skills.join(", ")}`;
         }
     }
+    else if (type == "legvs") {
+        m = jpText.match(/レジェンドレース　VS(.+)/)
+        if (m) {
+            let [,umaName] = m, umaNameEn = PFILES.umaNames.text[umaName];
+            if (umaNameEn) {
+                data[jpText] = `VS ${umaNameEn}`;
+            }
+        }
+    }
 }
 
 function writeFiles() {
     // Don't change files only used for lookup
     delete PFILES.umaNames;
-    delete PFILES.races;
+    // delete PFILES.races;
     delete PFILES.skills;
     delete PFILES.spTitles;
     delete PFILES.misc;
