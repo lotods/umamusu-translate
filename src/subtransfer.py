@@ -1,9 +1,13 @@
-import common
+import re
+from enum import Enum, auto
+from datetime import timedelta
+from typing import Union
+
+from Levenshtein import ratio
 import ass
 import srt
-import re
-from Levenshtein import ratio
-from enum import Enum, auto
+
+import common
 import helpers
 
 class SubFormat(Enum):
@@ -22,6 +26,7 @@ class SubTransferOptions():
         self.filter = None
         self.choicePrefix = [">"]
         self.strictChoices = True
+        self.noDupeSubs: Union[bool, str] = False
         
     @classmethod
     def fromArgs(cls, args):
@@ -50,6 +55,7 @@ class BasicSubProcessor:
         self.format = SubFormat.NONE
         self.options = options
         self.cpreRe = re.compile("|".join(options.choicePrefix), re.IGNORECASE) # match searches start only
+        # self.idx = 0 #TODO: track idx on class
 
         self.choiceNames = list()
         for cpre in options.choicePrefix:
@@ -88,8 +94,8 @@ class BasicSubProcessor:
     def getBlockIdx(self, idx):
         return self.srcLines[idx]['blockIdx']
 
-    def cleanLine(self, text):
-        return text
+    def cleanLine(self, text: str):
+        return text.strip()
 
     def filter(self, line: TextLine, target):
         filter = self.options.filter
@@ -123,6 +129,24 @@ class BasicSubProcessor:
                     line.effect = "choice"
             line.text = self.cleanLine(line.text)
 
+    def addSub(self, idx, subLine):
+        if idx > len(self.srcLines) - 1:
+            print("Attempted to add sub beyond last line of file.")
+            return idx
+
+        # Attempt to match untranslated text
+        while len(subLine.text) == 0 or\
+        re.match(r"（.+）$|(?:[…。―ー？！、　]*(?:(?:げほ|ごほ|[はくふワあアえ]*)[ぁァッぅっ]*)*)+$", self.getJp(idx)) and\
+        not (len(subLine.text) < 15 or re.match(r"[(<*)].+[>*)]$|^(?:\W*[gnfh]*[eao]*[gfh]*\W*)+$", subLine.text, flags=re.IGNORECASE)):
+            print(f"Marking untranslated line at {self.getBlockIdx(idx)}")
+            # print("debug:", p.getJp(idx), subLine.text)
+            self.setEn(idx, TextLine("<UNTRANSLATED>"))
+            idx += 1
+
+        self.setEn(idx, subLine)
+        idx += 1
+        return idx
+
     def duplicateSub(self, idx: int, line: TextLine = None):
         # duplicate text and choices
         self.setEn(idx, self.getEn(idx-1))
@@ -131,14 +155,7 @@ class BasicSubProcessor:
             for c, choice in enumerate(choices):
                 self.setChoices(idx, c, TextLine(choice['enText']))
 
-        # Add sub text to matching (next) block and return it as new pos
-        if line:
-            if idx < len(self.srcLines) - 1:
-                idx += 1
-                self.setEn(idx, line)
-            else:
-                print("Attempted to duplicate beyond last line of file. Subtitle file does not match?")
-        return idx
+        return idx + 1
 
     def isDuplicateBlock(self, idx: int) -> bool:
         if self.srcFile.type != "story": return False
@@ -161,9 +178,21 @@ class AssSubProcessor(BasicSubProcessor):
         text = super().cleanLine(text)
         return text
 
+
     def preprocess(self, parsed):
+        lastTimeStamp = zeroDelta = timedelta()
+        def sort(x):
+            nonlocal lastTimeStamp
+            if x.start == zeroDelta:
+                return lastTimeStamp 
+            else:
+                lastTimeStamp = x.start
+                return x.start
+        parsed.events._lines.sort(key=sort)
+
         lastSplit = None
         for line in parsed.events:
+            if not isinstance(line, ass.Dialogue): continue
             if re.match("skip", line.effect, re.IGNORECASE): continue
             if line.name == "Nameplate": continue
             if not re.search("MainText|Default|Button", line.style, re.IGNORECASE): continue
@@ -235,6 +264,14 @@ def process(srcFile, subFile, opts: SubTransferOptions):
         # skip title logo on events and dummy text
         if p.getJp(idx).startswith("イベントタイトルロゴ表示") or re.match("※*ダミーテキスト|欠番", p.getJp(idx)):
             idx += 1
+        # Skip repeated subs (usually for style)
+        if opts.noDupeSubs:
+            # print(f"checking\n{subLine}\nto\n{p.getEn(idx-1).text}")
+            if (opts.noDupeSubs == "strict" and subLine.text == p.getEn(idx-1).text)\
+                or (opts.noDupeSubs == "loose" and subLine.text in p.getEn(idx-1).text):
+                print(f"Dupe sub skipped at {p.getBlockIdx(idx)}: {subLine.text}")
+                continue
+
         # races can have "choices" but their format is different because there is always only 1 and can be treated as normal text
         if storyType == "story":
             if subLine.isChoice():
@@ -260,19 +297,13 @@ def process(srcFile, subFile, opts: SubTransferOptions):
                 print(f"Missing choice subtitle at block {p.getBlockIdx(idx-1)}")
                 errors += 1
             lastChoice[1] = 0
-        
+
         # Add text
         if p.isDuplicateBlock(idx):
-            print(f"Found gender dupe at block {p.getBlockIdx(idx)}, duplicating.")
-            idx = p.duplicateSub(idx, subLine) + 1
-            continue
-        else:
-            if len(subLine.text) == 0:
-                print(f"Untranslated line at {p.getBlockIdx(idx)}")
-                errors += 1
-            else:
-                p.setEn(idx, subLine)
-        idx += 1
+            print(f"Found dupe source line at block {p.getBlockIdx(idx)}, duplicating.")
+            idx = p.duplicateSub(idx, subLine)
+
+        idx = p.addSub(idx, subLine)
     # check niche case of duplicate last line (idx is already increased)
     if idx < srcLen:
         if p.isDuplicateBlock(idx):
@@ -302,6 +333,7 @@ def main():
                     \nbrak: sync enclosing brackets with original text")
     ap.add_argument("-cpre", dest="choicePrefix", nargs="+", default=[">"], help="Prefixes that mark choices. Supports regex\nChecks name as a special case if prefix includes ':'")
     ap.add_argument("--no-strict-choices", dest="strictChoices", action="store_false", help="Use choice sub line as dialogue when no choice in original")
+    ap.add_argument("--skip-dupe-subs", dest="noDupeSubs", nargs="?", default = False, const = "strict", choices=["strict", "loose"], help="Skip subsequent duplicated subtitle lines")
     args = ap.parse_args()
     process(args.src, args.sub, SubTransferOptions.fromArgs(args))
 

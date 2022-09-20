@@ -1,32 +1,40 @@
 from argparse import SUPPRESS
 import re
-import common
-from helpers import isEnglish
 import tkinter as tk
 from tkinter import ttk, messagebox
 from tkinter.font import Font
-import textprocess
 from types import SimpleNamespace
 
+import common
+from helpers import isEnglish
+import textprocess
+
+if common.IS_WIN:
+    from ctypes import windll, byref, create_unicode_buffer, create_string_buffer
+
 TEXTBOX_WIDTH = 54
+COLOR_WIN = "systemWindow" if common.IS_WIN else "white"
+COLOR_BTN = "SystemButtonFace" if common.IS_WIN else "gray"
 
-
-def change_chapter(event=None):
+def change_chapter(event=None, initialLoad=False):
     global cur_chapter
     global cur_block
     global cur_file
 
+    if not initialLoad: save_block()
     cur_chapter = chapter_dropdown.current()
     cur_block = 0
 
-    if isinstance(files[cur_chapter], str):
-        files[cur_chapter] = common.TranslationFile(files[cur_chapter])
+    loadFile()
     cur_file = files[cur_chapter]
 
     block_dropdown['values'] = [f"{i+1} - {block['jpText'][:8]}" for i, block in enumerate(cur_file.textBlocks)]
     ll = textprocess.calcLineLen(cur_file, False)
     # Attempt to calc the relation of line length to text box size
-    ll = int(ll / (0.958 * ll**0.057) + 1) if ll else TEXTBOX_WIDTH
+    # ll = int(ll / (0.958 * ll**0.057) + 1) if ll else TEXTBOX_WIDTH # default font
+    # ll = int(ll / (1.067 * ll**0.057) + 1) if ll else TEXTBOX_WIDTH # game font attempt 1
+    ll = int(ll / (1.135 * ll**0.05) + 1) if ll else TEXTBOX_WIDTH
+
     text_box_en.config(width=ll)
     text_box_jp.config(width=ll)
 
@@ -100,7 +108,7 @@ def load_block(event=None, dir=1):
         en_name = cur_block_data.get('enName', "")
         if en_name:
             speaker_en_entry.insert(0, en_name)
-            speaker_en_entry.config(bg='systemWindow')
+            speaker_en_entry.config(bg=COLOR_WIN)
         else:
             speaker_en_entry.config(bg='red')
 
@@ -131,7 +139,7 @@ def load_block(event=None, dir=1):
         toggleTextListPopup(allowShow=False, target=cur_choices)
     else:
         btn_choices['state'] = 'disabled'
-        btn_choices.config(bg='SystemButtonFace')
+        btn_choices.config(bg=COLOR_BTN)
         
     # Update colored button
     cur_colored = cur_block_data.get('coloredText')
@@ -141,7 +149,7 @@ def load_block(event=None, dir=1):
         toggleTextListPopup(allowShow=False, target=cur_colored)
     else:
         btn_colored['state'] = 'disabled'
-        btn_colored.config(bg='SystemButtonFace')
+        btn_colored.config(bg=COLOR_BTN)
         
 
 def save_block():
@@ -183,6 +191,10 @@ def copy_block(event=None):
     root.clipboard_clear()
     root.clipboard_append(cur_file.textBlocks[cur_block]['jpText'])
 
+def loadFile(chapter=None):
+    ch = chapter or cur_chapter
+    if isinstance(files[ch], str):
+        files[ch] = common.TranslationFile(files[ch])
 
 def saveFile(event=None):
     if save_on_next.get() == 0:
@@ -299,7 +311,7 @@ def create_search_popup():
     global search_orig_state
 
     # set it here so it exists when window closed without searching
-    search_orig_state = cur_block, cur_chapter, save_on_next.get() 
+    search_orig_state = cur_block, cur_chapter, save_on_next.get(), skip_translated.get()
     reset_search() # sets cur state
 
     search_window = tk.Toplevel()
@@ -339,25 +351,28 @@ def search_text(*_):
     min_ch = search_cur_state[0]
     if search_chapters.get():
         for ch in range(min_ch, len(files)):
-            chapter_dropdown.current(ch)
-            change_chapter()
-            if _search_text_blocks():
+            loadFile(ch)
+            if _search_text_blocks(ch):
                 return
     else:
-        _search_text_blocks()
+        _search_text_blocks(cur_chapter)
 
 
-def _search_text_blocks():
+def _search_text_blocks(chapter):
     global search_cur_state
 
     start_block = search_cur_state[1]
     s_field, s_re = (x.get() for x in search_filter)
 
     # print(f"searching in {cur_file.name}, from {search_cur_state}, on {s_field} = {s_re}")
-    for i in range(start_block, len(cur_file.textBlocks)):
-        block = cur_file.textBlocks[i]
+    file = files[chapter]
+    for i in range(start_block, len(file.textBlocks)):
+        block = file.textBlocks[i]
         if re.search(s_re, block.get(s_field, ""), flags=re.IGNORECASE):
-            # print(f"Found {s_re} at {i}")
+            # print(f"Found {s_re} at ch{chapter}:b{i}")
+            if chapter != cur_chapter:
+                chapter_dropdown.current(chapter)
+                change_chapter()
             block_dropdown.current(i)
             change_block()
             search_cur_state = cur_chapter, i + 1
@@ -373,7 +388,7 @@ def reset_search(event=None, *args):
 
 
 def restore_search_state():
-    ch, b, _ = search_orig_state
+    ch, b, *_ = search_orig_state
     chapter_dropdown.current(ch)
     change_chapter()
     block_dropdown.current(b)
@@ -382,14 +397,16 @@ def restore_search_state():
 
 def show_search():
     global search_orig_state
-    search_orig_state = cur_chapter, cur_block, save_on_next.get()
+    search_orig_state = cur_chapter, cur_block, save_on_next.get(), skip_translated.get()
     save_on_next.set(0)
+    skip_translated.set(0)
     search_window.deiconify()
     search_window.nametowidget("filter").focus()
 
     
 def close_search():
     save_on_next.set(search_orig_state[2])
+    skip_translated.set(search_orig_state[3])
     search_window.withdraw()
 
 
@@ -470,11 +487,38 @@ def txt_for_display(text, reverse=False):
 def cleanText(text: str):
     return " \n".join([line.strip() for line in text.strip().split("\n")])
 
+def loadFont(fontPath):
+    # code modified from https://github.com/ifwe/digsby/blob/f5fe00244744aa131e07f09348d10563f3d8fa99/digsby/src/gui/native/win/winfonts.py#L15
+    # origFontList = list(tk.font.families())
+    if isinstance(fontPath, bytes):
+        pathbuf = create_string_buffer(fontPath)
+        AddFontResourceEx = windll.gdi32.AddFontResourceExA
+    elif isinstance(fontPath, str):
+        pathbuf = create_unicode_buffer(fontPath)
+        AddFontResourceEx = windll.gdi32.AddFontResourceExW
+    else:
+        raise TypeError('fontPath must be bytes or str')
+
+    flags = 0x10 | 0x20 # private and not enumerable
+    # flags = 0x10 | 0 # private and enumerable
+
+    numFontsAdded = AddFontResourceEx(byref(pathbuf), flags, 0)
+    # print(f"added {numFontsAdded} fonts:", [name for name in tk.font.families() if name not in origFontList])
+    # print(tk.font.families()[-3:])
+
+    return numFontsAdded
+
 
 def tlNames():
     import names
     names.translate(cur_file)
     load_block()
+
+def nextMissingName():
+    for idx, block in enumerate(cur_file.textBlocks):
+        if block.get("jpName") not in common.NAMES_BLACKLIST and not block.get("enName"):
+            block_dropdown.current(idx)
+            change_block()
 
 
 def _switchWidgetFocusForced(e):
@@ -522,7 +566,9 @@ def main():
     root = tk.Tk()
     root.title("Edit Story")
     root.resizable(False, False)
-    large_font = Font(root, size=18)
+    if common.IS_WIN: loadFont(r"src/data/RodinWanpakuPro-B-ex.otf")
+    else: print("Non-Windows system: To load custom game font install 'src/data/RodinWanpakuPro-B-ex.otf' to system fonts.")
+    large_font = Font(root, family="RodinWanpakuPro B", size=18, weight="normal")
 
     chapter_label = tk.Label(root, text="Chapter")
     chapter_label.grid(row=0, column=0)
@@ -584,7 +630,8 @@ def main():
         tk.Button(frm_btns_side, text="Convert\nunicode codepont", command=char_convert),
         tk.Button(frm_btns_side, text="Process text", command=lambda: process_text(SimpleNamespace(state=0))),
         tk.Button(frm_btns_side, text="Process text\n(clean newlines)", command=lambda: process_text(SimpleNamespace(state=1))),
-        tk.Button(frm_btns_side, text="Translate speakers", command=tlNames)
+        tk.Button(frm_btns_side, text="Translate speakers", command=tlNames),
+        tk.Button(frm_btns_side, text="Find missing speakers", command=nextMissingName)
     )
     for btn in side_buttons:
         btn.pack(pady=3, fill=tk.X)
@@ -611,7 +658,7 @@ def main():
     create_text_list_popup()
     create_search_popup()
     chapter_dropdown.current(cur_chapter)
-    change_chapter()
+    change_chapter(initialLoad=True)
     block_dropdown.current(cur_block)
 
     root.bind("<Control-Return>", next_block)

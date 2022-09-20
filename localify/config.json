@@ -3,11 +3,11 @@
     "enableLogger": false,
     "dumpStaticEntries": false,
     "maxFps": -1,
-    "unlockSize": true,
+    "unlockSize": false,
     "uiScale": 1.0,
     "extraAssetBundlePath": "localized_data/includes",
     "replaceFont": true,
-    "customFontPath": "assets/UMAMUSUMERodinWanpakuPro-EB-edit.otf",
+    "customFontPath": "assets/RodinWanpakuPro-B-ex.otf",
     "customFontSizeOffset": -3,
     "customFontStyle": 0,
     "customFontLinespacing": 0.65,
@@ -16,9 +16,23 @@
     "autoFullscreen": false,
     "LineBreakHotKey": "u",
     "autoChangeLineBreakMode": true,
-    "resolution_start": [-1, -1],
-    "aspect_ratio": [16.0, 9.0],
-    "dicts": ["localized_data/dynamic.json"],
+    "resolution_start": [
+        -1,
+        -1
+    ],
+    "aspect_ratio": [
+        16.0,
+        9.0
+    ],
+    "dicts": [
+        "localized_data\\dynamic.json",
+        "localify\\localized_data\\uma-profile-tagline.json",
+        "localify\\localized_data\\load-screens.json",
+        "localify\\localized_data\\character_system_text\\tokai_teio.json",
+        "localify\\localized_data\\character_system_text\\turbo.json",
+        "localify\\localized_data\\character_system_text\\urara.json",
+        "localify\\localized_data\\character_system_text\\eishin.json"
+    ],
     "static_dict": "localized_data/static.json",
     "no_static_dict_cache": true,
     "text_data_dict": "",
@@ -29,5 +43,6 @@
     "autoUpdate": {
         "source": "",
         "path": ""
-    }
+    },
+    "readRequestPack": false
 }

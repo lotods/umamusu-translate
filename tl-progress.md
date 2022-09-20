@@ -30,10 +30,12 @@ Miracles of the Holy Night | Complete | [CatNipHoarder][] & [Holo][]
 Blossoming New Year's Karuta Contest | Complete, In progress | deepl, [noccu]
 Patisserie Grandeur | Complete | [noccu][]
 Flapping Run-up | Complete | [Hades of Games][]
-Tonight at the Ligne Droite | In progress, Complete | [ebi], deepl
+Tonight at the Ligne Droite | In progress, Complete | Anonymous Reindeer, deepl
 A Resounding Cheer, Tracen Academy Cheerleading Squad! | In progress | [LotoDS][]
 The Promised Time: Silks & Three Riddles | In progress/Transferring, Complete | [Snep][], deepl
-Seek, Solve, Summer Walk! | In Progress, Complete | [noccu][] (ep 1-3), deepl
+Seek, Solve, Summer Walk! | Complete | [noccu][]
+Super Smashing☆Summer Vacation | In Progress | Anonymous Reindeer
+Wings of Iron: Hazy Tales | In Progress | [noccu] (ep 1-2)
 The rest up to 2022/07/08 | Complete | deepl (contributed by Korgi)
 
 
@@ -41,11 +43,13 @@ The rest up to 2022/07/08 | Complete | deepl (contributed by Korgi)
 name | progress | translator
 --- | --- | ---
 All not listed up to 2022/07/08 | Complete | deepl (contributed by Korgi)
+Admire Vega | Complete | [CatNipHoarder][] & [Holo][]
 Agnes Digital | Complete | deepl (contributed by CryDuringItAll)
 Agnes Tachyon | Complete | [Ren][] (ep 1), [noccu][] + [xct][] (ep 2-3), [xct][] (ep 4-7)
 Air Shakur | Complete | deepl (contributed by CryDuringItAll)
 Air Groove | Complete | [burritoblaster][]
 Biwa Hayahide | Complete | deepl (contributed by CryDuringItAll)
+Curren Chan | Complete | [CatNipHoarder][] & [Holo][]
 Daiwa Scarlet | Complete | [XiantheMiguel][] (commissioned by AhriParty)
 Eishin Flash | Complete, In progress | deepl, [noccu] (ep 1-2)
 El Condor Pasa | Complete | deepl (contributed by CryDuringItAll)
@@ -106,6 +110,10 @@ All not listed | up to 2022/07/08 | Complete | deepl (contributed by Korgi)
 249 | Nyan Nyan Island | Complete | [nem]
 259 | A sudden rain | Complete | [Snep]
 
+## Grand Live
+id | name (short) | progress | translator
+--- | --- | --- | ---
+All not listed | up to 2022/08/24 | Complete | deepl
 
 ## Umas
 name | progress | translator
@@ -123,7 +131,7 @@ Mihono Bourbon | Complete | deepl
 Narita Taishin | Complete | deepl (contributed by CryDuringItAll)
 Oguri Cap | Complete | deepl
 Rice Shower | Complete | deepl
-Rudolph | In progress | [ebi][]
+Rudolph | In progress | Anonymous Reindeer
 Sakura Bakushin O | Complete | deepl
 
 ## Cards
@@ -154,12 +162,13 @@ name | progress | translator
 Blaze | Complete | [noccu][]
 BLOW my GALE | Complete | [noccu][]
 Egao no Takaramono -Beyond the Future!- | Complete | [LotoDS][]
+Gaze on Me! | Complete | [noccu]
 Honnou Speed | Complete | [Eight][]
 Make Debut! | Complete | Unknown (https://www.animesonglyrics.com/) + [noccu][] (missing parts)
 Next Frontier | Complete | [LotoDS][]
 Sasayaka na Inori | Complete | [Eight][]
 transforming | Complete | [LotoDS][]
-Umapyoi Densetsu | Complete | [ebi][], [Karimenrider][] (missing parts)
+Umapyoi Densetsu | Complete | Anonymous Reindeer, [Karimenrider][] (missing parts)
 UNLIMITED IMPACT | Complete | [noccu][]
 We are DREAMERS!! | Complete | TR
 winning the soul | Complete | [Kuun0][]
@@ -178,7 +187,6 @@ Yume wo Kakeru! | Complete | [SkySubs](https://skysubs.carrd.co/)
 [xct]: https://www.youtube.com/user/ADSRM
 [Hades of Games]: https://www.youtube.com/c/HadesofGames
 [Karimenrider]: https://umamusume.fandom.com/wiki/User:Karimenrider
-[ebi]: https://twitter.com/tamamolife
 [Snep]: https://twitter.com/ProfessorSnep
 [Ben]: https://www.youtube.com/user/sheepawolf
 [Eight]: https://twitter.com/hachikure

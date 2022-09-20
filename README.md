@@ -32,6 +32,8 @@ This tool collection only changes text to translate it and it is *my belief* thi
 [^1]: cygames has a relatively good track record in leaving non-cheating, non-damaging tools and users alone in my experience. any possible crackdown is also likely to start with announcements and warnings before bans.
 
 # Install 
+Make sure you satisfied the *requirements* first, then follow the steps in *usage*.
+
 ## Requirements
 1. Install [Python](https://www.python.org/downloads/) 3.9+
     - During install, check the `Add to PATH` option.
@@ -42,9 +44,9 @@ This tool collection only changes text to translate it and it is *my belief* thi
 
 ## Basic Usage
 1. **UI** (menus, buttons, ...): Open the game's *install folder* (where the `Umamusume.exe` is)
-    1. Download [tlg]'s latest [release](https://github.com/MinamiChiwa/Trainers-Legend-G/releases), extract the `version.dll` and put it in the game's *install folder*
-    1. Copy the *contents* of this project's [localify folder](localify) to the *install folder*
-        - If the game won't start and you double checked you did it correctly, try renaming the `version.dll` file to `uxtheme.dll` (errors mean the issue is elsewhere)
+    1. Download [tlg]'s latest [release](https://github.com/MinamiChiwa/Trainers-Legend-G/releases), extract **only the `version.dll`** and put that in the game's *install folder*
+    1. Copy the **contents** of this project's `localify` folder to the *install folder*
+        - If the game *won't start* and you double checked you did it correctly, try renaming the `version.dll` file to `uxtheme.dll` (*errors* mean the issue is elsewhere)
         - ~~In rare cases when a story overlay pops up in the main menus, your UI may blur and get stuck that way. Temporarily remove the dll and restart the game to do the action. (may only affect uxtheme.dll naming?)~~ (fixed in TLG, I think)
 1. **Dialogue**: double click `run.bat` 
 1. **Skills and other variable text**: Run either of the `mdb import.bat` files
@@ -62,11 +64,13 @@ In general, check out the [scripts](#script-info).
 1. **Dialogue**
     - To install specific things, see [id-structure.md](id-structure.md) and use: `py src/import.py -O -g <group> -id <id>`
     - To add additional translations through deepl, or contribute your own, see [translating.md](translating.md)
-1. **UI**
+2. **UI**
     - To update yourself when the translations are jumbled, see [here](translating.md#updating)
-1. **Skills and other variable text**: See the [db-translate project]
+3. **Skills and other variable text**: See the [db-translate project]
 
 # Script info
+
+See [data-layout.md](data-layout.md) for an overview of the game's data files and how this repo maps translation files to them.
 
 All scripts are made to be run from the root dir, i.e: `py src/script.py -arg val`  
 Arguments can be given to all and it is recommended you do so, processing the smallest amount of files you're comfortable with at a time.  

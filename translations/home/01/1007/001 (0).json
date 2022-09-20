@@ -1,15 +1,15 @@
 {
-    "version": 3,
-    "bundle": "RW7GIM5UNKWPGPAWPLFNVBTZBWB6FC77",
+    "version": 5,
+    "bundle": "G2TCRWBQ6B7UTGHWEICNHBXZFSECMENY",
     "type": "home",
-    "storyId": "000000000",
+    "storyId": "011007001",
     "title": "0",
     "text": [
         {
             "jpName": "ゴールドシップ",
             "enName": "Gold Ship",
             "jpText": "ここから土星まではおよそ80光分……。\r\n直径10cmのドーナツを\r\n1.4億個並べたくれーの距離か。",
-            "enText": "From here to Saturn is approximately 80 light \nminutes.…… So the distance of about \n140 million 10cm-sized doughnuts.",
+            "enText": "From here to Saturn is approximately 80 \nlight minutes…… So the distance of about \n140 million 10cm-sized doughnuts.",
             "nextBlock": 2,
             "pathId": -3966864267797376893,
             "blockIdx": 1
@@ -42,5 +42,5 @@
             "blockIdx": 4
         }
     ],
-    "modified": 1657443970
+    "modified": 1662157821
 }
