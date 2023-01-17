@@ -1,17 +1,21 @@
 This document gives an overview of translation progress.  
+If you'd like to contribute a translation, it is suggested to open an issue or join the [TL Discord](https://discord.gg/HpMRFNvsMv) for organization.
+
 Note: [deepl](https://www.deepl.com/) is machine translation. These have limited and mostly arbitrary manual edits stemming from fixing common issues.
 Quality varies based on content (speech patterns, topics, etc).
 
 ### Legend
 term | meaning
 --- | ---
-Not listed | No progress
-Transferring | Translation exists elsewhere and is in the process, or planned to be, imported (progress noted)
-In progress | Translation work is planned, ongoing, or only part is translated (possibly with no work ongoing)
-Complete | All the relevant content is available in English
-Finished | Content satisfies this project's translation standards and style guide (to come)
+Not listed | No progress, please contribute.
+Exists | Translation exists elsewhere. (reason for not importing)
+Transferring | External translation is in the process of, or planned to be, imported.
+In progress | Translation work is planned or ongoing.
+Stalled | Translation was partial, paused, or cancelled.
+Complete | All the relevant content is available in English.
+Finished | Content satisfies this project's translation standards and style guide (to come).
 
-# Main/Event Stories
+# Main
 name | progress | translator
 --- | --- | ---
 Main story Act 1 Ch 1 | Complete | [CatNipHoarder][] & [Holo][]
@@ -23,23 +27,39 @@ Main story Act 1 Ch 6 Finale Part 1 | Complete | [LotoDS][]
 Main story Act 1 Ch 6 Finale Part 2 | Complete | [LotoDS][]
 Half Anniversary Story | Complete | [CatNipHoarder][] & [Holo][]
 1st Anniversary Story | Complete | [CatNipHoarder][] & [Holo][]
+1.5th Anniversary Story | Complete | [CatNipHoarder][] & [Holo][]
+
+# Event Stories
+name | progress | translator
+--- | --- | ---
 Brand-New Friend | Complete | [Hades of Games][] (ep 1-2, 5-8, 4 (missing parts)), [Vacxy][] (ep 3, 4 (partial)) + [noccu][] (slightly edited)
-The Sounds of Autumn | Complete, In Progress | deepl (old), Anonymous Reindeer
+The Sounds of Autumn | Complete, Stalled | deepl (old), Anonymous Reindeer
 Make up in Halloween！ | Complete | [CatNipHoarder][] & [Holo][]
 Miracles of the Holy Night | Complete | [CatNipHoarder][] & [Holo][]
 Blossoming New Year's Karuta Contest | Complete, In progress | deepl, [noccu]
 Patisserie Grandeur | Complete | [noccu][]
 Flapping Run-up | Complete | [Hades of Games][]
-Tonight at the Ligne Droite | Transferring, Complete | Anonymous Reindeer, deepl
+Tonight at the Ligne Droite | Complete | Anonymous Reindeer
 A Resounding Cheer, Tracen Academy Cheerleading Squad! | Transferring | [LotoDS][]
-The Promised Time: Silks & Three Riddles | In progress/Transferring, Complete | [Snep][], deepl
+The Promised Time: Silks & Three Riddles | Transferring/Stalled, Complete | [Snep][], deepl
 Seek, Solve, Summer Walk! | Complete | [noccu][]
-Super Smashing☆Summer Vacation | In Progress | Anonymous Reindeer
+Super Smashing☆Summer Vacation | Stalled | Anonymous Reindeer
 Wings of Iron: Hazy Tales | In Progress | [noccu] (ep 1-2)
 Days in a Flash | Complete | [Kuwaiden]
-Illuminate the Heart | In progress/Transferring | [robflop]
+Illuminate the Heart | Complete | [robflop]
+Happy new future ～Bonds dyed in the sunrise～ | Complete | deepl
+Intertwined Memories, Galloping Thoughts | Complete | deepl
 The rest up to 2022/07/08 | Complete | deepl (contributed by Korgi)
 
+# Collab Events
+name | progress | translator
+--- | --- | ---
+KIRARI MAGIC SHOW | Complete | deepl (intro by [noccu])
+
+# Campaigns
+name | progress | translator
+--- | --- | ---
+Omikuji | Complete | [noccu]
 
 # Character stories
 name | progress | translator
@@ -54,13 +74,14 @@ Biwa Hayahide | Complete | deepl (contributed by CryDuringItAll)
 Copano Rickey | Complete | [LotoDS][]
 Curren Chan | Complete | [CatNipHoarder][] & [Holo][]
 Daiwa Scarlet | Complete | [XiantheMiguel][] (commissioned by AhriParty)
-Eishin Flash | Complete, In progress | deepl, [noccu] (ep 1-2)
+Eishin Flash | Complete, Stalled, In progress | deepl, [noccu] (ep 1-2), Admiy
 El Condor Pasa | Complete | deepl (contributed by CryDuringItAll)
 Fine Motion | Complete | [LotoDS][]
 Gold City | Complete | [Hades of Games][]
 Gold Ship | Complete | deepl
 Grass Wonder | Complete | deepl
 Haru Urara | Complete | [Vacxy][] (ep 1), deepl
+Hokko Tarumae | Complete | [Riersa]
 Inari One | Complete | [LotoDS][]
 Ines Fujin | Complete | [noccu] (ep 1-4), deepl
 King Halo | Complete | [burritoblaster][]
@@ -74,7 +95,7 @@ Mejiro McQueen | Transferring | [ZarCuZ](https://www.youtube.com/channel/UCMP1Ee
 Mejiro Ryan | Complete | deepl (contributed by CryDuringItAll)
 Mihono Bourbon | Complete, In progress | deepl, [KevinVG207](https://github.com/KevinVG207)
 Narita Taishin | Complete | deepl (contributed by CryDuringItAll)
-Nice Nature | In progress | [xct][] (ep 1-4)
+Nice Nature | Complete | [xct]
 Rice Shower  | Complete | [Ben][] (ep 1-4), deepl
 Sakura Bakushin O | Complete | [noccu][]
 Sakura Chiyono O | Complete | [LotoDS][]
@@ -83,30 +104,33 @@ Silence Suzuka | Complete | [LotoDS][]
 Smart Falcon | Complete | [LotoDS][]
 Special Week | Complete | Mann
 Super Creek | In Progress, Complete | [DantheBoss] (ep 1-2), deepl
-Sweep Tosho | In Progress, Complete | FragmentalSolstice, deepl
+Sweep Tosho | Stalled, Complete | FragmentalSolstice, deepl
 Symboli Rudolf | Complete | deepl
 Taiki Shuttle | Complete | [LotoDS][]
 Tamamo Cross | Complete | [LotoDS][]
 Vodka | Complete | [robflop][]
 Yaeno Muteki | Complete | [LotoDS][] (ep 1-4), deepl
-Zenno Rob Roy | In Progress | [LotoDS][] (ep 1-4)
+Yamanin Zephyr | Complete | [Director Kok][]
+Zenno Rob Roy | Stalled | [LotoDS][] (ep 1-4)
 
 
 # Training story/events
 name | progress | translator
 --- | --- | ---
-Campaign intro | Complete | [noccu][]
 Shared events | Complete | [noccu][]
 
 ## URA
 id | name (short) | progress | translator
 --- | --- | --- | ---
-All | up to 2022/07/08 | Complete | deepl (contributed by Korgi)
+Campaign intro | Complete | [noccu]
+002 | Complete | [Korgi]
+All others | up to 2022/07/08 | Complete | deepl (contributed by Korgi)
 
 ## Aoharu
 id | name (short) | progress | translator
 --- | --- | --- | ---
-All | up to 2022/07/08 | Complete | deepl (contributed by Korgi)
+Campaign intro | Complete | [noccu]
+All others | up to 2022/07/08 | Complete | deepl (contributed by Korgi)
 
 ## Make a New Track
 id | name (short) | progress | translator
@@ -118,6 +142,7 @@ All not listed | up to 2022/07/08 | Complete | deepl (contributed by Korgi)
 ## Grand Live
 id | name (short) | progress | translator
 --- | --- | --- | ---
+Campaign intro | Complete | deepl
 All not listed | up to 2022/08/24 | Complete | deepl
 
 ## Umas
@@ -138,7 +163,7 @@ Mihono Bourbon | Complete | deepl
 Narita Taishin | Complete | deepl (contributed by CryDuringItAll)
 Oguri Cap | Complete | deepl
 Rice Shower | Complete | deepl
-Rudolph | In progress | Anonymous Reindeer
+Rudolph | Stalled | Anonymous Reindeer
 Sakura Bakushin O | Complete | deepl
 
 ## Cards
@@ -152,9 +177,10 @@ Vodka (SSR, Road of Vodka) | Complete | [robflop][]
 # Home Dialogue
 name | progress | translator
 --- | --- | ---
-All not listed up to 2022/07/08 | Complete | deepl (contributed by Korgi)
+All not listed up to 2023/01/01 | Complete | deepl (contributed by Korgi up to 2022/07/08)
 Maruzensky | Complete | [noccu][]
 Curren Chan | Complete | [noccu][]
+Kitasan Black | Stalled | [noccu] (solo 2)
 Gold Ship | Complete | [noccu][] (solo 1-2), deepl
 
 # System text
@@ -165,7 +191,7 @@ Eishin Flash | Complete | deepl
 Haru Urara | Complete | deepl
 Meisho Doto | Complete, In Progress | deepl, [Mini Fox][]
 Tazuna | In Progress | [Nephiro] (5/78)
-Tokai Teio | In Progress | [noccu] (2/211)
+Tokai Teio | Stalled | [noccu] (2/211)
 Twin Turbo | Complete | [noccu]
 
 # General
@@ -174,7 +200,7 @@ name | progress | translator
 Tutorial (Group 00) | Complete | deepl (contributed by Korgi)
 Tutorial (Group 01) | Complete | [ericathyz](https://twitter.com/ericathyz) + [noccu] (missing + edits)
 
-# Lyrics
+# Lyrics / Songs / Lives
 name | progress | translator
 --- | --- | ---
 Blaze | Complete | [noccu][]
@@ -183,8 +209,9 @@ Egao no Takaramono -Beyond the Future!- | Complete | [LotoDS][]
 Gaze on Me! | Complete | [noccu]
 Honnou Speed | Complete | [Eight][]
 Make Debut! | Complete | Unknown (https://www.animesonglyrics.com/) + [noccu][] (missing parts)
+Ms. VICTORIA | Complete | [Nine]
 Next Frontier | Complete | [LotoDS][]
-Sasayaka na Inori | Complete | [Eight][]
+Sasayaka na Inori | Complete | [Eight] (edited by [noccu] based in part on tl by [Solo])
 transforming | Complete | [LotoDS][]
 Umapyoi Densetsu | Complete | Anonymous Reindeer, [Karimenrider][] (missing parts)
 UNLIMITED IMPACT | Complete | [noccu][]
@@ -214,3 +241,7 @@ Yume wo Kakeru! | Complete | [SkySubs](https://skysubs.carrd.co/)
 [Nephiro]: https://github.com/Nephiro
 [Kuwaiden]: https://www.youtube.com/@Kuwaiden
 [DantheBoss]: https://www.youtube.com/channel/UCqAtDEmjrzy4twoZnvH-upw
+[Nine]: https://www.youtube.com/@nineumasubs8221
+[Solo]: https://www.youtube.com/@solotranslation8586
+[Riersa]: https://www.reddit.com/u/Riersa
+[Director Kok]: https://www.twitch.tv/chrissss_pp

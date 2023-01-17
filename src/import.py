@@ -6,6 +6,7 @@ from functools import reduce
 
 import common
 from common import GameBundle
+import filecopy as backup
 
 
 class ConfigError(Exception): pass
@@ -31,6 +32,9 @@ class PatchManager:
                     raise ConfigError(f"Invalid config arg: {k}: {v}")
         if self.args.overwrite:
             self.args.dst = common.GAME_ASSET_ROOT
+            self.fcArgs = backup.parseArgs([])
+            self.fcArgs.restore_missing = False
+            self.fcArgs.full_path = False
         if self.args.write_log and self.errorLog is stdout:
             self.errorLog = open("import.log", "w")
         elif not self.args.write_log and self.errorLog is not stdout:
@@ -87,11 +91,9 @@ class PatchManager:
             raise NoAssetError(f"{name} does not exist in your game data.")
 
         if self.args.update:
-            savePath = GameBundle.createPath(self.args.dst, name)
-            bundle.readPatchState(customPath=savePath)
-            if bundle.isPatched:
+            if (b := GameBundle(GameBundle.createPath(self.args.dst, name), load=False)).isPatched:
                 tlModTime = self.tlFile.data.get("modified")
-                if tlModTime and bundle.patchedTime != tlModTime:
+                if tlModTime and b.patchedTime != tlModTime:
                     print("translations modified... ", end="", flush=True)
                 else:
                     raise AlreadyPatchedError(f"{self.tlFile.bundle} already patched.")
@@ -104,6 +106,8 @@ class PatchManager:
     def patch(self, path: str):
         """Swaps game assets with translation file data, returns modified state."""
         self.loadTranslationFile(path)
+        if self.args.skip_mtl and not self.tlFile.data.get("humanTl"):
+            return False
         if self.args.use_tlg and isUsingTLG() and self.tlFile.data.get("tlg"):
             convertTlFile(self.tlFile)
             if self.args.verbose:
@@ -122,7 +126,9 @@ class PatchManager:
 
         patcher.patch()
         if patcher.isModified:
-            bundle.setPatchState(self.tlFile)
+            if self.args.overwrite and not bundle.isPatched:
+                backup.copy(bundle, self.fcArgs)
+            bundle.markPatched(self.tlFile)
             bundle.save(dstFolder=Path(self.args.dst))
 
         return patcher.isModified
@@ -276,7 +282,7 @@ class LyricsPatcher(StoryPatcher):
             self.assetData.save()
 
 
-def main():
+def parseArgs():
     ap = common.Args("Write Game Assets from Translation Files")
     ap.add_argument("-O", "--overwrite", action="store_true", help="(Over)Write files straight to game directory")
     ap.add_argument("-U", "--update", action="store_true", help="Skip already imported files")
@@ -286,17 +292,17 @@ def main():
     ap.add_argument("-cps", default=28, type=int, help="Characters per second, for unvoiced lines (excludes choices)")
     ap.add_argument("-fps", default=30, type=int, help="Framerate, for calculating the right text speed")
     ap.add_argument("-tlg", "--use-tlg", action="store_true", help="Auto-write any TLG versions when detected")
+    ap.add_argument("-nomtl", "--skip-mtl", action="store_true", help="Only import human translations")
 
-    args = ap.parse_args()
+    return ap.parse_args()
+
+def main():
+    args = parseArgs()
     if args.use_tlg:
         global isUsingTLG
         global convertTlFile
         from helpers import isUsingTLG
         from manage import convertTlFile
-    process(args)
-
-
-def process(args):
     patcher = PatchManager(args)
     try:
         patcher.start()

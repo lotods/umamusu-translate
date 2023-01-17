@@ -13,18 +13,21 @@ from UnityPy.files import ObjectReader
 import helpers
 from helpers import IS_WIN
 
-GAME_ROOT = os.path.realpath(os.path.join(os.environ['LOCALAPPDATA'], "../LocalLow/Cygames/umamusume/"))
-GAME_ASSET_ROOT = os.path.join(GAME_ROOT, "dat")
-GAME_META_FILE = os.path.join(GAME_ROOT, "meta")
-GAME_MASTER_FILE = os.path.join(GAME_ROOT, "master", "master.mdb")
+if IS_WIN:
+    GAME_ROOT = os.path.realpath(os.path.join(os.environ['LOCALAPPDATA'], "../LocalLow/Cygames/umamusume/"))
+    GAME_ASSET_ROOT = os.path.join(GAME_ROOT, "dat")
+    GAME_META_FILE = os.path.join(GAME_ROOT, "meta")
+    GAME_MASTER_FILE = os.path.join(GAME_ROOT, "master", "master.mdb")
+else:
+    GAME_ROOT = GAME_ASSET_ROOT = GAME_META_FILE = GAME_MASTER_FILE = None
 SUPPORTED_TYPES = ["story", "home", "race", "lyrics", "preview", "ruby", "mdb"]  # Update indexing on next line
 TARGET_TYPES = SUPPORTED_TYPES[:-1]  # Omit mdb
 NAMES_BLACKLIST = ["<username>", "", "モノローグ"]  # Special-use game names, don't touch
 
 
-def searchFiles(targetType, targetGroup, targetId, targetIdx=False, changed=False) -> list[str]:
+def searchFiles(targetType, targetGroup, targetId, targetIdx=False, changed=False, jsonOnly=True) -> list[str]:
     found = list()
-    isJson = lambda f: PurePath(f).suffix == ".json"
+    isJson = lambda f: PurePath(f).suffix == ".json" if jsonOnly else True
     if changed:
         from subprocess import run, PIPE
         cmd = ["git", "status", "--short", "--porcelain"] if changed is True else ["git", "show", "--pretty=", "--name-status", changed]
@@ -38,7 +41,7 @@ def searchFiles(targetType, targetGroup, targetId, targetIdx=False, changed=Fals
                 if targetId and path.parts[3] != targetId: continue
                 found.append(str(path))
     else:
-        searchDir = targetType if type(targetType) is os.PathLike else os.path.join("translations", targetType)
+        searchDir = targetType if isinstance(targetType, os.PathLike) else os.path.join("translations", targetType)
         for root, dirs, files in os.walk(searchDir):
             depth = len(dirs[0]) if dirs else -1
             if targetGroup and depth == 2:
@@ -94,13 +97,10 @@ def patchVersion():
 class RawDefaultFormatter(argparse.ArgumentDefaultsHelpFormatter, argparse.RawTextHelpFormatter): pass
 class Args(argparse.ArgumentParser):
     def __init__(self, desc, defaultArgs=True, types=None, **kwargs) -> None:
-        if len(sys.argv) > 1 and sys.argv[1] in ("-v", "--version"):
-            print(f"Patch version: {patchVersion()}")
-            sys.exit()
         super().__init__(description=desc, conflict_handler='resolve', formatter_class=RawDefaultFormatter, **kwargs)
+        self.add_argument("-v", "--version", action="store_true", help="Show version and exit")
+        self.add_argument("--read-defaults", "--read-config", action="store_true", help="Overwrite args with data from umatl.json config")
         if defaultArgs:
-            self.add_argument("-v", "--version", action="store_true", default=argparse.SUPPRESS,
-                              help="Show version and exit")
             self.add_argument("-t", "--type", choices=types or TARGET_TYPES, default=types[0] if types else TARGET_TYPES[0],
                               help="The type of assets to process.")
             self.add_argument("-g", "--group", help="The group to process")
@@ -110,14 +110,33 @@ class Args(argparse.ArgumentParser):
                               help="Limit to changed files (requires git)")
             self.add_argument("-src", default=GAME_ASSET_ROOT)
             self.add_argument("-dst", default=Path("dat/").resolve())
-            self.add_argument("-vb", "--verbose", action="store_true")
+            self.add_argument("-vb", "--verbose", action="store_true", help="Print additional info")
         elif types:
             self.add_argument("-t", "--type", choices=types, default=types[0], help="The type of assets to process.")
+    def parse_args(self, *args, **kwargs):
+        a = super().parse_args(*args, **kwargs)
+        if a.version:
+            print(f"Patch version: {patchVersion()}")
+            sys.exit()
+        if a.read_defaults:
+            try:
+                cfg = helpers.readJson("umatl.json")
+            except FileNotFoundError:
+                cfg = createDefaultUmatlConfig()
+            # Resolve to make sure it works on both abs and rel paths.
+            ctx = str(Path(sys.argv[0]).resolve().relative_to(Path("src").resolve()).with_suffix("")).replace("\\","/")
+            for k, v in cfg.get(ctx, {}).items():
+                setattr(a, k, v)
+        return a
+    @classmethod
+    def fake(cls, **kwargs):
+        return argparse.Namespace(**kwargs)
 
 
 class TranslationFile:
-    latestVersion = 5
+    latestVersion = 6
     ver_offset_mdb = 100
+    textBlacklist = regex.compile(r"^タイトルコール$|イベントタイトルロゴ表示.*|※*ダミーテキスト|^欠番$")
 
     def __init__(self, file=None, load=True, readOnly=False):
         self.readOnly = readOnly
@@ -210,6 +229,7 @@ class TranslationFile:
     def genTextContainers(self) -> Generator[dict, None, None]:
         for block in self.textBlocks:
             if block['jpText']:
+                if self.textBlacklist.match(block['jpText']): continue
                 yield block
             if 'coloredText' in block:
                 for entry in block['coloredText']:
@@ -283,6 +303,18 @@ class TranslationFile:
         c.data = {'version': cls.latestVersion, **data}
         c.init(snapshot)
         return c
+    @classmethod
+    def rename(cls, tlFile:'TranslationFile', newName:str=None):
+        '''Renames the physical file in the same dir. Dev helper method.'''
+        if not tlFile.fileExists:
+            return
+        if newName is None:
+            idx = parseStoryId(tlFile.getStoryId())[-1]
+            title = tlFile.data.get('title')
+            newName = f"{idx} ({title}).json" if title else f"{idx}.json"
+        newName = Path(tlFile.file).parent.joinpath(helpers.sanitizeFilename(newName))
+        os.rename(tlFile.file, newName)
+        tlFile.setFile(newName)
 
 
 class GameBundle:
@@ -291,37 +323,54 @@ class GameBundle:
     def __init__(self, path, load=True) -> None:
         self.bundlePath = Path(path)
         self.bundleName = self.bundlePath.stem
+        self.bundleType = "story"
         self.exists = self.bundlePath.exists()
-        self.isPatched = False
         self.data = None
         self.patchData:bytes = b""
         self._autoloaded = load
+        self._patchedState = None
 
         if load:
             self.load()
 
-    def setPatchState(self, tlFile: TranslationFile):
+    def markPatched(self, tlFile: TranslationFile):
         m = tlFile.data.get("modified", b"")
         if m:
             m = m.to_bytes(5, byteorder='big', signed=False)
             # Have a nice day and good training if you're reading this in the year 15xxx somewhere :spemini:
         self.patchData = m + self.editMark
 
+    @property
+    def isPatched(self):
+        return self.readPatchState()
+    @isPatched.setter
+    def isPatched(self, v):
+        self._patchedState = v
+
     def readPatchState(self, customPath=None):
+        if not customPath and self._patchedState is not None: return self._patchedState
         try:
             with open(customPath or self.bundlePath, "rb") as f:
                 f.seek(-7, os.SEEK_END)
                 modified = f.read(5)
                 mark = f.read(2)
                 if mark == self.editMark:
-                    self.isPatched = True
+                    self._patchedState = True
                     try:
                         modified = int.from_bytes(modified, byteorder='big')
                         self.patchedTime = modified
                     except:
                         self.patchedTime = None
+                else:
+                    self._patchedState = False
         except:
-            pass # defer to defaults
+            self._patchedState = False
+        return self._patchedState
+
+    def getAssetData(self, pathId: int):
+        if a := self.assets.get(pathId):
+            return a.read_typetree()
+        else: return None
 
     def load(self):
         # UnityPy does not error and loads empty files
@@ -331,7 +380,7 @@ class GameBundle:
         self.data = UnityPy.load(str(self.bundlePath))
         if self._autoloaded: self.readPatchState()
         self.rootAsset: ObjectReader = next(iter(self.data.container.values())).get_obj()
-        self.assets: list[ObjectReader] = self.rootAsset.assets_file.files
+        self.assets: dict[str, ObjectReader] = self.rootAsset.assets_file.files
         return self
 
     def save(self, dstFolder:Path=None, dstName:str=None):
@@ -358,3 +407,20 @@ class GameBundle:
 
 def currentTimestamp():
     return int(datetime.now(timezone.utc).timestamp())
+
+def createDefaultUmatlConfig():
+    data = {
+        "import": {
+            "update": True,
+            "skip_mtl": False
+        },
+        "mdb/import": {
+            "skill_data": False
+        }
+    }
+    helpers.writeJson("umatl.json", data, 2)
+    print("Uma-tl uses the umatl.json config file for user preferences when requested.\n"
+        "This seems to be your first time running uma-tl this way so a new file was created.\n"
+        "Uma-tl has quit this first time so you can edit the config first. Defaults are:")
+    print(json.dumps(data, indent=2))
+    sys.exit()

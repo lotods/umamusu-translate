@@ -15,6 +15,101 @@ if common.IS_WIN:
 TEXTBOX_WIDTH = 54
 COLOR_WIN = "systemWindow" if common.IS_WIN else "white"
 COLOR_BTN = "SystemButtonFace" if common.IS_WIN else "gray"
+AUDIO_PLAYER = None
+
+class AudioPlayer:
+    curPlaying = (None, 0)
+    subkey = None
+    audioOut = None
+    wavFile = None
+    subFiles = None
+    def __init__(self) -> None:
+        global pyaudio, sqlite3, wave, restore, AWB, HCA
+        import pyaudio, sqlite3, wave, restore
+        from PyCriCodecs import AWB, HCA
+        self.pyaud = pyaudio.PyAudio()
+        self._db = sqlite3.connect(common.GAME_META_FILE)
+        self._restoreArgs = restore.parseArgs([])
+    def dealloc(self):
+        self._db.close()
+        if isinstance(self.audioOut, pyaudio.Stream):
+            self.audioOut.stop_stream()
+            self._closeWavStream()
+            self.audioOut.close()
+        self.pyaud.terminate()
+    def play(self, storyId, idx, sType="story"):
+        '''Plays audio for a specific text block'''
+        if idx < 0:
+            print("Text block is not voiced.")
+            return
+        if reloaded := self.curPlaying[0] != storyId:
+            if sType == "home":
+                stmt = f"SELECT h FROM a WHERE n LIKE 'sound%{storyId[:2]}\_{storyId[2:]}.awb' ESCAPE '\\'"
+            else:
+                stmt = f"SELECT h FROM a WHERE n LIKE 'sound%{storyId}.awb'"
+            h = self._db.execute(stmt).fetchone()
+            if h is None:
+                print("Couldn't find audio asset.")
+                return
+            asset = common.GameBundle.fromName(h[0], load=False)
+            asset.bundleType = "sound"
+            if not asset.exists:
+                restore.save(asset, self._restoreArgs)
+            self.load(str(asset.bundlePath))
+        if reloaded or self.curPlaying[1] != idx:
+            if idx > len(self.subFiles):
+                print("Index out of range")
+                return
+            self.decodeAudio(self.subFiles[idx])
+        self.curPlaying = (storyId, idx)
+        self._playAudio()
+    def load(self, path: str):
+        '''Loads the main audio container at path'''
+        awbFile = AWB(path)
+        # get by idx method seems to corrupt half the files??
+        self.subFiles = [f for f in awbFile.getfiles()]
+        self.subkey = awbFile.subkey
+        awbFile.stream.close()
+    def decodeAudio(self, hcaFile:bytes):
+        '''Decodes a new audio stream, called only when such is requested'''
+        hcaFile:HCA = HCA(hcaFile, key=75923756697503, subkey=self.subkey)
+        hcaFile.decode() # leaves a wav ByteIOStream in stream attr
+        # Ready the data to be played
+        if self.wavFile:
+            self._closeWavStream()
+        self.wavFile = wave.open(hcaFile.stream, "rb")
+    def _getAudioData(self, data, frames, time, status):
+        '''Data retrieval method called by async pyAudio play'''
+        data = self.wavFile.readframes(frames)
+        # auto-stop on EOF seems to override Flag and only affects is_active()
+        # stream still needs to be stopped
+        return (data, pyaudio.paContinue)
+    def _playAudio(self):
+        '''Deals with the technical side of playing audio'''
+        if not self.wavFile or self.wavFile.getfp().closed:
+            print("No WAV loaded.")
+            return
+        channels = self.wavFile.getnchannels() or 1
+        rate = self.wavFile.getframerate() or 48000
+        bpc = self.wavFile.getsampwidth() or 2
+        if isinstance(self.audioOut, pyaudio.PyAudio.Stream):
+            self.audioOut.stop_stream() # New play is requested, always stop any current
+            if self.audioOut._channels != channels or self.audioOut._rate != rate:
+                self.audioOut.close()
+            else:
+                self.wavFile.rewind() # test
+                self.audioOut.start_stream()
+                return
+        self.audioOut = self.pyaud.open(
+            format=self.pyaud.get_format_from_width(width=bpc),
+            channels = channels,
+            rate = rate,
+            output=True,
+            stream_callback=self._getAudioData
+        )
+    def _closeWavStream(self):
+        self.wavFile.getfp().close()
+        self.wavFile.close()
 
 def change_chapter(event=None, initialLoad=False):
     global cur_chapter
@@ -200,6 +295,8 @@ def saveFile(event=None):
     if save_on_next.get() == 0:
         print("Saved")
     save_block()
+    if set_humanTl.get() == 1:
+        cur_file.data["humanTl"] = True
     cur_file.save()
 
 
@@ -368,6 +465,9 @@ def _search_text_blocks(chapter):
     file = files[chapter]
     for i in range(start_block, len(file.textBlocks)):
         block = file.textBlocks[i]
+        # Ignore blacklisted names when searching for empties
+        if s_field.startswith("enN") and s_re == "^$" and block.get("jpName") in common.NAMES_BLACKLIST:
+            continue
         if re.search(s_re, block.get(s_field, ""), flags=re.IGNORECASE):
             # print(f"Found {s_re} at ch{chapter}:b{i}")
             if chapter != cur_chapter:
@@ -516,15 +616,46 @@ def tlNames():
 
 def nextMissingName():
     for idx, block in enumerate(cur_file.textBlocks):
-        if block.get("jpName") not in common.NAMES_BLACKLIST and not block.get("enName"):
+        if not block.get("enName") and block.get("jpName") not in common.NAMES_BLACKLIST:
             block_dropdown.current(idx)
             change_block()
+
+
+def listen(event=None):
+    if not common.IS_WIN:
+        print("Currently unsupported on non-windows")
+        return
+    global AUDIO_PLAYER
+    if cur_file.version < 6:
+        print("Old file version, does not have voice info.")
+        return "break"
+    storyId = cur_file.data.get("storyId")
+    voiceIdx = cur_file.textBlocks[cur_block].get("voiceIdx")
+    if not storyId or len(storyId) != 9:
+        # Could support a few other types but isn't useful.
+        print("Unsupported type.")
+        return "break"
+    elif storyId is None:
+        print("File has an invalid storyid.")
+        return "break"
+    elif voiceIdx is None:
+        print("No voice info found for this block.")
+        return "break"
+    else:
+        if not AUDIO_PLAYER:
+            AUDIO_PLAYER = AudioPlayer()
+        AUDIO_PLAYER.play(storyId, voiceIdx, sType=cur_file.type)
+    return "break"
 
 
 def _switchWidgetFocusForced(e):
     e.widget.tk_focusNext().focus()
     return "break"
 
+def onClose(event=None):
+    if AUDIO_PLAYER:
+        AUDIO_PLAYER.dealloc()
+    root.quit()
 
 def main():
     global files
@@ -544,6 +675,7 @@ def main():
     global btn_colored
     global save_on_next
     global skip_translated
+    global set_humanTl
     global large_font
 
     cur_chapter = 0
@@ -609,12 +741,14 @@ def main():
     btn_choices.grid(row=0, column=0)
     btn_colored = tk.Button(frm_btns_bot, text="Colored", command=lambda: toggleTextListPopup(target=cur_colored), state='disabled', width=10)
     btn_colored.grid(row=1, column=0)
-    btn_reload = tk.Button(frm_btns_bot, text="Reload", command=reload_chapter, width=10)
-    btn_reload.grid(row=0, column=1)
+    btn_listen = tk.Button(frm_btns_bot, text="Listen", command=listen, width=10)
+    btn_listen.grid(row=0, column=1)
     btn_search = tk.Button(frm_btns_bot, text="Search", command=toggleSearchPopup, width=10)
     btn_search.grid(row=1, column=1)
+    btn_reload = tk.Button(frm_btns_bot, text="Reload", command=reload_chapter, width=10)
+    btn_reload.grid(row=0, column=2)
     btn_save = tk.Button(frm_btns_bot, text="Save", command=saveFile, width=10)
-    btn_save.grid(row=0, column=2)
+    btn_save.grid(row=1, column=2)
     btn_prev = tk.Button(frm_btns_bot, text="Prev", command=prev_block, width=10)
     btn_prev.grid(row=0, column=3)
     btn_next = tk.Button(frm_btns_bot, text="Next", command=next_block, width=10)
@@ -625,8 +759,8 @@ def main():
 
     frm_btns_side = tk.Frame(root)
     side_buttons = (
-        tk.Button(frm_btns_side, text="Italic", command=lambda: format_text(SimpleNamespace(key=73))),
-        tk.Button(frm_btns_side, text="Bold", command=lambda: format_text(SimpleNamespace(key=66))),
+        tk.Button(frm_btns_side, text="Italic", command=lambda: format_text(SimpleNamespace(keycode=73))),
+        tk.Button(frm_btns_side, text="Bold", command=lambda: format_text(SimpleNamespace(keycode=66))),
         tk.Button(frm_btns_side, text="Convert\nunicode codepoint", command=char_convert),
         tk.Button(frm_btns_side, text="Process text", command=lambda: process_text(SimpleNamespace(state=0))),
         tk.Button(frm_btns_side, text="Process text\n(clean newlines)", command=lambda: process_text(SimpleNamespace(state=1))),
@@ -641,11 +775,15 @@ def main():
     save_on_next = tk.IntVar()
     save_on_next.set(0)
     save_checkbox = tk.Checkbutton(root, text="Save chapter on block change", variable=save_on_next)
-    save_checkbox.grid(row=6, column=3)
+    save_checkbox.grid(row=6, column=1)
     skip_translated = tk.IntVar()
     skip_translated.set(0)
     skip_checkbox = tk.Checkbutton(root, text="Skip translated blocks", variable=skip_translated)
-    skip_checkbox.grid(row=6, column=2)
+    skip_checkbox.grid(row=6, column=0)
+    set_humanTl = tk.IntVar()
+    set_humanTl.set(0)
+    set_humanTl_checkbox = tk.Checkbutton(root, text="Mark as human TL", variable=set_humanTl)
+    set_humanTl_checkbox.grid(row=6, column=2)
     for f in (root, frm_btns_bot, frm_btns_side):
         for w in f.children.values():
             w.configure(takefocus=0)
@@ -682,6 +820,9 @@ def main():
     text_box_en.bind("<Alt-f>", process_text)
     text_box_en.bind("<Alt-F>", process_text)
     root.bind("<Control-f>", toggleSearchPopup)
+    text_box_en.bind("<Control-h>", listen)
+
+    root.protocol("WM_DELETE_WINDOW", onClose)
 
     root.mainloop()
 
