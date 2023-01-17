@@ -42,6 +42,11 @@
         "レーシングカーニバルの限定ミッションで獲得した報酬です。": "Reward from Racing \\nCarnival limited \\nmissions.",
         "みんなでトップウマドルプロジェクトで獲得した報酬です。": "Top Umadol project \\nreward.",
         "目指せ！最強チームの限定ミッションで獲得した報酬です。": "Reward from \\n\"Target: Top Team!\" \\nlimited missions.",
+        "「ウマさんぽキャンペーン」で獲得した報酬です。": "Reward from the Uma Stroll Campaign",
+        "「{0}」で獲得したクリスマスプレゼントです。": "Christmas present from 「{0}」",
+        "イベント「{0}」で\\n達成したイベント個人報酬です。": "Individual rewards from the\n\"{0}\" event",
+        "イベント「{0}」で\\n達成したイベント全体報酬です。": "Global rewards from the\n\"{0}\" event",
+        "イベント「{0}」\\nのライブ楽曲です。": "A Live track from the\n\"{0}\" event",
         "所持上限を超えて\\n獲得したアイテムです。": "Items acquired over\\nthe possession limit.",
         "称号「{0}」の獲得報酬です。": "Reward for earning\\nthe title \"{0}\".",
         "「{0}」{1}日目で獲得した報酬です。": "Reward earned on day {1}\\nof \"{0}\".",
@@ -81,6 +86,7 @@
         "2nd EVENT「Sound Fanfare！」Blu-ray 購入特典です。": "2nd EVENT\"Sound Fanfare！\" \\nBlu-ray purchase bonus",
         "3rd EVENT　WINNING DREAM STAGE Blu-ray 購入特典です。": "3rd EVENT \"WINNING \\nDREAM STAGE\" Blu-ray \\npurchase bonus",
         "WINNING LIVE 07 購入特典です。": "WINNING LIVE 07 \\npurchase bonus.",
-        "WINNING LIVE 08 購入特典です。": "WINNING LIVE 08 \\npurchase bonus."
+        "WINNING LIVE 08 購入特典です。": "WINNING LIVE 08 \\npurchase bonus.",
+        "WINNING LIVE 09 購入特典です。": "WINNING LIVE 09 \\npurchase bonus."
     }
 }
