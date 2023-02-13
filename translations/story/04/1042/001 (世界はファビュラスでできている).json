@@ -1,0 +1,1190 @@
+{
+    "version": 6,
+    "bundle": "JAFEKUMJ6M7SYJBJDDOTAF432R3TESYQ",
+    "type": "story",
+    "storyId": "041042001",
+    "title": "世界はファビュラスでできている",
+    "text": [
+        {
+            "jpName": "モノローグ",
+            "enName": "",
+            "jpText": "――宝珠。トレセン学園にはさまざまな才能を持つ宝石が集う。\nそして、その中には――",
+            "enText": "",
+            "nextBlock": 2,
+            "origClipLength": 98,
+            "voiceIdx": -1,
+            "pathId": -8532829179319735923,
+            "blockIdx": 1
+        },
+        {
+            "jpName": "モノローグ",
+            "enName": "",
+            "jpText": "デビュー前から圧倒的な輝きを放つ\n“海外産の至宝”もある。",
+            "enText": "",
+            "nextBlock": 3,
+            "origClipLength": 82,
+            "voiceIdx": -1,
+            "pathId": -1042880964214357084,
+            "blockIdx": 2
+        },
+        {
+            "jpName": "シーキングザパール",
+            "enName": "",
+            "jpText": "フフッ、模擬レース、スターティン♪　ついてらっしゃい\nドーベル！　まずは軽く脚慣らしよ！",
+            "enText": "",
+            "nextBlock": 4,
+            "origClipLength": 217,
+            "voiceIdx": 0,
+            "animData": [
+                {
+                    "origLen": 747,
+                    "pathId": -3050491034690480595
+                },
+                {
+                    "origLen": 20,
+                    "pathId": -4211741568162200829
+                },
+                {
+                    "origLen": 416,
+                    "pathId": -4854056375241646206
+                }
+            ],
+            "pathId": 4868200876682249984,
+            "blockIdx": 3
+        },
+        {
+            "jpName": "シーキングザパール",
+            "enName": "",
+            "jpText": "いい感じだわ。コースも、それを取り囲む自然も\nそして私を見つめるギャラリーも！",
+            "enText": "",
+            "nextBlock": 5,
+            "origClipLength": 253,
+            "voiceIdx": 1,
+            "animData": [
+                {
+                    "origLen": 747,
+                    "pathId": -7696090924337490708
+                },
+                {
+                    "origLen": 108,
+                    "pathId": 2288706853500003429
+                },
+                {
+                    "origLen": 416,
+                    "pathId": 4459733552247923159
+                }
+            ],
+            "pathId": -772468294550508335,
+            "blockIdx": 4
+        },
+        {
+            "jpName": "メジロドーベル",
+            "enName": "",
+            "jpText": "クッ……ゲートの出が速い！\nそれにトップスピードに到達するのも……。",
+            "enText": "",
+            "nextBlock": 6,
+            "origClipLength": 180,
+            "voiceIdx": 2,
+            "animData": [
+                {
+                    "origLen": 747,
+                    "pathId": 2858775709298871597
+                },
+                {
+                    "origLen": 209,
+                    "pathId": 6603932380851200735
+                },
+                {
+                    "origLen": 416,
+                    "pathId": 5955111521544966360
+                },
+                {
+                    "origLen": 20,
+                    "pathId": -2370896041079963674
+                }
+            ],
+            "pathId": -1196524405780397390,
+            "blockIdx": 5
+        },
+        {
+            "jpName": "メジロドーベル",
+            "enName": "",
+            "jpText": "物見しながらで、この速度！？\nこれで同期だなんて……！",
+            "enText": "",
+            "nextBlock": 7,
+            "origClipLength": 147,
+            "voiceIdx": 3,
+            "animData": [
+                {
+                    "origLen": 747,
+                    "pathId": 3800379592791848242
+                },
+                {
+                    "origLen": 20,
+                    "pathId": -1595615350954414073
+                },
+                {
+                    "origLen": 416,
+                    "pathId": 7463837414517972637
+                }
+            ],
+            "pathId": 3698160602107433659,
+            "blockIdx": 6
+        },
+        {
+            "jpName": "シーキングザパール",
+            "enName": "",
+            "jpText": "さぁてドーベル、ここからよ。ここからさらに――\nハァァァァアアアアアア！！",
+            "enText": "",
+            "nextBlock": 8,
+            "origClipLength": 209,
+            "voiceIdx": 4,
+            "animData": [
+                {
+                    "origLen": 44,
+                    "pathId": -7347469022486094550
+                },
+                {
+                    "origLen": 20,
+                    "pathId": 819099895895064472
+                },
+                {
+                    "origLen": 286,
+                    "pathId": -3710783322047295663
+                }
+            ],
+            "pathId": -1100528798614985703,
+            "blockIdx": 7
+        },
+        {
+            "jpName": "メジロドーベル",
+            "enName": "",
+            "jpText": "クゥ……！",
+            "enText": "",
+            "nextBlock": 9,
+            "origClipLength": 35,
+            "voiceIdx": 5,
+            "animData": [
+                {
+                    "origLen": 34,
+                    "pathId": 4703348880612247044
+                }
+            ],
+            "pathId": -3083136230948635879,
+            "blockIdx": 8
+        },
+        {
+            "jpName": "中堅トレーナーA",
+            "enName": "",
+            "jpText": "あれが噂のシーキングザパールか。名門メジロの俊才、\nメジロドーベルすら寄せつけないなんて。",
+            "enText": "",
+            "nextBlock": 10,
+            "origClipLength": 229,
+            "voiceIdx": 6,
+            "animData": [
+                {
+                    "origLen": 13,
+                    "pathId": 7869084114368195450
+                }
+            ],
+            "pathId": -2352155695582597800,
+            "blockIdx": 9
+        },
+        {
+            "jpName": "新人トレーナーA",
+            "enName": "",
+            "jpText": "ええ、模擬レースでこれなら、選抜レースは\nさらに楽しみです。君もそう思うだろ？",
+            "enText": "",
+            "nextBlock": 11,
+            "origClipLength": 218,
+            "voiceIdx": 7,
+            "choices": [
+                {
+                    "jpText": "ああ、超一級の才能だな……！",
+                    "enText": "",
+                    "nextBlock": 11
+                },
+                {
+                    "jpText": "うん、超一級の才能だね……！",
+                    "enText": "",
+                    "nextBlock": 11
+                }
+            ],
+            "pathId": 5523953563013889259,
+            "blockIdx": 10
+        },
+        {
+            "jpName": "モノローグ",
+            "enName": "",
+            "jpText": "将来有望どころか、最短でGⅠすら狙えそうな逸材。\n惹かれないトレーナーなどいるはずもない。",
+            "enText": "",
+            "nextBlock": 12,
+            "origClipLength": 103,
+            "voiceIdx": -1,
+            "pathId": 3662810381232509065,
+            "blockIdx": 11
+        },
+        {
+            "jpName": "モノローグ",
+            "enName": "",
+            "jpText": "シーキングザパール。\n果たして、どんなウマ娘なのか？",
+            "enText": "",
+            "nextBlock": 13,
+            "origClipLength": 78,
+            "voiceIdx": -1,
+            "pathId": 2356377025139074000,
+            "blockIdx": 12
+        },
+        {
+            "jpName": "シーキングザパール",
+            "enName": "",
+            "jpText": "ほーっほっほっほ！　貴方たちはどれほど知っているの？\nこのファビュラスな世界について！？",
+            "enText": "",
+            "nextBlock": 14,
+            "origClipLength": 260,
+            "voiceIdx": 8,
+            "animData": [
+                {
+                    "origLen": 40,
+                    "pathId": -2583188605804063271
+                }
+            ],
+            "pathId": -8278295793409024710,
+            "blockIdx": 13
+        },
+        {
+            "jpName": "トレーナーたち",
+            "enName": "",
+            "jpText": "はぁ……？",
+            "enText": "",
+            "nextBlock": 15,
+            "origClipLength": 42,
+            "voiceIdx": 9,
+            "animData": [
+                {
+                    "origLen": 80,
+                    "pathId": -3490028015748826510
+                }
+            ],
+            "pathId": -1940829188477206945,
+            "blockIdx": 14
+        },
+        {
+            "jpName": "シーキングザパール",
+            "enName": "",
+            "jpText": "少しくらい見たことがあるでしょう。\nほら――",
+            "enText": "",
+            "nextBlock": 16,
+            "origClipLength": 103,
+            "voiceIdx": 10,
+            "animData": [
+                {
+                    "origLen": 148,
+                    "pathId": -7293856394288094078
+                }
+            ],
+            "pathId": 4451713362677598749,
+            "blockIdx": 15
+        },
+        {
+            "jpName": "シーキングザパール",
+            "enName": "",
+            "jpText": "これよこれ……。ディス地球！\nこの隅々まで見たことはあるかしら？",
+            "enText": "",
+            "nextBlock": 17,
+            "origClipLength": 193,
+            "voiceIdx": 11,
+            "animData": [
+                {
+                    "origLen": 137,
+                    "pathId": -4017878250234664299
+                },
+                {
+                    "origLen": 179,
+                    "pathId": 1140841756463817912
+                }
+            ],
+            "pathId": -1849407720567150686,
+            "blockIdx": 16
+        },
+        {
+            "jpName": "モノローグ",
+            "enName": "",
+            "jpText": "ディス地球……。謎の持ち物を使った演説で、\nその性格は明らかになった。",
+            "enText": "",
+            "nextBlock": 18,
+            "origClipLength": 90,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 87,
+                    "pathId": -7517236211238265505
+                },
+                {
+                    "origLen": 20,
+                    "pathId": -7606634441234999104
+                }
+            ],
+            "pathId": 3914798660147636742,
+            "blockIdx": 17
+        },
+        {
+            "jpName": "シーキングザパール",
+            "enName": "",
+            "jpText": "USA生まれの私は、幼い頃から、\nあらゆる国を渡り歩いてきたわ。そして――",
+            "enText": "",
+            "nextBlock": 19,
+            "origClipLength": 223,
+            "voiceIdx": 12,
+            "animData": [
+                {
+                    "origLen": 21,
+                    "pathId": -2025533394332588288
+                }
+            ],
+            "pathId": 3841319083811270012,
+            "blockIdx": 18
+        },
+        {
+            "jpName": "シーキングザパール",
+            "enName": "",
+            "jpText": "さまざまな地のカルチャーやピーポゥと触れ合ってきた。",
+            "enText": "",
+            "nextBlock": 20,
+            "origClipLength": 112,
+            "voiceIdx": 13,
+            "pathId": 1802565470827286675,
+            "blockIdx": 19
+        },
+        {
+            "jpName": "ガイドのおばあさん",
+            "enName": "",
+            "jpText": "ほら、ウマ娘のお嬢ちゃん、見てごらん。\nここが王宮だよ。",
+            "enText": "",
+            "nextBlock": 21,
+            "origClipLength": 194,
+            "voiceIdx": 14,
+            "pathId": 2657362332517591954,
+            "blockIdx": 20
+        },
+        {
+            "jpName": "幼いパール",
+            "enName": "",
+            "jpText": "わぁ～、とってもエックセレ～ント♪",
+            "enText": "",
+            "nextBlock": 22,
+            "origClipLength": 110,
+            "voiceIdx": 15,
+            "pathId": 3527252210502204168,
+            "blockIdx": 21
+        },
+        {
+            "jpName": "ガイドのおばあさん",
+            "enName": "",
+            "jpText": "将来は頑張って、こういう場所に住めるようになるんだよ？\nお嬢ちゃんなら、きっとできるさ。",
+            "enText": "",
+            "nextBlock": 23,
+            "origClipLength": 249,
+            "voiceIdx": 16,
+            "pathId": -8835869340024236571,
+            "blockIdx": 22
+        },
+        {
+            "jpName": "シーキングザパール",
+            "enName": "",
+            "jpText": "そんな数々の体験は私に目標を与えてくれたわ。",
+            "enText": "",
+            "nextBlock": 24,
+            "origClipLength": 146,
+            "voiceIdx": 17,
+            "pathId": -2348359273022081503,
+            "blockIdx": 23
+        },
+        {
+            "jpName": "シーキングザパール",
+            "enName": "",
+            "jpText": "私が目指すのは――各国の名所！　伝統！　銘菓！\nそういった輝きに負けないウマ娘！",
+            "enText": "",
+            "nextBlock": 25,
+            "origClipLength": 271,
+            "voiceIdx": 18,
+            "animData": [
+                {
+                    "origLen": 50,
+                    "pathId": 8401357147730183090
+                },
+                {
+                    "origLen": 20,
+                    "pathId": -950499026614869449
+                },
+                {
+                    "origLen": 383,
+                    "pathId": 5192198114178181051
+                }
+            ],
+            "pathId": 7769314195440833518,
+            "blockIdx": 24
+        },
+        {
+            "jpName": "シーキングザパール",
+            "enName": "",
+            "jpText": "あらゆる人を照らしてみせるわ。\nレースを通じてメイビー！　そう――必ず、ね。",
+            "enText": "",
+            "nextBlock": 26,
+            "origClipLength": 231,
+            "voiceIdx": 19,
+            "animData": [
+                {
+                    "origLen": 133,
+                    "pathId": 5276434142993363306
+                },
+                {
+                    "origLen": 275,
+                    "pathId": 1888779737253191823
+                }
+            ],
+            "pathId": 4019879841359497691,
+            "blockIdx": 25
+        },
+        {
+            "jpName": "メジロドーベル",
+            "enName": "",
+            "jpText": "パールさん、銘菓って……お菓子？\nそれにメイビーって多分って意味だよね？",
+            "enText": "",
+            "nextBlock": 27,
+            "origClipLength": 258,
+            "voiceIdx": 20,
+            "animData": [
+                {
+                    "origLen": 341,
+                    "pathId": -6506131127452352646
+                },
+                {
+                    "origLen": 50,
+                    "pathId": -7130760105575256038
+                },
+                {
+                    "origLen": 20,
+                    "pathId": 5484949332820065228
+                }
+            ],
+            "pathId": 2125292343365327463,
+            "blockIdx": 26
+        },
+        {
+            "jpName": "モノローグ",
+            "enName": "",
+            "jpText": "自信に満ち溢れていて、どこかユーモアがあって。\nそんなウマ娘に――誰もが夢を見た。",
+            "enText": "",
+            "nextBlock": 28,
+            "origClipLength": 98,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 150,
+                    "pathId": 8722417024237904640
+                },
+                {
+                    "origLen": 147,
+                    "pathId": 8992334672672505973
+                }
+            ],
+            "pathId": -1704274935288217514,
+            "blockIdx": 27
+        },
+        {
+            "jpName": "中堅トレーナーA",
+            "enName": "",
+            "jpText": "待ってくれ、シーキングザパール！　俺とコンビを組もう！\n俺なら、お前の速さを最大限に磨くことができる！",
+            "enText": "",
+            "nextBlock": 29,
+            "origClipLength": 224,
+            "voiceIdx": 21,
+            "animData": [
+                {
+                    "origLen": 24,
+                    "pathId": 6534505459028073000
+                },
+                {
+                    "origLen": 24,
+                    "pathId": -487333268138863395
+                },
+                {
+                    "origLen": 80,
+                    "pathId": 7240516825105126278
+                },
+                {
+                    "origLen": 20,
+                    "pathId": 3375356722890177165
+                }
+            ],
+            "pathId": -3418141148816206222,
+            "blockIdx": 28
+        },
+        {
+            "jpName": "中堅トレーナーB",
+            "enName": "",
+            "jpText": "いいえ、組むなら私と！　私は魅せるレースの研究をしているの。\nファンをあっと言わせる走り、目指さない？",
+            "enText": "",
+            "nextBlock": 30,
+            "origClipLength": 283,
+            "voiceIdx": 22,
+            "animData": [
+                {
+                    "origLen": 309,
+                    "pathId": 4387893116981341951
+                },
+                {
+                    "origLen": 282,
+                    "pathId": 5886184072091866299
+                }
+            ],
+            "pathId": 1932275093955086220,
+            "blockIdx": 29
+        },
+        {
+            "jpName": "シーキングザパール",
+            "enName": "",
+            "jpText": "ありがとう、エブリワン。速さを磨きあげる、\nファンをあっと言わせる……。どれも悪くないわ。けど……。",
+            "enText": "",
+            "nextBlock": 31,
+            "origClipLength": 300,
+            "voiceIdx": 23,
+            "animData": [
+                {
+                    "origLen": 186,
+                    "pathId": 2047543913089665556
+                },
+                {
+                    "origLen": 20,
+                    "pathId": 8802153322943243787
+                }
+            ],
+            "pathId": 7594895261285807258,
+            "blockIdx": 30
+        },
+        {
+            "jpName": "モノローグ",
+            "enName": "",
+            "jpText": "実績あるトレーナー陣ですら関心をひけていない。\nやはり興味を持ってもらうのは大変そうだ。",
+            "enText": "",
+            "nextBlock": 32,
+            "origClipLength": 102,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 186,
+                    "pathId": -6236996306139345165
+                }
+            ],
+            "pathId": 487119436658388811,
+            "blockIdx": 31
+        },
+        {
+            "jpName": "シーキングザパール",
+            "enName": "",
+            "jpText": "もっとアメージングな夢はないのかしら。\nねぇ、そこのトレーナー。",
+            "enText": "",
+            "nextBlock": 33,
+            "origClipLength": 176,
+            "voiceIdx": 24,
+            "animData": [
+                {
+                    "origLen": 80,
+                    "pathId": -3435150769409027381
+                },
+                {
+                    "origLen": 20,
+                    "pathId": -9094204766751480349
+                }
+            ],
+            "pathId": 55394036069757528,
+            "blockIdx": 32
+        },
+        {
+            "jpName": "シーキングザパール",
+            "enName": "",
+            "jpText": "貴方は何か思いつく？　私を酔わせてくれる、\nとびきりゴージャスな夢を。",
+            "enText": "",
+            "nextBlock": 34,
+            "origClipLength": 206,
+            "voiceIdx": 25,
+            "animData": [
+                {
+                    "origLen": 100,
+                    "pathId": 1133101625072902349
+                },
+                {
+                    "origLen": 103,
+                    "pathId": -7457660372547658069
+                }
+            ],
+            "pathId": -7848192941909523646,
+            "blockIdx": 33
+        },
+        {
+            "jpName": "モノローグ",
+            "enName": "",
+            "jpText": "なんとなく目に留まっただけなのだろう。\n軽くいじるような視線をシーキングザパールは自分に向けてきた。",
+            "enText": "",
+            "nextBlock": 35,
+            "origClipLength": 110,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 165,
+                    "pathId": -813697625991346846
+                },
+                {
+                    "origLen": 149,
+                    "pathId": 8733105134861484410
+                }
+            ],
+            "pathId": 5560550874402454426,
+            "blockIdx": 34
+        },
+        {
+            "jpName": "モノローグ",
+            "enName": "",
+            "jpText": "千載一遇のチャンス。必死に考える。\nあの模擬レースで見せてもらった才能にふさわしい夢は――",
+            "enText": "",
+            "nextBlock": 36,
+            "origClipLength": 103,
+            "voiceIdx": -1,
+            "choices": [
+                {
+                    "jpText": "俺と一緒に『世界』を夢中にさせよう！",
+                    "enText": "",
+                    "nextBlock": 36
+                },
+                {
+                    "jpText": "私と一緒に『世界』を夢中にさせよう！",
+                    "enText": "",
+                    "nextBlock": 36
+                }
+            ],
+            "animData": [
+                {
+                    "origLen": 165,
+                    "pathId": 1870662936205308334
+                },
+                {
+                    "origLen": 137,
+                    "pathId": 7535758467643021162
+                }
+            ],
+            "pathId": -7680413627199962391,
+            "blockIdx": 35
+        },
+        {
+            "jpName": "シーキングザパール",
+            "enName": "",
+            "jpText": "あら、世界を夢中に……ねえ。",
+            "enText": "",
+            "nextBlock": 37,
+            "origClipLength": 136,
+            "voiceIdx": 26,
+            "animData": [
+                {
+                    "origLen": 134,
+                    "pathId": 6226008213708001850
+                },
+                {
+                    "origLen": 20,
+                    "pathId": -6439219074583553083
+                }
+            ],
+            "pathId": -7094457946733573170,
+            "blockIdx": 36
+        },
+        {
+            "jpName": "シーキングザパール",
+            "enName": "",
+            "jpText": "……確かに私は世界クラスの真珠よ。とはいえまだ原石。\nそして貴方も、まだ駆け出しのトレーナーでしょう？",
+            "enText": "",
+            "nextBlock": 38,
+            "origClipLength": 382,
+            "voiceIdx": 27,
+            "animData": [
+                {
+                    "origLen": 331,
+                    "pathId": -3302276163487851333
+                },
+                {
+                    "origLen": 50,
+                    "pathId": -6157348130728722106
+                }
+            ],
+            "pathId": 2840688694826275743,
+            "blockIdx": 37
+        },
+        {
+            "jpName": "シーキングザパール",
+            "enName": "",
+            "jpText": "なのにどうして『世界を夢中に』なんて大層なことが言えるの？\nプランでもあるのかしら？",
+            "enText": "",
+            "nextBlock": 39,
+            "origClipLength": 239,
+            "voiceIdx": 28,
+            "choices": [
+                {
+                    "jpText": "それは……",
+                    "enText": "",
+                    "nextBlock": 39
+                }
+            ],
+            "animData": [
+                {
+                    "origLen": 63,
+                    "pathId": 7208331026251701883
+                }
+            ],
+            "pathId": 4894949692524924356,
+            "blockIdx": 38
+        },
+        {
+            "jpName": "シーキングザパール",
+            "enName": "",
+            "jpText": "フフッ♪　何も考えていなかったわけね。\n勢いがあるのは素晴らしいことだけれど……。",
+            "enText": "",
+            "nextBlock": 40,
+            "origClipLength": 238,
+            "voiceIdx": 29,
+            "animData": [
+                {
+                    "origLen": 332,
+                    "pathId": -4023921587282116265
+                },
+                {
+                    "origLen": 165,
+                    "pathId": 5986765170580497921
+                }
+            ],
+            "pathId": 8928751416624596394,
+            "blockIdx": 39
+        },
+        {
+            "jpName": "シーキングザパール",
+            "enName": "",
+            "jpText": "もう少しリアルな地図を見せてほしかったわ。\n貴方だけの世界地図を、ね。",
+            "enText": "",
+            "nextBlock": 41,
+            "origClipLength": 234,
+            "voiceIdx": 30,
+            "animData": [
+                {
+                    "origLen": 60,
+                    "pathId": -1628028869066851956
+                },
+                {
+                    "origLen": 20,
+                    "pathId": -4949644417188467835
+                }
+            ],
+            "pathId": 8752448719871870026,
+            "blockIdx": 40
+        },
+        {
+            "jpName": "モノローグ",
+            "enName": "",
+            "jpText": "つい口をついて出た言葉。根拠がないのは\nあっさり見透かされてしまった。そして――",
+            "enText": "",
+            "nextBlock": 42,
+            "origClipLength": 97,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 89,
+                    "pathId": -4200473839859627754
+                }
+            ],
+            "pathId": -771846117508387151,
+            "blockIdx": 41
+        },
+        {
+            "jpName": "シーキングザパール",
+            "enName": "",
+            "jpText": "ヘイ、トレーナーズ♪　ラブコールは嬉しいけど、\nスカウトは本気の走りを見た後にしてほしいわ。",
+            "enText": "",
+            "nextBlock": 43,
+            "origClipLength": 248,
+            "voiceIdx": 31,
+            "animData": [
+                {
+                    "origLen": 221,
+                    "pathId": -4700552538678246029
+                },
+                {
+                    "origLen": 20,
+                    "pathId": -1680551815454100648
+                }
+            ],
+            "pathId": -3334426958075137198,
+            "blockIdx": 42
+        },
+        {
+            "jpName": "シーキングザパール",
+            "enName": "",
+            "jpText": "そう、選抜レース！　その舞台で私は勝ってみせるわ！\n“あのウマ娘”にも！",
+            "enText": "",
+            "nextBlock": 44,
+            "origClipLength": 248,
+            "voiceIdx": 32,
+            "animData": [
+                {
+                    "origLen": 136,
+                    "pathId": -1023264618834843379
+                },
+                {
+                    "origLen": 169,
+                    "pathId": -1858259346269992984
+                }
+            ],
+            "pathId": 133574126132636060,
+            "blockIdx": 43
+        },
+        {
+            "jpName": "モノローグ",
+            "enName": "",
+            "jpText": "余裕綽々だったシーキングザパールの瞳に\n一瞬よぎるシリアスな光。",
+            "enText": "",
+            "nextBlock": 45,
+            "origClipLength": 86,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 50,
+                    "pathId": 8603387843443068057
+                },
+                {
+                    "origLen": 20,
+                    "pathId": -8878479843204010449
+                }
+            ],
+            "pathId": -6798586861009675639,
+            "blockIdx": 44
+        },
+        {
+            "jpName": "モノローグ",
+            "enName": "",
+            "jpText": "来たるべき選抜レース。シーキングザパールが\nライバル視する“あのウマ娘”とは――",
+            "enText": "",
+            "nextBlock": 46,
+            "origClipLength": 97,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 136,
+                    "pathId": -3321086050076782963
+                }
+            ],
+            "pathId": 3680514720966734592,
+            "blockIdx": 45
+        },
+        {
+            "jpName": "タイキシャトル",
+            "enName": "",
+            "jpText": "ハウディー、パールさん！\n今日はよろしくお願いしマース！",
+            "enText": "",
+            "nextBlock": 47,
+            "origClipLength": 146,
+            "voiceIdx": 33,
+            "animData": [
+                {
+                    "origLen": 97,
+                    "pathId": 5920451943985581959
+                },
+                {
+                    "origLen": 83,
+                    "pathId": 4239863085129316120
+                },
+                {
+                    "origLen": 20,
+                    "pathId": -2119838300898364989
+                }
+            ],
+            "pathId": -4928040742499584500,
+            "blockIdx": 46
+        },
+        {
+            "jpName": "シーキングザパール",
+            "enName": "",
+            "jpText": "来たわね、タイキ。相変わらず、\nこっちのハートがシェイクするほどのオーラだわ。",
+            "enText": "",
+            "nextBlock": 48,
+            "origClipLength": 228,
+            "voiceIdx": 34,
+            "animData": [
+                {
+                    "origLen": 256,
+                    "pathId": -8158756175073590734
+                },
+                {
+                    "origLen": 167,
+                    "pathId": 761499834306716867
+                }
+            ],
+            "pathId": 2151972064546035092,
+            "blockIdx": 47
+        },
+        {
+            "jpName": "タイキシャトル",
+            "enName": "",
+            "jpText": "イエース！　仕上がりはゼッコウチョウです！\nケンタッキーエクスプレスは誰にも止められまセーン！",
+            "enText": "",
+            "nextBlock": 49,
+            "origClipLength": 261,
+            "voiceIdx": 35,
+            "animData": [
+                {
+                    "origLen": 60,
+                    "pathId": 1951630349523246940
+                },
+                {
+                    "origLen": 30,
+                    "pathId": 1232828010681917093
+                },
+                {
+                    "origLen": 275,
+                    "pathId": -5097435115442260645
+                }
+            ],
+            "pathId": 7024982624310945560,
+            "blockIdx": 48
+        },
+        {
+            "jpName": "シーキングザパール",
+            "enName": "",
+            "jpText": "そうね。普通のウマ娘なら追いつけない。でも私の辞書に\n『インポッシブル』という文字はないわ。いえ――",
+            "enText": "",
+            "nextBlock": 50,
+            "origClipLength": 310,
+            "voiceIdx": 36,
+            "animData": [
+                {
+                    "origLen": 328,
+                    "pathId": -3772806169572626793
+                },
+                {
+                    "origLen": 126,
+                    "pathId": -78446377695717755
+                },
+                {
+                    "origLen": 20,
+                    "pathId": 1691808352763985377
+                }
+            ],
+            "pathId": 1923220537533337932,
+            "blockIdx": 49
+        },
+        {
+            "jpName": "シーキングザパール",
+            "enName": "",
+            "jpText": "そもそも辞書なんて、生まれた時から捨てている！\nサウザンドの言葉より、ただやり遂げるのみよ！",
+            "enText": "",
+            "nextBlock": 51,
+            "origClipLength": 268,
+            "voiceIdx": 37,
+            "animData": [
+                {
+                    "origLen": 313,
+                    "pathId": 2919659645144402164
+                },
+                {
+                    "origLen": 50,
+                    "pathId": 1615987658177884298
+                }
+            ],
+            "pathId": -2379886290162275927,
+            "blockIdx": 50
+        },
+        {
+            "jpName": "中堅トレーナーA",
+            "enName": "",
+            "jpText": "シーキングザパールvsタイキシャトルか。\nアメリカが生んだ超才能の激突だな。",
+            "enText": "",
+            "nextBlock": 52,
+            "origClipLength": 201,
+            "voiceIdx": 38,
+            "animData": [
+                {
+                    "origLen": 235,
+                    "pathId": -5027244152732179571
+                },
+                {
+                    "origLen": 80,
+                    "pathId": 7627455250976936672
+                }
+            ],
+            "pathId": -7772666649068534123,
+            "blockIdx": 51
+        },
+        {
+            "jpName": "中堅トレーナーB",
+            "enName": "",
+            "jpText": "ええ、スピードだけなら、すでに上の世代すら\n超えているかもしれないわ。勝つのは果たして……。",
+            "enText": "",
+            "nextBlock": 53,
+            "origClipLength": 236,
+            "voiceIdx": 39,
+            "animData": [
+                {
+                    "origLen": 289,
+                    "pathId": -2501717508356938799
+                },
+                {
+                    "origLen": 96,
+                    "pathId": -3132836075349156422
+                },
+                {
+                    "origLen": 333,
+                    "pathId": -8518189986174541701
+                },
+                {
+                    "origLen": 64,
+                    "pathId": -6314460300991462033
+                }
+            ],
+            "pathId": -3128427870153043998,
+            "blockIdx": 52
+        },
+        {
+            "jpName": "シーキングザパール",
+            "enName": "",
+            "jpText": "ほーっほっほっ、私に決まっているわ。\n必ず勝って、自らの可能性を示してみせる！",
+            "enText": "",
+            "nextBlock": 54,
+            "origClipLength": 268,
+            "voiceIdx": 40,
+            "animData": [
+                {
+                    "origLen": 250,
+                    "pathId": 2452009183822128318
+                },
+                {
+                    "origLen": 20,
+                    "pathId": 8872238932715268987
+                },
+                {
+                    "origLen": 50,
+                    "pathId": -4403473231491614032
+                },
+                {
+                    "origLen": 20,
+                    "pathId": 4947503409789733592
+                }
+            ],
+            "pathId": -4704597895595031436,
+            "blockIdx": 53
+        },
+        {
+            "jpName": "シーキングザパール",
+            "enName": "",
+            "jpText": "そう、私は超一級の真珠！\nいかにタイキが速くとも、この輝きには一点の曇りも――",
+            "enText": "",
+            "nextBlock": 55,
+            "origClipLength": 283,
+            "voiceIdx": 41,
+            "animData": [
+                {
+                    "origLen": 93,
+                    "pathId": 8621202053297921071
+                },
+                {
+                    "origLen": 151,
+                    "pathId": 3674338722512712023
+                },
+                {
+                    "origLen": 20,
+                    "pathId": -4115722805744578740
+                }
+            ],
+            "pathId": -7526202242623668519,
+            "blockIdx": 54
+        },
+        {
+            "jpName": "モノローグ",
+            "enName": "",
+            "jpText": "※SE用のダミーテキストです。",
+            "enText": "",
+            "nextBlock": 56,
+            "origClipLength": 64,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 13,
+                    "pathId": -348103088840322000
+                },
+                {
+                    "origLen": 151,
+                    "pathId": -3811744148576617858
+                }
+            ],
+            "pathId": 8900994813156166203,
+            "blockIdx": 55
+        },
+        {
+            "jpName": "シーキングザパール",
+            "enName": "",
+            "jpText": "あ、あら？　私には曇りはないけれど――",
+            "enText": "",
+            "nextBlock": 57,
+            "origClipLength": 142,
+            "voiceIdx": 42,
+            "pathId": -3717347951807756363,
+            "blockIdx": 56
+        },
+        {
+            "jpName": "シーキングザパール",
+            "enName": "",
+            "jpText": "空はそうでもないようね。\n突然のレイジーレインだなんて。",
+            "enText": "",
+            "nextBlock": 58,
+            "origClipLength": 164,
+            "voiceIdx": 43,
+            "pathId": -1109127228630189417,
+            "blockIdx": 57
+        },
+        {
+            "jpName": "モノローグ",
+            "enName": "",
+            "jpText": "いきなり降りだした雨が足元を濡らす。\nこうして――",
+            "enText": "",
+            "nextBlock": 59,
+            "origClipLength": 77,
+            "voiceIdx": -1,
+            "pathId": 2491264136971027383,
+            "blockIdx": 58
+        },
+        {
+            "jpName": "モノローグ",
+            "enName": "",
+            "jpText": "アメリカン超特急対決は、\n不良バ場のなかで行われることとなった。",
+            "enText": "",
+            "nextBlock": -1,
+            "origClipLength": 106,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 226,
+                    "pathId": 4584739735592390701
+                },
+                {
+                    "origLen": 20,
+                    "pathId": -2159352920159818644
+                },
+                {
+                    "origLen": 48,
+                    "pathId": -4796225509408273049
+                },
+                {
+                    "origLen": 20,
+                    "pathId": -2688592975099680531
+                }
+            ],
+            "pathId": 3600857748511821775,
+            "blockIdx": 59
+        }
+    ],
+    "modified": 1674185192
+}

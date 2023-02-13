@@ -73,6 +73,7 @@ Air Groove | Complete | [burritoblaster][]
 Biwa Hayahide | Complete | deepl (contributed by CryDuringItAll)
 Copano Rickey | Complete | [LotoDS][]
 Curren Chan | Complete | [CatNipHoarder][] & [Holo][]
+Daitaku Helios | Complete | [LotoDS][]
 Daiwa Scarlet | Complete | [XiantheMiguel][] (commissioned by AhriParty)
 Eishin Flash | Complete, Stalled, In progress | deepl, [noccu] (ep 1-2), Admiy
 El Condor Pasa | Complete | deepl (contributed by CryDuringItAll)
