@@ -3,9 +3,10 @@ import json
 import os
 from pathlib import Path, PurePath
 import sys
-from typing import Generator
+from typing import Generator, Union
 import regex
 from datetime import datetime, timezone
+from dataclasses import dataclass, astuple, asdict
 
 import UnityPy
 from UnityPy.files import ObjectReader
@@ -21,11 +22,11 @@ if IS_WIN:
 else:
     GAME_ROOT = GAME_ASSET_ROOT = GAME_META_FILE = GAME_MASTER_FILE = None
 SUPPORTED_TYPES = ["story", "home", "race", "lyrics", "preview", "ruby", "mdb"]  # Update indexing on next line
-TARGET_TYPES = SUPPORTED_TYPES[:-1]  # Omit mdb
+TARGET_TYPES = SUPPORTED_TYPES[:-2]  # Classic asset types we want to read/write.
 NAMES_BLACKLIST = ["<username>", "", "モノローグ"]  # Special-use game names, don't touch
 
 
-def searchFiles(targetType, targetGroup, targetId, targetIdx=False, changed=False, jsonOnly=True) -> list[str]:
+def searchFiles(targetType, targetGroup, targetId, targetIdx=False, targetSet=False, changed=False, jsonOnly=True) -> list[str]:
     found = list()
     isJson = lambda f: PurePath(f).suffix == ".json" if jsonOnly else True
     if changed:
@@ -44,7 +45,9 @@ def searchFiles(targetType, targetGroup, targetId, targetIdx=False, changed=Fals
         searchDir = targetType if isinstance(targetType, os.PathLike) else os.path.join("translations", targetType)
         for root, dirs, files in os.walk(searchDir):
             depth = len(dirs[0]) if dirs else -1
-            if targetGroup and depth == 2:
+            if targetSet and depth == 5:
+                dirs[:] = [d for d in dirs if d == targetSet]
+            elif targetGroup and depth == 2:
                 dirs[:] = [d for d in dirs if d == targetGroup]
             elif targetId:
                 if targetType in ("lyrics", "preview"):
@@ -59,26 +62,78 @@ def searchFiles(targetType, targetGroup, targetId, targetIdx=False, changed=Fals
     return found
 
 
-# TODO: This is unpacking a string we packed ourselves, refactoring should eliminate this fn entirely.
-def parseStoryId(text_type, s) -> tuple:
-    if text_type in ("lyrics", "preview"):
-        return None, s, s
-    else:
-        return s[:2], s[2:6], s[6:]
-
-
-def parseStoryIdFromPath(text_type: str, path: str):
-    """Given a text type (story, lyrics, etc.) and a game data filepath, extract and return the group, id, and index."""
-    if text_type == "home":
-        path = path[-10:]
-        return path[:2], path[3:7], path[7:]
-    elif text_type == "lyrics":
-        return None, None, path[-11:-7]
-    elif text_type == "preview":
-        return None, None, path[-4:]
-    else:  # story and storyrace
-        path = path[-9:]
-        return path[:2], path[2:6], path[6:9]
+@dataclass
+class StoryId:
+    type:str = "story"
+    set:str = None
+    setLen = 5
+    group:str = None
+    groupLen = 2
+    id:str = None
+    idLen = 4
+    idx:str = None
+    idxLen = 3
+    idOnlyGroup = ("lyrics", "preview")
+    def __post_init__(self):
+        if self.type in self.idOnlyGroup:
+            if not self.id and self.idx:
+                self.id = self.idx
+            self.idx = None
+            self.group = None
+            self.set = None
+    def __str__(self) -> str:
+        '''Return the joined numeric parts, as written in tlFiles'''
+        return "".join(x for x in astuple(self)[1:] if x is not None)
+    @classmethod
+    def parse(cls, text_type, s):
+        if text_type in cls.idOnlyGroup:
+            return cls(type=text_type, id=s)
+        elif len(s) > 9 and text_type == "home":
+            return cls(type=text_type, set=s[:5], group=s[5:7], id=s[7:11], idx=s[11:])
+        else:
+            return cls(type=text_type, group=s[:2], id=s[2:6], idx=s[6:])
+    @classmethod
+    def parseFromPath(cls, text_type: str, path: str):
+        """Given a text type (story, lyrics, etc.) and a game data filepath, extract and return the group, id, and index."""
+        if text_type == "home":
+            path = path[-16:]
+            return cls(type=text_type, set=path[:5], group=path[6:8], id=path[9:13], idx=path[13:])
+        elif text_type == "lyrics":
+            return cls(type=text_type, id=path[-11:-7])
+        elif text_type == "preview":
+            return cls(type=text_type, id=path[-4:])
+        else:  # story and storyrace
+            path = path[-9:]
+            return cls(type=text_type, group=path[:2], id=path[2:6], idx=path[6:9])
+    @classmethod
+    def queryfy(cls, storyId:'StoryId'):
+        '''Returns a new StoryId with attributes usable in SQL'''
+        parts = asdict(storyId)
+        for k,v in parts.items():
+            if v is None:
+                parts[k] = "_" * getattr(storyId, f"{k}Len", 0)
+        return cls(*parts.values())
+    @classmethod
+    def fromLegacy(cls, group, id, idx):
+        return cls(group=group, id=id, idx=idx)
+    def asLegacy(self):
+        return self.group, self.id, self.idx
+    def asTuple(self, validOnly=False):
+        if validOnly:
+            # Faster with the list comp for some extra mem cost, apparently
+            return tuple([x for x in astuple(self) if x is not None])
+        else:
+            return astuple(self)
+    def asPath(self, includeIdx=False):
+        offset = None if includeIdx else -1
+        return Path().joinpath(*self.asTuple(validOnly=True)[1:offset]) # ignore type for now
+    def getFilenameIdx(self):
+        if self.type in self.idOnlyGroup:
+            return self.id
+        elif self.idx:
+            return self.idx
+        else:
+            raise AttributeError
 
 
 def patchVersion():
@@ -100,12 +155,15 @@ class Args(argparse.ArgumentParser):
         super().__init__(description=desc, conflict_handler='resolve', formatter_class=RawDefaultFormatter, **kwargs)
         self.add_argument("-v", "--version", action="store_true", help="Show version and exit")
         self.add_argument("--read-defaults", "--read-config", action="store_true", help="Overwrite args with data from umatl.json config")
+        self.hasDefault = defaultArgs
         if defaultArgs:
             self.add_argument("-t", "--type", choices=types or TARGET_TYPES, default=types[0] if types else TARGET_TYPES[0],
                               help="The type of assets to process.")
+            self.add_argument("-s", "--set", help="The set to process")
             self.add_argument("-g", "--group", help="The group to process")
             self.add_argument("-id", help="The id (subgroup) to process")
             self.add_argument("-idx", help="The specific asset index to process")
+            self.add_argument("-sid", "-story", "--story", help="The storyid to process, can be partial")
             self.add_argument("--changed", nargs="?", default=False, const=True,
                               help="Limit to changed files (requires git)")
             self.add_argument("-src", default=GAME_ASSET_ROOT)
@@ -127,6 +185,12 @@ class Args(argparse.ArgumentParser):
             ctx = str(Path(sys.argv[0]).resolve().relative_to(Path("src").resolve()).with_suffix("")).replace("\\","/")
             for k, v in cfg.get(ctx, {}).items():
                 setattr(a, k, v)
+        if self.hasDefault and a.story:
+            a.story = StoryId.parse(a.type, a.story)
+            a.set = a.set or a.story.set
+            a.group = a.group or a.story.group
+            a.id = a.id or a.story.id
+            a.idx = a.idx or a.story.idx
         return a
     @classmethod
     def fake(cls, **kwargs):
@@ -138,12 +202,11 @@ class TranslationFile:
     ver_offset_mdb = 100
     textBlacklist = regex.compile(r"^タイトルコール$|イベントタイトルロゴ表示.*|※*ダミーテキスト|^欠番$")
 
-    def __init__(self, file=None, load=True, readOnly=False):
+    def __init__(self, file:Union[str, Path]=None, load=True, readOnly=False):
         self.readOnly = readOnly
         if load:
             if not file: raise RuntimeError("Attempting to load tlfile but no file provided.")
             self.setFile(file)
-            self.fileExists = True  # should error if it does not
             self.reload()
         else:
             self.fileExists = False
@@ -176,6 +239,9 @@ class TranslationFile:
             else:
                 raise LookupError(f"No index provided for list-format file {self.root.name}")
 
+        def items(self, key="jpText", val="enText"):
+            for entry in self.data:
+                yield (entry.get(key), entry.get(val))
         def __getitem__(self, itm):
             return self.get(itm)
         def __setitem__(self, itm, val):
@@ -192,6 +258,7 @@ class TranslationFile:
 
         def toInterchange(self, data=None) -> list[dict]:
             data = data or self.data
+            self._nativeData = data #todo: change the whole system
             if isinstance(data, dict):
                 self.map = dict()
                 o = list()
@@ -259,7 +326,7 @@ class TranslationFile:
             return self.data['storyId']
         else:
             isN = regex.compile(r"\d+")
-            g, id, idx = PurePath(self.file).parts[-3:]  # project structure provides at least 3 levels, luckily
+            g, id, idx = self.file.parts[-3:]  # project structure provides at least 3 levels, luckily
             if not isN.match(g): g = ""
             if not isN.match(id): id = ""
             idx = isN.match(idx)[0]
@@ -267,6 +334,7 @@ class TranslationFile:
 
     def reload(self):
         self.data = helpers.readJson(self.file)
+        self.fileExists = True  # should error if it does not
         self.init()
 
     def save(self):
@@ -287,13 +355,15 @@ class TranslationFile:
         else:
             self._snapshot = json.dumps(self.data, ensure_ascii=False, default=helpers._to_json)
 
-    def setFile(self, file):
-        self.file = file
-        self.name = PurePath(file).name
+    def setFile(self, file:Union[str, Path]):
+        self.file = Path(file)
+        self.name = self.file.name
 
     def init(self, snapshot=True):
         self.version = self._getVersion()
-        self.escapeNewline = self.type in ("race", "preview", "mdb")
+        self.escapeNewline = self.type in ("race", "preview", "mdb", "lyrics")
+        if self.type == "mdb" and self.file.parent.name == "character_system_text":
+            self.escapeNewline = False
         self.data['text'] = self.TextData(self)
         if snapshot: self.snapshot()
 
@@ -309,21 +379,21 @@ class TranslationFile:
         if not tlFile.fileExists:
             return
         if newName is None:
-            idx = parseStoryId(tlFile.getStoryId())[-1]
+            idx = StoryId.parse(tlFile.type, tlFile.getStoryId()).idx
             title = tlFile.data.get('title')
             newName = f"{idx} ({title}).json" if title else f"{idx}.json"
-        newName = Path(tlFile.file).parent.joinpath(helpers.sanitizeFilename(newName))
-        os.rename(tlFile.file, newName)
+        newName = tlFile.file.parent.joinpath(helpers.sanitizeFilename(newName))
+        tlFile.file.rename(newName)
         tlFile.setFile(newName)
 
 
 class GameBundle:
     editMark = b"\x08\x04"
 
-    def __init__(self, path, load=True) -> None:
+    def __init__(self, path, load=True, bType="story") -> None:
         self.bundlePath = Path(path)
         self.bundleName = self.bundlePath.stem
-        self.bundleType = "story"
+        self.bundleType = bType
         self.exists = self.bundlePath.exists()
         self.data = None
         self.patchData:bytes = b""
@@ -396,9 +466,10 @@ class GameBundle:
 
 
     @classmethod
-    def fromName(cls, name, load=True):
+    def fromName(cls, name, **kwargs):
+        '''Create a bundle by hash/name from the default game dir. kwargs passed to constructor'''
         bundlePath = PurePath(GAME_ASSET_ROOT, name[0:2], name)
-        return cls(bundlePath, load)
+        return cls(bundlePath, **kwargs)
 
     @staticmethod
     def createPath(dstFolder, dstName):
@@ -418,9 +489,13 @@ def createDefaultUmatlConfig():
             "skill_data": False
         }
     }
-    helpers.writeJson("umatl.json", data, 2)
+    try:
+        helpers.writeJson("umatl.json", data, 2)
+    except PermissionError:
+        print("Error: Lacking permissions to create the config file in this location. \nEdit the patch folder's permissions or move it to a different location.")
+        sys.exit()
     print("Uma-tl uses the umatl.json config file for user preferences when requested.\n"
         "This seems to be your first time running uma-tl this way so a new file was created.\n"
-        "Uma-tl has quit this first time so you can edit the config first. Defaults are:")
+        "Uma-tl has quit without doing anything this first time so you can edit the config before running it again. Defaults are:")
     print(json.dumps(data, indent=2))
     sys.exit()
