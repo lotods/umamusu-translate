@@ -1,5 +1,5 @@
 import common
-from common import TranslationFile
+from common import TranslationFile, StoryId
 import re
 from math import ceil
 import helpers
@@ -16,7 +16,7 @@ def processText(file: TranslationFile, text: str, opts: dict):
         text = cleannewLines(text)
     if opts.get("replaceMode"):
         text = replace(text, opts["replaceMode"])
-    if opts.get("lineLength") != 0:
+    if opts.get("lineLength") != None and opts.get("lineLength") != 0:
         text = adjustLength(file, text, opts)
 
     text = resizeText(file, text, force = opts.get("forceResize"))
@@ -46,6 +46,11 @@ def adjustLength(file: TranslationFile, text: str, opts, **overrides):
     lineLen: int = overrides.get("lineLength", opts.get("lineLength", -1))
     if lineLen == -1: lineLen = calcLineLen(file, opts.get('verbose'))
     if lineLen == 0: return text  # auto mode can return 0
+    # Calculate an estimation of raw characters from size-based length
+    # Adjusted by font size
+    fontsize = file.data.get("textSize", 24)
+    sizeMod = 1.07 * (fontsize / 24)**0.6
+    lineLen = int((lineLen * (1.135 * lineLen**0.05) + 1) * sizeMod)
     pureText = RE_TAGS.sub("", text)
 
     if len(pureText) < lineLen:
@@ -94,8 +99,8 @@ def adjustLength(file: TranslationFile, text: str, opts, **overrides):
 
         nLines = len(lines)
         if numLines < 1 and nLines > 1 and pureLen[-1] < lineLen / 3.25:
-            linesStr = '\n\t'.join(lines)
             if opts.get("verbose"):
+                linesStr = '\n\t'.join(lines)
                 print(f"Last line is short, balancing on line number:\n\t{linesStr}")
             return adjustLength(file, text, opts, numLines = nLines, lineLen = -2)
 
@@ -170,11 +175,11 @@ def processFiles(args):
     if args.src:
         files = [args.src]
     else:
-        files = common.searchFiles(args.type, args.group, args.id, args.idx, changed = args.changed)
+        files = common.searchFiles(args.type, args.group, args.id, args.idx, targetSet=args.set, changed = args.changed)
     print(f"Processing {len(files)} files...")
     if args.lineLength == -1: print(f"Automatically setting line length based on story type/id or file value")
     for file in files:
-        file = common.TranslationFile(file)
+        file = TranslationFile(file)
 
         for block in file.genTextContainers():
             if "enText" in block and len(block['enText']) != 0 and "skip" not in block:
@@ -189,13 +194,16 @@ def calcLineLen(file: TranslationFile, verbose):
         return LL_CACHE[1]
 
     lineLength = file.data.get('lineLength')
-    if lineLength is None:
-        if (file.type in ("lyrics", "race")
-            or (file.type == "story"
-                and common.parseStoryId(file.type, file.getStoryId())[0] in ("02", "04", "09"))):
-            lineLength = 65
+    if lineLength in (None, -1, 0):
+        if file.type == "lyrics":
+            lineLength = 57
+        elif (file.type == "race")\
+        or (file.type == "story" and StoryId.parse(file.type, file.getStoryId()).group in ("02", "04", "09", "10", "13")):
+            lineLength = 48
+        elif file.type == "mdb" and file.file.parent.name == "character_system_text":
+            lineLength = 30
         else:
-            lineLength = 45
+            lineLength = 34
     LL_CACHE = file, lineLength
     if verbose:
         print(f"Line length set to {lineLength} for {file.name}")

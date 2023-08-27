@@ -21,6 +21,7 @@
     "29": "Kakari Chance",
     "30": "Push Chance",
     "31": ["Acceleration", "m/s²"],
+    "32": "All stats",
     "35": "Target Lane",
     "37": "Activate Rare Skill",
     "501": "Event-specific",
@@ -30,7 +31,7 @@
   "ability_value_usage": {
     "0": "None",
     "1": "Direct",
-    "2": "* SkillNum",
+    "2": "* # Skills",
     "3": "* Team Speed",
     "4": "* Team Stamina",
     "5": "* Team Power",
@@ -38,18 +39,20 @@
     "7": "* Team Wis",
     "8": "* Random",
     "9": "* Random2",
-    "10": "",
+    "10": "* Races Won",
     "11": "",
     "12": "",
-    "13": "",
-    "14": "",
+    "13": "* Max Stat",
+    "14": "* # Green Skills",
     "15": "* # Heals Activated",
     "16": "* FinalCornerEndOrder",
-    "17": "* InvTeamMemberCount"
+    "17": "* InvTeamMemberCount",
+    "19": "+0.1 if ≥20m from lead"
   },
   "target_type": {
     "comment": "0 == n/a, 1 == self",
     "4": "in FOV",
+    "7": ["leading 4", true],
     "9": "ahead",
     "10": "behind",
     "18": "(all)",
@@ -116,9 +119,9 @@
     },
     "order_rate": {
       ">=": ["In trailing $%", "100-"],
-      ">": ["In trailing <$%", "100-"],
+      ">": ["In trailing ﹤$%", "100-"],
       "<=": "In leading $%",
-      "<": "In leading <$%"
+      "<": "In leading ﹤$%"
     },
     "change_order_onetime": {
       "<": "Overtook",
@@ -131,7 +134,8 @@
       "lookup": {
         "0": "Opening leg",
         "1": "Middle leg",
-        "2": "Final leg"
+        "2": "Final leg",
+        "3": "Last Spurt (phase)"
       },
       "==": "$",
       ">=": "$ or later",
@@ -160,7 +164,8 @@
       "lookup": {
         "0": "Opening leg",
         "1": "Middle leg",
-        "2": "Final leg"
+        "2": "Final leg",
+        "3": "Last Spurt (phase)"
       },
       "==": "$ first half (random)"
     },
@@ -181,12 +186,18 @@
       "==": "Last straight (random)"
     },
     "is_finalcorner": {
-      "==": "Final corner/straight",
-      "!=": "Not final corner/straight"
+      "lookup": {
+        "0": "Not final corner/straight",
+        "1": "Final corner/straight"
+      },
+      "==": "$"
     },
     "is_finalcorner_laterhalf": {
-      "==": "Final corner/straight (2nd half)",
-      "!=": "Not final corner/straight (2nd half)"
+      "lookup": {
+        "0": "Not final corner/straight (2nd half)",
+        "1": "Final corner/straight (2nd half)"
+      },
+      "==": "$"
     },
     "is_lastspurt": {
       "==": "Last spurt",
@@ -207,7 +218,7 @@
     },
     "ground_type": {
       "lookup": {
-        "1": "Grass",
+        "1": "Turf",
         "2": "Dirt"
       },
       "string": "$"
@@ -222,7 +233,23 @@
       "string": "Track condition $"
     },
     "track_id": {
-      "string": "Track $"
+      "lookup": {
+        "10001": "Sapporo",
+        "10002": "Hakodate",
+        "10003": "Niigata",
+        "10004": "Fukushima",
+        "10005": "Nakayama",
+        "10006": "Tokyo",
+        "10007": "Chukyo",
+        "10008": "Kyoto",
+        "10009": "Hanshin",
+        "10010": "Kokura",
+        "10101": "Ooi",
+        "10103": "Kawasaki",
+        "10104": "Funabashi",
+        "10105": "Morioka"
+      },
+      "string": "At $"
     },
     "rotation": {
       "lookup": {
