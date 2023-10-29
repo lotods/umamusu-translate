@@ -1,0 +1,943 @@
+{
+    "version": 6,
+    "bundle": "V4LIGY3GH25V4VE5YPHNAEABVP43GFXM",
+    "type": "story",
+    "storyId": "090023001",
+    "title": "暁に駆ける、君と",
+    "text": [
+        {
+            "jpName": "シンボリルドルフ",
+            "enName": "Symboli Rudolf",
+            "jpText": "……さて。\nどこから動くか――",
+            "enText": "Now then, where to next?",
+            "nextBlock": 2,
+            "origClipLength": 134,
+            "voiceIdx": 0,
+            "animData": [
+                {
+                    "origLen": 120,
+                    "pathId": 1635573178572908853
+                }
+            ],
+            "pathId": -6390258002719823686,
+            "blockIdx": 1
+        },
+        {
+            "jpName": "ミスターシービー",
+            "enName": "Mr. C.B.",
+            "jpText": "――へぇ、珍しいお客さんだ。",
+            "enText": "Well, well. Here's an unusual customer.",
+            "nextBlock": 3,
+            "origClipLength": 99,
+            "voiceIdx": 1,
+            "animData": [
+                {
+                    "origLen": 120,
+                    "pathId": 7486502657609504039
+                },
+                {
+                    "origLen": 71,
+                    "pathId": -7649862703300906976
+                }
+            ],
+            "pathId": -1048516694697736070,
+            "blockIdx": 2
+        },
+        {
+            "jpName": "ミスターシービー",
+            "enName": "Mr. C.B.",
+            "jpText": "今日の気分は青空生徒会？",
+            "enText": "Student council going so well today \nyou came to gaze at the clouds?",
+            "nextBlock": 4,
+            "origClipLength": 67,
+            "voiceIdx": 2,
+            "animData": [
+                {
+                    "origLen": 216,
+                    "pathId": 4049545619005798726
+                },
+                {
+                    "origLen": 144,
+                    "pathId": 762190795357744770
+                },
+                {
+                    "origLen": 103,
+                    "pathId": 7812213321670377565
+                }
+            ],
+            "pathId": 8104445146620639387,
+            "blockIdx": 3
+        },
+        {
+            "jpName": "シンボリルドルフ",
+            "enName": "Symboli Rudolf",
+            "jpText": "ははっ、そう興じるには少々傾いているかな――\n……いやなに、大仕事に向けて緊褌一番の決意を固めにきただけさ。",
+            "enText": "Haha, do I really look that amused to you? \nNo, I'm actually hard at work on an important job.",
+            "nextBlock": 5,
+            "origClipLength": 335,
+            "voiceIdx": 3,
+            "animData": [
+                {
+                    "origLen": 146,
+                    "pathId": 1231263712949013174
+                },
+                {
+                    "origLen": 20,
+                    "pathId": 6602146706944542626
+                },
+                {
+                    "origLen": 370,
+                    "pathId": 4688361795647300957
+                }
+            ],
+            "pathId": -3957092995758797048,
+            "blockIdx": 4
+        },
+        {
+            "jpName": "ミスターシービー",
+            "enName": "Mr. C.B.",
+            "jpText": "大仕事、ねぇ。\nキミがそう言うんだから、面倒そう。",
+            "enText": "Important job, huh. If you're saying \nthat, it must be pretty complicated.",
+            "nextBlock": 6,
+            "origClipLength": 217,
+            "voiceIdx": 4,
+            "animData": [
+                {
+                    "origLen": 186,
+                    "pathId": 5570330070248182388
+                },
+                {
+                    "origLen": 104,
+                    "pathId": -1239404014853751951
+                },
+                {
+                    "origLen": 80,
+                    "pathId": -9156847057713635162
+                }
+            ],
+            "pathId": 7021135091587340781,
+            "blockIdx": 5
+        },
+        {
+            "jpName": "シンボリルドルフ",
+            "enName": "Symboli Rudolf",
+            "jpText": "……今日、理事長に呼ばれてね――",
+            "enText": "Earlier today, the chairman called me in…",
+            "nextBlock": 7,
+            "origClipLength": 111,
+            "voiceIdx": 5,
+            "animData": [
+                {
+                    "origLen": 134,
+                    "pathId": -3609632948171354335
+                },
+                {
+                    "origLen": 20,
+                    "pathId": 3048504993412752776
+                },
+                {
+                    "origLen": 134,
+                    "pathId": 2909045213912890575
+                },
+                {
+                    "origLen": 21,
+                    "pathId": -7403794376762615958
+                }
+            ],
+            "pathId": -5146064421471377915,
+            "blockIdx": 6
+        },
+        {
+            "jpName": "シンボリルドルフ",
+            "enName": "Symboli Rudolf",
+            "jpText": "――トレセン学園のパンフレットの制作を、我々生徒に？",
+            "enText": "You want us, the student council, to \nwork on the Tracen Academy pamphlet?",
+            "nextBlock": 8,
+            "origClipLength": 131,
+            "voiceIdx": 6,
+            "animData": [
+                {
+                    "origLen": 185,
+                    "pathId": -8046248125729489170
+                },
+                {
+                    "origLen": 16,
+                    "pathId": -4892295206752754957
+                },
+                {
+                    "origLen": 192,
+                    "pathId": 1989850795725262965
+                }
+            ],
+            "pathId": -4997599017055002168,
+            "blockIdx": 7
+        },
+        {
+            "jpName": "秋川理事長",
+            "enName": "Chairwoman Akikawa",
+            "jpText": "肯定ッ！　新年度のパンフレットを作るにあたり、\n“生徒の活き活きした姿”がコンセプトとして上がった！",
+            "enText": "Affirmative! I would like to propose \"the high-spirited side of \nthe student body\" as theme for the new school year's pamphlet.",
+            "nextBlock": 9,
+            "origClipLength": 262,
+            "voiceIdx": 7,
+            "animData": [
+                {
+                    "origLen": 315,
+                    "pathId": 2014261506638073863
+                },
+                {
+                    "origLen": 60,
+                    "pathId": 3729566310660582404
+                },
+                {
+                    "origLen": 30,
+                    "pathId": 8117197137499760973
+                }
+            ],
+            "pathId": -1388117342031367355,
+            "blockIdx": 8
+        },
+        {
+            "jpName": "秋川理事長",
+            "enName": "Chairwoman Akikawa",
+            "jpText": "課題ッ！　いざ我々が生徒の姿をテーマにしようとしても、\nこれまでと変わり映えしない可能性に頭を抱えている！",
+            "enText": "Challenge! If we were to continue to repeatedly showcase \nthe same student body, I fear that we will remain stagnant!",
+            "nextBlock": 10,
+            "origClipLength": 303,
+            "voiceIdx": 8,
+            "animData": [
+                {
+                    "origLen": 358,
+                    "pathId": -7816290267930859181
+                },
+                {
+                    "origLen": 253,
+                    "pathId": -1469937718309696408
+                },
+                {
+                    "origLen": 84,
+                    "pathId": 7710274423187780343
+                }
+            ],
+            "pathId": 715604344464235805,
+            "blockIdx": 9
+        },
+        {
+            "jpName": "秋川理事長",
+            "enName": "Chairwoman Akikawa",
+            "jpText": "提案ッ！　そこで、現役の生徒である諸君らにも、\nパンフレットの制作に是非協力してほしい！",
+            "enText": "Proposal! Thus, I would like the current active members \nof the student body to work together to create the new \npamphlet by all means necessary!",
+            "nextBlock": 11,
+            "origClipLength": 269,
+            "voiceIdx": 9,
+            "animData": [
+                {
+                    "origLen": 349,
+                    "pathId": -2339158634592048435
+                },
+                {
+                    "origLen": 81,
+                    "pathId": -5535362493394900287
+                },
+                {
+                    "origLen": 100,
+                    "pathId": -7164445050780386185
+                },
+                {
+                    "origLen": 20,
+                    "pathId": 4010183317029645286
+                }
+            ],
+            "pathId": -3934627822158289467,
+            "blockIdx": 10
+        },
+        {
+            "jpName": "秋川理事長",
+            "enName": "Chairwoman Akikawa",
+            "jpText": "通常業務が多忙極まる中、大変に申し訳ない！　だが学園の未来、\nひいては、ウマ娘たちの未来のレースを輝かしいものにするべく――",
+            "enText": "I understand that you are all extremely busy and for that I do \napologize! However, it is for the future of the academy, and that \nof all horsegirls as well; their glorious races depend on you.",
+            "nextBlock": 12,
+            "origClipLength": 402,
+            "voiceIdx": 10,
+            "animData": [
+                {
+                    "origLen": 456,
+                    "pathId": -307485934268435158
+                },
+                {
+                    "origLen": 20,
+                    "pathId": 5776780167113768769
+                },
+                {
+                    "origLen": 60,
+                    "pathId": -1663282009546802144
+                },
+                {
+                    "origLen": 20,
+                    "pathId": -8545849173036692711
+                }
+            ],
+            "pathId": -1529512250883376503,
+            "blockIdx": 11
+        },
+        {
+            "jpName": "秋川理事長",
+            "enName": "Chairwoman Akikawa",
+            "jpText": "どうか、君たちの力を貸してもらえないだろうか……！",
+            "enText": "Please, will you lend me your abilities?",
+            "nextBlock": 13,
+            "origClipLength": 144,
+            "voiceIdx": 11,
+            "animData": [
+                {
+                    "origLen": 205,
+                    "pathId": 1530780548654211266
+                },
+                {
+                    "origLen": 115,
+                    "pathId": -2074102398471574234
+                }
+            ],
+            "pathId": 6851847926490720467,
+            "blockIdx": 12
+        },
+        {
+            "jpName": "シンボリルドルフ",
+            "enName": "Symboli Rudolf",
+            "jpText": "――というわけさ。それで、いざ取りかかる前に\n学園を1度、こうして見渡しておこうと思ってね。",
+            "enText": "And there you have it. Before I start, I wanted \nto take a good look at the academy.",
+            "nextBlock": 14,
+            "origClipLength": 245,
+            "voiceIdx": 12,
+            "animData": [
+                {
+                    "origLen": 299,
+                    "pathId": -5530754590813755969
+                },
+                {
+                    "origLen": 142,
+                    "pathId": 2047238538212138968
+                },
+                {
+                    "origLen": 298,
+                    "pathId": 2412544499556479504
+                },
+                {
+                    "origLen": 16,
+                    "pathId": -4346822497485693453
+                }
+            ],
+            "pathId": -284007098002466289,
+            "blockIdx": 13
+        },
+        {
+            "jpName": "ミスターシービー",
+            "enName": "Mr. C.B.",
+            "jpText": "未来のレースを、かぁ――\n…………じゃあそれ、アタシもやっていい？",
+            "enText": "Their future races, huh? In that case, you mind if I tag along?",
+            "nextBlock": 15,
+            "origClipLength": 310,
+            "voiceIdx": 13,
+            "animData": [
+                {
+                    "origLen": 362,
+                    "pathId": -7971970743930445557
+                },
+                {
+                    "origLen": 19,
+                    "pathId": -6833953845835428866
+                },
+                {
+                    "origLen": 81,
+                    "pathId": -2112040693060435548
+                },
+                {
+                    "origLen": 20,
+                    "pathId": -3236143103933352921
+                }
+            ],
+            "pathId": -7904794077903934362,
+            "blockIdx": 14
+        },
+        {
+            "jpName": "シンボリルドルフ",
+            "enName": "Symboli Rudolf",
+            "jpText": "……！　驚いたな。\n君がそんな提案をしてくれるとは――",
+            "enText": "…! Well, well. I wasn't expecting you to say something like that.",
+            "nextBlock": 16,
+            "origClipLength": 206,
+            "voiceIdx": 14,
+            "animData": [
+                {
+                    "origLen": 89,
+                    "pathId": 2544875727412584688
+                },
+                {
+                    "origLen": 253,
+                    "pathId": -4848617761733982823
+                }
+            ],
+            "pathId": -4770299803366565065,
+            "blockIdx": 15
+        },
+        {
+            "jpName": "ミスターシービー",
+            "enName": "Mr. C.B.",
+            "jpText": "要は“生徒の活き活きした姿”があればいい。だよね？\n――ちょっとやり方、考えてみるよ。いいパンフ、作ろうね。",
+            "enText": "You said you wanted a new \"high spirited side of \nthe student body?\" Give me some time to prepare. \nThen, let's make a great pamphlet together.",
+            "nextBlock": 17,
+            "origClipLength": 341,
+            "voiceIdx": 15,
+            "animData": [
+                {
+                    "origLen": 255,
+                    "pathId": -7033721792737322795
+                },
+                {
+                    "origLen": 24,
+                    "pathId": 5611865773230341541
+                },
+                {
+                    "origLen": 102,
+                    "pathId": -5930463111148063380
+                },
+                {
+                    "origLen": 20,
+                    "pathId": -4010930525259302679
+                }
+            ],
+            "pathId": 8614599355367145349,
+            "blockIdx": 16
+        },
+        {
+            "jpName": "シンボリルドルフ",
+            "enName": "Symboli Rudolf",
+            "jpText": "シービー、それならもう少し――\n……行ってしまった、か。",
+            "enText": "C.B. if you're going to… She's already gone.",
+            "nextBlock": 18,
+            "origClipLength": 160,
+            "voiceIdx": 16,
+            "animData": [
+                {
+                    "origLen": 50,
+                    "pathId": 151507849605134689
+                }
+            ],
+            "pathId": 4797579061725912599,
+            "blockIdx": 17
+        },
+        {
+            "jpName": "モノローグ",
+            "enName": "",
+            "jpText": "イベントタイトルロゴ表示。",
+            "enText": "",
+            "nextBlock": 19,
+            "origClipLength": 166,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 201,
+                    "pathId": 925239856669137543
+                }
+            ],
+            "pathId": -7345225671405995636,
+            "blockIdx": 18
+        },
+        {
+            "jpName": "ミスターシービー",
+            "enName": "Mr. C.B.",
+            "jpText": "……さてと。\n今朝はいるかな？",
+            "enText": "Well then. I wonder if she will be here this morning.",
+            "nextBlock": 20,
+            "origClipLength": 134,
+            "voiceIdx": 17,
+            "animData": [
+                {
+                    "origLen": 112,
+                    "pathId": -7457945122838172509
+                },
+                {
+                    "origLen": 75,
+                    "pathId": 5284096941538311382
+                }
+            ],
+            "pathId": 1940001963990153586,
+            "blockIdx": 19
+        },
+        {
+            "jpName": "カツラギエース",
+            "enName": "Katsuragi Ace",
+            "jpText": "――うぉおおおおおおおっ！！！",
+            "enText": "UOOOOHHHHHHH!",
+            "nextBlock": 21,
+            "origClipLength": 105,
+            "voiceIdx": 18,
+            "animData": [
+                {
+                    "origLen": 147,
+                    "pathId": -153725177309294854
+                },
+                {
+                    "origLen": 96,
+                    "pathId": 2739902623155372551
+                }
+            ],
+            "pathId": 3716220344581740180,
+            "blockIdx": 20
+        },
+        {
+            "jpName": "ミスターシービー",
+            "enName": "Mr. C.B.",
+            "jpText": "……ふふっ。\nやってるやってる。",
+            "enText": "Fufu, well well.",
+            "nextBlock": 22,
+            "origClipLength": 130,
+            "voiceIdx": 19,
+            "animData": [
+                {
+                    "origLen": 181,
+                    "pathId": -6705205911450541729
+                },
+                {
+                    "origLen": 17,
+                    "pathId": -2704221178215461625
+                },
+                {
+                    "origLen": 17,
+                    "pathId": -8410805594942135409
+                }
+            ],
+            "pathId": 5375637925885649359,
+            "blockIdx": 21
+        },
+        {
+            "jpName": "カツラギエース",
+            "enName": "Katsuragi Ace",
+            "jpText": "はっ、はっ、はっ――\nへへっ……！　あったまってきた……！",
+            "enText": "Huff, huff, huff. Hehe, I'm warmed up now!",
+            "nextBlock": 23,
+            "origClipLength": 156,
+            "voiceIdx": 20,
+            "animData": [
+                {
+                    "origLen": 202,
+                    "pathId": 3311609232069036663
+                }
+            ],
+            "pathId": -5668081851876945283,
+            "blockIdx": 22
+        },
+        {
+            "jpName": "カツラギエース",
+            "enName": "Katsuragi Ace",
+            "jpText": "はっ、はっ――\nっし、ここでもう一段階っ！！",
+            "enText": "Huff, huff. Just one more lap!",
+            "nextBlock": 24,
+            "origClipLength": 167,
+            "voiceIdx": 21,
+            "animData": [
+                {
+                    "origLen": 32,
+                    "pathId": 2690213252620150533
+                },
+                {
+                    "origLen": 19,
+                    "pathId": 2075205032530570393
+                }
+            ],
+            "pathId": -3712568662753277803,
+            "blockIdx": 23
+        },
+        {
+            "jpName": "カツラギエース",
+            "enName": "Katsuragi Ace",
+            "jpText": "おおおおおっ！！\n今日こそ振り切ってやるっ！！",
+            "enText": "UOHHHHHH! Today is the day I will shake you off!",
+            "nextBlock": 25,
+            "origClipLength": 146,
+            "voiceIdx": 22,
+            "animData": [
+                {
+                    "origLen": 159,
+                    "pathId": 1656577242864713058
+                }
+            ],
+            "pathId": -4208197362405415430,
+            "blockIdx": 24
+        },
+        {
+            "jpName": "ミスターシービー",
+            "enName": "Mr. C.B.",
+            "jpText": "……ふふっ。なるほど、そういう感じね。\nじゃあせっかくだし、まざっちゃおうかな――",
+            "enText": "Fufu, I see what's going on now. In that \ncase, maybe it's time for me to step in.",
+            "nextBlock": 26,
+            "origClipLength": 321,
+            "voiceIdx": 23,
+            "animData": [
+                {
+                    "origLen": 102,
+                    "pathId": 3173156462166881974
+                },
+                {
+                    "origLen": 20,
+                    "pathId": 9101446640589851019
+                }
+            ],
+            "pathId": -978762989608611686,
+            "blockIdx": 25
+        },
+        {
+            "jpName": "カツラギエース",
+            "enName": "Katsuragi Ace",
+            "jpText": "はぁッ、はぁッ、はぁッ！\nまだまだぁ！！",
+            "enText": "Huff, huff, huff! I'm not done yet!",
+            "nextBlock": 27,
+            "origClipLength": 131,
+            "voiceIdx": 24,
+            "animData": [
+                {
+                    "origLen": 182,
+                    "pathId": 4647905261650027127
+                },
+                {
+                    "origLen": 17,
+                    "pathId": 7435087978625471683
+                }
+            ],
+            "pathId": -4536584459490904790,
+            "blockIdx": 26
+        },
+        {
+            "jpName": "ミスターシービー",
+            "enName": "Mr. C.B.",
+            "jpText": "――おーーい！　エースー！！",
+            "enText": "Hey! Ace!",
+            "nextBlock": 28,
+            "origClipLength": 85,
+            "voiceIdx": 25,
+            "animData": [
+                {
+                    "origLen": 182,
+                    "pathId": -7941818270285467313
+                },
+                {
+                    "origLen": 110,
+                    "pathId": 366361163893444360
+                }
+            ],
+            "pathId": 7817961607119302095,
+            "blockIdx": 27
+        },
+        {
+            "jpName": "カツラギエース",
+            "enName": "Katsuragi Ace",
+            "jpText": "っ、シービー！？",
+            "enText": "C.B.?",
+            "nextBlock": 29,
+            "origClipLength": 87,
+            "voiceIdx": 26,
+            "animData": [
+                {
+                    "origLen": 182,
+                    "pathId": -1211892503797934844
+                },
+                {
+                    "origLen": 105,
+                    "pathId": -2145968578886987352
+                }
+            ],
+            "pathId": -730892023398972683,
+            "blockIdx": 28
+        },
+        {
+            "jpName": "ミスターシービー",
+            "enName": "Mr. C.B.",
+            "jpText": "イメージのアタシなんかよりさー！　本物のアタシと走ろうよー！\n――本気で、抜かしてあげるからさ！",
+            "enText": "Instead of just racing an imaginary version of me, how about \nrunning against the real thing! I'll take you on for real!",
+            "nextBlock": 30,
+            "origClipLength": 271,
+            "voiceIdx": 27,
+            "animData": [
+                {
+                    "origLen": 10,
+                    "pathId": -1743409301917854019
+                },
+                {
+                    "origLen": 10,
+                    "pathId": 8910702164948465807
+                },
+                {
+                    "origLen": 318,
+                    "pathId": 2083226460832789320
+                }
+            ],
+            "pathId": -8938149560908700873,
+            "blockIdx": 29
+        },
+        {
+            "jpName": "カツラギエース",
+            "enName": "Katsuragi Ace",
+            "jpText": "はははっ！　上等っ！\n抜かせるもんなら、抜かしてみろっ！！",
+            "enText": "Ha ha ha! Bring it! If you think you can take me on, just try me!",
+            "nextBlock": 31,
+            "origClipLength": 158,
+            "voiceIdx": 28,
+            "animData": [
+                {
+                    "origLen": 218,
+                    "pathId": -8539588110760238444
+                }
+            ],
+            "pathId": -5956979181283795050,
+            "blockIdx": 30
+        },
+        {
+            "jpName": "ミスターシービー",
+            "enName": "Mr. C.B.",
+            "jpText": "そうこなくっちゃ。\n――ふッ！！",
+            "enText": "Now you're talking.",
+            "nextBlock": 32,
+            "origClipLength": 93,
+            "voiceIdx": 29,
+            "animData": [
+                {
+                    "origLen": 30,
+                    "pathId": 5982476556653166554
+                }
+            ],
+            "pathId": -7652680021945297569,
+            "blockIdx": 31
+        },
+        {
+            "jpName": "シービー＆エース",
+            "enName": "C.B. & Ace",
+            "jpText": "――ハァァァァァァァァッ！！！\n――オオオオオオオオオッ！！！",
+            "enText": "HAHHHHHHHHHH!",
+            "nextBlock": 33,
+            "origClipLength": 96,
+            "voiceIdx": 30,
+            "animData": [
+                {
+                    "origLen": 147,
+                    "pathId": -2670484909662355000
+                },
+                {
+                    "origLen": 142,
+                    "pathId": 2214980875129047767
+                }
+            ],
+            "pathId": -5943638429444589462,
+            "blockIdx": 32
+        },
+        {
+            "jpName": "シービー＆エース",
+            "enName": "C.B. & Ace",
+            "jpText": "――ふっ。\n――ははっ！",
+            "enText": "Ha ha!",
+            "nextBlock": 34,
+            "origClipLength": 39,
+            "voiceIdx": 31,
+            "animData": [
+                {
+                    "origLen": 120,
+                    "pathId": 1917607931144155334
+                },
+                {
+                    "origLen": 63,
+                    "pathId": 6621188321388257409
+                },
+                {
+                    "origLen": 116,
+                    "pathId": -2468276640504242401
+                },
+                {
+                    "origLen": 67,
+                    "pathId": -1346933147848937746
+                }
+            ],
+            "pathId": 7689949839315771398,
+            "blockIdx": 33
+        },
+        {
+            "jpName": "カツラギエース",
+            "enName": "Katsuragi Ace",
+            "jpText": "――ぷはぁっ！\nあーーっ、今回も負けた負けたぁ！！",
+            "enText": "Pwahhhhh! Ah, I lost again!",
+            "nextBlock": 35,
+            "origClipLength": 280,
+            "voiceIdx": 32,
+            "animData": [
+                {
+                    "origLen": 218,
+                    "pathId": -6130475602826552091
+                },
+                {
+                    "origLen": 169,
+                    "pathId": 3888354376867995639
+                },
+                {
+                    "origLen": 102,
+                    "pathId": 3025339494815407243
+                },
+                {
+                    "origLen": 25,
+                    "pathId": -1467388032445706771
+                }
+            ],
+            "pathId": -8665818371028245813,
+            "blockIdx": 34
+        },
+        {
+            "jpName": "カツラギエース",
+            "enName": "Katsuragi Ace",
+            "jpText": "ったく、さすがだなシービー。\nけど、次こそはマジで負けないからな。覚悟しておけよ！",
+            "enText": "But man, you're something else C.B. Just know that I \ndefinitely won't lose next time. Got that!?",
+            "nextBlock": 36,
+            "origClipLength": 228,
+            "voiceIdx": 33,
+            "animData": [
+                {
+                    "origLen": 60,
+                    "pathId": 5160638113191355730
+                },
+                {
+                    "origLen": 19,
+                    "pathId": 6477018010916415264
+                },
+                {
+                    "origLen": 280,
+                    "pathId": 6948565893048335247
+                }
+            ],
+            "pathId": 4617049344514000238,
+            "blockIdx": 35
+        },
+        {
+            "jpName": "ミスターシービー",
+            "enName": "Mr. C.B.",
+            "jpText": "うん。\nけど、次もアタシが勝つよ。",
+            "enText": "Sure, but I'll still win again.",
+            "nextBlock": 37,
+            "origClipLength": 113,
+            "voiceIdx": 34,
+            "animData": [
+                {
+                    "origLen": 175,
+                    "pathId": 5650339517438788437
+                },
+                {
+                    "origLen": 50,
+                    "pathId": -6026362336411922502
+                },
+                {
+                    "origLen": 17,
+                    "pathId": 7443679038789872999
+                }
+            ],
+            "pathId": -3849370708504161954,
+            "blockIdx": 36
+        },
+        {
+            "jpName": "カツラギエース",
+            "enName": "Katsuragi Ace",
+            "jpText": "ははっ！　それでこそだ！\n――っし、今日からもっと走り込み増やすか！　やるぞやるぞぉ！",
+            "enText": "Ha ha! Well said! Alright! Today I'm going \nto step up my training! Let's do this!",
+            "nextBlock": 38,
+            "origClipLength": 273,
+            "voiceIdx": 35,
+            "animData": [
+                {
+                    "origLen": 50,
+                    "pathId": -397093502525237345
+                },
+                {
+                    "origLen": 20,
+                    "pathId": -5710573255060421341
+                },
+                {
+                    "origLen": 313,
+                    "pathId": 4055512795714376411
+                }
+            ],
+            "pathId": 7312134950419537014,
+            "blockIdx": 37
+        },
+        {
+            "jpName": "ミスターシービー",
+            "enName": "Mr. C.B.",
+            "jpText": "――うん。やっぱり、エースがよさそうだ。\n……ちょっと、手伝ってほしいことがあるんだけど。",
+            "enText": "Yup, Ace is definitely a good choice. Hey, there's \nsomething I'd actually like your help with.",
+            "nextBlock": 39,
+            "origClipLength": 282,
+            "voiceIdx": 36,
+            "animData": [
+                {
+                    "origLen": 218,
+                    "pathId": 4614117008324140169
+                },
+                {
+                    "origLen": 20,
+                    "pathId": -3969244895382890213
+                },
+                {
+                    "origLen": 104,
+                    "pathId": -186223979002270028
+                },
+                {
+                    "origLen": 21,
+                    "pathId": -7539931229735579329
+                }
+            ],
+            "pathId": 8998869153826659796,
+            "blockIdx": 38
+        },
+        {
+            "jpName": "カツラギエース",
+            "enName": "Katsuragi Ace",
+            "jpText": "お？　シービーが頼み事なんて珍しいな。どうした？",
+            "enText": "Oh? Haven't really heard you asking for help before. What's up?",
+            "nextBlock": 40,
+            "origClipLength": 141,
+            "voiceIdx": 37,
+            "animData": [
+                {
+                    "origLen": 179,
+                    "pathId": -4892000342303165669
+                },
+                {
+                    "origLen": 202,
+                    "pathId": -1544116298852148997
+                }
+            ],
+            "pathId": -1269631428325161797,
+            "blockIdx": 39
+        },
+        {
+            "jpName": "ミスターシービー",
+            "enName": "Mr. C.B.",
+            "jpText": "実はさ――",
+            "enText": "Well, you see…",
+            "nextBlock": -1,
+            "origClipLength": 68,
+            "voiceIdx": 38,
+            "animData": [
+                {
+                    "origLen": 92,
+                    "pathId": 201827818810543867
+                },
+                {
+                    "origLen": 80,
+                    "pathId": -1800715728791319000
+                },
+                {
+                    "origLen": 20,
+                    "pathId": 5242481208157138537
+                }
+            ],
+            "pathId": 3663572357332616940,
+            "blockIdx": 40
+        }
+    ],
+    "humanTl": true,
+    "modified": 1694039087
+}

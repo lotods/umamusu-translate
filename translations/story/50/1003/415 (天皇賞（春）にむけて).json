@@ -1,0 +1,73 @@
+{
+    "version": 6,
+    "bundle": "JIYXYZXOX6IKM2URT5YWP75YW54BER35",
+    "type": "story",
+    "storyId": "501003415",
+    "title": "天皇賞（春）にむけて",
+    "text": [
+        {
+            "jpName": "",
+            "enName": "",
+            "jpText": "シニア級の強豪が集う\r\n『天皇賞（春）』、当日。",
+            "enText": "On the day of the \"Tennou-sho (Spring)\", \na gathering of the best senior-level \ncompetitors, the \"Tennou-sho (Spring)\" \nis held.",
+            "nextBlock": 2,
+            "origClipLength": 76,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 235,
+                    "pathId": -5143468226507800627
+                },
+                {
+                    "origLen": 263,
+                    "pathId": 5433463261439751330
+                }
+            ],
+            "pathId": 4019205040228228983,
+            "blockIdx": 1
+        },
+        {
+            "jpName": "",
+            "enName": "",
+            "jpText": "トウカイテイオーは、その実力を\r\n存分に見せつけるのだと、やる気を漲らせる。",
+            "enText": "Tokai Teio is motivated to \nshow her full potential.",
+            "nextBlock": 3,
+            "origClipLength": 94,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 235,
+                    "pathId": 6563993441945313429
+                },
+                {
+                    "origLen": 263,
+                    "pathId": -3845679306073017585
+                }
+            ],
+            "pathId": 3647637359054178657,
+            "blockIdx": 2
+        },
+        {
+            "jpName": "",
+            "enName": "",
+            "jpText": "その勢いのままに……\r\n彼女は真剣勝負の地へと赴くのだった。",
+            "enText": "With this momentum…… she went to the land of \nserious competition.",
+            "nextBlock": -1,
+            "origClipLength": 84,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 235,
+                    "pathId": -3644168707684012524
+                },
+                {
+                    "origLen": 263,
+                    "pathId": 2805465840190498754
+                }
+            ],
+            "pathId": 1669136016735386483,
+            "blockIdx": 3
+        }
+    ],
+    "modified": 1694039145
+}

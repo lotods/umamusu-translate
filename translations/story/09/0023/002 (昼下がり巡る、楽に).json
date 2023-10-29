@@ -1,0 +1,1370 @@
+{
+    "version": 6,
+    "bundle": "Z6NDJU3PYDD6P3I5OAX7KOVLGUEOWH4G",
+    "type": "story",
+    "storyId": "090023002",
+    "title": "昼下がり巡る、楽に",
+    "text": [
+        {
+            "jpName": "カツラギエース",
+            "enName": "Katsuragi Ace",
+            "jpText": "――生徒で作るパンフレット、かぁ。\nぶっちゃけよくわかってないが、とりあえず手伝うぜ！",
+            "enText": "The student council's making a new pamphlet? \nI don't really get it, but I'll try to help out!",
+            "nextBlock": 2,
+            "origClipLength": 232,
+            "voiceIdx": 0,
+            "animData": [
+                {
+                    "origLen": 79,
+                    "pathId": 515042863274137033
+                },
+                {
+                    "origLen": 20,
+                    "pathId": -3250274649105903780
+                },
+                {
+                    "origLen": 247,
+                    "pathId": -5467188564276114793
+                }
+            ],
+            "pathId": -2029100392928045596,
+            "blockIdx": 1
+        },
+        {
+            "jpName": "ミスターシービー",
+            "enName": "Mr. C.B.",
+            "jpText": "ありがと。で、早速意見聞きたいんだけどさ。\n『生徒の活き活きした姿』って聞いて、思いつくことある？",
+            "enText": "Thanks. I know I just asked for your help, but what do you \nthink of when I say a \"livelier side of the student council?\"",
+            "nextBlock": 3,
+            "origClipLength": 275,
+            "voiceIdx": 1,
+            "animData": [
+                {
+                    "origLen": 152,
+                    "pathId": 1108500928785610094
+                },
+                {
+                    "origLen": 189,
+                    "pathId": 2550404294227355373
+                }
+            ],
+            "pathId": -5444948453496430394,
+            "blockIdx": 2
+        },
+        {
+            "jpName": "ミスターシービー",
+            "enName": "Mr. C.B.",
+            "jpText": "楽しそうって引き受けたけど、正直ここについては、\n具体的な考えがあったわけじゃないんだよね。",
+            "enText": "I'm guessing that it will be more fun, but honestly, \nI don't really have a specific idea in mind.",
+            "nextBlock": 4,
+            "origClipLength": 210,
+            "voiceIdx": 2,
+            "animData": [
+                {
+                    "origLen": 260,
+                    "pathId": -4061090017105371800
+                },
+                {
+                    "origLen": 21,
+                    "pathId": 8017680375305047298
+                },
+                {
+                    "origLen": 138,
+                    "pathId": 3619310532190181283
+                },
+                {
+                    "origLen": 20,
+                    "pathId": 4492655264202658141
+                }
+            ],
+            "pathId": 2488991196249334959,
+            "blockIdx": 3
+        },
+        {
+            "jpName": "カツラギエース",
+            "enName": "Katsuragi Ace",
+            "jpText": "うーん。\n……まぁやっぱ、レースやるとかじゃないか？",
+            "enText": "Hmmm. Well, wouldn't it at least have more races?",
+            "nextBlock": 5,
+            "origClipLength": 162,
+            "voiceIdx": 3,
+            "animData": [
+                {
+                    "origLen": 66,
+                    "pathId": -4089073077154941881
+                },
+                {
+                    "origLen": 175,
+                    "pathId": -7041865567087966354
+                }
+            ],
+            "pathId": -873467966902412225,
+            "blockIdx": 4
+        },
+        {
+            "jpName": "ミスターシービー",
+            "enName": "Mr. C.B.",
+            "jpText": "――――\n……ははっ。やっぱエース、いいね。",
+            "enText": "… Ha ha. That's a very you answer. Sure.",
+            "nextBlock": 6,
+            "origClipLength": 211,
+            "voiceIdx": 4,
+            "animData": [
+                {
+                    "origLen": 231,
+                    "pathId": -3673313921382776077
+                },
+                {
+                    "origLen": 50,
+                    "pathId": 4390179188866956741
+                }
+            ],
+            "pathId": -8731176132310113557,
+            "blockIdx": 5
+        },
+        {
+            "jpName": "カツラギエース",
+            "enName": "Katsuragi Ace",
+            "jpText": "おっ！　なんか正解な感じか！？",
+            "enText": "Really? Did I actually get it right?",
+            "nextBlock": 7,
+            "origClipLength": 77,
+            "voiceIdx": 5,
+            "animData": [
+                {
+                    "origLen": 60,
+                    "pathId": 4994089836580339523
+                },
+                {
+                    "origLen": 92,
+                    "pathId": -6139228975341482845
+                }
+            ],
+            "pathId": 4754692582491602149,
+            "blockIdx": 6
+        },
+        {
+            "jpName": "ミスターシービー",
+            "enName": "Mr. C.B.",
+            "jpText": "レース以外だとなにかある？",
+            "enText": "Do you have any ideas other than races?",
+            "nextBlock": 8,
+            "origClipLength": 84,
+            "voiceIdx": 6,
+            "animData": [
+                {
+                    "origLen": 119,
+                    "pathId": 8544356222052939465
+                },
+                {
+                    "origLen": 83,
+                    "pathId": -3202650563130267231
+                }
+            ],
+            "pathId": -6620337269679323794,
+            "blockIdx": 7
+        },
+        {
+            "jpName": "カツラギエース",
+            "enName": "Katsuragi Ace",
+            "jpText": "違うのかよ！？　他ぁ？　う～ん……。\nつってもあたしら、レース以外は結構バラバラだし――",
+            "enText": "That wasn't it? Other than races? Hmmm? \nWell, I'm not the best outside of racing…",
+            "nextBlock": 9,
+            "origClipLength": 360,
+            "voiceIdx": 7,
+            "animData": [
+                {
+                    "origLen": 245,
+                    "pathId": -4233219032805145620
+                },
+                {
+                    "origLen": 126,
+                    "pathId": -7908832706691746822
+                },
+                {
+                    "origLen": 266,
+                    "pathId": 294603114347013549
+                }
+            ],
+            "pathId": -871125576313059751,
+            "blockIdx": 8
+        },
+        {
+            "jpName": "カツラギエース",
+            "enName": "Katsuragi Ace",
+            "jpText": "活き活きした姿ってのも、正直それぞれだよな～。\nたとえば、息抜きの場所とかだってそれぞれ違うしよ。",
+            "enText": "But I mean, aren't there lots of ways to be \"high-spirited\"? \nLike, you know how you would want to relax in a different \nspot depending on the situation?",
+            "nextBlock": 10,
+            "origClipLength": 258,
+            "voiceIdx": 8,
+            "animData": [
+                {
+                    "origLen": 237,
+                    "pathId": 5899296033180133936
+                },
+                {
+                    "origLen": 20,
+                    "pathId": -2309268688694476388
+                },
+                {
+                    "origLen": 270,
+                    "pathId": 4658276430082288815
+                }
+            ],
+            "pathId": -3693855980627120209,
+            "blockIdx": 9
+        },
+        {
+            "jpName": "ミスターシービー",
+            "enName": "Mr. C.B.",
+            "jpText": "“場所”か――いいかもね、それ。\nみんなの“活き活きできる場所”を聞くのって、面白いんじゃない？",
+            "enText": "\"Spots,\" you say? That might work. \nA \"high-spirit spot\" sounds like an interesting idea.",
+            "nextBlock": 11,
+            "origClipLength": 244,
+            "voiceIdx": 9,
+            "animData": [
+                {
+                    "origLen": 270,
+                    "pathId": -7920472218807432198
+                },
+                {
+                    "origLen": 105,
+                    "pathId": -8548346852711556986
+                },
+                {
+                    "origLen": 20,
+                    "pathId": 633189508670679451
+                }
+            ],
+            "pathId": -633475544909164541,
+            "blockIdx": 10
+        },
+        {
+            "jpName": "カツラギエース",
+            "enName": "Katsuragi Ace",
+            "jpText": "なるほど……！　確かにそれを聞けば、\n色んなヤツの“活き活きした姿”が見られるかもな！",
+            "enText": "I see! If you ask some others about something like that \nI'm sure a lot of people will have a place in mind.",
+            "nextBlock": 12,
+            "origClipLength": 200,
+            "voiceIdx": 10,
+            "animData": [
+                {
+                    "origLen": 168,
+                    "pathId": 8248867240314104146
+                },
+                {
+                    "origLen": 27,
+                    "pathId": 5705338309198087836
+                },
+                {
+                    "origLen": 228,
+                    "pathId": 4670923631821795216
+                }
+            ],
+            "pathId": 6641813357615195807,
+            "blockIdx": 11
+        },
+        {
+            "jpName": "ミスターシービー",
+            "enName": "Mr. C.B.",
+            "jpText": "うんうん。よし、それじゃあ――",
+            "enText": "Yeah, yeah! In that case…",
+            "nextBlock": 13,
+            "origClipLength": 113,
+            "voiceIdx": 11,
+            "animData": [
+                {
+                    "origLen": 144,
+                    "pathId": 2536987222186331404
+                },
+                {
+                    "origLen": 102,
+                    "pathId": 5688181977995285894
+                },
+                {
+                    "origLen": 29,
+                    "pathId": 7255967026205925873
+                }
+            ],
+            "pathId": 7083700387899016908,
+            "blockIdx": 12
+        },
+        {
+            "jpName": "シンボリルドルフ",
+            "enName": "Symboli Rudolf",
+            "jpText": "――で、我々が集められたというわけか。\n……まったく、昨日の今日で一瀉千里の様相だな。",
+            "enText": "And that's everyone you've gathered. But still, I wasn't \nexpecting you to work so quickly in just two days.",
+            "nextBlock": 14,
+            "origClipLength": 261,
+            "voiceIdx": 12,
+            "animData": [
+                {
+                    "origLen": 23,
+                    "pathId": 4279435255515802336
+                },
+                {
+                    "origLen": 23,
+                    "pathId": -1364111690552783884
+                },
+                {
+                    "origLen": 108,
+                    "pathId": 8925625629496739748
+                },
+                {
+                    "origLen": 20,
+                    "pathId": 6951417178857683261
+                },
+                {
+                    "origLen": 334,
+                    "pathId": -6636250758310744798
+                },
+                {
+                    "origLen": 49,
+                    "pathId": 3811315697515708045
+                },
+                {
+                    "origLen": 316,
+                    "pathId": -5003490753377806054
+                },
+                {
+                    "origLen": 160,
+                    "pathId": -8812277223712336862
+                }
+            ],
+            "pathId": 8947670715507487324,
+            "blockIdx": 13
+        },
+        {
+            "jpName": "ミスターシービー",
+            "enName": "Mr. C.B.",
+            "jpText": "早いに越したことはないんじゃない？\nま、パンフのためと思ってさ。",
+            "enText": "It's always best to be ahead of the game, right? \nWell, it was all for making the pamphlet.",
+            "nextBlock": 15,
+            "origClipLength": 162,
+            "voiceIdx": 13,
+            "animData": [
+                {
+                    "origLen": 316,
+                    "pathId": -5681024665025583708
+                },
+                {
+                    "origLen": 16,
+                    "pathId": -8265174422902828346
+                },
+                {
+                    "origLen": 316,
+                    "pathId": -1630105353972850648
+                },
+                {
+                    "origLen": 167,
+                    "pathId": 5658860823616698165
+                },
+                {
+                    "origLen": 121,
+                    "pathId": -9126132234463620587
+                },
+                {
+                    "origLen": 178,
+                    "pathId": 6702111536575508775
+                }
+            ],
+            "pathId": 2085060169314966135,
+            "blockIdx": 14
+        },
+        {
+            "jpName": "カツラギエース",
+            "enName": "Katsuragi Ace",
+            "jpText": "――ターボもネイチャも、協力してくれてありがとな！\nせっかく来てもらったんだし、楽しんでいこうぜ！",
+            "enText": "Turbo and Nature, thanks for agreeing to work with us! \nI know you just joined, but let's give it our all!",
+            "nextBlock": 16,
+            "origClipLength": 207,
+            "voiceIdx": 14,
+            "animData": [
+                {
+                    "origLen": 316,
+                    "pathId": 4398144453586744195
+                },
+                {
+                    "origLen": 30,
+                    "pathId": 6049046798642233145
+                },
+                {
+                    "origLen": 235,
+                    "pathId": -3708302977594800651
+                },
+                {
+                    "origLen": 28,
+                    "pathId": -8724360381582250630
+                },
+                {
+                    "origLen": 316,
+                    "pathId": 1946956211513378774
+                },
+                {
+                    "origLen": 34,
+                    "pathId": 6886031212297610536
+                }
+            ],
+            "pathId": -6263083094094010191,
+            "blockIdx": 15
+        },
+        {
+            "jpName": "ツインターボ",
+            "enName": "Twin Turbo",
+            "jpText": "――イェーイ！\nお気にスポット巡りだー！",
+            "enText": "Yay! Let's all go on a tour of all the spots around here!",
+            "nextBlock": 17,
+            "origClipLength": 125,
+            "voiceIdx": 15,
+            "animData": [
+                {
+                    "origLen": 46,
+                    "pathId": 6502638439117399896
+                },
+                {
+                    "origLen": 20,
+                    "pathId": -7786360984729836591
+                },
+                {
+                    "origLen": 40,
+                    "pathId": 6756834319238287115
+                },
+                {
+                    "origLen": 136,
+                    "pathId": -4629577675672393116
+                },
+                {
+                    "origLen": 130,
+                    "pathId": -6830395431196575886
+                }
+            ],
+            "pathId": -8235024848916859323,
+            "blockIdx": 16
+        },
+        {
+            "jpName": "ナイスネイチャ",
+            "enName": "Nice Nature",
+            "jpText": "か、完全に巻き込まれた……！\nたまたまターボと歩いてただけなのに……！",
+            "enText": "H-how did I get dragged into this!? I just \nhappened to be walking around with Turbo!",
+            "nextBlock": 18,
+            "origClipLength": 203,
+            "voiceIdx": 16,
+            "animData": [
+                {
+                    "origLen": 228,
+                    "pathId": 6398378960379974220
+                },
+                {
+                    "origLen": 179,
+                    "pathId": -7681467194596664449
+                },
+                {
+                    "origLen": 174,
+                    "pathId": -1036755627773933208
+                },
+                {
+                    "origLen": 154,
+                    "pathId": 1292491498650068422
+                },
+                {
+                    "origLen": 33,
+                    "pathId": 5509247612072324755
+                }
+            ],
+            "pathId": -8047332752902245789,
+            "blockIdx": 17
+        },
+        {
+            "jpName": "ナイスネイチャ",
+            "enName": "Nice Nature",
+            "jpText": "にしても、会長さんにシービーさんにエースさんて――\nすごい面子っすね、こりゃ……。",
+            "enText": "Still, with the president, C.B., and Ace all here. This is quite an \nimpressive group to say the least…",
+            "nextBlock": 19,
+            "origClipLength": 262,
+            "voiceIdx": 17,
+            "animData": [
+                {
+                    "origLen": 288,
+                    "pathId": 795457539997999482
+                },
+                {
+                    "origLen": 20,
+                    "pathId": -8959084132570487547
+                },
+                {
+                    "origLen": 237,
+                    "pathId": 6934937925193331379
+                },
+                {
+                    "origLen": 307,
+                    "pathId": -3202951853808397044
+                },
+                {
+                    "origLen": 93,
+                    "pathId": -596518715871830486
+                },
+                {
+                    "origLen": 20,
+                    "pathId": 4288116431635579948
+                }
+            ],
+            "pathId": 8687870332654040025,
+            "blockIdx": 18
+        },
+        {
+            "jpName": "ミスターシービー",
+            "enName": "Mr. C.B.",
+            "jpText": "じゃ、早速行こうか。\nそれぞれの活き活きスポットに。",
+            "enText": "Well, let's head out. There're quite a \nfew high-spirit spots to check out.",
+            "nextBlock": 20,
+            "origClipLength": 147,
+            "voiceIdx": 18,
+            "animData": [
+                {
+                    "origLen": 188,
+                    "pathId": -1024878845951437330
+                },
+                {
+                    "origLen": 288,
+                    "pathId": -2604652611232460208
+                },
+                {
+                    "origLen": 29,
+                    "pathId": -3171319977616314954
+                },
+                {
+                    "origLen": 172,
+                    "pathId": -2580340789128386501
+                }
+            ],
+            "pathId": 3742180957779217251,
+            "blockIdx": 19
+        },
+        {
+            "jpName": "ツインターボ",
+            "enName": "Twin Turbo",
+            "jpText": "はいはいはいっ！　ターボやる！！\n1番最初、ターボがいい！！",
+            "enText": "Me, me, me! I wanna pick! I wanna pick the first spot!",
+            "nextBlock": 21,
+            "origClipLength": 123,
+            "voiceIdx": 19,
+            "animData": [
+                {
+                    "origLen": 288,
+                    "pathId": 1948447098219413172
+                },
+                {
+                    "origLen": 143,
+                    "pathId": 4719160770593166435
+                },
+                {
+                    "origLen": 60,
+                    "pathId": 9055708951705878078
+                },
+                {
+                    "origLen": 172,
+                    "pathId": 3390447002782132087
+                },
+                {
+                    "origLen": 122,
+                    "pathId": -4724326502272099647
+                }
+            ],
+            "pathId": 136083785996378560,
+            "blockIdx": 20
+        },
+        {
+            "jpName": "ツインターボ",
+            "enName": "Twin Turbo",
+            "jpText": "――おりゃおりゃおりゃ～～っ！！\nターボ最強ーーーーっ！！",
+            "enText": "Take this and this and this! Yeah, I'm the best!",
+            "nextBlock": 22,
+            "origClipLength": 138,
+            "voiceIdx": 20,
+            "animData": [
+                {
+                    "origLen": 60,
+                    "pathId": 6156566614847500493
+                },
+                {
+                    "origLen": 13,
+                    "pathId": -453373152858140521
+                },
+                {
+                    "origLen": 166,
+                    "pathId": 1499523043325020819
+                },
+                {
+                    "origLen": 166,
+                    "pathId": -1181220830058365577
+                },
+                {
+                    "origLen": 54,
+                    "pathId": 6638779906863723465
+                },
+                {
+                    "origLen": 13,
+                    "pathId": 1002994045117643704
+                }
+            ],
+            "pathId": 5853186502072893488,
+            "blockIdx": 21
+        },
+        {
+            "jpName": "ナイスネイチャ",
+            "enName": "Nice Nature",
+            "jpText": "だぁ～！　ボス以外もちょっとは撃ってよターボ！\nあ、会長さん右の集団任せていいですか！？",
+            "enText": "Come on! Can you at least shoot some of the enemies \nbesides the boss, Turbo!? Oh, Ms. Rudolf, can you take \nthe ones on the right?",
+            "nextBlock": 23,
+            "origClipLength": 275,
+            "voiceIdx": 21,
+            "animData": [
+                {
+                    "origLen": 161,
+                    "pathId": 723702126745267048
+                },
+                {
+                    "origLen": 303,
+                    "pathId": 3694551989359225455
+                },
+                {
+                    "origLen": 303,
+                    "pathId": 8099157659593376420
+                },
+                {
+                    "origLen": 26,
+                    "pathId": 8268820481534362132
+                },
+                {
+                    "origLen": 20,
+                    "pathId": -6481623677937684859
+                }
+            ],
+            "pathId": -3356317537777326727,
+            "blockIdx": 22
+        },
+        {
+            "jpName": "シンボリルドルフ",
+            "enName": "Symboli Rudolf",
+            "jpText": "承知した。\n正に四面楚歌、厳しい戦いだな……！",
+            "enText": "Understood! It would appear we are surrounded on all fronts. \nThe battlefield truly is a cruel mistress.",
+            "nextBlock": 24,
+            "origClipLength": 159,
+            "voiceIdx": 22,
+            "animData": [
+                {
+                    "origLen": 41,
+                    "pathId": -496781642833268579
+                },
+                {
+                    "origLen": 30,
+                    "pathId": 7844711561960863173
+                },
+                {
+                    "origLen": 175,
+                    "pathId": -3404007095626843973
+                },
+                {
+                    "origLen": 303,
+                    "pathId": -5502815078814221037
+                },
+                {
+                    "origLen": 43,
+                    "pathId": 6971587890305023328
+                }
+            ],
+            "pathId": -3093054548876829331,
+            "blockIdx": 23
+        },
+        {
+            "jpName": "ミスターシービー",
+            "enName": "Mr. C.B.",
+            "jpText": "ははっ、ルドルフ結構入り込んでるね。ちょっと新鮮。",
+            "enText": "Ha ha. Rudolf is pretty into this. This is new.",
+            "nextBlock": 25,
+            "origClipLength": 154,
+            "voiceIdx": 23,
+            "animData": [
+                {
+                    "origLen": 12,
+                    "pathId": 6539872304178614567
+                },
+                {
+                    "origLen": 13,
+                    "pathId": 7710636242784065893
+                },
+                {
+                    "origLen": 13,
+                    "pathId": 5907384737715679066
+                },
+                {
+                    "origLen": 12,
+                    "pathId": 2688282259629997485
+                },
+                {
+                    "origLen": 218,
+                    "pathId": -8496861140887653129
+                },
+                {
+                    "origLen": 127,
+                    "pathId": 2479353620685262744
+                },
+                {
+                    "origLen": 188,
+                    "pathId": 8886513313591688522
+                }
+            ],
+            "pathId": -7428683957594105504,
+            "blockIdx": 24
+        },
+        {
+            "jpName": "カツラギエース",
+            "enName": "Katsuragi Ace",
+            "jpText": "お、もう少しで倒せそうだぞ！　いけいけーっ！",
+            "enText": "Oh, they're so close to winning. Go, go!",
+            "nextBlock": 26,
+            "origClipLength": 123,
+            "voiceIdx": 24,
+            "animData": [
+                {
+                    "origLen": 134,
+                    "pathId": 3709079970116371654
+                },
+                {
+                    "origLen": 136,
+                    "pathId": 4370953476333826410
+                },
+                {
+                    "origLen": 5,
+                    "pathId": 4496286534577306634
+                }
+            ],
+            "pathId": 7564774504733577772,
+            "blockIdx": 25
+        },
+        {
+            "jpName": "ツインターボ",
+            "enName": "Twin Turbo",
+            "jpText": "やったーーっ！！　全クリ達成ーー！！",
+            "enText": "Yes! We beat the whole game!",
+            "nextBlock": 27,
+            "origClipLength": 132,
+            "voiceIdx": 25,
+            "animData": [
+                {
+                    "origLen": 118,
+                    "pathId": -7128303462419533258
+                },
+                {
+                    "origLen": 120,
+                    "pathId": 176749634384219204
+                },
+                {
+                    "origLen": 78,
+                    "pathId": 1573377892830470883
+                },
+                {
+                    "origLen": 97,
+                    "pathId": -7429670570867048470
+                }
+            ],
+            "pathId": 1631963003259163499,
+            "blockIdx": 26
+        },
+        {
+            "jpName": "ナイスネイチャ",
+            "enName": "Nice Nature",
+            "jpText": "ふぃ～。ホント元気だねぇ、アンタは……。\nにしてもゲーセンって、これ、パンフに載せられますかね……？",
+            "enText": "Whew. Well, someone's excited. But still, can we even \nput something like the arcade in the pamphlet?",
+            "nextBlock": 28,
+            "origClipLength": 307,
+            "voiceIdx": 26,
+            "animData": [
+                {
+                    "origLen": 365,
+                    "pathId": 5514226883076707272
+                },
+                {
+                    "origLen": 51,
+                    "pathId": 2723563491669065042
+                },
+                {
+                    "origLen": 149,
+                    "pathId": 7941975654297704133
+                },
+                {
+                    "origLen": 193,
+                    "pathId": -1993420153328328115
+                },
+                {
+                    "origLen": 183,
+                    "pathId": -1017316970361367874
+                },
+                {
+                    "origLen": 20,
+                    "pathId": 963716022797362437
+                },
+                {
+                    "origLen": 29,
+                    "pathId": -1887609982025778068
+                },
+                {
+                    "origLen": 27,
+                    "pathId": 7916884125321583622
+                },
+                {
+                    "origLen": 53,
+                    "pathId": -8651349712564654284
+                },
+                {
+                    "origLen": 34,
+                    "pathId": 5892133247223562327
+                }
+            ],
+            "pathId": 4657993323050965207,
+            "blockIdx": 27
+        },
+        {
+            "jpName": "シンボリルドルフ",
+            "enName": "Symboli Rudolf",
+            "jpText": "問題ないさ。事実、ツインターボは意気軒昂としている。\n今回の目的に対して相違するものはない。",
+            "enText": "It's fine. Seeing Turbo in such high spirits, \nto her, this fit the criteria perfectly.",
+            "nextBlock": 29,
+            "origClipLength": 275,
+            "voiceIdx": 27,
+            "animData": [
+                {
+                    "origLen": 180,
+                    "pathId": 1981106959377504435
+                },
+                {
+                    "origLen": 30,
+                    "pathId": -7605144198703008714
+                },
+                {
+                    "origLen": 292,
+                    "pathId": 7281131679713972394
+                },
+                {
+                    "origLen": 20,
+                    "pathId": -7966905018601733140
+                },
+                {
+                    "origLen": 292,
+                    "pathId": 5605618527685939812
+                }
+            ],
+            "pathId": -49984233385661609,
+            "blockIdx": 28
+        },
+        {
+            "jpName": "ツインターボ",
+            "enName": "Twin Turbo",
+            "jpText": "ターボね！　トレーニングとか、レースとか！\nめっちゃがんばって、いっぱい疲れたときにここにくるんだ！",
+            "enText": "You see, I've been giving it my all at training and at races! \nAfterwards, I get super tired and come here!",
+            "nextBlock": 30,
+            "origClipLength": 215,
+            "voiceIdx": 28,
+            "animData": [
+                {
+                    "origLen": 200,
+                    "pathId": 505109632578764070
+                },
+                {
+                    "origLen": 61,
+                    "pathId": 3701184874747732003
+                },
+                {
+                    "origLen": 20,
+                    "pathId": 4446229683388658919
+                },
+                {
+                    "origLen": 292,
+                    "pathId": 7859721222532829563
+                },
+                {
+                    "origLen": 200,
+                    "pathId": 3022093028169661219
+                }
+            ],
+            "pathId": -6110793903759463272,
+            "blockIdx": 29
+        },
+        {
+            "jpName": "ツインターボ",
+            "enName": "Twin Turbo",
+            "jpText": "遊んでると楽しくなって、エンジンに火がつくんだ！\nそれでうおおって走りたくなって、ターボふっかーつ！",
+            "enText": "I have so much fun playing around that I can feel my engine \nheat up! And then I'm all like whoosh when I run!",
+            "nextBlock": 31,
+            "origClipLength": 272,
+            "voiceIdx": 29,
+            "animData": [
+                {
+                    "origLen": 284,
+                    "pathId": 9080451828461484968
+                },
+                {
+                    "origLen": 60,
+                    "pathId": 7224971532152185411
+                },
+                {
+                    "origLen": 20,
+                    "pathId": 507168924865440632
+                },
+                {
+                    "origLen": 50,
+                    "pathId": -4331760768076215524
+                },
+                {
+                    "origLen": 20,
+                    "pathId": 719143610253635392
+                }
+            ],
+            "pathId": -7748504993172922529,
+            "blockIdx": 30
+        },
+        {
+            "jpName": "ツインターボ",
+            "enName": "Twin Turbo",
+            "jpText": "遊ぶ！　楽しくなる！　レース走りたくなる！\nまたぱーっと遊ぶ！　これがターボ流・活き活きループだー！！",
+            "enText": "Play! Have fun! Race! Play again! That's the \nTurbo way: the ultimate high-spirited loop!",
+            "nextBlock": 32,
+            "origClipLength": 307,
+            "voiceIdx": 30,
+            "animData": [
+                {
+                    "origLen": 320,
+                    "pathId": -8813892856968484415
+                },
+                {
+                    "origLen": 60,
+                    "pathId": 6297300961719770049
+                },
+                {
+                    "origLen": 344,
+                    "pathId": -4778426251705290579
+                }
+            ],
+            "pathId": 6021607201654920195,
+            "blockIdx": 31
+        },
+        {
+            "jpName": "シンボリルドルフ",
+            "enName": "Symboli Rudolf",
+            "jpText": "……なるほど。非常に参考になったよ。\n――よし、次は私のお薦めを案内するとしようか。",
+            "enText": "I see. You've been quite active haven't you. \nWell, in any case, I will choose the next location.",
+            "nextBlock": 33,
+            "origClipLength": 300,
+            "voiceIdx": 31,
+            "animData": [
+                {
+                    "origLen": 104,
+                    "pathId": 1796213838527419798
+                },
+                {
+                    "origLen": 21,
+                    "pathId": -6210893653432333933
+                },
+                {
+                    "origLen": 152,
+                    "pathId": 977517564498534681
+                },
+                {
+                    "origLen": 320,
+                    "pathId": 5519155481858224252
+                },
+                {
+                    "origLen": 273,
+                    "pathId": -7916571912417006879
+                }
+            ],
+            "pathId": -2173475060724245741,
+            "blockIdx": 32
+        },
+        {
+            "jpName": "ナイスネイチャ",
+            "enName": "Nice Nature",
+            "jpText": "いや～、にしてもゲーセンの次に寄るのがウマ娘ミュージアムとは、\n予想してなかったですね……。",
+            "enText": "But man, we went all the way from the arcade to the museum. \nI really can't guess what we're going to do next…",
+            "nextBlock": 34,
+            "origClipLength": 272,
+            "voiceIdx": 32,
+            "animData": [
+                {
+                    "origLen": 23,
+                    "pathId": -5125508139321283521
+                },
+                {
+                    "origLen": 23,
+                    "pathId": 3229581809623184940
+                },
+                {
+                    "origLen": 111,
+                    "pathId": 7955384337525804597
+                },
+                {
+                    "origLen": 20,
+                    "pathId": 8320370643913103766
+                },
+                {
+                    "origLen": 252,
+                    "pathId": -6562217621660491003
+                }
+            ],
+            "pathId": 4329501532860447663,
+            "blockIdx": 33
+        },
+        {
+            "jpName": "ミスターシービー",
+            "enName": "Mr. C.B.",
+            "jpText": "たしかに振れ幅すごいよね。\nでもまぁ、みんなエンジョイしてたみたいだ。",
+            "enText": "Yes, the gap between the two locations is quite large. \nBut still, it seems everyone is enjoying themselves.",
+            "nextBlock": 35,
+            "origClipLength": 204,
+            "voiceIdx": 33,
+            "animData": [
+                {
+                    "origLen": 225,
+                    "pathId": 5571956925637208044
+                },
+                {
+                    "origLen": 68,
+                    "pathId": -6243309167510122128
+                },
+                {
+                    "origLen": 122,
+                    "pathId": 7568447994589518617
+                },
+                {
+                    "origLen": 30,
+                    "pathId": 6965603529051294647
+                }
+            ],
+            "pathId": -3580123271736674157,
+            "blockIdx": 34
+        },
+        {
+            "jpName": "カツラギエース",
+            "enName": "Katsuragi Ace",
+            "jpText": "――ぶっちゃけ最初、『勉強かよ！？』とか思ったんだけど、\nルドルフの解説のおかげで、すげー見やすかったな～！",
+            "enText": "Honestly, at first, I thought, \"Really? Studying?\" \nBut, Rudolf, having you there to help explain things \nmade everything a lot easier to understand.",
+            "nextBlock": 36,
+            "origClipLength": 225,
+            "voiceIdx": 34,
+            "animData": [
+                {
+                    "origLen": 247,
+                    "pathId": -5062134723288674313
+                },
+                {
+                    "origLen": 247,
+                    "pathId": -869388626939156828
+                },
+                {
+                    "origLen": 36,
+                    "pathId": 5222255136885302225
+                },
+                {
+                    "origLen": 12,
+                    "pathId": -6469091163793135902
+                },
+                {
+                    "origLen": 12,
+                    "pathId": 2097606456421806412
+                },
+                {
+                    "origLen": 12,
+                    "pathId": 3185981265827887623
+                },
+                {
+                    "origLen": 253,
+                    "pathId": -4296802615363580081
+                },
+                {
+                    "origLen": 20,
+                    "pathId": 5344854245151166398
+                }
+            ],
+            "pathId": -8019795011513134881,
+            "blockIdx": 35
+        },
+        {
+            "jpName": "ツインターボ",
+            "enName": "Twin Turbo",
+            "jpText": "昔のウマ娘もなかなかやるじゃん……！\nそれでもターボのほうが勝つけどなっ！！",
+            "enText": "The horsegirls of old were something else! \nStill, if we raced, I'd beat them though.",
+            "nextBlock": 37,
+            "origClipLength": 171,
+            "voiceIdx": 35,
+            "animData": [
+                {
+                    "origLen": 247,
+                    "pathId": 1833859724446999276
+                },
+                {
+                    "origLen": 146,
+                    "pathId": -5446369158631533596
+                },
+                {
+                    "origLen": 60,
+                    "pathId": -4834297614020031799
+                },
+                {
+                    "origLen": 22,
+                    "pathId": 8380144039682556433
+                },
+                {
+                    "origLen": 183,
+                    "pathId": -351639499718382988
+                }
+            ],
+            "pathId": 6945790769781232263,
+            "blockIdx": 36
+        },
+        {
+            "jpName": "カツラギエース",
+            "enName": "Katsuragi Ace",
+            "jpText": "わかるわかる！　特にあの、『歴史に刻まれた大逃げ』の特集な！\nどのウマ娘も、勝利のコメントが熱いのなんの……！",
+            "enText": "I totally get what you mean! Especially \"The Escape \nSpecialists That Made History\" exhibition. Just reading \ntheir victory interviews gave me chills!",
+            "nextBlock": 38,
+            "origClipLength": 290,
+            "voiceIdx": 36,
+            "animData": [
+                {
+                    "origLen": 306,
+                    "pathId": 4091373143781958363
+                },
+                {
+                    "origLen": 20,
+                    "pathId": 6472954989367637170
+                },
+                {
+                    "origLen": 216,
+                    "pathId": -1693535407428233989
+                },
+                {
+                    "origLen": 36,
+                    "pathId": 9154745001535069663
+                },
+                {
+                    "origLen": 132,
+                    "pathId": -1159674876637114404
+                },
+                {
+                    "origLen": 151,
+                    "pathId": -463789393824596619
+                }
+            ],
+            "pathId": -8677974539320444515,
+            "blockIdx": 37
+        },
+        {
+            "jpName": "カツラギエース",
+            "enName": "Katsuragi Ace",
+            "jpText": "あたしもあのウマ娘たちみたいに、いつか名を揚げてやる……！\n燃えてきた！！",
+            "enText": "I want to be just like them and make a name \nfor myself… Alright, that got me fired up!",
+            "nextBlock": 39,
+            "origClipLength": 200,
+            "voiceIdx": 37,
+            "animData": [
+                {
+                    "origLen": 306,
+                    "pathId": 4311645114147144601
+                },
+                {
+                    "origLen": 306,
+                    "pathId": -5411725851466356950
+                },
+                {
+                    "origLen": 45,
+                    "pathId": 4531767431133974735
+                },
+                {
+                    "origLen": 20,
+                    "pathId": -2573896888464139246
+                }
+            ],
+            "pathId": 130758551736513045,
+            "blockIdx": 38
+        },
+        {
+            "jpName": "ツインターボ",
+            "enName": "Twin Turbo",
+            "jpText": "ターボもターボも！！\n逃げまくって伝説をつくるぞ～！！",
+            "enText": "Me too, me too! Let's become legendary escape specialists!",
+            "nextBlock": 40,
+            "origClipLength": 149,
+            "voiceIdx": 38,
+            "animData": [
+                {
+                    "origLen": 306,
+                    "pathId": -2520450093472960588
+                },
+                {
+                    "origLen": 164,
+                    "pathId": 8662719749081377157
+                },
+                {
+                    "origLen": 60,
+                    "pathId": -3030576273967848122
+                },
+                {
+                    "origLen": 153,
+                    "pathId": 1749477417479426558
+                },
+                {
+                    "origLen": 122,
+                    "pathId": -6645191100266549980
+                }
+            ],
+            "pathId": -6805647012443341342,
+            "blockIdx": 39
+        },
+        {
+            "jpName": "シンボリルドルフ",
+            "enName": "Symboli Rudolf",
+            "jpText": "ふふ、心焦がしてもらえたようで嬉しいよ。\nその気持ちは、ここに来るたび私も宿すものだからね。",
+            "enText": "I'm glad to see you two were so moved. I get \nthe same feeling every time I come here too.",
+            "nextBlock": 41,
+            "origClipLength": 278,
+            "voiceIdx": 39,
+            "animData": [
+                {
+                    "origLen": 271,
+                    "pathId": 4477315775589916194
+                },
+                {
+                    "origLen": 114,
+                    "pathId": 6183398164573654860
+                },
+                {
+                    "origLen": 251,
+                    "pathId": -5220353903526200990
+                },
+                {
+                    "origLen": 235,
+                    "pathId": 9000550435998066478
+                },
+                {
+                    "origLen": 275,
+                    "pathId": -4487075878897752392
+                }
+            ],
+            "pathId": 3340007607227534334,
+            "blockIdx": 40
+        },
+        {
+            "jpName": "シンボリルドルフ",
+            "enName": "Symboli Rudolf",
+            "jpText": "……永きウマ娘の歴史は、私に走る意味を思い出させてくれる。\nこれこそが私の活力、なのだろうな――",
+            "enText": "The horsegirls immortalized in history motivate me to \ncontinue running. Perhaps they too are what give me life.",
+            "nextBlock": 42,
+            "origClipLength": 330,
+            "voiceIdx": 40,
+            "animData": [
+                {
+                    "origLen": 379,
+                    "pathId": 824408566219262136
+                },
+                {
+                    "origLen": 60,
+                    "pathId": -2713758797957466098
+                },
+                {
+                    "origLen": 344,
+                    "pathId": -8580118991163189212
+                },
+                {
+                    "origLen": 344,
+                    "pathId": -4497841239070852041
+                },
+                {
+                    "origLen": 364,
+                    "pathId": -3029805240084958843
+                }
+            ],
+            "pathId": -5105730113095950528,
+            "blockIdx": 41
+        },
+        {
+            "jpName": "ミスターシービー",
+            "enName": "Mr. C.B.",
+            "jpText": "ゲーセン、ミュージアムときたから、\nせっかくだし、さらにバラエティに富む形にしたいね。",
+            "enText": "So, we've been to the arcade and the museum. Might as well \ncontinue this variety trend we've got here.",
+            "nextBlock": 43,
+            "origClipLength": 215,
+            "voiceIdx": 41,
+            "animData": [
+                {
+                    "origLen": 12,
+                    "pathId": 3882530743327192579
+                },
+                {
+                    "origLen": 12,
+                    "pathId": -6963854679351021984
+                },
+                {
+                    "origLen": 12,
+                    "pathId": -574499522656346209
+                },
+                {
+                    "origLen": 248,
+                    "pathId": 4574580691560058099
+                },
+                {
+                    "origLen": 187,
+                    "pathId": -810721589815462861
+                },
+                {
+                    "origLen": 166,
+                    "pathId": -5965821139267702036
+                },
+                {
+                    "origLen": 38,
+                    "pathId": 3363169101237698668
+                },
+                {
+                    "origLen": 12,
+                    "pathId": -4017093166028470312
+                },
+                {
+                    "origLen": 12,
+                    "pathId": 6173862969510542199
+                }
+            ],
+            "pathId": -5273534899176221786,
+            "blockIdx": 42
+        },
+        {
+            "jpName": "ナイスネイチャ",
+            "enName": "Nice Nature",
+            "jpText": "あ――それならえっと、よければなんですけど……\n次、アタシのスポットを紹介させてもらっていいですかね……？",
+            "enText": "In that case, umm, if you don't mind, \nI would like to show everyone my spot.",
+            "nextBlock": -1,
+            "origClipLength": 312,
+            "voiceIdx": 42,
+            "animData": [
+                {
+                    "origLen": 150,
+                    "pathId": 2839859062261687356
+                },
+                {
+                    "origLen": 20,
+                    "pathId": -6576179886277445097
+                },
+                {
+                    "origLen": 376,
+                    "pathId": -7438178904688046289
+                },
+                {
+                    "origLen": 22,
+                    "pathId": 5451281061446825544
+                }
+            ],
+            "pathId": -4545172378714417742,
+            "blockIdx": 43
+        }
+    ],
+    "humanTl": true,
+    "modified": 1694039087
+}

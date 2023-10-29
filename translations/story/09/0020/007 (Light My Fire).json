@@ -1,6 +1,6 @@
 {
-    "version": 5,
-    "bundle": "MIMFRXBBXUEQOIHJZR3LBG6EO7JAHSSK",
+    "version": 6,
+    "bundle": "63GNEUXSY3F3HIXSAP4B6F37Z5OCDOCY",
     "type": "story",
     "storyId": "090020007",
     "title": "Light My Fire",
@@ -9,9 +9,10 @@
             "jpName": "イベント運営",
             "enName": "Event Manager",
             "jpText": "――カウントダウン始めます！\n10、9、8、7、6、5、4――！",
-            "enText": "I'm starting the countdown! \n10, 9, 8, 7, 6, 5, 4, …!",
+            "enText": "――The countdown begins! 10, 9, 8, 7, 6, 5, 4――!",
             "nextBlock": 2,
             "origClipLength": 264,
+            "voiceIdx": 0,
             "animData": [
                 {
                     "origLen": 178,
@@ -32,6 +33,7 @@
             "enText": "…!",
             "nextBlock": 3,
             "origClipLength": 102,
+            "voiceIdx": 1,
             "animData": [
                 {
                     "origLen": 58,
@@ -49,9 +51,10 @@
             "jpName": "ダイワスカーレット",
             "enName": "Daiwa Scarlet",
             "jpText": "（――遠くで走ってるはずなのに、アイツの息が聞こえる。\nそれはきっと、芝の上を……覚えてるから）",
-            "enText": "(We're running this far apart, but I feel as if I could hear her \nbreathing. This must be because I remember from when we race…)",
+            "enText": "(―I should be running far away, but I \ncan hear her breath. I'm sure it's because……I \nremember it on the grass.)",
             "nextBlock": 4,
             "origClipLength": 252,
+            "voiceIdx": 2,
             "pathId": 9089014907837907472,
             "blockIdx": 3
         },
@@ -59,9 +62,10 @@
             "jpName": "ウオッカ",
             "enName": "Vodka",
             "jpText": "（俺たちは全然噛み合わねぇ。でも唯一、ぴったりハマる時がある。\nそれは――ターフの上）",
-            "enText": "(We're both totally different… but there's just one time where \nwe're in sync. And that's when we race.)",
+            "enText": "(We don't mesh at all. But there's one time when \nit fits perfectly. It's on the turf.)",
             "nextBlock": 5,
             "origClipLength": 290,
+            "voiceIdx": 3,
             "pathId": 1645447855435379311,
             "blockIdx": 4
         },
@@ -69,9 +73,10 @@
             "jpName": "ウオッカ",
             "enName": "Vodka",
             "jpText": "――アイツのペース管理は完璧だ。\n多分、最初の勢いを保ってる。俺も……！",
-            "enText": "Her pacing is perfect. She's probably \nmaintaining her original momentum. Me too…!",
+            "enText": "――She's got perfect control of her pace. She's \nprobably keeping her initial momentum. Me too……!",
             "nextBlock": 6,
             "origClipLength": 221,
+            "voiceIdx": 4,
             "animData": [
                 {
                     "origLen": 260,
@@ -85,9 +90,10 @@
             "jpName": "ダイワスカーレット",
             "enName": "Daiwa Scarlet",
             "jpText": "……きっと、キッチリついてきてるわね。アイツ、コーナーで\nふくらんでるはずだから……アタシも少し大きめに！",
-            "enText": "… I'm sure she's precisely on time. She'll probably swerve a bit \nto the outside on this corner, so I also need to!",
+            "enText": "…I'm sure she's right on top of you. She's \nprobably swelling up in the corner, so… I need \nto make it bigger too!",
             "nextBlock": 7,
             "origClipLength": 297,
+            "voiceIdx": 5,
             "animData": [
                 {
                     "origLen": 364,
@@ -109,9 +115,10 @@
             "jpName": "ウオッカ",
             "enName": "Vodka",
             "jpText": "ヤベ！　ふくらみすぎたか！？\n……いや、問題ない。アイツならわかってる。このまま……！",
-            "enText": "Oh crap, did I swerve too far out!? … No, I'm sure she knew that \nwould happen. I'll keep going like this…!",
+            "enText": "Crap! Did I overexert myself?! …No, it's not a \nproblem. I know her. At this rate…!",
             "nextBlock": 8,
             "origClipLength": 261,
+            "voiceIdx": 6,
             "animData": [
                 {
                     "origLen": 23,
@@ -137,9 +144,10 @@
             "jpName": "ウオッカ",
             "enName": "Vodka",
             "jpText": "（確かに俺たちはデコボコだ。だからこそ本気でぶつかりあって、\nそのたびに……ガチッと噛み合ってきた）",
-            "enText": "(It's true that we're complete opposites. That's why we can clash \nwith all we have, and why we attract each other.)",
+            "enText": "(It's true that we're bumpy. That's \nwhy we're seriously clashing, and each \ntime…… we're firmly in sync.)",
             "nextBlock": 9,
             "origClipLength": 267,
+            "voiceIdx": 7,
             "animData": [
                 {
                     "origLen": 309,
@@ -157,9 +165,10 @@
             "jpName": "ダイワスカーレット",
             "enName": "Daiwa Scarlet",
             "jpText": "（それがウザくて、腹立たしくて……絶対負けたくなかった！\n言葉でいくら否定したって……されたって！　アタシたちは――）",
-            "enText": "(Even if she's sometimes annoying and upsets me… she's the one I \nabsolutely didn't want to lose to! No matter how much I deny it \nwith words… or how she denies it… )",
+            "enText": "(That annoyed me, irritated me…… I absolutely \ndidn't want to lose! No matter how much I denied \nit…… with words! We――)",
             "nextBlock": 10,
             "origClipLength": 334,
+            "voiceIdx": 8,
             "animData": [
                 {
                     "origLen": 372,
@@ -181,9 +190,10 @@
             "jpName": "2人",
             "enName": "Both",
             "jpText": "ライバルなんだ……！",
-            "enText": "We're rivals after all…!",
+            "enText": "She's my rival!",
             "nextBlock": 11,
             "origClipLength": 54,
+            "voiceIdx": 9,
             "animData": [
                 {
                     "origLen": 45,
@@ -201,9 +211,10 @@
             "jpName": "サクラローレル",
             "enName": "Sakura Laurel",
             "jpText": "すごい……！　2人とも、息ピッタリ！\n全然お互いが見えないはずなのに……！",
-            "enText": "Wow…! They're in perfect sync! \nEven though they can't see each other at all!",
+            "enText": "Wow…! They're in perfect sync! \nWe can't see each other at all!",
             "nextBlock": 12,
             "origClipLength": 229,
+            "voiceIdx": 10,
             "animData": [
                 {
                     "origLen": 84,
@@ -237,9 +248,10 @@
             "jpName": "ナリタブライアン",
             "enName": "Narita Brian",
             "jpText": "……そうか。\nアイツらは今……レースをしているんだな。",
-            "enText": "… I get it. \nThose two… they're racing right now.",
+            "enText": "…I see. So they're racing right now.",
             "nextBlock": 13,
             "origClipLength": 190,
+            "voiceIdx": 11,
             "animData": [
                 {
                     "origLen": 287,
@@ -273,9 +285,10 @@
             "jpName": "イベント司会",
             "enName": "Event Manager",
             "jpText": "――さあ、まもなく！　2人のサンタが、\n頂上へと辿りつこうとしています……！",
-            "enText": "It's time soon! Shortly, our two Santas \nwill reach the peak of the tower!",
+            "enText": "――Now, soon! Two Santas are \ntrying to reach the top……!",
             "nextBlock": 14,
             "origClipLength": 165,
+            "voiceIdx": 12,
             "animData": [
                 {
                     "origLen": 112,
@@ -309,9 +322,10 @@
             "jpName": "2人",
             "enName": "Both",
             "jpText": "はああああ……！",
-            "enText": "Haaaaaaah!",
+            "enText": "Haaaaaah…!",
             "nextBlock": 15,
             "origClipLength": 85,
+            "voiceIdx": 13,
             "animData": [
                 {
                     "origLen": 22,
@@ -345,9 +359,10 @@
             "jpName": "イベント司会",
             "enName": "Event Moderator",
             "jpText": "ご覧ください！　サンタが見事頂上へ辿りつき、\nハロンタワー全体がライトアップされました！",
-            "enText": "Please look at this, ladies and gentlemen! Our Santas \nhave splendidly ascended to the peak, illuminating \nthe Furlong Tower from bottom to top!",
+            "enText": "Look! Santa has made it to the top, and the \nentirety of Harron Tower is lit up!",
             "nextBlock": 16,
             "origClipLength": 227,
+            "voiceIdx": 14,
             "pathId": -5721288201514302263,
             "blockIdx": 15
         },
@@ -355,9 +370,10 @@
             "jpName": "イベント司会",
             "enName": "Event Moderator",
             "jpText": "頂上からは光が放射され、\nまるでプレゼントかのように私たちへ降り注ぎます！",
-            "enText": "This light being emitted from the peak \nalmost feels like a present raining down upon us!",
+            "enText": "Light radiates from the top and pours down on us \nlike a present!",
             "nextBlock": 17,
             "origClipLength": 200,
+            "voiceIdx": 15,
             "pathId": 3624444129753451393,
             "blockIdx": 16
         },
@@ -365,9 +381,10 @@
             "jpName": "観客たち",
             "enName": "Crowd",
             "jpText": "わぁ、すご～い……！　綺麗……！\nウマ娘サンタさーん、ありがとうー！",
-            "enText": "Woah, amazing…! It's so pretty…! \nMs. Horsegirl Santas, thank you!",
+            "enText": "Wow, that's amazing! It's \nso pretty! Thanks, Santa!",
             "nextBlock": 18,
             "origClipLength": 148,
+            "voiceIdx": 16,
             "pathId": 6562056317603349170,
             "blockIdx": 17
         },
@@ -375,9 +392,10 @@
             "jpName": "イベント運営",
             "enName": "Event Manager",
             "jpText": "う、うう～～……！\n唯一無二の……2つの光……っ！！　最高です～！！",
-            "enText": "Two lights, irreplaceable to another…!! \nThis is the best!!",
+            "enText": "U-Uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu!!",
             "nextBlock": 19,
             "origClipLength": 202,
+            "voiceIdx": 17,
             "pathId": -4848918334886511120,
             "blockIdx": 18
         },
@@ -385,9 +403,10 @@
             "jpName": "ウオッカ",
             "enName": "Vodka",
             "jpText": "……っ！　スカーレット！",
-            "enText": "…huff! Scarlet!",
+            "enText": "…! Scarlet!",
             "nextBlock": 20,
             "origClipLength": 126,
+            "voiceIdx": 18,
             "pathId": -5871789317250599802,
             "blockIdx": 19
         },
@@ -398,16 +417,18 @@
             "enText": "Vodka!",
             "nextBlock": 21,
             "origClipLength": 57,
+            "voiceIdx": 19,
             "pathId": -5366603819897717737,
             "blockIdx": 20
         },
         {
-            "jpName": "",
+            "jpName": "モノローグ",
             "enName": "",
             "jpText": "（――！）",
-            "enText": "(―!)",
+            "enText": "(――!)",
             "nextBlock": 22,
             "origClipLength": 51,
+            "voiceIdx": -1,
             "pathId": -3677611027917373833,
             "blockIdx": 21
         },
@@ -415,9 +436,10 @@
             "jpName": "エアグルーヴ",
             "enName": "Air Groove",
             "jpText": "――2人とも、まずはご苦労だった。公式アンバサダーの仕事を\n立派に務めたな。先方もとても感謝してくださっていたよ。",
-            "enText": "First of all, great job, both of you. You carried out your jobs \nas official ambassadors splendidly. The organizers also told me \nto express their gratitude.",
+            "enText": "Thank you both for your hard work. You've done a \nwonderful job as an official ambassador. They \nwere very grateful to you.",
             "nextBlock": 23,
             "origClipLength": 292,
+            "voiceIdx": 20,
             "animData": [
                 {
                     "origLen": 363,
@@ -447,9 +469,10 @@
             "jpName": "エアグルーヴ",
             "enName": "Air Groove",
             "jpText": "私とブライアン、それにローレルは後片付けを手伝ってくる。\nお前たちはここで夜景でも眺めて休んでいろ。",
-            "enText": "Brian, Laurel and I are going to go help with \nthe clean-up work now. You two stay here and \nrest while you enjoy the view for a while.",
+            "enText": "Brian, Laurel, and I will help you clean up. You \ncan rest here and enjoy the night view.",
             "nextBlock": 24,
             "origClipLength": 250,
+            "voiceIdx": 21,
             "animData": [
                 {
                     "origLen": 294,
@@ -479,9 +502,10 @@
             "jpName": "ダイワスカーレット",
             "enName": "Daiwa Scarlet",
             "jpText": "えっ、アタシたちも手伝いますよ！",
-            "enText": "Huh? We'll come help too!",
+            "enText": "Huh? We'll help too!",
             "nextBlock": 25,
             "origClipLength": 89,
+            "voiceIdx": 22,
             "animData": [
                 {
                     "origLen": 47,
@@ -507,9 +531,10 @@
             "jpName": "エアグルーヴ",
             "enName": "Air Groove",
             "jpText": "大きな貢献をしてくれたお前たちを働かせるほど、\n私は非道に見えるか？",
-            "enText": "Do I look so unjust as to make the main actors \nwork even more right after their big performance?",
+            "enText": "Do I look inhuman enough to put you guys to work \nfor a great service?",
             "nextBlock": 26,
             "origClipLength": 178,
+            "voiceIdx": 23,
             "animData": [
                 {
                     "origLen": 89,
@@ -531,9 +556,10 @@
             "jpName": "エアグルーヴ",
             "enName": "Air Groove",
             "jpText": "……私からも礼を言うよ。イベントを大いに盛り上げてくれて、\n感謝する。たまにはゆっくり語り合え。",
-            "enText": "… Allow me to also express my personal gratitude for livening up \nthe event as much as you did. And now, take some time to talk \namongst yourselves in peace.",
+            "enText": "…I'd like to thank you too. Thank you for making \nthe event a lot more exciting. We can have a \nnice chat once in a while.",
             "nextBlock": 27,
             "origClipLength": 295,
+            "voiceIdx": 24,
             "animData": [
                 {
                     "origLen": 60,
@@ -559,9 +585,10 @@
             "jpName": "ウオッカ",
             "enName": "Vodka",
             "jpText": "……………………えっと。\n語り合うって……何をだよなぁ？　はは……。",
-            "enText": "……… Ummm. \nShe said to talk, but about what? Ahaha…",
+            "enText": "…………Umm… What do you mean……talk \nto each other? Haha……",
             "nextBlock": 28,
             "origClipLength": 292,
+            "voiceIdx": 25,
             "animData": [
                 {
                     "origLen": 311,
@@ -587,9 +614,10 @@
             "jpName": "ダイワスカーレット",
             "enName": "Daiwa Scarlet",
             "jpText": "…………ごめん。",
-            "enText": "…… I'm sorry.",
+            "enText": "…Sorry.",
             "nextBlock": 29,
             "origClipLength": 91,
+            "voiceIdx": 26,
             "animData": [
                 {
                     "origLen": 311,
@@ -614,6 +642,7 @@
             "enText": "Huh?",
             "nextBlock": 30,
             "origClipLength": 41,
+            "voiceIdx": 27,
             "animData": [
                 {
                     "origLen": 53,
@@ -639,9 +668,10 @@
             "jpName": "ダイワスカーレット",
             "enName": "Daiwa Scarlet",
             "jpText": "ごめんって、言ったの！\nダサいって、アンタのことバカにしたこと。",
-            "enText": "I said I'm sorry! \nFor saying you're lame and making fun of you.",
+            "enText": "I said I'm sorry! I said it was \nlame, and made fun of you.",
             "nextBlock": 31,
             "origClipLength": 172,
+            "voiceIdx": 28,
             "animData": [
                 {
                     "origLen": 222,
@@ -667,9 +697,10 @@
             "jpName": "ダイワスカーレット",
             "enName": "Daiwa Scarlet",
             "jpText": "八つ当たりしたの。\nアタシ……アタシね、本当は……――",
-            "enText": "I was taking out my frustration on you. \nIn reality… you―",
+            "enText": "I hit her. I… I actually…",
             "nextBlock": 32,
             "origClipLength": 198,
+            "voiceIdx": 29,
             "animData": [
                 {
                     "origLen": 175,
@@ -691,9 +722,10 @@
             "jpName": "ウオッカ",
             "enName": "Vodka",
             "jpText": "……いいよ、らしくねぇ。\n意地張ってるほうがお前っぽい。",
-            "enText": "… It's fine, this isn't like you. \nBeing stubborn fits you better.",
+            "enText": "…It's fine. It's not like you to be stubborn.",
             "nextBlock": 33,
             "origClipLength": 201,
+            "voiceIdx": 30,
             "animData": [
                 {
                     "origLen": 213,
@@ -722,6 +754,7 @@
             "enText": "But…",
             "nextBlock": 34,
             "origClipLength": 34,
+            "voiceIdx": 31,
             "animData": [
                 {
                     "origLen": 60,
@@ -747,9 +780,10 @@
             "jpName": "ウオッカ",
             "enName": "Vodka",
             "jpText": "俺もひでーこと言ったしよ。\n多分……お前と同じ感じだったんだ。",
-            "enText": "I also said some terrible things. \nWe… we were probably feeling the same way.",
+            "enText": "I said something terrible. I think… I felt the \nsame way as you.",
             "nextBlock": 35,
             "origClipLength": 221,
+            "voiceIdx": 32,
             "animData": [
                 {
                     "origLen": 270,
@@ -775,9 +809,10 @@
             "jpName": "ウオッカ",
             "enName": "Vodka",
             "jpText": "だから、俺もごめん。\nこれでおしまいにしようぜっ。な？",
-            "enText": "So… I'm sorry too. \nLet's just leave it at that, okay?",
+            "enText": "So I'm sorry too. Let's end this. Okay?",
             "nextBlock": 36,
             "origClipLength": 229,
+            "voiceIdx": 33,
             "animData": [
                 {
                     "origLen": 270,
@@ -803,9 +838,10 @@
             "jpName": "ダイワスカーレット",
             "enName": "Daiwa Scarlet",
             "jpText": "……イヤよ。ちゃんと言う。",
-            "enText": "… I don't want to. I'm gonna tell you clearly.",
+            "enText": "…No. I'll say it.",
             "nextBlock": 37,
             "origClipLength": 105,
+            "voiceIdx": 34,
             "animData": [
                 {
                     "origLen": 147,
@@ -831,9 +867,10 @@
             "jpName": "ダイワスカーレット",
             "enName": "Daiwa Scarlet",
             "jpText": "またこんなことになっても、わかるように！\nアタシ……アンタのこと、本当に気に食わない！",
-            "enText": "So that you know if something like this ever happens again! \nYou… I… I really can't stand you!",
+            "enText": "Even if this happens again, I'll understand! I… \nI really don't like you!",
             "nextBlock": 38,
             "origClipLength": 277,
+            "voiceIdx": 35,
             "animData": [
                 {
                     "origLen": 80,
@@ -859,9 +896,10 @@
             "jpName": "ウオッカ",
             "enName": "Vodka",
             "jpText": "はあっ！？\nおい、何を――",
-            "enText": "Huh!? \nHey, what―",
+            "enText": "Huh?! Hey, what are you—",
             "nextBlock": 39,
             "origClipLength": 93,
+            "voiceIdx": 36,
             "animData": [
                 {
                     "origLen": 131,
@@ -887,9 +925,10 @@
             "jpName": "ダイワスカーレット",
             "enName": "Daiwa Scarlet",
             "jpText": "でも、ムカつくからこそ負けたくないって思える。\nアンタがいるから、もっと強くなれるの。",
-            "enText": "But… that's exactly why I don't want to lose to you. \nI can get stronger because you're by my side.",
+            "enText": "But I don't want to lose because it pisses me \noff. It's because you're here that I'm stronger.",
             "nextBlock": 40,
             "origClipLength": 240,
+            "voiceIdx": 37,
             "animData": [
                 {
                     "origLen": 94,
@@ -911,9 +950,10 @@
             "jpName": "ダイワスカーレット",
             "enName": "Daiwa Scarlet",
             "jpText": "アタシにとってアンタは……\n勝ちたいって思わせてくれる……悔しいけど、目指す相手だわ。",
-            "enText": "To me, you're someone I want to win against… even if it \nfrustrates me, you're the one I want to surpass one day.",
+            "enText": "To me, you… make me want to win… I hate to admit \nit, but you're the person I want to be.",
             "nextBlock": 41,
             "origClipLength": 280,
+            "voiceIdx": 38,
             "animData": [
                 {
                     "origLen": 250,
@@ -935,9 +975,10 @@
             "jpName": "ダイワスカーレット",
             "enName": "Daiwa Scarlet",
             "jpText": "……アンタはどうなのよ。\nアタシのこと、どう思ってるわけ！？",
-            "enText": "… What about you? \nWhat… what do you think about me!?",
+            "enText": "…What about you? What do you think of me?!",
             "nextBlock": 42,
             "origClipLength": 186,
+            "voiceIdx": 39,
             "animData": [
                 {
                     "origLen": 139,
@@ -959,9 +1000,10 @@
             "jpName": "ウオッカ",
             "enName": "Vodka",
             "jpText": "ばっかじゃねぇの！？\nい、いいい、言うかよ！",
-            "enText": "A-are you kidding!? \nA-as, as if I could say something like that!",
+            "enText": "Aren't you an idiot?! N-No, I'm not!",
             "nextBlock": 43,
             "origClipLength": 142,
+            "voiceIdx": 40,
             "animData": [
                 {
                     "origLen": 154,
@@ -983,9 +1025,10 @@
             "jpName": "ダイワスカーレット",
             "enName": "Daiwa Scarlet",
             "jpText": "言いなさいよ！\n……言って。",
-            "enText": "Say it! \n… Say it, please.",
+            "enText": "Say it! …Say it.",
             "nextBlock": 44,
             "origClipLength": 112,
+            "voiceIdx": 41,
             "animData": [
                 {
                     "origLen": 98,
@@ -1007,9 +1050,10 @@
             "jpName": "ウオッカ",
             "enName": "Vodka",
             "jpText": "…………………………。",
-            "enText": "………",
+            "enText": "…………",
             "nextBlock": 45,
             "origClipLength": 138,
+            "voiceIdx": 42,
             "animData": [
                 {
                     "origLen": 83,
@@ -1035,9 +1079,10 @@
             "jpName": "ウオッカ",
             "enName": "Vodka",
             "jpText": "……同じだよ。\n“唯一無二のライバル”って、思ってる。",
-            "enText": "… I'm the same. \nYou're… my irreplaceable rival.",
+            "enText": "…It's the same. I think of you \nas my one and only rival.",
             "nextBlock": 46,
             "origClipLength": 215,
+            "voiceIdx": 43,
             "animData": [
                 {
                     "origLen": 231,
@@ -1063,9 +1108,10 @@
             "jpName": "ウオッカ",
             "enName": "Vodka",
             "jpText": "……あと！　これだけ言わせろ！\nその衣装……スゲー似合ってっかんな！！",
-            "enText": "… and! Let me just say this! \nThat outfit… you look really good in it!!",
+            "enText": "…Also! Let me just say this! That outfit… It \nreally suits you!!",
             "nextBlock": 47,
             "origClipLength": 268,
+            "voiceIdx": 44,
             "animData": [
                 {
                     "origLen": 64,
@@ -1091,9 +1137,10 @@
             "jpName": "ダイワスカーレット",
             "enName": "Daiwa Scarlet",
             "jpText": "！　……フンッ。\nアンタも、カッコいいんじゃない……――",
-            "enText": "! …Hmph. \nWell… you're also looking pretty cool, you know…!",
+            "enText": "…! Hmph. You're cool, too…",
             "nextBlock": -1,
             "origClipLength": 194,
+            "voiceIdx": 45,
             "animData": [
                 {
                     "origLen": 111,
@@ -1112,6 +1159,6 @@
             "blockIdx": 47
         }
     ],
-    "modified": 1673054671,
-    "humanTl": true
+    "humanTl": true,
+    "modified": 1694039086
 }

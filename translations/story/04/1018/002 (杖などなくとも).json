@@ -1,0 +1,1177 @@
+{
+    "version": 6,
+    "bundle": "OG5JGQXICAPCOOM7SSCFFOXW3VXAED5Y",
+    "type": "story",
+    "storyId": "041018002",
+    "title": "杖などなくとも",
+    "text": [
+        {
+            "jpName": "モノローグ",
+            "enName": "",
+            "jpText": "エアグルーヴとの印象的な出会いを果たした、その翌日。\r\n廊下で何やら言い争うような声が聞こえ、見に行ってみると――",
+            "enText": "The next day, I had a surprising encounter with \nAir Groove. I found her after following the irritated \nvoice coming from the hallway一",
+            "nextBlock": 2,
+            "origClipLength": 119,
+            "voiceIdx": -1,
+            "pathId": -9173570786860223031,
+            "blockIdx": 1
+        },
+        {
+            "jpName": "グルーヴの担当",
+            "enName": "",
+            "jpText": "な、なぜなの？　私はエアグルーヴのトレーナーよ！\r\nだったら聞き入れてくれてもいいじゃない……！",
+            "enText": "Air Groove's Trainer:Why?! I'm Air Groove's trainer! \nSo just listen to what I'm saying…!",
+            "nextBlock": 3,
+            "origClipLength": 219,
+            "voiceIdx": 0,
+            "animData": [
+                {
+                    "origLen": 295,
+                    "pathId": 468987545227222460
+                }
+            ],
+            "pathId": 1899156203838636567,
+            "blockIdx": 2
+        },
+        {
+            "jpName": "シンボリルドルフ",
+            "enName": "Symboli Rudolf",
+            "jpText": "トレセン学園は生徒の自主性を重んじている。\r\n多岐にわたる生徒会活動も、その一環だ。",
+            "enText": "Tracen Academy values student independence. A wide range of \nstudent council activities are part of that.",
+            "nextBlock": 4,
+            "origClipLength": 255,
+            "voiceIdx": 1,
+            "animData": [
+                {
+                    "origLen": 295,
+                    "pathId": 1524041231111994557
+                }
+            ],
+            "pathId": -314596552997290150,
+            "blockIdx": 3
+        },
+        {
+            "jpName": "グルーヴの担当",
+            "enName": "Air Groove's Trainer",
+            "jpText": "でも、このまま生徒会活動や後輩指導に関わっていては、\r\n彼女自身の成長の妨げになってしまうわ！　だから――",
+            "enText": "But, if she continues in her student council activities and \nguiding her juniors, it's her own growth that'll be affected! So一",
+            "nextBlock": 5,
+            "origClipLength": 281,
+            "voiceIdx": 2,
+            "animData": [
+                {
+                    "origLen": 293,
+                    "pathId": -1053831125223420291
+                }
+            ],
+            "pathId": -7573938529422291706,
+            "blockIdx": 4
+        },
+        {
+            "jpName": "シンボリルドルフ",
+            "enName": "Symboli Rudolf",
+            "jpText": "エアグルーヴは、明確な意志と目的があり活動に参加している。\r\n誰であれ、彼女の同意無しにその権利を剥奪出来ないはずだが。",
+            "enText": "Air Groove takes part in those with a clear will and purpose. No \none should be able to deprive her of that without her consent.",
+            "nextBlock": 6,
+            "origClipLength": 327,
+            "voiceIdx": 3,
+            "animData": [
+                {
+                    "origLen": 203,
+                    "pathId": -3123461929784094321
+                }
+            ],
+            "pathId": -500821682486890330,
+            "blockIdx": 5
+        },
+        {
+            "jpName": "シンボリルドルフ",
+            "enName": "Symboli Rudolf",
+            "jpText": "君の言う『トレーニングに集中するため、生徒会を辞任する』\r\nという件、エアグルーヴ自身は了承しているのか？",
+            "enText": "Is Air Groove aware of this \"resigning from the student council \nto focus on training\" rule you speak of?",
+            "nextBlock": 7,
+            "origClipLength": 315,
+            "voiceIdx": 4,
+            "animData": [
+                {
+                    "origLen": 360,
+                    "pathId": 1082731121750405619
+                }
+            ],
+            "pathId": -4312498909846162689,
+            "blockIdx": 6
+        },
+        {
+            "jpName": "グルーヴの担当",
+            "enName": "Air Groove's Trainer",
+            "jpText": "そっ、それは……。",
+            "enText": "Th-that's…",
+            "nextBlock": 8,
+            "origClipLength": 61,
+            "voiceIdx": 5,
+            "animData": [
+                {
+                    "origLen": 252,
+                    "pathId": 7957278636400545706
+                }
+            ],
+            "pathId": -2301604812503336468,
+            "blockIdx": 7
+        },
+        {
+            "jpName": "エアグルーヴ",
+            "enName": "Air Groove",
+            "jpText": "――いえ、特に伺った記憶はありませんね。",
+            "enText": "一No, I don't particularly have any memory of it.",
+            "nextBlock": 9,
+            "origClipLength": 114,
+            "voiceIdx": 6,
+            "animData": [
+                {
+                    "origLen": 252,
+                    "pathId": 2762068999400310948
+                },
+                {
+                    "origLen": 130,
+                    "pathId": 7329959084441630672
+                },
+                {
+                    "origLen": 62,
+                    "pathId": -5703228681905108221
+                }
+            ],
+            "pathId": -4535464058445716415,
+            "blockIdx": 8
+        },
+        {
+            "jpName": "グルーヴの担当",
+            "enName": "Air Groove's Trainer",
+            "jpText": "っ、エアグルーヴ！？　どうしてここに……！",
+            "enText": "Air Groove…!…Why are you here?",
+            "nextBlock": 10,
+            "origClipLength": 125,
+            "voiceIdx": 7,
+            "animData": [
+                {
+                    "origLen": 252,
+                    "pathId": 2009290331175845659
+                },
+                {
+                    "origLen": 143,
+                    "pathId": 5255767960076084030
+                },
+                {
+                    "origLen": 137,
+                    "pathId": -2348546452895359276
+                }
+            ],
+            "pathId": -8472914907823010526,
+            "blockIdx": 9
+        },
+        {
+            "jpName": "エアグルーヴ",
+            "enName": "Air Groove",
+            "jpText": "会長、お手を煩わせてしまい申し訳ございませんでした。\r\n後は私と彼女で話をいたしますので。",
+            "enText": "President, I apologize for getting you involved \nin this. I'll take it from here.",
+            "nextBlock": 11,
+            "origClipLength": 235,
+            "voiceIdx": 8,
+            "animData": [
+                {
+                    "origLen": 252,
+                    "pathId": -5086724638808140530
+                },
+                {
+                    "origLen": 254,
+                    "pathId": -2010666910801348118
+                },
+                {
+                    "origLen": 127,
+                    "pathId": -135258539968430435
+                }
+            ],
+            "pathId": 393122888611221632,
+            "blockIdx": 10
+        },
+        {
+            "jpName": "シンボリルドルフ",
+            "enName": "Symboli Rudolf",
+            "jpText": "そうか？　では、私はこれで。\r\nまあ……あまり厳しく当たってやるなよ、エアグルーヴ。",
+            "enText": "Is that so? Then I'll take my leave here. \nWell… don't be too hard on her, Air Groove.",
+            "nextBlock": 12,
+            "origClipLength": 273,
+            "voiceIdx": 9,
+            "animData": [
+                {
+                    "origLen": 375,
+                    "pathId": 3446227931153806039
+                },
+                {
+                    "origLen": 262,
+                    "pathId": 4985839163790003959
+                },
+                {
+                    "origLen": 285,
+                    "pathId": -7168604820739967563
+                }
+            ],
+            "pathId": -6281384383192789041,
+            "blockIdx": 11
+        },
+        {
+            "jpName": "エアグルーヴ",
+            "enName": "Air Groove",
+            "jpText": "……努力します。",
+            "enText": "…I'll try my best.",
+            "nextBlock": 13,
+            "origClipLength": 78,
+            "voiceIdx": 10,
+            "animData": [
+                {
+                    "origLen": 375,
+                    "pathId": 90945057984887582
+                },
+                {
+                    "origLen": 262,
+                    "pathId": 7130322647931187317
+                },
+                {
+                    "origLen": 73,
+                    "pathId": 1414354065776400737
+                }
+            ],
+            "pathId": 7991078970452723483,
+            "blockIdx": 12
+        },
+        {
+            "jpName": "エアグルーヴ",
+            "enName": "Air Groove",
+            "jpText": "さて……勝手な事をしてくれたものだな。",
+            "enText": "Now then, you've been rather selfish haven't you.",
+            "nextBlock": 14,
+            "origClipLength": 141,
+            "voiceIdx": 11,
+            "animData": [
+                {
+                    "origLen": 102,
+                    "pathId": 1074470389383163008
+                },
+                {
+                    "origLen": 20,
+                    "pathId": -6877843369945797546
+                },
+                {
+                    "origLen": 183,
+                    "pathId": 5918632065964627144
+                },
+                {
+                    "origLen": 60,
+                    "pathId": -2575056306661720703
+                }
+            ],
+            "pathId": 7678319329710026877,
+            "blockIdx": 13
+        },
+        {
+            "jpName": "グルーヴの担当",
+            "enName": "Air Groove's Trainer",
+            "jpText": "待って、話を聞いてちょうだい！\r\n私はただ、あなたが無駄なことに時間を使わないようにと……！",
+            "enText": "Wait, please listen to what I'm saying! \nI just didn't want you to waste your time…!",
+            "nextBlock": 15,
+            "origClipLength": 213,
+            "voiceIdx": 12,
+            "animData": [
+                {
+                    "origLen": 225,
+                    "pathId": 6582454558138291012
+                }
+            ],
+            "pathId": -765847952487286470,
+            "blockIdx": 14
+        },
+        {
+            "jpName": "エアグルーヴ",
+            "enName": "Air Groove",
+            "jpText": "『無駄』、とはな……。\r\nその発言が出る時点で、これ以上対話の余地はない。",
+            "enText": "\"Waste\", huh… \nJust from that sentence, there's no room for further argument.",
+            "nextBlock": 16,
+            "origClipLength": 228,
+            "voiceIdx": 13,
+            "animData": [
+                {
+                    "origLen": 169,
+                    "pathId": 7342559055060884861
+                }
+            ],
+            "pathId": 3868827994635997701,
+            "blockIdx": 15
+        },
+        {
+            "jpName": "グルーヴの担当",
+            "enName": "Air Groove's Trainer",
+            "jpText": "そんな……！　どうして！？\r\nレースで結果を残すなら、余計な時間は切り捨てるべきよ！！",
+            "enText": "What… why?! If you want to leave good results then \nyou should cut out unnecessary activities!!",
+            "nextBlock": 17,
+            "origClipLength": 213,
+            "voiceIdx": 14,
+            "animData": [
+                {
+                    "origLen": 225,
+                    "pathId": 3511801420315377151
+                }
+            ],
+            "pathId": 8483445239074230160,
+            "blockIdx": 16
+        },
+        {
+            "jpName": "エアグルーヴ",
+            "enName": "Air Groove",
+            "jpText": "レースで結果を残す……ただそれだけを見据えていたのならば、\r\n私と貴様では視座が違った、という事だ。",
+            "enText": "Leave good results… if that's all you were thinking about, \nthen that means our viewpoints were different.",
+            "nextBlock": 18,
+            "origClipLength": 291,
+            "voiceIdx": 15,
+            "animData": [
+                {
+                    "origLen": 221,
+                    "pathId": 4108886814418419430
+                },
+                {
+                    "origLen": 87,
+                    "pathId": 760176111818458744
+                }
+            ],
+            "pathId": -4500797978775297398,
+            "blockIdx": 17
+        },
+        {
+            "jpName": "エアグルーヴ",
+            "enName": "Air Groove",
+            "jpText": "――以上。担当契約は只今を持って打ち切るものとする。\r\nでは失礼。",
+            "enText": "That's all. The supervisor contract is \nnow terminated. Now then, excuse me.",
+            "nextBlock": 19,
+            "origClipLength": 170,
+            "voiceIdx": 16,
+            "animData": [
+                {
+                    "origLen": 197,
+                    "pathId": -7401090435429246196
+                },
+                {
+                    "origLen": 20,
+                    "pathId": 7318311607981230774
+                }
+            ],
+            "pathId": -333711610562243749,
+            "blockIdx": 18
+        },
+        {
+            "jpName": "ヒシアマゾン",
+            "enName": "Hishi Amazon",
+            "jpText": "あーりゃりゃ……またこうなっちまったか。",
+            "enText": "Good grief… it happened again, huh?",
+            "nextBlock": 20,
+            "origClipLength": 121,
+            "voiceIdx": 17,
+            "choices": [
+                {
+                    "jpText": "『また』？",
+                    "enText": "\"Again\"?",
+                    "nextBlock": 20
+                }
+            ],
+            "animData": [
+                {
+                    "origLen": 102,
+                    "pathId": -6659974507847864362
+                },
+                {
+                    "origLen": 172,
+                    "pathId": -3235092514370539442
+                },
+                {
+                    "origLen": 177,
+                    "pathId": -8531049725040665768
+                }
+            ],
+            "pathId": 125789782855653372,
+            "blockIdx": 19
+        },
+        {
+            "jpName": "ヒシアマゾン",
+            "enName": "Hishi Amazon",
+            "jpText": "そーだよ。ま、アイツのお眼鏡にかなうトレーナーってのも\r\nそうそういないだろうけど――",
+            "enText": "Yeah. Well, I don't think there are many trainers \nthat can match up to her standards but一",
+            "nextBlock": 21,
+            "origClipLength": 195,
+            "voiceIdx": 18,
+            "animData": [
+                {
+                    "origLen": 178,
+                    "pathId": 7556938628337574285
+                },
+                {
+                    "origLen": 20,
+                    "pathId": 6676378783426626685
+                }
+            ],
+            "pathId": 1704864176260085293,
+            "blockIdx": 20
+        },
+        {
+            "jpName": "ヒシアマゾン",
+            "enName": "Hishi Amazon",
+            "jpText": "って、アンタもまたエアグルーヴを見てたのかい！\r\nどいつもこいつも懲りないねぇ。",
+            "enText": "Wait, you're looking at Air Groove again? \nNone of you ever seem to learn.",
+            "nextBlock": 22,
+            "origClipLength": 204,
+            "voiceIdx": 19,
+            "animData": [
+                {
+                    "origLen": 84,
+                    "pathId": -331968327793881070
+                },
+                {
+                    "origLen": 50,
+                    "pathId": -4288140446163167682
+                }
+            ],
+            "pathId": 9144186537360921948,
+            "blockIdx": 21
+        },
+        {
+            "jpName": "ヒシアマゾン",
+            "enName": "Hishi Amazon",
+            "jpText": "ん？　でも、こりゃもしかして、\r\nアンタにとっちゃチャンスってやつかね？",
+            "enText": "Hm? But wait this might actually be a big chance for you, huh?",
+            "nextBlock": 23,
+            "origClipLength": 184,
+            "voiceIdx": 20,
+            "animData": [
+                {
+                    "origLen": 145,
+                    "pathId": 437297639138873824
+                },
+                {
+                    "origLen": 20,
+                    "pathId": -849027903094220622
+                },
+                {
+                    "origLen": 36,
+                    "pathId": 9092274493661823513
+                }
+            ],
+            "pathId": 2473079488928752709,
+            "blockIdx": 22
+        },
+        {
+            "jpName": "ヒシアマゾン",
+            "enName": "Hishi Amazon",
+            "jpText": "なぁアンタ。いまならエアグルーヴを\r\nスカウトできるんじゃないかい？",
+            "enText": "Hey you, if you tried it now wouldn't \nyou be able to scout Air Groove?",
+            "nextBlock": 24,
+            "origClipLength": 132,
+            "voiceIdx": 21,
+            "choices": [
+                {
+                    "jpText": "言われてみれば……！",
+                    "enText": "Now that you mention it…!",
+                    "nextBlock": 24
+                }
+            ],
+            "animData": [
+                {
+                    "origLen": 102,
+                    "pathId": -3227371338659746120
+                }
+            ],
+            "pathId": 5564920729594226865,
+            "blockIdx": 23
+        },
+        {
+            "jpName": "ヒシアマゾン",
+            "enName": "Hishi Amazon",
+            "jpText": "ま、見ての通り一筋縄じゃいかない“女帝”サマだからねえ、\r\n相応の覚悟をしてから――って、ありゃ。行っちまいやがった。",
+            "enText": "Well, as you can see she's a rather blunt \"Empress\" so be sure \nyou're re- Wait, he left already.",
+            "nextBlock": 25,
+            "origClipLength": 357,
+            "voiceIdx": 22,
+            "animData": [
+                {
+                    "origLen": 104,
+                    "pathId": 2531788987417316718
+                },
+                {
+                    "origLen": 87,
+                    "pathId": 165615471428920739
+                },
+                {
+                    "origLen": 60,
+                    "pathId": 4627107277232530546
+                }
+            ],
+            "pathId": 8567879202518491142,
+            "blockIdx": 24
+        },
+        {
+            "jpName": "モノローグ",
+            "enName": "",
+            "jpText": "エアグルーヴをスカウトするため、歩き去って行った彼女を\r\n追いかけて並木道へとやって来た。そして――",
+            "enText": "So I could scout Air Groove, I chased her until \nshe reached a tree lined road. And then一",
+            "nextBlock": 26,
+            "origClipLength": 110,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 249,
+                    "pathId": -6677388588301388136
+                },
+                {
+                    "origLen": 207,
+                    "pathId": 5799520761219944412
+                },
+                {
+                    "origLen": 19,
+                    "pathId": 38546890789401991
+                },
+                {
+                    "origLen": 15,
+                    "pathId": -4013399503670906005
+                }
+            ],
+            "pathId": 6506646923780581152,
+            "blockIdx": 25
+        },
+        {
+            "jpName": "エアグルーヴ",
+            "enName": "Air Groove",
+            "jpText": "全く……天下のトレセン学園だというのに、\r\nトレーナーの質はあの程度なのか。",
+            "enText": "Good grief… is a trainer of that level \nreally the best Tracen has to offer?",
+            "nextBlock": 27,
+            "origClipLength": 227,
+            "voiceIdx": 23,
+            "animData": [
+                {
+                    "origLen": 249,
+                    "pathId": 2891485112418039772
+                },
+                {
+                    "origLen": 249,
+                    "pathId": 8666088098168986967
+                }
+            ],
+            "pathId": 6233059776160545742,
+            "blockIdx": 26
+        },
+        {
+            "jpName": "エアグルーヴ",
+            "enName": "Air Groove",
+            "jpText": "これでは信頼の置けるパートナーなど、到底――",
+            "enText": "At this rate, something like a trusted partner seems一",
+            "nextBlock": 28,
+            "origClipLength": 125,
+            "voiceIdx": 24,
+            "choices": [
+                {
+                    "jpText": "エアグルーヴ、君をスカウトさせてくれ！",
+                    "enText": "Air Groove, I'm here to scout you!",
+                    "nextBlock": 28
+                },
+                {
+                    "jpText": "エアグルーヴ、貴方をスカウトさせて！",
+                    "enText": "Air Groove, I'm here to scout you!",
+                    "nextBlock": 28
+                }
+            ],
+            "animData": [
+                {
+                    "origLen": 249,
+                    "pathId": -2988260301544485424
+                },
+                {
+                    "origLen": 20,
+                    "pathId": 7408261076833354420
+                }
+            ],
+            "pathId": 5782050507975385705,
+            "blockIdx": 27
+        },
+        {
+            "jpName": "エアグルーヴ",
+            "enName": "Air Groove",
+            "jpText": "は……？　なんだ貴様は。\r\n急に現れたかと思えば、不躾な！",
+            "enText": "Ha…? Who are you?! Appearing out \nof nowhere like that, how uncouth!",
+            "nextBlock": 29,
+            "origClipLength": 190,
+            "voiceIdx": 25,
+            "animData": [
+                {
+                    "origLen": 178,
+                    "pathId": 8081980202206633837
+                },
+                {
+                    "origLen": 20,
+                    "pathId": 4055070552344985967
+                },
+                {
+                    "origLen": 29,
+                    "pathId": 3993189054709257806
+                }
+            ],
+            "pathId": 6086447236589798058,
+            "blockIdx": 28
+        },
+        {
+            "jpName": "モノローグ",
+            "enName": "",
+            "jpText": "凄まじく怖い顔をさせてしまったので、きちんと挨拶をしてから\r\nスカウトしたい旨を丁寧に伝えた……。",
+            "enText": "Her face was terrifying so I properly introduced myself before \npolitely explaining I wanted to scout her…",
+            "nextBlock": 30,
+            "origClipLength": 108,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 201,
+                    "pathId": -3814585832195646179
+                }
+            ],
+            "pathId": -7459429350839907942,
+            "blockIdx": 29
+        },
+        {
+            "jpName": "エアグルーヴ",
+            "enName": "Air Groove",
+            "jpText": "ふん。お前の意志はしつこいほどに伝わったが、\r\n私はつい先刻、トレーナー相手に時間を消費する事に飽いてな。",
+            "enText": "Hmph. I can tell you're persistent, but I'm already \ngetting tired of wasting my time on trainers.",
+            "nextBlock": 31,
+            "origClipLength": 263,
+            "voiceIdx": 26,
+            "animData": [
+                {
+                    "origLen": 275,
+                    "pathId": -3907061609364858776
+                },
+                {
+                    "origLen": 290,
+                    "pathId": 9203850937227829397
+                }
+            ],
+            "pathId": -3891779400710516478,
+            "blockIdx": 30
+        },
+        {
+            "jpName": "エアグルーヴ",
+            "enName": "Air Groove",
+            "jpText": "今更新人トレーナーなどと組むつもりは――",
+            "enText": "I've no intention of teaming up with some rookie trai一",
+            "nextBlock": 32,
+            "origClipLength": 90,
+            "voiceIdx": 27,
+            "animData": [
+                {
+                    "origLen": 54,
+                    "pathId": -3074249479589551394
+                },
+                {
+                    "origLen": 167,
+                    "pathId": -4303134841633186589
+                }
+            ],
+            "pathId": -7980254801572231220,
+            "blockIdx": 31
+        },
+        {
+            "jpName": "エアグルーヴ",
+            "enName": "Air Groove",
+            "jpText": "……いや、待て。",
+            "enText": "No, wait.",
+            "nextBlock": 33,
+            "origClipLength": 73,
+            "voiceIdx": 28,
+            "animData": [
+                {
+                    "origLen": 85,
+                    "pathId": -5177190832186079224
+                },
+                {
+                    "origLen": 20,
+                    "pathId": -4045404327901796357
+                }
+            ],
+            "pathId": -7300897438160238206,
+            "blockIdx": 32
+        },
+        {
+            "jpName": "エアグルーヴ",
+            "enName": "Air Groove",
+            "jpText": "明日、私は学内ジムにて筋力トレーニングを行う。\r\nそこでのメニューを、お前が組み立てて来い。",
+            "enText": "Tomorrow, I'll be doing strength training in the school gym. I'll \nallow you to decide the regimen there.",
+            "nextBlock": 34,
+            "origClipLength": 236,
+            "voiceIdx": 29,
+            "animData": [
+                {
+                    "origLen": 112,
+                    "pathId": 3704966933877194623
+                }
+            ],
+            "pathId": 3079778488881342013,
+            "blockIdx": 33
+        },
+        {
+            "jpName": "エアグルーヴ",
+            "enName": "Air Groove",
+            "jpText": "まずはトレーナーとしての実力を見せろ。\r\n話はそれからだ。",
+            "enText": "First, show me your abilities as a trainer. \nThen we'll talk.",
+            "nextBlock": 35,
+            "origClipLength": 145,
+            "voiceIdx": 30,
+            "animData": [
+                {
+                    "origLen": 157,
+                    "pathId": 4697487192018284029
+                }
+            ],
+            "pathId": 6356541540884207985,
+            "blockIdx": 34
+        },
+        {
+            "jpName": "モノローグ",
+            "enName": "",
+            "jpText": "なんとかエアグルーヴに認めてもらうため、\r\nひと晩かけて必死にメニューを考案した。",
+            "enText": "I spent the entire night desperately devising a \nplan that would make Air Groove recognize me.",
+            "nextBlock": 36,
+            "origClipLength": 98,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 27,
+                    "pathId": -9157539657215872898
+                }
+            ],
+            "pathId": -5788695838495533827,
+            "blockIdx": 35
+        },
+        {
+            "jpName": "モノローグ",
+            "enName": "",
+            "jpText": "そして、翌日……。",
+            "enText": "Then, the next day…",
+            "nextBlock": 37,
+            "origClipLength": 56,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 302,
+                    "pathId": -8204524046589272299
+                }
+            ],
+            "pathId": 2144044720305801763,
+            "blockIdx": 36
+        },
+        {
+            "jpName": "エアグルーヴ",
+            "enName": "Air Groove",
+            "jpText": "――ふむ、及第点だな。\r\n『トレーニングを問題なく遂行する力』だけは、あるようだ。",
+            "enText": "Hm. It seems up to par. Looks like you'll at least be able to \ncarry out training without issue.",
+            "nextBlock": 38,
+            "origClipLength": 243,
+            "voiceIdx": 31,
+            "animData": [
+                {
+                    "origLen": 302,
+                    "pathId": 73203533219439512
+                }
+            ],
+            "pathId": -4217334741811618253,
+            "blockIdx": 37
+        },
+        {
+            "jpName": "エアグルーヴ",
+            "enName": "Air Groove",
+            "jpText": "では、契約はこうだ。\r\n貴様はトレーナーとして、私との『トレーニング』のみに気を配れ。",
+            "enText": "Then, the contract will go as so. As my trainer, you will only \nconcern yourself with duties related to my training.",
+            "nextBlock": 39,
+            "origClipLength": 237,
+            "voiceIdx": 32,
+            "animData": [
+                {
+                    "origLen": 216,
+                    "pathId": -3712421968396737457
+                },
+                {
+                    "origLen": 20,
+                    "pathId": 1891485889501677284
+                }
+            ],
+            "pathId": 2467985334239346122,
+            "blockIdx": 38
+        },
+        {
+            "jpName": "エアグルーヴ",
+            "enName": "Air Groove",
+            "jpText": "それ以外の事――即ち、私の生徒会活動や私的な時間にまで\r\nあれこれ口を挟む事は、決して許さん。",
+            "enText": "Involving yourself with anything other than training, that is my \ntime spent on student council activities. Will not be forgiven.",
+            "nextBlock": 40,
+            "origClipLength": 273,
+            "voiceIdx": 33,
+            "choices": [
+                {
+                    "jpText": "つまり、スカウトを受けてくれるのか！？",
+                    "enText": "So, you'll let me scout you!?",
+                    "nextBlock": 40
+                },
+                {
+                    "jpText": "つまり、スカウトを受けてくれるの！？",
+                    "enText": "So, you'll let me scout you!?",
+                    "nextBlock": 40
+                }
+            ],
+            "animData": [
+                {
+                    "origLen": 289,
+                    "pathId": -5378454892188926414
+                },
+                {
+                    "origLen": 38,
+                    "pathId": 7729926632257716971
+                }
+            ],
+            "pathId": -3194701569108605077,
+            "blockIdx": 39
+        },
+        {
+            "jpName": "エアグルーヴ",
+            "enName": "Air Groove",
+            "jpText": "ああ。だが契約条件の事は、ゆめゆめ忘れるなよ。\r\n……では、改めて。",
+            "enText": "Yes. But don't even dream of forgetting \nthe contract conditions. Now then…",
+            "nextBlock": 41,
+            "origClipLength": 246,
+            "voiceIdx": 34,
+            "animData": [
+                {
+                    "origLen": 60,
+                    "pathId": -7059245991448530240
+                },
+                {
+                    "origLen": 20,
+                    "pathId": -7365912841149229838
+                }
+            ],
+            "pathId": -3218175397226393204,
+            "blockIdx": 40
+        },
+        {
+            "jpName": "エアグルーヴ",
+            "enName": "Air Groove",
+            "jpText": "私は“女帝”エアグルーヴ。あらゆるウマ娘の理想を体現し、\r\n皆にとっての指針となるためにこの名が在る。",
+            "enText": "I am \"The Empress\" Air Groove. I hold this title so that I can be \nan ideal and compass for all horse girls.",
+            "nextBlock": 42,
+            "origClipLength": 282,
+            "voiceIdx": 35,
+            "animData": [
+                {
+                    "origLen": 278,
+                    "pathId": 7528852785961147091
+                },
+                {
+                    "origLen": 20,
+                    "pathId": -6780092951777918523
+                }
+            ],
+            "pathId": 2881796564817636802,
+            "blockIdx": 41
+        },
+        {
+            "jpName": "エアグルーヴ",
+            "enName": "Air Groove",
+            "jpText": "無論レースにおいても、“女帝”の名に相応しい結果が不可欠。\r\nただ勝利するのみならず、憧憬の的と成る事こそ、我が使命だ。",
+            "enText": "Of course in races too, I must uphold the meaning \nof this title. Leaving only victory and results \nworthy of admiration, is my duty.",
+            "nextBlock": 43,
+            "origClipLength": 326,
+            "voiceIdx": 36,
+            "animData": [
+                {
+                    "origLen": 79,
+                    "pathId": -1798537062789849267
+                }
+            ],
+            "pathId": -2192658349652864926,
+            "blockIdx": 42
+        },
+        {
+            "jpName": "エアグルーヴ",
+            "enName": "Air Groove",
+            "jpText": "そのためにも、貴様はトレーナーとして必要十分な役割を果たせ。\r\n……理解したか？",
+            "enText": "For that purpose, you also need to make sure you \nfulfill your role as trainer. Understood?",
+            "nextBlock": 44,
+            "origClipLength": 207,
+            "voiceIdx": 37,
+            "choices": [
+                {
+                    "jpText": "わ、わかった！",
+                    "enText": "U-Understood!",
+                    "nextBlock": 44
+                }
+            ],
+            "animData": [
+                {
+                    "origLen": 219,
+                    "pathId": 2822050828607614982
+                },
+                {
+                    "origLen": 51,
+                    "pathId": -346207825520184652
+                }
+            ],
+            "pathId": 8076521424640049913,
+            "blockIdx": 43
+        },
+        {
+            "jpName": "エアグルーヴ",
+            "enName": "Air Groove",
+            "jpText": "頼りない返事だな……ふん、まあいい。",
+            "enText": "What an unreliable answer… hmph. Well, whatever.",
+            "nextBlock": 45,
+            "origClipLength": 155,
+            "voiceIdx": 38,
+            "animData": [
+                {
+                    "origLen": 122,
+                    "pathId": 6140930926737517231
+                },
+                {
+                    "origLen": 83,
+                    "pathId": -663876416811872658
+                }
+            ],
+            "pathId": 320740343104403276,
+            "blockIdx": 44
+        },
+        {
+            "jpName": "エアグルーヴ",
+            "enName": "Air Groove",
+            "jpText": "どちらにせよ、頼るつもりもないのでな……。",
+            "enText": "I don't intend on relying on you anyways…",
+            "nextBlock": 46,
+            "origClipLength": 111,
+            "voiceIdx": 39,
+            "animData": [
+                {
+                    "origLen": 152,
+                    "pathId": 4761233035285387156
+                },
+                {
+                    "origLen": 123,
+                    "pathId": 6102623928467464838
+                }
+            ],
+            "pathId": -4451566574210920167,
+            "blockIdx": 45
+        },
+        {
+            "jpName": "モノローグ",
+            "enName": "",
+            "jpText": "こうして、なにやら波乱の予感がありつつも\r\nエアグルーヴを担当する日々が始まったのだが――",
+            "enText": "Thus, although there was a hint of turmoil, \nmy days of supervising Air Groove began一",
+            "nextBlock": 47,
+            "origClipLength": 103,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 32,
+                    "pathId": 5049070779202060365
+                },
+                {
+                    "origLen": 32,
+                    "pathId": 2016021254412461194
+                }
+            ],
+            "pathId": -8798999975507146254,
+            "blockIdx": 46
+        },
+        {
+            "jpName": "エアグルーヴ",
+            "enName": "Air Groove",
+            "jpText": "トレーニングは以上か？\r\nならば私は失礼するぞ。",
+            "enText": "Is that all for training? Then I'll be excusing myself.",
+            "nextBlock": 48,
+            "origClipLength": 123,
+            "voiceIdx": 40,
+            "choices": [
+                {
+                    "jpText": "そんなに急いでどこへ行くんだ？",
+                    "enText": "Where are you going in such a hurry?",
+                    "nextBlock": 48
+                },
+                {
+                    "jpText": "そんなに急いでどこへ行くの？",
+                    "enText": "Where are you going in such a hurry?",
+                    "nextBlock": 48
+                }
+            ],
+            "animData": [
+                {
+                    "origLen": 165,
+                    "pathId": -6871394057454393711
+                }
+            ],
+            "pathId": 1990464986383471457,
+            "blockIdx": 47
+        },
+        {
+            "jpName": "エアグルーヴ",
+            "enName": "Air Groove",
+            "jpText": "言う義理があるとは思えんが……まあいい、後輩たちへの指導だ。",
+            "enText": "I don't think you have any right to ask, but \nfine. I'm going to go coach the juniors.",
+            "nextBlock": 49,
+            "origClipLength": 209,
+            "voiceIdx": 41,
+            "animData": [
+                {
+                    "origLen": 63,
+                    "pathId": 2256036420060205244
+                },
+                {
+                    "origLen": 20,
+                    "pathId": 816047322746489780
+                }
+            ],
+            "pathId": -387347103021475168,
+            "blockIdx": 48
+        },
+        {
+            "jpName": "エアグルーヴ",
+            "enName": "Air Groove",
+            "jpText": "トレーナー契約前の生徒は教官からトレーニングを指示されるが、\r\n一律のメニューである以上、個々に合った指導というのは難しい。",
+            "enText": "Students that haven't been scouted by a trainer are trained by \ninstructors, but because the regimen is uniform it's difficult to \ngive individual instruction.",
+            "nextBlock": 50,
+            "origClipLength": 263,
+            "voiceIdx": 42,
+            "animData": [
+                {
+                    "origLen": 275,
+                    "pathId": 5136877552645967461
+                }
+            ],
+            "pathId": -8917843524782777583,
+            "blockIdx": 49
+        },
+        {
+            "jpName": "エアグルーヴ",
+            "enName": "Air Groove",
+            "jpText": "そういった環境下で不安を抱えてしまう子は多くいるのでな。\r\n彼女らが少しでも道に迷わんよう導いているだけだ。",
+            "enText": "There are plenty that are troubled by this system. So I'm simply \ntrying to guide them as best I can.",
+            "nextBlock": 51,
+            "origClipLength": 253,
+            "voiceIdx": 43,
+            "animData": [
+                {
+                    "origLen": 91,
+                    "pathId": -8057736780463317224
+                }
+            ],
+            "pathId": -3254899418882010830,
+            "blockIdx": 50
+        },
+        {
+            "jpName": "エアグルーヴ",
+            "enName": "Air Groove",
+            "jpText": "……時間がない。では、失礼。",
+            "enText": "There's no time. Well then, excuse me.",
+            "nextBlock": 52,
+            "origClipLength": 90,
+            "voiceIdx": 44,
+            "animData": [
+                {
+                    "origLen": 102,
+                    "pathId": 8298667311275138890
+                }
+            ],
+            "pathId": -3896743902373331229,
+            "blockIdx": 51
+        },
+        {
+            "jpName": "エアグルーヴ",
+            "enName": "Air Groove",
+            "jpText": "なに、今からミーティングがしたい？",
+            "enText": "Huh…? You want to hold a meeting right now?",
+            "nextBlock": 53,
+            "origClipLength": 105,
+            "voiceIdx": 45,
+            "animData": [
+                {
+                    "origLen": 165,
+                    "pathId": 9148060288099958335
+                },
+                {
+                    "origLen": 102,
+                    "pathId": -4291167874453727722
+                }
+            ],
+            "pathId": 8136483233653899737,
+            "blockIdx": 52
+        },
+        {
+            "jpName": "エアグルーヴ",
+            "enName": "Air Groove",
+            "jpText": "無理だな、生徒会で行う清掃活動の予定が入っている。\r\n……そもそも予定の変更は前日までに言えと伝えているだろうが。",
+            "enText": "Not possible, I have cleaning plans with the student \ncouncil. In the first place, I told you to tell me \nof any schedule changes a day in advance.",
+            "nextBlock": 54,
+            "origClipLength": 301,
+            "voiceIdx": 46,
+            "animData": [
+                {
+                    "origLen": 116,
+                    "pathId": 602586274264763966
+                },
+                {
+                    "origLen": 20,
+                    "pathId": 8983986963188250927
+                }
+            ],
+            "pathId": -7938446200272339030,
+            "blockIdx": 53
+        },
+        {
+            "jpName": "エアグルーヴ",
+            "enName": "Air Groove",
+            "jpText": "打ち合わせたい内容を資料化して送っておけ。\r\n目は通しておいてやる。",
+            "enText": "Send me a file of what it is you wanted to discuss. \nI'll look over it later.",
+            "nextBlock": 55,
+            "origClipLength": 143,
+            "voiceIdx": 47,
+            "animData": [
+                {
+                    "origLen": 155,
+                    "pathId": 8535056240198366489
+                }
+            ],
+            "pathId": 2365544983881165402,
+            "blockIdx": 54
+        },
+        {
+            "jpName": "モノローグ",
+            "enName": "",
+            "jpText": "担当契約を交わしてからものの数日で、\r\n彼女の多忙ぶりが心配になるのだった……。",
+            "enText": "Only a few days after signing the contract and I was already \nworrying over her busy schedule…",
+            "nextBlock": -1,
+            "origClipLength": 97,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 102,
+                    "pathId": 6106499161567852207
+                },
+                {
+                    "origLen": 40,
+                    "pathId": 2926972141403543279
+                }
+            ],
+            "pathId": 6295872159286957701,
+            "blockIdx": 55
+        }
+    ],
+    "humanTl": true,
+    "modified": 1694039036
+}

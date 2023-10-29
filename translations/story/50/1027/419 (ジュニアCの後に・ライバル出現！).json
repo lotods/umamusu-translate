@@ -1,0 +1,116 @@
+{
+    "version": 6,
+    "bundle": "XFO5NY7PBG6H2ZO526PVJEMSAIMXZEHU",
+    "type": "story",
+    "storyId": "501027419",
+    "title": "ジュニアCの後に・ライバル出現！",
+    "text": [
+        {
+            "jpName": "モノローグ",
+            "enName": "",
+            "jpText": "『ジュニアカップ』で力を出し切って走った\r\nメジロライアンは憧れの舞台への切符を\n手にして、歓喜する。",
+            "enText": "Mejiro Ryan, who ran with all her might \nin the \"Junior Cup,\" is delighted to \nhave a ticket to the stage of her dreams. \nShe is elated to have a ticket to the \nstage of her dreams.",
+            "nextBlock": 2,
+            "origClipLength": 111,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 123,
+                    "pathId": 7586013012212277728
+                },
+                {
+                    "origLen": 123,
+                    "pathId": -1565840356764182277
+                }
+            ],
+            "pathId": 3826727987352057990,
+            "blockIdx": 1
+        },
+        {
+            "jpName": "モノローグ",
+            "enName": "",
+            "jpText": "その直後、別のレース場を映す\r\n中継テレビから大歓声が上がった。",
+            "enText": "Immediately thereafter, a loud cheer erupted \nfrom a relay TV showing another racecourse.",
+            "nextBlock": 3,
+            "origClipLength": 86,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 123,
+                    "pathId": -2887753954230884187
+                },
+                {
+                    "origLen": 123,
+                    "pathId": 3333636890062900247
+                }
+            ],
+            "pathId": -1683388083164140468,
+            "blockIdx": 2
+        },
+        {
+            "jpName": "モノローグ",
+            "enName": "",
+            "jpText": "テレビに映されたのは、ぶっちぎりの\r\n逃げ切り勝ちを収めるアイネスフウジンの姿。",
+            "enText": "The TV showed Ines Fujin, who had \nclinched a victory by outright escaping \nthe rest of the field.",
+            "nextBlock": 4,
+            "origClipLength": 105,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 25,
+                    "pathId": 2242998081421421939
+                },
+                {
+                    "origLen": 25,
+                    "pathId": -3808499185254822874
+                },
+                {
+                    "origLen": 145,
+                    "pathId": 4031999498356386069
+                },
+                {
+                    "origLen": 149,
+                    "pathId": -5410476707202159370
+                }
+            ],
+            "pathId": -748341202862324048,
+            "blockIdx": 3
+        },
+        {
+            "jpName": "モノローグ",
+            "enName": "",
+            "jpText": "アイネスフウジンの『皐月賞』で会おうと\r\n言うライバル宣言を、メジロライアンは\n画面越しに受け取ったのだった。",
+            "enText": "Mejiro Ryan stared at her through \nthe screen as she declared they would \nmeet at the Satsuki Sho as rivals.",
+            "nextBlock": -1,
+            "origClipLength": 116,
+            "voiceIdx": -1,
+            "coloredText": [
+                {
+                    "jpText": "皐月賞",
+                    "enText": "Satsuki Sho"
+                }
+            ],
+            "animData": [
+                {
+                    "origLen": 185,
+                    "pathId": 5029655505546073808
+                },
+                {
+                    "origLen": 263,
+                    "pathId": -5438383530561741720
+                },
+                {
+                    "origLen": 28,
+                    "pathId": 5941671701474467871
+                },
+                {
+                    "origLen": 28,
+                    "pathId": 2329010001971535940
+                }
+            ],
+            "pathId": 2234015462746490976,
+            "blockIdx": 4
+        }
+    ],
+    "modified": 1694061079
+}

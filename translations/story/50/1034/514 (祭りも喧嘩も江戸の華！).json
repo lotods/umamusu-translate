@@ -1,0 +1,1103 @@
+{
+    "version": 6,
+    "bundle": "YBSZBPUDIN7NZRRTE6RSXW4VEG66N7OK",
+    "type": "story",
+    "storyId": "501034514",
+    "title": "祭りも喧嘩も江戸の華！",
+    "text": [
+        {
+            "jpName": "",
+            "enName": "",
+            "jpText": "この日は、イナリワンの希望で\n行きつけの商店街で行われるお祭りの\n準備を手伝うことになっていたのだが――",
+            "enText": "Inari One wanted to help prepare for a \nfestival at her favorite shopping street. to \nhelp with preparations for a festival at her \nfavorite shopping street.",
+            "nextBlock": 2,
+            "origClipLength": 112,
+            "voiceIdx": -1,
+            "choices": [
+                {
+                    "jpText": "どうして勝負服を？",
+                    "enText": "Why are you dressed to win?",
+                    "nextBlock": 2
+                }
+            ],
+            "animData": [
+                {
+                    "origLen": 123,
+                    "pathId": -6097937967139688091
+                },
+                {
+                    "origLen": 123,
+                    "pathId": 2770991332351726073
+                }
+            ],
+            "pathId": -2204411296051811617,
+            "blockIdx": 1
+        },
+        {
+            "jpName": "イナリワン",
+            "enName": "Inari One",
+            "jpText": "あたしを応援してくれる\n商店街の祭りとくりゃあ、\nこの格好で出向くしかねえだろ？",
+            "enText": "I'm going to a festival in a shopping \ndistrict that supports me, so I have no \nchoice but to go dressed like this, right?",
+            "nextBlock": 3,
+            "origClipLength": 97,
+            "voiceIdx": 0,
+            "animData": [
+                {
+                    "origLen": 86,
+                    "pathId": -1366586485867379126
+                },
+                {
+                    "origLen": 108,
+                    "pathId": -4476887088328147624
+                }
+            ],
+            "pathId": -7909868763058645251,
+            "blockIdx": 2
+        },
+        {
+            "jpName": "イナリワン",
+            "enName": "Inari One",
+            "jpText": "気合いもやる気も\nこいつで盛り上げて――",
+            "enText": "She's got the energy, she's \ngot the motivation, she's got \nthe drive, she's got the…",
+            "nextBlock": 4,
+            "origClipLength": 71,
+            "voiceIdx": 5,
+            "animData": [
+                {
+                    "origLen": 33,
+                    "pathId": -8998851026217357700
+                },
+                {
+                    "origLen": 82,
+                    "pathId": -3354532896553483126
+                }
+            ],
+            "pathId": 4297086762858139486,
+            "blockIdx": 3
+        },
+        {
+            "jpName": "？？？",
+            "enName": "???",
+            "jpText": "はぁ～～～……。",
+            "enText": "Hah～～～……",
+            "nextBlock": 5,
+            "origClipLength": 55,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 72,
+                    "pathId": 844388375788486639
+                },
+                {
+                    "origLen": 67,
+                    "pathId": -8535036214323617542
+                },
+                {
+                    "origLen": 66,
+                    "pathId": 6946904918959430606
+                }
+            ],
+            "pathId": 4049843663275320614,
+            "blockIdx": 4
+        },
+        {
+            "jpName": "商店街の人A",
+            "enName": "Market Person A",
+            "jpText": "やっと準備も折り返しだが、\nこの調子で当日間に合うかねえ……。",
+            "enText": "We are finally turning around the \npreparations, but I wonder if we can make it \non the day of the event at this rate. ……",
+            "nextBlock": 6,
+            "origClipLength": 85,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 15,
+                    "pathId": -803435745298682427
+                },
+                {
+                    "origLen": 122,
+                    "pathId": 8445574062172688542
+                },
+                {
+                    "origLen": 143,
+                    "pathId": 1885161976963069152
+                }
+            ],
+            "pathId": 1162630131070764496,
+            "blockIdx": 5
+        },
+        {
+            "jpName": "イナリワン",
+            "enName": "Inari One",
+            "jpText": "なんでいなんでい！　辛気臭え面しやがって！\nそんなんじゃ祭りも湿気っちまうぜ？",
+            "enText": "Why, why, why! You're so bitter! You'll make \nthe festival damp!",
+            "nextBlock": 7,
+            "origClipLength": 95,
+            "voiceIdx": 16,
+            "animData": [
+                {
+                    "origLen": 57,
+                    "pathId": -3130047673036074273
+                },
+                {
+                    "origLen": 106,
+                    "pathId": 2239660777479470946
+                }
+            ],
+            "pathId": 4025147154708554632,
+            "blockIdx": 6
+        },
+        {
+            "jpName": "商店街の人A",
+            "enName": "Market Person A",
+            "jpText": "イナリちゃん！！\nははっ……そうだよな！　祭りだもんな！\nくよくよ言ってる暇はねえかっ！",
+            "enText": "Inari-chan!!! Haha…… I know! It's a festival! \nNo time to dwell on it!",
+            "nextBlock": 8,
+            "origClipLength": 102,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 113,
+                    "pathId": -2484130713103081377
+                },
+                {
+                    "origLen": 113,
+                    "pathId": 6225916077515440811
+                }
+            ],
+            "pathId": -519996759248232372,
+            "blockIdx": 7
+        },
+        {
+            "jpName": "商店街の人A",
+            "enName": "Market Person A",
+            "jpText": "にしたって、さすがの晴れ衣装だ！\n俺の心までパッと晴れ渡っちまったよ！",
+            "enText": "But, it's a great outfit for a beautiful day! \nIt really made my heart light up!",
+            "nextBlock": 9,
+            "origClipLength": 90,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 101,
+                    "pathId": -5744423802138600529
+                },
+                {
+                    "origLen": 101,
+                    "pathId": 7190128905659643625
+                }
+            ],
+            "pathId": 467540848769557619,
+            "blockIdx": 8
+        },
+        {
+            "jpName": "イナリワン",
+            "enName": "Inari One",
+            "jpText": "その調子だ！\nいっちょ日本一の祭りにしちまおうぜ！",
+            "enText": "Keep it up! Let's make this \nthe best festival in Japan!",
+            "nextBlock": 10,
+            "origClipLength": 77,
+            "voiceIdx": 6,
+            "animData": [
+                {
+                    "origLen": 51,
+                    "pathId": -8167786083119367034
+                },
+                {
+                    "origLen": 88,
+                    "pathId": 131354574801875225
+                }
+            ],
+            "pathId": 6433168583551785397,
+            "blockIdx": 9
+        },
+        {
+            "jpName": "商店街の人B",
+            "enName": "Market Person B",
+            "jpText": "イナリちゃんイナリちゃん！\nこの屋台なんだけど、\n屋根が上手く張れなくて……。",
+            "enText": "Inari-chan, Inari-chan! It's this stall, but \nI couldn't get the roof right. ……",
+            "nextBlock": 11,
+            "origClipLength": 95,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 126,
+                    "pathId": -5610746450899574883
+                },
+                {
+                    "origLen": 137,
+                    "pathId": -19675931352451376
+                }
+            ],
+            "pathId": 2818332285557956311,
+            "blockIdx": 10
+        },
+        {
+            "jpName": "イナリワン",
+            "enName": "Inari One",
+            "jpText": "1人でダメなら、皆でやりゃいいのさ！\n皆ー！　手え貸してくれいっ！",
+            "enText": "If we can't do it alone, we can do it \ntogether! Guys! Give me a hand!",
+            "nextBlock": 12,
+            "origClipLength": 88,
+            "voiceIdx": 156,
+            "animData": [
+                {
+                    "origLen": 61,
+                    "pathId": -2091613315419241088
+                },
+                {
+                    "origLen": 99,
+                    "pathId": -7056766798478635218
+                }
+            ],
+            "pathId": -5610691042520729740,
+            "blockIdx": 11
+        },
+        {
+            "jpName": "イナリワン",
+            "enName": "Inari One",
+            "jpText": "いいかい？　同時に\nわっしょいっと屋根を持ち上げるぜ？\nせーの――！！",
+            "enText": "Ready? We're gonna lift the roof with one big \nheave at the same time, okay? Ready…!",
+            "nextBlock": 13,
+            "origClipLength": 90,
+            "voiceIdx": -1,
+            "choices": [
+                {
+                    "jpText": "わっしょーい！！",
+                    "enText": "Woo hoo!",
+                    "nextBlock": 13
+                }
+            ],
+            "animData": [
+                {
+                    "origLen": 66,
+                    "pathId": -6103885753866568629
+                },
+                {
+                    "origLen": 101,
+                    "pathId": 4242024467755673165
+                }
+            ],
+            "pathId": -8363857304614208562,
+            "blockIdx": 12
+        },
+        {
+            "jpName": "",
+            "enName": "",
+            "jpText": "と、その調子でイナリワンは、\n方々に出向いて活躍してゆき――",
+            "enText": "And so, Inari One went on her way and became \nan active member of the community.",
+            "nextBlock": 14,
+            "origClipLength": 84,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 97,
+                    "pathId": -5450302156247872238
+                },
+                {
+                    "origLen": 95,
+                    "pathId": 1799582011371001751
+                }
+            ],
+            "pathId": 1138519983947257633,
+            "blockIdx": 13
+        },
+        {
+            "jpName": "イナリワン",
+            "enName": "Inari One",
+            "jpText": "ふうっ！　やっぱ祭りってのは、\n準備から楽しいもんだな！",
+            "enText": "Phew! Festivals are so much \nfun, right from the start!",
+            "nextBlock": 15,
+            "origClipLength": 81,
+            "voiceIdx": 59,
+            "choices": [
+                {
+                    "jpText": "本当に、大活躍だったな",
+                    "enText": "Really, you did a great job.",
+                    "nextBlock": 15
+                },
+                {
+                    "jpText": "本当に、大活躍だったね",
+                    "enText": "Really, you did a great job.",
+                    "nextBlock": 15
+                }
+            ],
+            "animData": [
+                {
+                    "origLen": 110,
+                    "pathId": 8178739734932030479
+                },
+                {
+                    "origLen": 110,
+                    "pathId": -7020144703634243119
+                },
+                {
+                    "origLen": 134,
+                    "pathId": -7999490121041128545
+                }
+            ],
+            "pathId": -4408068055978148525,
+            "blockIdx": 14
+        },
+        {
+            "jpName": "イナリワン",
+            "enName": "Inari One",
+            "jpText": "ったりめえよ！　こちとら小さい頃から\n祭りのたびに手伝ってたからな！\n慣れもするってんだよ――",
+            "enText": "Of course not! We've been helping \nout at every festival since we were \nkids! You get used to it.",
+            "nextBlock": 16,
+            "origClipLength": 106,
+            "voiceIdx": 48,
+            "animData": [
+                {
+                    "origLen": 20,
+                    "pathId": -4469827182710348842
+                },
+                {
+                    "origLen": 117,
+                    "pathId": -7887092965571256085
+                },
+                {
+                    "origLen": 117,
+                    "pathId": 8327612823730692920
+                }
+            ],
+            "pathId": 3342707380984106795,
+            "blockIdx": 15
+        },
+        {
+            "jpName": "商店街の人C",
+            "enName": "",
+            "jpText": "て、てえへんだ～～！\nあっちで大工の喧嘩がはじまっちまったよ！",
+            "enText": "Oh, no! The carpenters are \nfighting over there!",
+            "nextBlock": 17,
+            "origClipLength": 85,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 96,
+                    "pathId": -5075901802103857875
+                },
+                {
+                    "origLen": 96,
+                    "pathId": -3824552162073064776
+                }
+            ],
+            "pathId": -3260165968102242567,
+            "blockIdx": 16
+        },
+        {
+            "jpName": "イナリワン",
+            "enName": "Inari One",
+            "jpText": "おっと！\nまたイナリ様の出番みたいだな。",
+            "enText": "Oops! Looks like it's Inari-sama's turn again.",
+            "nextBlock": 18,
+            "origClipLength": 71,
+            "voiceIdx": 77,
+            "choices": [
+                {
+                    "jpText": "待った！ちょっと危ないんじゃ……",
+                    "enText": "Oh wait!!! It's a little dangerous. ……",
+                    "nextBlock": 18
+                }
+            ],
+            "animData": [
+                {
+                    "origLen": 76,
+                    "pathId": -5485836978506197724
+                },
+                {
+                    "origLen": 82,
+                    "pathId": 5330771895687602245
+                },
+                {
+                    "origLen": 82,
+                    "pathId": -2241668552583670039
+                }
+            ],
+            "pathId": -337446215063475217,
+            "blockIdx": 17
+        },
+        {
+            "jpName": "イナリワン",
+            "enName": "Inari One",
+            "jpText": "心配すんなって！\n喧嘩の仲裁は慣れてるってんだよ！\nそれに――",
+            "enText": "Don't worry! I'm used to breaking \nup fights! Besides…",
+            "nextBlock": 19,
+            "origClipLength": 85,
+            "voiceIdx": 3,
+            "animData": [
+                {
+                    "origLen": 19,
+                    "pathId": -2354912463134630414
+                },
+                {
+                    "origLen": 96,
+                    "pathId": 7038843098908242698
+                },
+                {
+                    "origLen": 96,
+                    "pathId": -7899708130170436631
+                }
+            ],
+            "pathId": 4438386026656348751,
+            "blockIdx": 18
+        },
+        {
+            "jpName": "イナリワン",
+            "enName": "Inari One",
+            "jpText": "喧嘩を前に引くようじゃ、\nこの勝負服が廃れちまうってんだよ！！",
+            "enText": "If you back down before a fight, \nyou'll ruin this outfit!",
+            "nextBlock": 20,
+            "origClipLength": 85,
+            "voiceIdx": 63,
+            "animData": [
+                {
+                    "origLen": 110,
+                    "pathId": -7941884441908058864
+                },
+                {
+                    "origLen": 96,
+                    "pathId": -3281823791261159952
+                },
+                {
+                    "origLen": 96,
+                    "pathId": 4379459049160958754
+                }
+            ],
+            "pathId": -2062505734134395101,
+            "blockIdx": 19
+        },
+        {
+            "jpName": "",
+            "enName": "",
+            "jpText": "イナリワンはにんじん焼きを\nいっきに食べ切り、現場に駆けてゆく――",
+            "enText": "Inari One eats the roasted carrots right away \nand rushes to the scene of the crime.",
+            "nextBlock": 21,
+            "origClipLength": 88,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 13,
+                    "pathId": -5952909934328443914
+                },
+                {
+                    "origLen": 13,
+                    "pathId": 1032069506291719955
+                },
+                {
+                    "origLen": 13,
+                    "pathId": -2135180348875132765
+                }
+            ],
+            "pathId": -4665489550779175173,
+            "blockIdx": 20
+        },
+        {
+            "jpName": "",
+            "enName": "",
+            "jpText": "彼女の想いを尊重しつつ、\n何か起こる前にすぐに対処できるようにと\nその背中を追いかけ……。",
+            "enText": "While respecting her wishes, I followed her \nback to help her deal with the situation \nimmediately before anything happens. ……",
+            "nextBlock": 22,
+            "origClipLength": 103,
+            "voiceIdx": -1,
+            "pathId": 6746598316117037882,
+            "blockIdx": 21
+        },
+        {
+            "jpName": "喧嘩している大工たち",
+            "enName": "",
+            "jpText": "――最後の唐揚げ弁当横取りしやがって！\n――遅ぇアンタが悪い！　のり弁食ってな！",
+            "enText": "―You took my last fried chicken lunch! \n―You're too slow! Eat your noriben!",
+            "nextBlock": 23,
+            "origClipLength": 97,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 109,
+                    "pathId": 2083687042257852493
+                },
+                {
+                    "origLen": 109,
+                    "pathId": 1181422761558192232
+                }
+            ],
+            "pathId": 7608191359543472236,
+            "blockIdx": 22
+        },
+        {
+            "jpName": "イナリワン",
+            "enName": "Inari One",
+            "jpText": "ここかい？　噂の火事場ってのは。\nっとくりゃあ……。",
+            "enText": "Is this it? The rumored fireplace? You can \nfind out more at ……",
+            "nextBlock": 24,
+            "origClipLength": 78,
+            "voiceIdx": 32,
+            "animData": [
+                {
+                    "origLen": 37,
+                    "pathId": -6999459636121209260
+                },
+                {
+                    "origLen": 89,
+                    "pathId": 2525683763046591352
+                }
+            ],
+            "pathId": 3144220319988416297,
+            "blockIdx": 23
+        },
+        {
+            "jpName": "イナリワン",
+            "enName": "Inari One",
+            "jpText": "寄ってらっしゃい見てらっしゃい！\n祭りの喧嘩は江戸の華！\nいっちょ派手なの見せとくれ！",
+            "enText": "Come on, come on, come on, come on, come on! \nFestival fights are the flower of Edo! Show \nus something spectacular!",
+            "nextBlock": 25,
+            "origClipLength": 101,
+            "voiceIdx": 53,
+            "animData": [
+                {
+                    "origLen": 118,
+                    "pathId": 1608115794804775890
+                },
+                {
+                    "origLen": 79,
+                    "pathId": 4548955554788225428
+                },
+                {
+                    "origLen": 112,
+                    "pathId": 7054997284672846127
+                }
+            ],
+            "pathId": 6423874610186848321,
+            "blockIdx": 24
+        },
+        {
+            "jpName": "イナリワン",
+            "enName": "Inari One",
+            "jpText": "ってな訳で、頼むぜおふたりさん！\nお客を満足させとくれよ～！",
+            "enText": "So, do me a favor, you two! \nKeep my customers happy!",
+            "nextBlock": 26,
+            "origClipLength": 84,
+            "voiceIdx": 6,
+            "animData": [
+                {
+                    "origLen": 20,
+                    "pathId": -6179677995802622143
+                },
+                {
+                    "origLen": 59,
+                    "pathId": 8759939884356703188
+                },
+                {
+                    "origLen": 95,
+                    "pathId": 3169912750982140138
+                }
+            ],
+            "pathId": -7681395490715015835,
+            "blockIdx": 25
+        },
+        {
+            "jpName": "商店街の人D",
+            "enName": "",
+            "jpText": "お、そう来たかい！\nとくりゃ、俺らも盛り上げなきゃなあ！",
+            "enText": "Oh, that's what I thought! Well, then, we'll \nhave to get our act together, too!",
+            "nextBlock": 27,
+            "origClipLength": 81,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 92,
+                    "pathId": 8565428188864069917
+                },
+                {
+                    "origLen": 92,
+                    "pathId": -2582744933316482215
+                }
+            ],
+            "pathId": 2065299053688362496,
+            "blockIdx": 26
+        },
+        {
+            "jpName": "イナリワン",
+            "enName": "Inari One",
+            "jpText": "それで、ご両人さん？　喧嘩の理由は？\nこの騒ぎよう……\n大層ご立派な意地のぶつかり合いと見たが！",
+            "enText": "So, gentlemen? What was the reason for the \nfight? What's all the fuss about?…… I see a \nvery noble clash of wills!",
+            "nextBlock": 28,
+            "origClipLength": 107,
+            "voiceIdx": 52,
+            "animData": [
+                {
+                    "origLen": 70,
+                    "pathId": -4000275725909311733
+                },
+                {
+                    "origLen": 118,
+                    "pathId": 5102275286280255701
+                }
+            ],
+            "pathId": 5873242882125476904,
+            "blockIdx": 27
+        },
+        {
+            "jpName": "大工A",
+            "enName": "",
+            "jpText": "え、いや、意地っていうか、\nそれほどの喧嘩じゃねえっていうか……。",
+            "enText": "Well, I mean, it's not so much a fight as it \nis a stubbornness. ……",
+            "nextBlock": 29,
+            "origClipLength": 88,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 99,
+                    "pathId": -4776746561791027630
+                },
+                {
+                    "origLen": 99,
+                    "pathId": -7718732150232626410
+                }
+            ],
+            "pathId": 8700173134607017741,
+            "blockIdx": 28
+        },
+        {
+            "jpName": "大工B",
+            "enName": "",
+            "jpText": "ど、どうすんだお前、\nこんなくだらねえことで\nぞろぞろ人集めちまって！",
+            "enText": "What are you going to do, get a bunch of \npeople to come out here for this nonsense?",
+            "nextBlock": 30,
+            "origClipLength": 90,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 79,
+                    "pathId": -5822771178076305068
+                },
+                {
+                    "origLen": 101,
+                    "pathId": 6004552417531537023
+                }
+            ],
+            "pathId": -2741886522793110595,
+            "blockIdx": 29
+        },
+        {
+            "jpName": "大工A",
+            "enName": "",
+            "jpText": "ええいっ……たまにはのり弁もいいか！\nやめやめ！　喧嘩はやめだ！",
+            "enText": "Yeah…… sometimes a nori bento is good! Stop \nit, stop it! Stop fighting!",
+            "nextBlock": 31,
+            "origClipLength": 86,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 97,
+                    "pathId": 5964004478227739528
+                },
+                {
+                    "origLen": 97,
+                    "pathId": -8142486128226150756
+                }
+            ],
+            "pathId": 6941715995023157561,
+            "blockIdx": 30
+        },
+        {
+            "jpName": "イナリワン",
+            "enName": "Inari One",
+            "jpText": "これにて、一件落着！　――ってなあ！",
+            "enText": "That's it! Case closed! ―What the hell!",
+            "nextBlock": 32,
+            "origClipLength": 68,
+            "voiceIdx": -1,
+            "choices": [
+                {
+                    "jpText": "お手柄だな！",
+                    "enText": "Nice work!",
+                    "nextBlock": 32
+                },
+                {
+                    "jpText": "お手柄だね！",
+                    "enText": "Nice work!",
+                    "nextBlock": 32
+                }
+            ],
+            "animData": [
+                {
+                    "origLen": 26,
+                    "pathId": -648997005252642717
+                },
+                {
+                    "origLen": 79,
+                    "pathId": -2505033764265876920
+                }
+            ],
+            "pathId": -4776118657210037856,
+            "blockIdx": 31
+        },
+        {
+            "jpName": "イナリワン",
+            "enName": "Inari One",
+            "jpText": "これくらい朝飯前でい！\nしかも、今はこの服を着てるんだからな。",
+            "enText": "This is just a piece of cake! Besides, I'm \nwearing these clothes now.",
+            "nextBlock": 33,
+            "origClipLength": 85,
+            "voiceIdx": 3,
+            "animData": [
+                {
+                    "origLen": 47,
+                    "pathId": 870068512561724110
+                },
+                {
+                    "origLen": 96,
+                    "pathId": 2617666898628821054
+                }
+            ],
+            "pathId": 6303728727818190799,
+            "blockIdx": 32
+        },
+        {
+            "jpName": "イナリワン",
+            "enName": "Inari One",
+            "jpText": "この服はな、\n火消しが着る火事装束みたいなもんなんだよ。",
+            "enText": "These clothes are like the \nfirefighter's fire gear.",
+            "nextBlock": 34,
+            "origClipLength": 81,
+            "voiceIdx": 84,
+            "animData": [
+                {
+                    "origLen": 84,
+                    "pathId": 1610167290462770541
+                },
+                {
+                    "origLen": 69,
+                    "pathId": -8587380054289692930
+                },
+                {
+                    "origLen": 92,
+                    "pathId": 299158665554691975
+                }
+            ],
+            "pathId": -7755612709512757979,
+            "blockIdx": 33
+        },
+        {
+            "jpName": "イナリワン",
+            "enName": "Inari One",
+            "jpText": "駆けつける姿を見りゃ、誰もが頼りに思い、\n誰もが活躍に胸躍らせる！\nそれが、あたしの勝負服なのさ。",
+            "enText": "When everyone sees you running to the \ndoor, everyone is counting on you, and \neveryone is excited to see what you can \ndo! That's what I wear to win.",
+            "nextBlock": 35,
+            "origClipLength": 108,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 20,
+                    "pathId": 4291484738308139328
+                },
+                {
+                    "origLen": 119,
+                    "pathId": 1839479457158066776
+                },
+                {
+                    "origLen": 119,
+                    "pathId": 4309849654357657390
+                }
+            ],
+            "pathId": -1183828264283517148,
+            "blockIdx": 34
+        },
+        {
+            "jpName": "イナリワン",
+            "enName": "Inari One",
+            "jpText": "だからこの服を纏ってる時は\n全力で駆け、全力で皆を楽しませたいんでい！",
+            "enText": "So when I wear this outfit, I want \nto run as fast as I can and entertain \neveryone as much as I can!",
+            "nextBlock": 36,
+            "origClipLength": 90,
+            "voiceIdx": 6,
+            "animData": [
+                {
+                    "origLen": 64,
+                    "pathId": 5221771868238538774
+                },
+                {
+                    "origLen": 101,
+                    "pathId": -4582131547074385359
+                }
+            ],
+            "pathId": 2394900345811694703,
+            "blockIdx": 35
+        },
+        {
+            "jpName": "イナリワン",
+            "enName": "Inari One",
+            "jpText": "レースだろうが、どこであろうが……な。",
+            "enText": "Whether it's a race or not, \nwherever you are, go to ……",
+            "nextBlock": 37,
+            "origClipLength": 69,
+            "voiceIdx": -1,
+            "choices": [
+                {
+                    "jpText": "粋だな！",
+                    "enText": "Classy!",
+                    "nextBlock": 38
+                },
+                {
+                    "jpText": "粋だね！",
+                    "enText": "Classy!",
+                    "nextBlock": 38
+                },
+                {
+                    "jpText": "なら、俺も一緒に楽しもうかな！",
+                    "enText": "Well, then I guess I'll \nhave some fun with you!",
+                    "nextBlock": 42
+                },
+                {
+                    "jpText": "なら、私も一緒に楽しもうかな！",
+                    "enText": "Well, then I guess I'll just \nhave to join in on the fun!",
+                    "nextBlock": 42
+                }
+            ],
+            "animData": [
+                {
+                    "origLen": 45,
+                    "pathId": 5312583568302744562
+                },
+                {
+                    "origLen": 80,
+                    "pathId": -3538599205372156695
+                }
+            ],
+            "pathId": -1959792643155195272,
+            "blockIdx": 36
+        },
+        {
+            "jpName": "イナリワン",
+            "enName": "Inari One",
+            "jpText": "レースだろうが、どこであろうが……な。",
+            "enText": "Whether it's a race or not, \nwherever you are, go to ……",
+            "nextBlock": 38,
+            "origClipLength": 69,
+            "voiceIdx": -1,
+            "choices": [
+                {
+                    "jpText": "粋だな！",
+                    "enText": "Classy!",
+                    "nextBlock": 38
+                },
+                {
+                    "jpText": "粋だね！",
+                    "enText": "Classy!",
+                    "nextBlock": 38
+                },
+                {
+                    "jpText": "なら、俺も一緒に楽しもうかな！",
+                    "enText": "Well, then I guess I'll \nhave some fun with you!",
+                    "nextBlock": 42
+                },
+                {
+                    "jpText": "なら、私も一緒に楽しもうかな！",
+                    "enText": "Well, then I guess I'll just \nhave to join in on the fun!",
+                    "nextBlock": 42
+                }
+            ],
+            "animData": [
+                {
+                    "origLen": 45,
+                    "pathId": -8910873065100888606
+                },
+                {
+                    "origLen": 80,
+                    "pathId": 7246737643954580044
+                }
+            ],
+            "pathId": -4742665826306655590,
+            "blockIdx": 37
+        },
+        {
+            "jpName": "イナリワン",
+            "enName": "Inari One",
+            "jpText": "あったりめえよ！\nあたしを誰だと思ってんでい？",
+            "enText": "Of course I do! Who do you think I am?",
+            "nextBlock": 39,
+            "origClipLength": 75,
+            "voiceIdx": 48,
+            "animData": [
+                {
+                    "origLen": 53,
+                    "pathId": -5880226083773945319
+                },
+                {
+                    "origLen": 86,
+                    "pathId": 8269351899218922146
+                }
+            ],
+            "pathId": -1129513561850314428,
+            "blockIdx": 38
+        },
+        {
+            "jpName": "イナリワン",
+            "enName": "Inari One",
+            "jpText": "いずれ天下に名をとどろかせる、\nイナリ様たあ、あたしのことだぜ！",
+            "enText": "I'm the one who's going to make a name for \nmyself all over the world, Inari-sama!",
+            "nextBlock": 40,
+            "origClipLength": 86,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 54,
+                    "pathId": -8873769472905676588
+                },
+                {
+                    "origLen": 97,
+                    "pathId": -1012790115785425724
+                }
+            ],
+            "pathId": -155217569664440302,
+            "blockIdx": 39
+        },
+        {
+            "jpName": "イナリワン",
+            "enName": "Inari One",
+            "jpText": "これくらいできなきゃ、\n勝負服以前に名が廃るってもんよ！",
+            "enText": "If you can't do this, you'll lose your name \nbefore you can win a race!",
+            "nextBlock": 41,
+            "origClipLength": 81,
+            "voiceIdx": 63,
+            "animData": [
+                {
+                    "origLen": 39,
+                    "pathId": 1435834930060543290
+                },
+                {
+                    "origLen": 92,
+                    "pathId": -8078423924695361988
+                }
+            ],
+            "pathId": -5949653018322547304,
+            "blockIdx": 40
+        },
+        {
+            "jpName": "",
+            "enName": "",
+            "jpText": "そう意気込むイナリワンの姿を見て、\n商店街の人たちと一緒に\n拍手を送るのであった。",
+            "enText": "Seeing Inari One so enthusiastic, she \napplauded along with the people of the \nshopping district.",
+            "nextBlock": -1,
+            "origClipLength": 98,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 109,
+                    "pathId": 1653784090067106362
+                },
+                {
+                    "origLen": 109,
+                    "pathId": -4291665741724373736
+                }
+            ],
+            "pathId": 4380574876543276042,
+            "blockIdx": 41
+        },
+        {
+            "jpName": "イナリワン",
+            "enName": "Inari One",
+            "jpText": "任せときなってんでい！",
+            "enText": "Leave it to me!",
+            "nextBlock": 43,
+            "origClipLength": 59,
+            "voiceIdx": 48,
+            "animData": [
+                {
+                    "origLen": 37,
+                    "pathId": -6979934293782857790
+                },
+                {
+                    "origLen": 70,
+                    "pathId": -7225977549178141045
+                }
+            ],
+            "pathId": 1901764633764037251,
+            "blockIdx": 42
+        },
+        {
+            "jpName": "イナリワン",
+            "enName": "Inari One",
+            "jpText": "あたしについてくりゃ、\nどこでだって楽しめるぜい！",
+            "enText": "Follow me and we'll have fun wherever we go!",
+            "nextBlock": 44,
+            "origClipLength": 77,
+            "voiceIdx": 74,
+            "animData": [
+                {
+                    "origLen": 66,
+                    "pathId": -9190642070419358212
+                },
+                {
+                    "origLen": 88,
+                    "pathId": 8858621506285508713
+                }
+            ],
+            "pathId": -9042496323979096375,
+            "blockIdx": 43
+        },
+        {
+            "jpName": "イナリワン",
+            "enName": "Inari One",
+            "jpText": "さーて、まずは手始めに\n準備の続きを楽しむとするか！　な、皆！",
+            "enText": "Well, let's enjoy the rest of the \npreparations for starters! Hey, guys!",
+            "nextBlock": 45,
+            "origClipLength": 85,
+            "voiceIdx": 11,
+            "animData": [
+                {
+                    "origLen": 59,
+                    "pathId": -7868739091882353515
+                },
+                {
+                    "origLen": 96,
+                    "pathId": -4512685166546508117
+                }
+            ],
+            "pathId": -7673102276191181168,
+            "blockIdx": 44
+        },
+        {
+            "jpName": "商店街のみんな",
+            "enName": "",
+            "jpText": "おーうっ！！",
+            "enText": "Oooooh!",
+            "nextBlock": 46,
+            "origClipLength": 52,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 30,
+                    "pathId": -6508994376049412802
+                },
+                {
+                    "origLen": 63,
+                    "pathId": 7944433332658526991
+                }
+            ],
+            "pathId": 5667877168829513503,
+            "blockIdx": 45
+        },
+        {
+            "jpName": "",
+            "enName": "",
+            "jpText": "その後、みんな一丸となり、愉快な調子で\n祭りの準備を終わらせたのであった。",
+            "enText": "After that, everyone worked together \nto finish the preparations for the \nfestival in a joyful tone.",
+            "nextBlock": -1,
+            "origClipLength": 93,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 104,
+                    "pathId": 2964354536821414331
+                },
+                {
+                    "origLen": 104,
+                    "pathId": -1111065337647127821
+                }
+            ],
+            "pathId": 7305596232159861669,
+            "blockIdx": 46
+        }
+    ],
+    "modified": 1694039405
+}

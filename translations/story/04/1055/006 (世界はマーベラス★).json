@@ -1,0 +1,1137 @@
+{
+    "version": 6,
+    "bundle": "APA6RMPAMVIOZ4UU7LZMYJIVBR2TRFV3",
+    "type": "story",
+    "storyId": "041055006",
+    "title": "世界はマーベラス★",
+    "text": [
+        {
+            "jpName": "モノローグ",
+            "enName": "",
+            "jpText": "休日。商店街を散策していたところ、不意にいい匂いがした。\nお菓子屋だ。どうやら、焼きたてのクッキーの匂いのようだ。",
+            "enText": "A day off. While wandering around the shopping \ndistrict, I suddenly smelled something nice. A \nsweets shop. Seems like it's freshly baked cookies.",
+            "nextBlock": 2,
+            "origClipLength": 119,
+            "voiceIdx": -1,
+            "choices": [
+                {
+                    "jpText": "焼き色も綺麗で、美味しそうですね！",
+                    "enText": "The color is nice and it looks good!",
+                    "nextBlock": 2
+                }
+            ],
+            "pathId": -3421977528902157610,
+            "blockIdx": 1
+        },
+        {
+            "jpName": "お菓子屋の店員",
+            "enName": "Sweets Store Clerk",
+            "jpText": "ありがとうございます！　いやぁ～、今朝のはよく焼けたんですよ！\nもう2倍くらいサクサク感増しちゃってるかもです！",
+            "enText": "Thanks! Well~, this morning's batch turned out well! \nIt might be twice as crisp as usual!",
+            "nextBlock": 3,
+            "origClipLength": 263,
+            "voiceIdx": 0,
+            "pathId": 4229799069852589400,
+            "blockIdx": 2
+        },
+        {
+            "jpName": "モノローグ",
+            "enName": "",
+            "jpText": "よいと思ったことをよいと伝えるだけで、笑顔は自然と生まれる。\nたったそれだけで、世界はより輝いて見える。",
+            "enText": "Smiles just came naturally when you came across something good. \nThat's all it took for the world to seem brighter.",
+            "nextBlock": 4,
+            "origClipLength": 112,
+            "voiceIdx": -1,
+            "pathId": -2064069584897033239,
+            "blockIdx": 3
+        },
+        {
+            "jpName": "モノローグ",
+            "enName": "",
+            "jpText": "なんとも清々しく、心地のよい気分だ。\nきっとこの場に彼女がいたらこう言うだろう――",
+            "enText": "It was refreshing, a comfortable feeling. \nIf she was here, I'm sure she'd say――",
+            "nextBlock": 5,
+            "origClipLength": 98,
+            "voiceIdx": -1,
+            "pathId": 7326590938583286251,
+            "blockIdx": 4
+        },
+        {
+            "jpName": "マーベラスサンデー",
+            "enName": "Marvelous Sunday",
+            "jpText": "うう～ん、マーベラス☆　いい匂～いっ！",
+            "enText": "Mmmm~, Marvelous☆ It smells good!",
+            "nextBlock": 6,
+            "origClipLength": 182,
+            "voiceIdx": 1,
+            "animData": [
+                {
+                    "origLen": 125,
+                    "pathId": -1563308690956020803
+                },
+                {
+                    "origLen": 50,
+                    "pathId": -740255743473286157
+                }
+            ],
+            "pathId": 4542467073898338003,
+            "blockIdx": 5
+        },
+        {
+            "jpName": "マーベラスサンデー",
+            "enName": "Marvelous Sunday",
+            "jpText": "って、あれあれ、トレーナーだっ！！",
+            "enText": "Ohー, huh, it's Trainer!!",
+            "nextBlock": 7,
+            "origClipLength": 101,
+            "voiceIdx": 2,
+            "animData": [
+                {
+                    "origLen": 60,
+                    "pathId": -7360185544967561681
+                },
+                {
+                    "origLen": 20,
+                    "pathId": 8927969035459939588
+                }
+            ],
+            "pathId": -7869540289329028443,
+            "blockIdx": 6
+        },
+        {
+            "jpName": "モノローグ",
+            "enName": "",
+            "jpText": "その後、お菓子屋で2人分のクッキーを食べてから、\n商店街を歩き始めた。",
+            "enText": "After eating 2 servings of cookies, \nwe walked around the shopping district.",
+            "nextBlock": 8,
+            "origClipLength": 90,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 198,
+                    "pathId": -8001888766272929553
+                }
+            ],
+            "pathId": -7352965583295313557,
+            "blockIdx": 7
+        },
+        {
+            "jpName": "マーベラスサンデー",
+            "enName": "Marvelous Sunday",
+            "jpText": "さっきのクッキー！　とーってもマーベラスだったね☆\nトレーナーにも会えたし、今日はさっそくマーベラース★",
+            "enText": "Those cookies! They were very Marvelous, weren't they?☆ \nI met up with Trainer so today's already been Marvelous★",
+            "nextBlock": 9,
+            "origClipLength": 281,
+            "voiceIdx": 3,
+            "animData": [
+                {
+                    "origLen": 60,
+                    "pathId": 4901769187786193643
+                },
+                {
+                    "origLen": 20,
+                    "pathId": -3497075323919710208
+                }
+            ],
+            "pathId": 5941315361935384880,
+            "blockIdx": 8
+        },
+        {
+            "jpName": "マーベラスサンデー",
+            "enName": "Marvelous Sunday",
+            "jpText": "そうだ！　トレーナーも一緒に行こうよ、マーベラス探し！\n世界中で生まれている新しいマーベラスを探しに行くのっ☆★☆",
+            "enText": "That's right! Trainer, let's go search for Marvelous together! \nWe'll go search the world for a new Marvelous☆★☆",
+            "nextBlock": 10,
+            "origClipLength": 289,
+            "voiceIdx": 4,
+            "animData": [
+                {
+                    "origLen": 79,
+                    "pathId": 209227463730761184
+                },
+                {
+                    "origLen": 20,
+                    "pathId": 3429093155061641520
+                }
+            ],
+            "pathId": -225022759911236123,
+            "blockIdx": 9
+        },
+        {
+            "jpName": "モノローグ",
+            "enName": "",
+            "jpText": "マーベラスを探す、か。とても興味を惹かれる。彼女の見ている\n輝かしい世界――“マーベラス”な世界を自分も感じてみたい！",
+            "enText": "Searching for Marvelous, huh. It sounds interesting. \nThat brilliant world that she sees――I want to get \na feel for that \"Marvelous\" world.",
+            "nextBlock": 11,
+            "origClipLength": 121,
+            "voiceIdx": -1,
+            "choices": [
+                {
+                    "jpText": "じゃあ、お言葉に甘えて",
+                    "enText": "I'll take you up on that offer",
+                    "nextBlock": 11
+                }
+            ],
+            "animData": [
+                {
+                    "origLen": 235,
+                    "pathId": 137836451517510387
+                }
+            ],
+            "pathId": 5221290183775986176,
+            "blockIdx": 10
+        },
+        {
+            "jpName": "マーベラスサンデー",
+            "enName": "Marvelous Sunday",
+            "jpText": "やったーーっ！　1人より2人のほうがマーベラスっ☆",
+            "enText": "Alrightーー! \nRather than being alone, being together is more Marvelous☆",
+            "nextBlock": 12,
+            "origClipLength": 136,
+            "voiceIdx": 5,
+            "animData": [
+                {
+                    "origLen": 50,
+                    "pathId": 216082137122528031
+                },
+                {
+                    "origLen": 102,
+                    "pathId": -7481993043515014156
+                }
+            ],
+            "pathId": -2161843161326909165,
+            "blockIdx": 11
+        },
+        {
+            "jpName": "マーベラスサンデー",
+            "enName": "Marvelous Sunday",
+            "jpText": "わぁ～！　お庭の盆栽、見てみて～っ☆",
+            "enText": "Ooh~! Look at the bonsai in that garden~☆",
+            "nextBlock": 13,
+            "origClipLength": 137,
+            "voiceIdx": 6,
+            "animData": [
+                {
+                    "origLen": 210,
+                    "pathId": 8314550614613886301
+                },
+                {
+                    "origLen": 75,
+                    "pathId": 7839221104683169768
+                }
+            ],
+            "pathId": 4385043885340138489,
+            "blockIdx": 12
+        },
+        {
+            "jpName": "モノローグ",
+            "enName": "",
+            "jpText": "見ると、塀の向こうの庭には、見事な盆栽が置かれていた。\nマーベラスを求め、盆栽をまじまじと眺めていたのだが――",
+            "enText": "There was a wonderful bonsai in the garden. \nWhile seeking Marvelous, I ended up staring at the bonsai――",
+            "nextBlock": 14,
+            "origClipLength": 116,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 147,
+                    "pathId": 939861904560226407
+                },
+                {
+                    "origLen": 20,
+                    "pathId": -7705542418630756617
+                }
+            ],
+            "pathId": 6998653059923643180,
+            "blockIdx": 13
+        },
+        {
+            "jpName": "おじいさんA",
+            "enName": "Old Man A",
+            "jpText": "なんだね、ウチに何か用でも？",
+            "enText": "What are you doing, do you have some business with me?",
+            "nextBlock": 15,
+            "origClipLength": 128,
+            "voiceIdx": 7,
+            "animData": [
+                {
+                    "origLen": 221,
+                    "pathId": 8073389803034235548
+                },
+                {
+                    "origLen": 146,
+                    "pathId": 4082141748698891148
+                }
+            ],
+            "pathId": 2515545008867350325,
+            "blockIdx": 14
+        },
+        {
+            "jpName": "マーベラスサンデー",
+            "enName": "Marvelous Sunday",
+            "jpText": "うん！　盆栽がすっごくマーベラスだな～って☆\n特に幹のうねりがとーってもマーベラス★",
+            "enText": "Yeah! I was just thinking this bonsai is Marvelous☆ \nEspecially the shape of the trunk, it's very Marvelous★",
+            "nextBlock": 16,
+            "origClipLength": 301,
+            "voiceIdx": 8,
+            "animData": [
+                {
+                    "origLen": 60,
+                    "pathId": 1721255001056154910
+                },
+                {
+                    "origLen": 20,
+                    "pathId": -5597901101301758992
+                }
+            ],
+            "pathId": 2504277118180841508,
+            "blockIdx": 15
+        },
+        {
+            "jpName": "おじいさんA",
+            "enName": "Old Man A",
+            "jpText": "…………。",
+            "enText": "…………",
+            "nextBlock": 17,
+            "origClipLength": 59,
+            "voiceIdx": 9,
+            "animData": [
+                {
+                    "origLen": 116,
+                    "pathId": -3367807230164210644
+                }
+            ],
+            "pathId": 4681576965197254838,
+            "blockIdx": 16
+        },
+        {
+            "jpName": "モノローグ",
+            "enName": "",
+            "jpText": "老人の表情がいっそう険しくなった。これはマズいかもしれない。\n無許可で覗いてしまったことを謝罪をしようとしたのだが――",
+            "enText": "The old man's expression became serious. This could be bad. \nI was going to apologize for peeking in without permission but――",
+            "nextBlock": 18,
+            "origClipLength": 121,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 97,
+                    "pathId": -3524474938259365145
+                }
+            ],
+            "pathId": -2419886934694857627,
+            "blockIdx": 17
+        },
+        {
+            "jpName": "おじいさんA",
+            "enName": "Old Man A",
+            "jpText": "お嬢さん、わかってくれるかね……っ！",
+            "enText": "Girly, you really do get it, huh……!",
+            "nextBlock": 19,
+            "origClipLength": 135,
+            "voiceIdx": 10,
+            "animData": [
+                {
+                    "origLen": 446,
+                    "pathId": 5720862440961628649
+                }
+            ],
+            "pathId": 1533356393079074777,
+            "blockIdx": 18
+        },
+        {
+            "jpName": "おじいさんA",
+            "enName": "Old Man A",
+            "jpText": "まさしくあのうねり！　あれを出すのに20年はかかっとるよ！\n針金で固定してな、あの形に整えたんだ。",
+            "enText": "It's all about that trunk! It took 20 years to get like that! \nI used a wire to arrange it in to that shape.",
+            "nextBlock": 20,
+            "origClipLength": 374,
+            "voiceIdx": 11,
+            "choices": [
+                {
+                    "jpText": "20年も！手間暇かけられたんですね！",
+                    "enText": "20 years! That's alot of time and effort!",
+                    "nextBlock": 20
+                }
+            ],
+            "animData": [
+                {
+                    "origLen": 383,
+                    "pathId": -7438866895012066002
+                },
+                {
+                    "origLen": 20,
+                    "pathId": -3819521196447467693
+                }
+            ],
+            "pathId": 1308343455861272237,
+            "blockIdx": 19
+        },
+        {
+            "jpName": "マーベラスサンデー",
+            "enName": "Marvelous Sunday",
+            "jpText": "うんうん！　それってとってもマーベラス☆\nすっごく大切にされてるんだねっ！",
+            "enText": "Yeah, yeah! That's really Marvelous☆ \nYou've been taking really good care of it, huh!?",
+            "nextBlock": 21,
+            "origClipLength": 230,
+            "voiceIdx": 12,
+            "animData": [
+                {
+                    "origLen": 177,
+                    "pathId": -8725065918611391121
+                },
+                {
+                    "origLen": 30,
+                    "pathId": -5207163117879348678
+                }
+            ],
+            "pathId": 2339008674498572477,
+            "blockIdx": 20
+        },
+        {
+            "jpName": "マーベラスサンデー",
+            "enName": "Marvelous Sunday",
+            "jpText": "きっと盆栽も、おじいさんの想いに応えようって、\nキレイに成長したんだと思うよっ！",
+            "enText": "I'll bet that bonsai grew so beautifully \nin response to your feelings!",
+            "nextBlock": 22,
+            "origClipLength": 202,
+            "voiceIdx": 13,
+            "animData": [
+                {
+                    "origLen": 60,
+                    "pathId": -2845734615714546535
+                },
+                {
+                    "origLen": 100,
+                    "pathId": -1343399871673933281
+                }
+            ],
+            "pathId": 5681835858146106159,
+            "blockIdx": 21
+        },
+        {
+            "jpName": "マーベラスサンデー",
+            "enName": "Marvelous Sunday",
+            "jpText": "だから、これは奇跡のマーベラスだね☆\n奇跡を見られたアタシたちも、すっごくハッピーでマーベラーース★",
+            "enText": "So, that makes this a miraculous Marvelous☆ Seeing something \nso miraculous makes us really happy and Maaarvelous★",
+            "nextBlock": 23,
+            "origClipLength": 303,
+            "voiceIdx": 14,
+            "animData": [
+                {
+                    "origLen": 60,
+                    "pathId": 356961454866848162
+                },
+                {
+                    "origLen": 20,
+                    "pathId": -2209249301092061405
+                }
+            ],
+            "pathId": 5611977600925186903,
+            "blockIdx": 22
+        },
+        {
+            "jpName": "おじいさんA",
+            "enName": "Old Man A",
+            "jpText": "ああ……久しぶりだ、この感じは……。\nいくつになっても、褒められるのは、嬉しいものだな。",
+            "enText": "Aaah…… it's been a while since I've felt like this…… \nNo matter how old you get, being praised makes you feel happy.",
+            "nextBlock": 24,
+            "origClipLength": 379,
+            "voiceIdx": 15,
+            "animData": [
+                {
+                    "origLen": 284,
+                    "pathId": -2657739650877944474
+                }
+            ],
+            "pathId": 6345059662112876080,
+            "blockIdx": 23
+        },
+        {
+            "jpName": "モノローグ",
+            "enName": "",
+            "jpText": "老人はとても嬉しそうにそう語った。どんな人であっても\n明るく変えてしまう。まさしくマーベラス！　さすがだ！",
+            "enText": "The old man spoke so happily. No matter who she talked to, \nthey became brighter. That's Marvelous! As expected!",
+            "nextBlock": 25,
+            "origClipLength": 114,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 60,
+                    "pathId": 1508586001779586709
+                },
+                {
+                    "origLen": 104,
+                    "pathId": -4758041990790180442
+                }
+            ],
+            "pathId": 7155666381008622054,
+            "blockIdx": 24
+        },
+        {
+            "jpName": "モノローグ",
+            "enName": "",
+            "jpText": "休憩がてら公園に行った。着くや否や、マーベラスサンデーは\n1人ベンチに座る少女を見つけ、即座に彼女に歩み寄っていった。",
+            "enText": "We headed to the park to take a break. Marvelous Sunday spotted \na girl sitting alone and immediately went over to her.",
+            "nextBlock": 26,
+            "origClipLength": 121,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 89,
+                    "pathId": -5729774925254147661
+                },
+                {
+                    "origLen": 20,
+                    "pathId": 6596414769113907079
+                }
+            ],
+            "pathId": 610034174751656931,
+            "blockIdx": 25
+        },
+        {
+            "jpName": "マーベラスサンデー",
+            "enName": "Marvelous Sunday",
+            "jpText": "ねえねえ、誰か待ってるの？　お友だち？",
+            "enText": "Hey hey, are you waiting for someone? Your friends?",
+            "nextBlock": 27,
+            "origClipLength": 110,
+            "voiceIdx": 16,
+            "animData": [
+                {
+                    "origLen": 142,
+                    "pathId": -2194527345778133253
+                },
+                {
+                    "origLen": 123,
+                    "pathId": -223768335437909570
+                }
+            ],
+            "pathId": 4339254614935818890,
+            "blockIdx": 26
+        },
+        {
+            "jpName": "女の子A",
+            "enName": "Girl A",
+            "jpText": "ううん……。わたし……さいきん引っこしてきたから、\nともだちは、まだいなくて……。",
+            "enText": "No…… I……just moved here, \nso I haven't made any friends yet……",
+            "nextBlock": 28,
+            "origClipLength": 232,
+            "voiceIdx": 17,
+            "animData": [
+                {
+                    "origLen": 315,
+                    "pathId": 4554757191296263123
+                },
+                {
+                    "origLen": 20,
+                    "pathId": -2975038317133949383
+                }
+            ],
+            "pathId": 1026697236039849857,
+            "blockIdx": 27
+        },
+        {
+            "jpName": "マーベラスサンデー",
+            "enName": "Marvelous Sunday",
+            "jpText": "そっか！　じゃあ今からアタシがアナタの友だちだよ！\n一緒に遊ぼっ！　なにか得意な遊びはある？",
+            "enText": "I see! In that case, from now on, I'll be your friend! \nLet's play! Is there something you're good at?",
+            "nextBlock": 29,
+            "origClipLength": 291,
+            "voiceIdx": 18,
+            "animData": [
+                {
+                    "origLen": 60,
+                    "pathId": 8670755636242767230
+                },
+                {
+                    "origLen": 30,
+                    "pathId": 643420641731654992
+                },
+                {
+                    "origLen": 238,
+                    "pathId": 8544325116905254831
+                },
+                {
+                    "origLen": 255,
+                    "pathId": 3840378621344945234
+                }
+            ],
+            "pathId": 7750131775926835587,
+            "blockIdx": 28
+        },
+        {
+            "jpName": "女の子A",
+            "enName": "Girl A",
+            "jpText": "えっ……かくれんぼ……かな。見つけるの、とくいだから……。",
+            "enText": "Eh……hide and seek……I guess. \nBecause I'm good at finding people……",
+            "nextBlock": 30,
+            "origClipLength": 219,
+            "voiceIdx": 19,
+            "animData": [
+                {
+                    "origLen": 36,
+                    "pathId": 5613349751716590737
+                },
+                {
+                    "origLen": 238,
+                    "pathId": 4962701238478730416
+                },
+                {
+                    "origLen": 255,
+                    "pathId": 8276247694353444138
+                }
+            ],
+            "pathId": -3190529574362987572,
+            "blockIdx": 29
+        },
+        {
+            "jpName": "マーベラスサンデー",
+            "enName": "Marvelous Sunday",
+            "jpText": "マーベラス☆　見つけるの得意なんだねっ★\nそれじゃ、かくれんぼ、さっそく始めよっか！",
+            "enText": "Marvelous☆ So you're good at finding people huh?★ \nThen let's start playing hide and seek!",
+            "nextBlock": 31,
+            "origClipLength": 235,
+            "voiceIdx": 20,
+            "animData": [
+                {
+                    "origLen": 225,
+                    "pathId": -2175283499267458606
+                },
+                {
+                    "origLen": 151,
+                    "pathId": 2370760020363420117
+                },
+                {
+                    "origLen": 284,
+                    "pathId": -6346448240372032249
+                }
+            ],
+            "pathId": -8257211364987738046,
+            "blockIdx": 30
+        },
+        {
+            "jpName": "女の子A",
+            "enName": "Girl A",
+            "jpText": "う、うん！　じゃあ、お姉ちゃんたちかくれたら言ってね！",
+            "enText": "O-okay! Then, tell me when both of you are hidden!",
+            "nextBlock": 32,
+            "origClipLength": 161,
+            "voiceIdx": 21,
+            "animData": [
+                {
+                    "origLen": 225,
+                    "pathId": 2012958650473904192
+                },
+                {
+                    "origLen": 216,
+                    "pathId": 6082498427155539781
+                },
+                {
+                    "origLen": 283,
+                    "pathId": -2026911295484442769
+                }
+            ],
+            "pathId": -3901298938776741934,
+            "blockIdx": 31
+        },
+        {
+            "jpName": "モノローグ",
+            "enName": "",
+            "jpText": "かくして、女の子とのかくれんぼが始まったのだが……。",
+            "enText": "So we hid and began playing hide and seek with the girl……",
+            "nextBlock": 33,
+            "origClipLength": 78,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 20,
+                    "pathId": -7168221391352658285
+                },
+                {
+                    "origLen": 59,
+                    "pathId": 5331775073601040322
+                },
+                {
+                    "origLen": 59,
+                    "pathId": 4254019718407432855
+                }
+            ],
+            "pathId": -768074888077626240,
+            "blockIdx": 32
+        },
+        {
+            "jpName": "女の子A",
+            "enName": "Girl A",
+            "jpText": "あ、お姉ちゃん見ーつけた！\nお兄ちゃんもその下にいるでしょー！",
+            "enText": "Ah, Onee-chan, I found you! \nAnd you're underneath there, aren't you!?",
+            "nextBlock": 34,
+            "origClipLength": 173,
+            "voiceIdx": 22,
+            "pathId": 9072994255601304418,
+            "blockIdx": 33
+        },
+        {
+            "jpName": "女の子A",
+            "enName": "Girl A",
+            "jpText": "あ、お姉ちゃん見ーつけた！\nもうひとりのお姉ちゃんもその下にいるでしょー！",
+            "enText": "Ah, Onee-chan, I found you! \nAnd you're underneath there, aren't you!?",
+            "nextBlock": 35,
+            "origClipLength": 197,
+            "voiceIdx": 23,
+            "pathId": -3333740527585078125,
+            "blockIdx": 34
+        },
+        {
+            "jpName": "マーベラスサンデー",
+            "enName": "Marvelous Sunday",
+            "jpText": "マーベラス☆　もう見つかっちゃった～！\nかくれんぼ、とっても上手なんだねっ！",
+            "enText": "Marvelous☆ You found us already~! \nYou're really good at hide and seek, huh!",
+            "nextBlock": 36,
+            "origClipLength": 226,
+            "voiceIdx": 24,
+            "choices": [
+                {
+                    "jpText": "かくれんぼの天才だな！",
+                    "enText": "Hide and seek genius!",
+                    "nextBlock": 36
+                },
+                {
+                    "jpText": "かくれんぼの天才だね！",
+                    "enText": "Hide and seek genius!",
+                    "nextBlock": 36
+                }
+            ],
+            "animData": [
+                {
+                    "origLen": 79,
+                    "pathId": 6828581169511930106
+                },
+                {
+                    "origLen": 50,
+                    "pathId": -7354629444011442055
+                }
+            ],
+            "pathId": -6840938922691748140,
+            "blockIdx": 35
+        },
+        {
+            "jpName": "女の子A",
+            "enName": "Girl A",
+            "jpText": "え、そうかな？　でも、そこまでじゃないっていうか……えへへ。",
+            "enText": "Eh, you think so? But, maybe not that good……ehehe.",
+            "nextBlock": 37,
+            "origClipLength": 263,
+            "voiceIdx": 25,
+            "animData": [
+                {
+                    "origLen": 416,
+                    "pathId": -4357307577742196885
+                },
+                {
+                    "origLen": 36,
+                    "pathId": -2070035139189567133
+                }
+            ],
+            "pathId": 4977140701203268790,
+            "blockIdx": 36
+        },
+        {
+            "jpName": "女の子B",
+            "enName": "Girl B",
+            "jpText": "ねえ、かくれんぼじょうずなの！？\n私もまざっていいかな？",
+            "enText": "Hey, you're good at hide and seek!? \nCan I join in too?",
+            "nextBlock": 38,
+            "origClipLength": 153,
+            "voiceIdx": 26,
+            "animData": [
+                {
+                    "origLen": 78,
+                    "pathId": 672060618947538057
+                }
+            ],
+            "pathId": -6299325634368901741,
+            "blockIdx": 37
+        },
+        {
+            "jpName": "男の子A",
+            "enName": "Boy A",
+            "jpText": "僕も僕も！　そんなに強いなら、いっしょにやってみたい！",
+            "enText": "Me too, me too! If you're that good, I want to try too!",
+            "nextBlock": 39,
+            "origClipLength": 135,
+            "voiceIdx": 27,
+            "animData": [
+                {
+                    "origLen": 303,
+                    "pathId": 1307819682844861376
+                },
+                {
+                    "origLen": 164,
+                    "pathId": 7879326475315568247
+                }
+            ],
+            "pathId": -99980486071419806,
+            "blockIdx": 38
+        },
+        {
+            "jpName": "マーベラスサンデー",
+            "enName": "Marvelous Sunday",
+            "jpText": "うんうんマーベラス☆　みんなで遊んだほうが絶対楽しいよっ★",
+            "enText": "Yeah, yeah, Marvelous☆ \nPlaying together with everyone will definitely be more fun★",
+            "nextBlock": 40,
+            "origClipLength": 197,
+            "voiceIdx": 28,
+            "animData": [
+                {
+                    "origLen": 291,
+                    "pathId": 2412665197311595003
+                },
+                {
+                    "origLen": 20,
+                    "pathId": -6920217454147224899
+                }
+            ],
+            "pathId": -3701501434774499311,
+            "blockIdx": 39
+        },
+        {
+            "jpName": "男の子A",
+            "enName": "Boy A",
+            "jpText": "ホントに強いんだねー！\nでも、明日は負けないからなー！",
+            "enText": "You really are good, huh! \nBut, tomorrow I won't lose!",
+            "nextBlock": 41,
+            "origClipLength": 161,
+            "voiceIdx": 29,
+            "animData": [
+                {
+                    "origLen": 24,
+                    "pathId": 9150056292427271837
+                }
+            ],
+            "pathId": -7551953301600765129,
+            "blockIdx": 40
+        },
+        {
+            "jpName": "女の子A",
+            "enName": "Girl A",
+            "jpText": "こっちこそ！　またねーっ！",
+            "enText": "I won't either! See you!",
+            "nextBlock": 42,
+            "origClipLength": 94,
+            "voiceIdx": 30,
+            "pathId": -1345574815694074853,
+            "blockIdx": 41
+        },
+        {
+            "jpName": "マーベラスサンデー",
+            "enName": "Marvelous Sunday",
+            "jpText": "今日1日だけで、お友だちをこーんなにたくさん作っちゃうなんて！\nアナタって本当に、マーーーベラスだねっ☆",
+            "enText": "To think you'd make so many friends in just one day! \nYou really are Maaaaaarvelous☆",
+            "nextBlock": 43,
+            "origClipLength": 329,
+            "voiceIdx": 31,
+            "choices": [
+                {
+                    "jpText": "友だち作りも天才だったり？",
+                    "enText": "A genius at making friends too?",
+                    "nextBlock": 43
+                }
+            ],
+            "animData": [
+                {
+                    "origLen": 60,
+                    "pathId": -5975004274952912649
+                },
+                {
+                    "origLen": 87,
+                    "pathId": -871316858395715296
+                }
+            ],
+            "pathId": -338456213335832736,
+            "blockIdx": 42
+        },
+        {
+            "jpName": "女の子A",
+            "enName": "Girl A",
+            "jpText": "ううん。お姉ちゃんたちのおかげだよ！\nその、ありがと……また遊ぼうね！",
+            "enText": "No. It's thanks to Onee-chan and you! \nUm, thanks……let's play again!",
+            "nextBlock": 44,
+            "origClipLength": 295,
+            "voiceIdx": 32,
+            "animData": [
+                {
+                    "origLen": 320,
+                    "pathId": 897263791922695251
+                },
+                {
+                    "origLen": 20,
+                    "pathId": -4397366631781603808
+                }
+            ],
+            "pathId": 3521593531946435584,
+            "blockIdx": 43
+        },
+        {
+            "jpName": "マーベラスサンデー",
+            "enName": "Marvelous Sunday",
+            "jpText": "うん！　今度はもっと大勢で遊ぼっ！\nきっともっとマーベラスだからっ☆",
+            "enText": "Yeah! Next time, let's play with even more people! \nThen it'll be even more Marvelous☆",
+            "nextBlock": 45,
+            "origClipLength": 187,
+            "voiceIdx": 33,
+            "animData": [
+                {
+                    "origLen": 84,
+                    "pathId": 3369754272232930976
+                },
+                {
+                    "origLen": 95,
+                    "pathId": -6590767835640545623
+                }
+            ],
+            "pathId": 436402582232807619,
+            "blockIdx": 44
+        },
+        {
+            "jpName": "マーベラスサンデー",
+            "enName": "Marvelous Sunday",
+            "jpText": "はぁ～～っ！　キラキラでラッキーで、ハッピーでいーっぱい！！\nやっぱり、世界はマーベラスで満ちてるねっ☆",
+            "enText": "Haaa~~~! It was all sparkly, lucky, and happy! \nAs I thought, the world is overflowing with Marvelous☆",
+            "nextBlock": 46,
+            "origClipLength": 306,
+            "voiceIdx": 34,
+            "animData": [
+                {
+                    "origLen": 208,
+                    "pathId": -7603072734287508473
+                },
+                {
+                    "origLen": 138,
+                    "pathId": -6689450083698609395
+                }
+            ],
+            "pathId": -690619429550467814,
+            "blockIdx": 45
+        },
+        {
+            "jpName": "モノローグ",
+            "enName": "",
+            "jpText": "そういう彼女こそマーベラスだ。彼女がいるから、自然と周りが\n輝いてゆくのだ。それを今回、改めて実感できた。",
+            "enText": "She was the one that was Marvelous. Because \nshe was there, her surroundings would naturally \nshine. Today's events reaffirmed that.",
+            "nextBlock": 47,
+            "origClipLength": 114,
+            "voiceIdx": -1,
+            "choices": [
+                {
+                    "jpText": "君のおかげだと思うよ",
+                    "enText": "I think it's because of you",
+                    "nextBlock": 47
+                },
+                {
+                    "jpText": "貴方のおかげだと思うよ",
+                    "enText": "I think it's because of you",
+                    "nextBlock": 47
+                }
+            ],
+            "animData": [
+                {
+                    "origLen": 208,
+                    "pathId": -1609698018802656587
+                },
+                {
+                    "origLen": 138,
+                    "pathId": -7424999292394857228
+                }
+            ],
+            "pathId": -5056058842228859123,
+            "blockIdx": 46
+        },
+        {
+            "jpName": "マーベラスサンデー",
+            "enName": "Marvelous Sunday",
+            "jpText": "あははっ！　ありがとう！　そう言ってもらえると、嬉しいなっ！\nでもね、それはトレーナーにも言えると思うなっ！",
+            "enText": "Ahahaa! Thank you! I'm happy that you'd say that! \nBut, I think you could say that about Trainer too!",
+            "nextBlock": 48,
+            "origClipLength": 287,
+            "voiceIdx": 35,
+            "animData": [
+                {
+                    "origLen": 73,
+                    "pathId": -7768729677619442576
+                },
+                {
+                    "origLen": 21,
+                    "pathId": -3981989279870066486
+                }
+            ],
+            "pathId": -4049928915466264604,
+            "blockIdx": 47
+        },
+        {
+            "jpName": "マーベラスサンデー",
+            "enName": "Marvelous Sunday",
+            "jpText": "あのおじいさんも、あの女の子も、商店街のお菓子屋さんも！\nみんなみーんな、見たことないくらいマーベラスだった！",
+            "enText": "That old man, that little girl, and the sweets \nstore clerk too! Each and every one of them, \nwas Marvelous like I've never seen before!",
+            "nextBlock": 49,
+            "origClipLength": 305,
+            "voiceIdx": 36,
+            "animData": [
+                {
+                    "origLen": 395,
+                    "pathId": 3026686587402886226
+                },
+                {
+                    "origLen": 200,
+                    "pathId": -6517581485786435477
+                }
+            ],
+            "pathId": -4525579865238319877,
+            "blockIdx": 48
+        },
+        {
+            "jpName": "マーベラスサンデー",
+            "enName": "Marvelous Sunday",
+            "jpText": "トレーナーの言葉でおじいさん嬉しそうにしてたしっ！\n女の子も、自信を持てるようになってた！",
+            "enText": "That old man looked really happy after what Trainer said! \nThat girl seemed more confident in herself too!",
+            "nextBlock": 50,
+            "origClipLength": 239,
+            "voiceIdx": 37,
+            "animData": [
+                {
+                    "origLen": 98,
+                    "pathId": 6160301587104365837
+                },
+                {
+                    "origLen": 20,
+                    "pathId": -7445483869644017773
+                }
+            ],
+            "pathId": -783127494477788221,
+            "blockIdx": 49
+        },
+        {
+            "jpName": "マーベラスサンデー",
+            "enName": "Marvelous Sunday",
+            "jpText": "アタシのマーベラスとトレーナーのマーベラス☆\nそれが合わさって、いつも以上に大きなマーベラスになってた★",
+            "enText": "With my Marvelous together with Trainer's Marvelous☆ \nBy combining both of them, we get an even more Marvelous★",
+            "nextBlock": 51,
+            "origClipLength": 295,
+            "voiceIdx": 38,
+            "animData": [
+                {
+                    "origLen": 87,
+                    "pathId": 7598331840917916488
+                },
+                {
+                    "origLen": 20,
+                    "pathId": -8232872117135827350
+                }
+            ],
+            "pathId": -2439447271116394924,
+            "blockIdx": 50
+        },
+        {
+            "jpName": "マーベラスサンデー",
+            "enName": "Marvelous Sunday",
+            "jpText": "だからね、今日はとーってもマーベラスだったんだ！\nアタシが初めて見るピッカピカで、キラキラなマーベラス☆★☆",
+            "enText": "That's why today, was even more Marvelous! \nThe first time I've seen such a shiny, sparkly Marvelous☆★☆",
+            "nextBlock": 52,
+            "origClipLength": 327,
+            "voiceIdx": 39,
+            "animData": [
+                {
+                    "origLen": 60,
+                    "pathId": 19992700504132378
+                },
+                {
+                    "origLen": 20,
+                    "pathId": -5439499691457339543
+                }
+            ],
+            "pathId": -1703727172067977031,
+            "blockIdx": 51
+        },
+        {
+            "jpName": "マーベラスサンデー",
+            "enName": "Marvelous Sunday",
+            "jpText": "世界はマーベラスであふれかえってるって、実感できて――\nうん、すっごく、マーベラスだった☆　あははっ！！",
+            "enText": "I could feel that the world was overflowing with Marvelous―― \nYeah, it was really Marvelous☆ Ahahaa!!",
+            "nextBlock": 53,
+            "origClipLength": 369,
+            "voiceIdx": 40,
+            "choices": [
+                {
+                    "jpText": "俺がマーベラス？",
+                    "enText": "I'm Marvelous?",
+                    "nextBlock": 53
+                },
+                {
+                    "jpText": "私がマーベラス？",
+                    "enText": "I'm Marvelous?",
+                    "nextBlock": 53
+                }
+            ],
+            "animData": [
+                {
+                    "origLen": 60,
+                    "pathId": 1836117726718727753
+                },
+                {
+                    "origLen": 20,
+                    "pathId": -876667862718249005
+                }
+            ],
+            "pathId": -8365349422820804917,
+            "blockIdx": 52
+        },
+        {
+            "jpName": "マーベラスサンデー",
+            "enName": "Marvelous Sunday",
+            "jpText": "うん！　アタシがマーベラスなんだから、\nトレーナーも、マーベラスに決まってるよっ☆★☆",
+            "enText": "Yeah! I'm Marvelous after all, \nso obviously Trainer would be Marvelous too☆★☆",
+            "nextBlock": 54,
+            "origClipLength": 196,
+            "voiceIdx": 41,
+            "animData": [
+                {
+                    "origLen": 79,
+                    "pathId": 3889887637491340161
+                },
+                {
+                    "origLen": 30,
+                    "pathId": 4246818941992190584
+                }
+            ],
+            "pathId": 4180772146514000673,
+            "blockIdx": 53
+        },
+        {
+            "jpName": "モノローグ",
+            "enName": "",
+            "jpText": "ああ、これか。これが……彼女の感じている世界か。\n彼女がマーベラスを追い求める訳を知ることができた気がする。",
+            "enText": "Ah, so it's this. This is……the world that she's seeing. \nI felt like I now knew why she was chasing after Marvelous.",
+            "nextBlock": 55,
+            "origClipLength": 115,
+            "voiceIdx": -1,
+            "animData": [
+                {
+                    "origLen": 14,
+                    "pathId": -2889596114753434199
+                }
+            ],
+            "pathId": 3713509605039118883,
+            "blockIdx": 54
+        },
+        {
+            "jpName": "モノローグ",
+            "enName": "",
+            "jpText": "いいものだ。彼女のため――いや、世界のマーベラスのために！\nこれからも、彼女を支えていくとしよう！",
+            "enText": "It's a good feeling. For her――no, for the Marvelous of the world! \nI'll continue to support her!",
+            "nextBlock": -1,
+            "origClipLength": 108,
+            "voiceIdx": -1,
+            "pathId": -8072824771145272923,
+            "blockIdx": 55
+        }
+    ],
+    "modified": 1694039053
+}

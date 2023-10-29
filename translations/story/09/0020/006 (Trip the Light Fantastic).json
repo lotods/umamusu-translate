@@ -1,6 +1,6 @@
 {
-    "version": 5,
-    "bundle": "ZRHZFYJN2PDHVCTQ7SGL3ISSLJFPXNR5",
+    "version": 6,
+    "bundle": "5E7YLB2O27C7JJ75RKFBVNULJNTLREXK",
     "type": "story",
     "storyId": "090020006",
     "title": "Trip the Light Fantastic",
@@ -9,9 +9,10 @@
             "jpName": "エアグルーヴ",
             "enName": "Air Groove",
             "jpText": "お前たちが、代わりにライトアップするということか？\n……言っておくが、想像よりはるかに難しいぞ。",
-            "enText": "Are you saying you'll trigger the illumination \nyourself instead? … That's far more difficult \nthan just saying it would suggest, you know.",
+            "enText": "Are you saying you're going to light \nup instead? …Just so you know, it's \nmuch harder than I thought.",
             "nextBlock": 2,
             "origClipLength": 245,
+            "voiceIdx": 0,
             "animData": [
                 {
                     "origLen": 90,
@@ -41,9 +42,10 @@
             "jpName": "エアグルーヴ",
             "enName": "Air Groove",
             "jpText": "外階段を駆け上がり、ライトのつく人感センサーを反応させる。\nこれで、ライトが頂上へ登っていく形に見せることは可能だ。",
-            "enText": "You'll have to run up the outer staircase, passing the motion \nsensors which will then activate the lights. That way, the \nillumination could proceed as planned.",
+            "enText": "I run up the outside stairs and react \nto the lights on. Now I can see the \nlights climbing to the top.",
             "nextBlock": 3,
             "origClipLength": 304,
+            "voiceIdx": 1,
             "animData": [
                 {
                     "origLen": 372,
@@ -69,9 +71,10 @@
             "jpName": "エアグルーヴ",
             "enName": "Air Groove",
             "jpText": "しかし階段は2つにわかれているため、お互いの姿は見えない……\nつまり目でタイミングを合わせて駆けあがることはできない。",
-            "enText": "But as this staircase is split into two spiraling paths, you \nwon't be able to see each other. In other words… you can't match \nyour running pace based on sight.",
+            "enText": "However, since the stairs are split into \ntwo, we can't see each other…… In other \nwords, we can't run up the stairs at \nthe right time with our eyes.",
             "nextBlock": 4,
             "origClipLength": 301,
+            "voiceIdx": 2,
             "animData": [
                 {
                     "origLen": 304,
@@ -97,9 +100,10 @@
             "jpName": "エアグルーヴ",
             "enName": "Air Groove",
             "jpText": "要するに、お前たちは機械で制御するように、完璧に呼吸を合わせ、\nしかも一定のスピードで駆け抜けねばならないのだ。",
-            "enText": "Putting it simply, you will have to run up the staircase with \nclockwork-like precision, staying at the same constant speed as \nthe other until you reach the top.",
+            "enText": "In other words, you have to move at a steady \nspeed, in perfect synchrony.",
             "nextBlock": 5,
             "origClipLength": 297,
+            "voiceIdx": 3,
             "animData": [
                 {
                     "origLen": 250,
@@ -125,9 +129,10 @@
             "jpName": "エアグルーヴ",
             "enName": "Air Groove",
             "jpText": "……確実にできると、言いきれるか？",
-            "enText": "… Are you're certain about being able to achieve this?",
+            "enText": "…Can you say for sure?",
             "nextBlock": 6,
             "origClipLength": 137,
+            "voiceIdx": 4,
             "animData": [
                 {
                     "origLen": 183,
@@ -153,9 +158,10 @@
             "jpName": "2人",
             "enName": "Both",
             "jpText": "できます！",
-            "enText": "We are!",
+            "enText": "I can do it!",
             "nextBlock": 7,
             "origClipLength": 31,
+            "voiceIdx": 5,
             "animData": [
                 {
                     "origLen": 183,
@@ -185,9 +191,10 @@
             "jpName": "エアグルーヴ",
             "enName": "Air Groove",
             "jpText": "……こう2人が言っているのですが、\n我々を信じて、任せていただくことは可能でしょうか？",
-            "enText": "… And there you have it. \nWould it be possible to trust in these two and leave it to them?",
+            "enText": "…Is it possible for the two of you to trust us \nand leave it to us?",
             "nextBlock": 8,
             "origClipLength": 226,
+            "voiceIdx": 6,
             "animData": [
                 {
                     "origLen": 80,
@@ -221,9 +228,10 @@
             "jpName": "イベント運営",
             "enName": "Event Manager",
             "jpText": "そ、それはもちろん！　お2人がおっしゃるなら……！\nご負担をおかけしますが、よろしくお願いします……！",
-            "enText": "O-Of course! If they say they're able to…! I apologize for \nputting you in this situation, but thank you very much!",
+            "enText": "O-Of course! If you two say so…! I'm sorry to \nburden you, but I'm counting on you!",
             "nextBlock": 9,
             "origClipLength": 257,
+            "voiceIdx": 7,
             "animData": [
                 {
                     "origLen": 175,
@@ -245,9 +253,10 @@
             "jpName": "エアグルーヴ",
             "enName": "Air Groove",
             "jpText": "ありがとうございます。……聞いたな？\n点灯式まで時間がない、お前たちはウォーミングアップをしろ。",
-            "enText": "Thank you for your trust as well. \nYou heard her. The ceremony is soon, so go warm yourselves up.",
+            "enText": "Thank you very much. …Didn't you hear? \nThere's no time until the light-up \nceremony. You guys warm up.",
             "nextBlock": 10,
             "origClipLength": 232,
+            "voiceIdx": 8,
             "animData": [
                 {
                     "origLen": 155,
@@ -281,9 +290,10 @@
             "jpName": "エアグルーヴ",
             "enName": "Air Groove",
             "jpText": "――というわけで、2人は式には参加できない。\n代わりに、我々が今すぐ間を持たせる必要がある。",
-            "enText": "―And that's why they won't be able to participate in the \nceremony. We need to make some time for them to prepare.",
+            "enText": "And so, the two of them won't be able to attend \nthe ceremony. Instead, we need to make room for \nthem right now.",
             "nextBlock": 11,
             "origClipLength": 243,
+            "voiceIdx": 9,
             "animData": [
                 {
                     "origLen": 316,
@@ -317,9 +327,10 @@
             "jpName": "エアグルーヴ",
             "enName": "Air Groove",
             "jpText": "考えているのは、2人が披露する予定だった\n『GIRLS' LEGEND U』を私とブライアンが――",
-            "enText": "I was thinking of having Brian and myself take over the \"GIRLS' \nLEGEND U\" performance they were supposed to hold―",
+            "enText": "What I'm thinking is that Brian and I are going \nto present the GIRLS LEGEND U――",
             "nextBlock": 12,
             "origClipLength": 213,
+            "voiceIdx": 10,
             "animData": [
                 {
                     "origLen": 199,
@@ -345,9 +356,10 @@
             "jpName": "サクラローレル",
             "enName": "Sakura Laurel",
             "jpText": "待って！　それ……私がやってもいいかな？\n私がステージでパフォーマンスするよ！　ううん、させて！",
-            "enText": "Wait! That performance… would it be alright if I was to take \nover? I'd like to perform on stage. Please let me!",
+            "enText": "Wait! Can I do that? I'll perform \non stage! No, let me!",
             "nextBlock": 13,
             "origClipLength": 403,
+            "voiceIdx": 11,
             "animData": [
                 {
                     "origLen": 454,
@@ -381,9 +393,10 @@
             "jpName": "エアグルーヴ",
             "enName": "Air Groove",
             "jpText": "それでも問題ないが……1人でいいのか？",
-            "enText": "I don't mind, but… will you be fine alone?",
+            "enText": "That's not a problem… Is it okay to be alone?",
             "nextBlock": 14,
             "origClipLength": 133,
+            "voiceIdx": 12,
             "animData": [
                 {
                     "origLen": 50,
@@ -409,9 +422,10 @@
             "jpName": "サクラローレル",
             "enName": "Sakura Laurel",
             "jpText": "エアグルーヴちゃんも、ブライアンちゃんも、\nなにかあったときのために、待機しておいたほうがいいでしょう？",
-            "enText": "You two should be available if anything \nelse was to come up, don't you think?",
+            "enText": "Both Airgrove and Brian should be on standby in \ncase something happens, right?",
             "nextBlock": 15,
             "origClipLength": 215,
+            "voiceIdx": 13,
             "animData": [
                 {
                     "origLen": 274,
@@ -437,9 +451,10 @@
             "jpName": "サクラローレル",
             "enName": "Sakura Laurel",
             "jpText": "大丈夫。私ね、今日はすごいパフォーマンスができると思うの。\n大切な想いを込めて歌うよ。……どうかな？",
-            "enText": "It'll be fine! I get the feeling I can deliver \na great performance today. I'll put all my feelings \ninto this song. What do you think?",
+            "enText": "Don't worry. I think I'll be able to put on an \namazing performance today. I'll sing with my \nprecious feelings. …What do you think?",
             "nextBlock": 16,
             "origClipLength": 370,
+            "voiceIdx": 14,
             "animData": [
                 {
                     "origLen": 426,
@@ -465,9 +480,10 @@
             "jpName": "エアグルーヴ",
             "enName": "Air Groove",
             "jpText": "……集まった観客を満足させられるというのなら、\n私は構わん。ブライアン、お前はどうだ？",
-            "enText": "…As long as you're able to satisfy the expectations of those that \nhave come to watch, I don't mind. Brian, what about you?",
+            "enText": "…If you want to satisfy the audience, I don't \nmind. Brian, what about you?",
             "nextBlock": 17,
             "origClipLength": 260,
+            "voiceIdx": 15,
             "animData": [
                 {
                     "origLen": 253,
@@ -497,9 +513,10 @@
             "jpName": "ナリタブライアン",
             "enName": "Narita Brian",
             "jpText": "好きにすればいい。",
-            "enText": "Do as you like.",
+            "enText": "Do as you please.",
             "nextBlock": 18,
             "origClipLength": 53,
+            "voiceIdx": 16,
             "animData": [
                 {
                     "origLen": 253,
@@ -529,9 +546,10 @@
             "jpName": "サクラローレル",
             "enName": "Sakura Laurel",
             "jpText": "……うん、好きにする。\nだから……。",
-            "enText": "…Yup, I will. \nAnd that's why…",
+            "enText": "Yeah, I'll do what I want. So…",
             "nextBlock": 19,
             "origClipLength": 173,
+            "voiceIdx": 17,
             "animData": [
                 {
                     "origLen": 253,
@@ -561,9 +579,10 @@
             "jpName": "サクラローレル",
             "enName": "Sakura Laurel",
             "jpText": "ブライアンちゃん――\n見ててね。……私を、見ていて。",
-            "enText": "Brian, you watch too. \nWatch me.",
+            "enText": "Brian… Just watch. Just watch me.",
             "nextBlock": 20,
             "origClipLength": 261,
+            "voiceIdx": 18,
             "animData": [
                 {
                     "origLen": 277,
@@ -596,6 +615,7 @@
             "enText": "!",
             "nextBlock": 21,
             "origClipLength": 23,
+            "voiceIdx": 19,
             "animData": [
                 {
                     "origLen": 128,
@@ -625,9 +645,10 @@
             "jpName": "サクラローレル",
             "enName": "Sakura Laurel",
             "jpText": "じゃあ、行ってきまーす！",
-            "enText": "I'll be going then!",
+            "enText": "I'm off, then!",
             "nextBlock": 22,
             "origClipLength": 65,
+            "voiceIdx": 20,
             "animData": [
                 {
                     "origLen": 128,
@@ -657,9 +678,10 @@
             "jpName": "イベント司会",
             "enName": "Event Moderator",
             "jpText": "――いよいよこの後、点灯式が始まります！\nその前に……今回は、サプライズで1曲披露していただきます！",
-            "enText": "――At last, the illumination ceremony is about to start! \nBut before that… have a look at this surprise performance!",
+            "enText": "――Finally, the lighting ceremony begins after \nthis! Before that……this time, we're going to \nperform one song as a surprise!",
             "nextBlock": 23,
             "origClipLength": 291,
+            "voiceIdx": 21,
             "animData": [
                 {
                     "origLen": 339,
@@ -685,9 +707,10 @@
             "jpName": "ナリタブライアン",
             "enName": "Narita Brian",
             "jpText": "……アイツ、何を考えている？",
-            "enText": "… What's she up to?",
+            "enText": "…What is she thinking?",
             "nextBlock": 24,
             "origClipLength": 138,
+            "voiceIdx": 22,
             "animData": [
                 {
                     "origLen": 344,
@@ -713,9 +736,10 @@
             "jpName": "エアグルーヴ",
             "enName": "Air Groove",
             "jpText": "“息を呑ませたい”んだろう。最近のお前は、私から見ても\n牙が抜けたようだからな。……ケガの影響があるのはわかるが。",
-            "enText": "She wants to \"leave you speechless\", doesn't she? From my point \nof view, you look as if you've lost your edge recently. … Though \nI understand your injury plays into that.",
+            "enText": "You want to catch your breath, don't you? You \nseem to have lost your fangs recently, even from \nmy perspective. …I can tell you're hurt.",
             "nextBlock": 25,
             "origClipLength": 326,
+            "voiceIdx": 23,
             "animData": [
                 {
                     "origLen": 336,
@@ -744,6 +768,7 @@
             "enText": "…!",
             "nextBlock": 26,
             "origClipLength": 32,
+            "voiceIdx": 24,
             "animData": [
                 {
                     "origLen": 336,
@@ -761,9 +786,10 @@
             "jpName": "エアグルーヴ",
             "enName": "Air Groove",
             "jpText": "それでも、ローレルはお前に……\nいや、この先はすぐわかるはずだ。",
-            "enText": "But even then, Laurel… \nNo, you'll see what I mean in a second.",
+            "enText": "Even so, Laurel will tell you… \nNo, she'll know soon enough.",
             "nextBlock": 27,
             "origClipLength": 240,
+            "voiceIdx": 25,
             "animData": [
                 {
                     "origLen": 89,
@@ -781,9 +807,10 @@
             "jpName": "エアグルーヴ",
             "enName": "Air Groove",
             "jpText": "目を離すなよ。ぶつけられる覚悟に向き合うのも、\n目指すべき“象徴”になった者の責任だ。",
-            "enText": "Don't take your eyes off her. Facing others' determination \nis one responsibility of those who have become a \"symbol\" \nwhich others aspire to overcome.",
+            "enText": "Don't take your eyes off me. It's the \nresponsibility of those who become the symbol of \ntheir goal to face the resolve to face them.",
             "nextBlock": 28,
             "origClipLength": 224,
+            "voiceIdx": 26,
             "animData": [
                 {
                     "origLen": 211,
@@ -801,9 +828,10 @@
             "jpName": "サクラローレル",
             "enName": "Sakura Laurel",
             "jpText": "（――みんなへ向けて、全力で想いを届ける。\nそしてその中にいる、貴方にも……！）",
-            "enText": "(I'll put my everything into bringing across these feelings for \nthe people here. And especially for you…!)",
+            "enText": "(―I'm going to show everyone my feelings. And \nI'm going to show you…!)",
             "nextBlock": 29,
             "origClipLength": 282,
+            "voiceIdx": 27,
             "animData": [
                 {
                     "origLen": 14,
@@ -821,9 +849,10 @@
             "jpName": "サクラローレル",
             "enName": "Sakura Laurel",
             "jpText": "（――諦めなければならなかったものが、たくさんあった。\n芽吹くことなく枯れていった、私の、みんなの、たくさんの希望）",
-            "enText": "(There've been many things I've had to give up already. My hopes, \nthe hopes of many others… hope that wilted before it could bloom…)",
+            "enText": "(There were so many things I had to \ngive up on. My hopes for everyone, \nwho withered without budding.)",
             "nextBlock": 30,
             "origClipLength": 441,
+            "voiceIdx": 28,
             "pathId": 7095264704195721905,
             "blockIdx": 29
         },
@@ -831,9 +860,10 @@
             "jpName": "サクラローレル",
             "enName": "Sakura Laurel",
             "jpText": "（それでも、どうしても諦められない、譲れない想いがある。\n貴方には、“ここ”にいてもらわなきゃ。絶対的な光のような――）",
-            "enText": "(But even then… I too have feelings that I refuse to, that I \ncan't give up. I need you to be here. I need the overwhelming \npresence of your light.)",
+            "enText": "(Still, I can't give up. I can't give up. I have \nto have you stay here. An absolute light――)",
             "nextBlock": 31,
             "origClipLength": 468,
+            "voiceIdx": 29,
             "pathId": -5819647321062285091,
             "blockIdx": 30
         },
@@ -841,9 +871,10 @@
             "jpName": "サクラローレル",
             "enName": "Sakura Laurel",
             "jpText": "『――キミと勝ちたい！』",
-            "enText": "I want to win with you!",
+            "enText": "『――I want to win with you!』",
             "nextBlock": 32,
             "origClipLength": 45,
+            "voiceIdx": 30,
             "pathId": 8448911089742327018,
             "blockIdx": 31
         },
@@ -854,6 +885,7 @@
             "enText": "…!",
             "nextBlock": 33,
             "origClipLength": 31,
+            "voiceIdx": 31,
             "pathId": 1701550610622386019,
             "blockIdx": 32
         },
@@ -861,9 +893,10 @@
             "jpName": "サクラローレル",
             "enName": "Sakura Laurel",
             "jpText": "（私を見て、ブライアンちゃん。\n貴方が最後に見るとすればそれは――私の光でなくちゃ）",
-            "enText": "(Look at me, Brian. If there has to be a last thing you see… \nit would have to be my light!)",
+            "enText": "(Look at me, Brian. The last \nthing you see is my light.)",
             "nextBlock": 34,
             "origClipLength": 336,
+            "voiceIdx": 32,
             "pathId": 2306926398539622450,
             "blockIdx": 33
         },
@@ -871,9 +904,10 @@
             "jpName": "イベント司会",
             "enName": "Event Moderator",
             "jpText": "サクラローレルさん、ありがとうございましたー！\n気迫のこもった素晴らしい歌声でした……！",
-            "enText": "Thank you very much, Ms. Sakura Laurel! \nYou could really feel the emotions in that performance!",
+            "enText": "Sakura Laurel, thank you very much! Your voice \nwas full of spirit and spirit!",
             "nextBlock": 35,
             "origClipLength": 197,
+            "voiceIdx": 33,
             "animData": [
                 {
                     "origLen": 258,
@@ -891,9 +925,10 @@
             "jpName": "エアグルーヴ",
             "enName": "Air Groove",
             "jpText": "……ふぅん？\nローレルの想いは届いたようだな。",
-            "enText": "… Hmm? \nLooks like Laurel's feelings reached you, huh?",
+            "enText": "…Hmm? Looks like Laurel's \nfeelings have reached you.",
             "nextBlock": 36,
             "origClipLength": 180,
+            "voiceIdx": 34,
             "animData": [
                 {
                     "origLen": 90,
@@ -919,9 +954,10 @@
             "jpName": "ナリタブライアン",
             "enName": "Narita Brian",
             "jpText": "……それより、問題はこの後だろう。\nウオッカとスカーレットが階段を駆け上がる――",
-            "enText": "… More importantly, the real challenge is from here on out. \nIt's time for Vodka and Scarlet to run up the stairway.",
+            "enText": "…Anyway, the real problem is after this. Vodka \nand Scarlet run up the stairs―",
             "nextBlock": 37,
             "origClipLength": 226,
+            "voiceIdx": 35,
             "animData": [
                 {
                     "origLen": 262,
@@ -950,6 +986,7 @@
             "enText": "……",
             "nextBlock": 38,
             "origClipLength": 40,
+            "voiceIdx": 36,
             "animData": [
                 {
                     "origLen": 14,
@@ -991,9 +1028,10 @@
             "jpName": "ダイワスカーレット",
             "enName": "Daiwa Scarlet",
             "jpText": "……アタシ、自分のペースで走るから。\nいいわよね？",
-            "enText": "…I'm just going to run at my own pace. \nThat's fine, right?",
+            "enText": "…I'll run at my own pace. Okay?",
             "nextBlock": 39,
             "origClipLength": 158,
+            "voiceIdx": 37,
             "animData": [
                 {
                     "origLen": 207,
@@ -1019,9 +1057,10 @@
             "jpName": "ウオッカ",
             "enName": "Vodka",
             "jpText": "ハッ、そうしろ！　俺も俺らしく走る。\n――今までずっと、そうだったんだから。",
-            "enText": "Heh, do that! I'm going to do the same. \nThat's how it's always been.",
+            "enText": "Hah, do that! I'll run like myself. That's how \nI've always been.",
             "nextBlock": 40,
             "origClipLength": 244,
+            "voiceIdx": 38,
             "animData": [
                 {
                     "origLen": 205,
@@ -1043,9 +1082,10 @@
             "jpName": "イベント運営",
             "enName": "Event Manager",
             "jpText": "ウオッカさん、スカーレットさん！\nスタンバイお願いします！",
-            "enText": "Ms. Vodka and Ms. Daiwa Scarlet! \nPlease get into position!",
+            "enText": "Vodka, Scarlet! Please stand by!",
             "nextBlock": 41,
             "origClipLength": 111,
+            "voiceIdx": 39,
             "animData": [
                 {
                     "origLen": 149,
@@ -1071,9 +1111,10 @@
             "jpName": "ウオッカ",
             "enName": "Vodka",
             "jpText": "……じゃ、テッペンで。",
-            "enText": "… See you at the top.",
+            "enText": "…Okay, I'll go with tappen.",
             "nextBlock": 42,
             "origClipLength": 113,
+            "voiceIdx": 40,
             "animData": [
                 {
                     "origLen": 55,
@@ -1091,9 +1132,10 @@
             "jpName": "エアグルーヴ",
             "enName": "Air Groove",
             "jpText": "――ローレル、お疲れ。\nいいパフォーマンスだったぞ。",
-            "enText": "Good job, Laurel. \nThat was a great performance.",
+            "enText": "Laurel, good work. That was a good performance.",
             "nextBlock": 43,
             "origClipLength": 117,
+            "voiceIdx": 41,
             "animData": [
                 {
                     "origLen": 63,
@@ -1119,9 +1161,10 @@
             "jpName": "サクラローレル",
             "enName": "Sakura Laurel",
             "jpText": "ありがとう！　それで、ウオッカちゃんたちは？",
-            "enText": "Thanks! What about Vodka and Scarlet?",
+            "enText": "Thanks! So, what about Vodka and the others?",
             "nextBlock": 44,
             "origClipLength": 129,
+            "voiceIdx": 42,
             "animData": [
                 {
                     "origLen": 160,
@@ -1143,9 +1186,10 @@
             "jpName": "エアグルーヴ",
             "enName": "Air Groove",
             "jpText": "もう始まる。地上から展望台まで続く外階段を駆け上がり、\nライトアップを再現する――",
-            "enText": "They're about to start. Running from the first floor up to the \nobservatory while recreating the illumination show as planned…",
+            "enText": "It's about to start. I run up the stairs leading \nfrom the ground to the observation deck, and \nreproduce the lights―",
             "nextBlock": 45,
             "origClipLength": 233,
+            "voiceIdx": 43,
             "animData": [
                 {
                     "origLen": 270,
@@ -1171,9 +1215,10 @@
             "jpName": "エアグルーヴ",
             "enName": "Air Groove",
             "jpText": "ブライアン、お前なら可能か？",
-            "enText": "Brian, do you think you'd be able to do it?",
+            "enText": "Brian, can you do it?",
             "nextBlock": 46,
             "origClipLength": 99,
+            "voiceIdx": 44,
             "animData": [
                 {
                     "origLen": 153,
@@ -1207,9 +1252,10 @@
             "jpName": "ナリタブライアン",
             "enName": "Narita Brian",
             "jpText": "……走るスピードを他人に合わせる、しかも\nそいつの姿は見えない……そんな訓練はしていない。",
-            "enText": "… Matching my running pace to someone else, while not even being \nable to see them at that… it's not something I've ever practiced.",
+            "enText": "I don't train to match someone else's speed, and \nI can't see them.",
             "nextBlock": 47,
             "origClipLength": 300,
+            "voiceIdx": 45,
             "animData": [
                 {
                     "origLen": 321,
@@ -1243,9 +1289,10 @@
             "jpName": "ナリタブライアン",
             "enName": "Narita Brian",
             "jpText": "だがあの2人にはできると、\nアンタらは考えているんだろう？",
-            "enText": "But you two believe in them \nbeing able to do it, don't you?",
+            "enText": "But you think those two can do it, right?",
             "nextBlock": 48,
             "origClipLength": 141,
+            "voiceIdx": 46,
             "animData": [
                 {
                     "origLen": 61,
@@ -1279,9 +1326,10 @@
             "jpName": "サクラローレル",
             "enName": "Sakura Laurel",
             "jpText": "うん！\nだって、ウオッカちゃんとスカーレットちゃんだもの！",
-            "enText": "Yup! \nWe're talking about Vodka and Scarlet after all!",
+            "enText": "Yeah! It's Vodka and Scarlet!",
             "nextBlock": 49,
             "origClipLength": 159,
+            "voiceIdx": 47,
             "animData": [
                 {
                     "origLen": 198,
@@ -1315,9 +1363,10 @@
             "jpName": "イベント司会",
             "enName": "Event Moderator",
             "jpText": "――というわけで、今回のライトアップなのですが……\nなんと！　実際にアンバサダーのお2人に点灯いただきます！",
-            "enText": "Well then, onto the illumination show! …What's that? Our two \nambassadors will carry out the lighting ceremony personally by \nrunning up the staircase, you say? Wow!",
+            "enText": "――And so, about this lighting……what a surprise! \nThe two Ambassadors will actually be lighting it!",
             "nextBlock": 50,
             "origClipLength": 249,
+            "voiceIdx": 48,
             "animData": [
                 {
                     "origLen": 194,
@@ -1351,9 +1400,10 @@
             "jpName": "イベント司会",
             "enName": "Event Moderator",
             "jpText": "皆さんどうぞ、ハロンタワーにご注目お願いします！",
-            "enText": "Ladies and Gentlemen, please look towards the Furlong Tower!",
+            "enText": "Everyone, please pay attention to Hallon Tower!",
             "nextBlock": -1,
             "origClipLength": 143,
+            "voiceIdx": 49,
             "animData": [
                 {
                     "origLen": 154,
@@ -1384,6 +1434,6 @@
             "blockIdx": 50
         }
     ],
-    "modified": 1673054671,
-    "humanTl": true
+    "humanTl": true,
+    "modified": 1694039085
 }

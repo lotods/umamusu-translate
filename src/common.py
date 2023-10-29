@@ -177,13 +177,8 @@ class Args(argparse.ArgumentParser):
             print(f"Patch version: {patchVersion()}")
             sys.exit()
         if a.read_defaults:
-            try:
-                cfg = helpers.readJson("umatl.json")
-            except FileNotFoundError:
-                cfg = createDefaultUmatlConfig()
-            # Resolve to make sure it works on both abs and rel paths.
-            ctx = str(Path(sys.argv[0]).resolve().relative_to(Path("src").resolve()).with_suffix("")).replace("\\","/")
-            for k, v in cfg.get(ctx, {}).items():
+            cfg = ScriptConfig()
+            for k, v in cfg.items():
                 setattr(a, k, v)
         if self.hasDefault and a.story:
             a.story = StoryId.parse(a.type, a.story)
@@ -270,7 +265,7 @@ class TranslationFile:
 
         def toNative(self, data=None):
             data = data or self.data
-            if self.root.version > self.root.ver_offset_mdb and isinstance(data, list):
+            if (self.root.version == -2 or self.root.version > self.root.ver_offset_mdb) and isinstance(data, list):
                 o = dict()
                 for e in data:
                     o[e.get("jpText")] = e.get("enText", "")
@@ -278,18 +273,25 @@ class TranslationFile:
             return data
 
     def _getVersion(self) -> int:
-        return self.data['version'] if 'version' in self.data else 1
+        ver = self.data.get('version', 1)
+        if ver == 1 and not isinstance(next(iter(self.data.values())), list):
+            ver = -2 
+        return ver
 
     @property
     def textBlocks(self) -> TextData:
         if self.version > 1:
             return self.data['text']
+        elif self.version == -2:
+            return self.data
         else:
             return list(self.data.values())[0]
     @textBlocks.setter
     def textBlocks(self, val):
         if self.version > 1:
             self.data['text'] = self.TextData(self, val)
+        elif self.version == -2:
+            self.data = self.TextData(self, val)
         else:
             raise NotImplementedError
 
@@ -309,6 +311,8 @@ class TranslationFile:
     def bundle(self):
         if self.version > 1:
             return self.data['bundle']
+        elif self.version == -2:
+            return
         else:
             return list(self.data.keys())[0]
 
@@ -316,6 +320,8 @@ class TranslationFile:
     def type(self):
         if self.version > 2:
             return self.data['type']
+        elif self.version == -2:
+            return "dict"
         else:
             return "story/home"
 
@@ -324,6 +330,8 @@ class TranslationFile:
             return self.data['storyId']
         elif self.version > 2 and self.data['storyId'] != "000000000":
             return self.data['storyId']
+        elif self.version == -2:
+            return
         else:
             isN = regex.compile(r"\d+")
             g, id, idx = self.file.parts[-3:]  # project structure provides at least 3 levels, luckily
@@ -340,7 +348,7 @@ class TranslationFile:
     def save(self):
         if self.fileExists and self._snapshot == json.dumps(self.data, ensure_ascii=False, default=helpers._to_json): return
         assert self.file
-        if self.version < self.ver_offset_mdb:
+        if 3 < self.version < self.ver_offset_mdb:
             self.data['modified'] = currentTimestamp()
         helpers.writeJson(self.file, self.data)
 
@@ -364,7 +372,10 @@ class TranslationFile:
         self.escapeNewline = self.type in ("race", "preview", "mdb", "lyrics")
         if self.type == "mdb" and self.file.parent.name == "character_system_text":
             self.escapeNewline = False
-        self.data['text'] = self.TextData(self)
+        if self.type == "dict":
+            self.data = self.TextData(self)
+        else:
+            self.data['text'] = self.TextData(self)
         if snapshot: self.snapshot()
 
     @classmethod
@@ -479,23 +490,35 @@ class GameBundle:
 def currentTimestamp():
     return int(datetime.now(timezone.utc).timestamp())
 
-def createDefaultUmatlConfig():
-    data = {
-        "import": {
-            "update": True,
-            "skip_mtl": False
-        },
-        "mdb/import": {
-            "skill_data": False
+class ScriptConfig(dict):
+    cfg = None
+    empty = {}
+    def __init__(self) -> None:
+        # Resolve to make sure it works on both abs and rel paths.
+        ctx = str(Path(sys.argv[0]).resolve().relative_to(Path("src").resolve()).with_suffix("")).replace("\\","/")
+        if not ScriptConfig.cfg:
+            try:
+                ScriptConfig.cfg = helpers.readJson("umatl.json")
+            except FileNotFoundError:
+                self.createDefault()
+        super().__init__(ScriptConfig.cfg.get(ctx, ScriptConfig.empty))
+    def createDefault(self):
+        data = {
+            "import": {
+                "update": True,
+                "skip_mtl": True
+            },
+            "mdb/import": {
+                "skill_data": False
+            }
         }
-    }
-    try:
-        helpers.writeJson("umatl.json", data, 2)
-    except PermissionError:
-        print("Error: Lacking permissions to create the config file in this location. \nEdit the patch folder's permissions or move it to a different location.")
+        try:
+            helpers.writeJson("umatl.json", data, 2)
+        except PermissionError:
+            print("Error: Lacking permissions to create the config file in this location. \nEdit the patch folder's permissions or move it to a different location.")
+            sys.exit()
+        print("Uma-tl uses the umatl.json config file for user preferences when requested.\n"
+            "This seems to be your first time running uma-tl this way so a new file was created.\n"
+            "Uma-tl has quit without doing anything this first time so you can edit the config before running it again. Defaults are:")
+        print(json.dumps(data, indent=2))
         sys.exit()
-    print("Uma-tl uses the umatl.json config file for user preferences when requested.\n"
-        "This seems to be your first time running uma-tl this way so a new file was created.\n"
-        "Uma-tl has quit without doing anything this first time so you can edit the config before running it again. Defaults are:")
-    print(json.dumps(data, indent=2))
-    sys.exit()
