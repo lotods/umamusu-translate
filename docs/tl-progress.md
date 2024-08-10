@@ -55,7 +55,7 @@ Seek, Solve, Summer Walk! | Complete | [noccu]
 Super Smashing☆Summer Vacation | Stalled | Anonymous Reindeer
 Wings of Iron: Hazy Tales | Complete | [noccu]
 Days in a Flash | Complete | [Kuwaiden] + [noccu] (preview)
-Intertwined Memories, Galloping Emotions | Complete | [UmaTL] (noccu)☆
+Intertwined Memories, Galloping Emotions | Complete | [UmaTL] (noccu)
 Illuminate the Heart | Complete, Exists | MTL, Anonymous Raccoon
 Happy new future ～Bonds dyed in the sunrise～ | Complete, In progress | MTL + [noccu] (preview), [noccu]☆
 Sweet Memory ♥ Teatime | Complete | [noccu]
@@ -66,7 +66,7 @@ An Oath to My Dear Challengers | Stalled | [noccu] (preview)
 #summer #besties | Complete | [Jimoori]
 Summer's Sunlight Fades to Blue | In progress | [UmaTL] (noccu)☆
 Tapestry of Farewells Everlasting | Complete | [UmaTL] (Anonymous Panda)
-As the Leaves Rust, Feelings Blossom | Complete | [UmaTL] (Anonymous Panda)☆
+As the Leaves Rust, Feelings Blossom | Complete | [UmaTL] (Anonymous Panda)
 A Gleaming Mejiro Gala |  |
 Together with Everyone | In progress | [UmaTL] (Anonymous Panda)☆
 Come On Down To Calming Koumian! |  |
@@ -89,8 +89,8 @@ name | progress | translator
 --- | --- | ---
 All not listed up to 2022/07/08 | Complete | MTL (contributed by Korgi)
 Admire Vega | Complete | [CatNipHoarder] & [Holo]
-Air Shakur | Exists | [fling]
-Agnes Digital | In progress | [fling]
+Air Shakur | Complete | [fling]
+Agnes Digital | Complete | [fling]
 Agnes Tachyon | Complete | [Ren] (ep 1), [noccu] + [xct] (ep 2-3), [xct] (ep 4-7)
 Air Shakur | Complete | MTL (contributed by CryDuringItAll)
 Air Groove | Complete | [burritoblaster]
@@ -110,7 +110,7 @@ Gold City | Complete | [Hades of Games]
 Gold Ship | Complete, Stalled | MTL, UmaTL☆
 Grass Wonder | Complete | [LotoDS]
 Haru Urara | Complete, In progress | [Vacxy] (ep 1) + MTL (rest), [xct]
-Hishi Amazon | In progress | [UmaTL] ([noccu])☆
+Hishi Amazon | Complete | [UmaTL] ([noccu])☆
 Hishi Miracle | Complete | [LotoDS]
 Hokko Tarumae | Complete | [Riersa] (MTL edit)
 Inari One | Complete | [LotoDS]
@@ -128,7 +128,7 @@ Mayano Top Gun | Complete | [Director Kok]
 Mejiro Ardan | Complete | [LotoDS] + [Mini Fox] (minor edits)
 Mejiro Dober | Complete | [LotoDS]
 Mejiro McQueen | Complete | [UmaTL] (bocchi)
-Mejiro Palmer | Stalled, In progress, Complete | [Director Kok] (ep 1-2), [UmaTL] (bocchi)☆, MTL
+Mejiro Palmer | Complete | [UmaTL] (bocchi)☆
 Mejiro Ramonu | Complete | [LotoDS]
 Mejiro Ryan | Complete | MTL (contributed by CryDuringItAll)
 Mihono Bourbon | Complete | [KevinVG207]
@@ -342,6 +342,7 @@ Not all of these might be present in the patch data.
 
 name | progress | translator
 --- | --- | ---
+Bakunetsu My Soul | Complete | [LotoDS]
 Blaze | Complete | [noccu]
 BLOW my GALE | Complete | [noccu]
 [*Boukyaku Nite*](https://youtu.be/o400qsQ3vhY) | Complete | [Snep]
@@ -380,6 +381,7 @@ Sasayaka na Inori | Complete | [Eight] (edited by [noccu] based in part on tl by
 Tracen Ondo | Complete | [Kasey]
 transforming | Complete | [LotoDS]
 Umapyoi Densetsu | Complete | Anonymous Reindeer + [Karimenrider] (missing parts)
+U.M.A. New World | Complete | [LotoDS]
 UNLIMITED IMPACT | Complete | [noccu]
 We are DREAMERS!! | Complete | TR
 winning the soul | Complete | [Kuun0]
