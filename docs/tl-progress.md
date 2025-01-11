@@ -101,7 +101,7 @@ Air Shakur | Complete | MTL (contributed by CryDuringItAll)
 Air Groove | Complete | [burritoblaster]
 Aston Machan | Exists | [Snep]
 Biwa Hayahide | Complete | MTL (contributed by CryDuringItAll)
-Bubble Gum Fellow | In Progress | [LotoDS]
+Bubble Gum Fellow | Complete | [LotoDS]
 Calstone Light O | Stalled | [kanade]
 Cesario | Complete | [LotoDS]
 Cheval Grand | Exists | Naellza
@@ -150,8 +150,8 @@ Narita Taishin | Complete | MTL (contributed by CryDuringItAll)
 Narita Top Road | Complete | [LotoDS]
 Nice Nature | Complete | [xct]
 Neo Universe | Complete | [LotoDS]
+Rhein Kraft | Complete | [LotoDS]
 Rice Shower | Exists, Complete | [Ben] (ep 1-4), [UmaTL] (bocchi)☆
-Rhein Kraft | In Progress | [LotoDS]
 Sakura Bakushin O | Complete | [noccu]
 Sakura Chiyono O | Complete | [LotoDS]
 Sakura Laurel | Complete | [LotoDS]
