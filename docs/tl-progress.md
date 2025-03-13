@@ -1,6 +1,9 @@
 This document gives an overview of translation progress.  
 If you'd like to contribute a translation, please submit a PR, or open an issue or join the [Discord](https://discord.gg/eqZT27TeJ) for organization.
 
+> [!WARNING]
+> [This page has moved to UmaTL's Hachimi-format wiki](https://github.com/UmaTL/hachimi-tl-en/wiki/Translation-Progress).
+
 Note: MTL = machine translation. These have very limited and arbitrary manual edits, sometimes. Quality varies based on content (speech patterns, topics, etc).  
 Translations by the UmaTL team are made possible by [supporters](https://ko-fi.com/noccyu).
 
@@ -115,6 +118,7 @@ Eishin Flash | Complete, In progress, Stalled | MTL, [noccu] (ep 1-2), Admiy
 El Condor Pasa | Complete | [UmaTL] (noccu)☆
 Fine Motion | Complete | [LotoDS]
 Fuji Kiseki | Complete | [Kasey]
+Furioso | Complete | [LotoDS]
 Gentildonna | Complete | [LotoDS]
 Gold City | Complete | [Hades of Games]
 Gold Ship | Complete, Stalled | MTL, UmaTL☆
@@ -150,6 +154,7 @@ Narita Taishin | Complete | MTL (contributed by CryDuringItAll)
 Narita Top Road | Complete | [LotoDS]
 Nice Nature | Complete | [xct]
 Neo Universe | Complete | [LotoDS]
+Orfevre | Complete | [LotoDS]
 Rhein Kraft | Complete | [LotoDS]
 Rice Shower | Exists, Complete | [Ben] (ep 1-4), [UmaTL] (bocchi)☆
 Sakura Bakushin O | Complete | [noccu]
@@ -379,6 +384,7 @@ Kirari Magic Show | Complete | [LotoDS]
 *Koi Wa Derby* | Complete | Hentai Maskudo
 *L's Surprise!!* | Stalled | [noccu]☆
 l'Arc de Gloire | Complete | [LotoDS]
+Legend-Changer | Complete | [LotoDS]
 *Lightless* | Complete | [Ren]
 Make Debut! | Complete | Unknown (https://www.animesonglyrics.com/) + [noccu] (missing parts)
 [*Mikadowarai kageki \~Tataeyo Towa Ni~*](https://youtu.be/XtTn3GSVKM0) | Complete | [Kasey]
