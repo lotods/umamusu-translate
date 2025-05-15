@@ -114,6 +114,7 @@ Daitaku Helios | Complete | [LotoDS]
 Daiwa Scarlet | Complete | [XiantheMiguel] (commissioned by AhriParty)
 Daiichi Ruby | Complete | [Riersa]
 Dream Journey | Complete | [LotoDS]
+Durandal | Complete | [LotoDS]
 Eishin Flash | Complete, In progress, Stalled | MTL, [noccu] (ep 1-2), Admiy
 El Condor Pasa | Complete | [UmaTL] (noccu)☆
 Fine Motion | Complete | [LotoDS]
@@ -122,6 +123,7 @@ Furioso | Complete | [LotoDS]
 Gentildonna | Complete | [LotoDS]
 Gold City | Complete | [Hades of Games]
 Gold Ship | Complete, Stalled | MTL, UmaTL☆
+Gran Alegria | Complete | [LotoDS]
 Grass Wonder | Complete | [LotoDS]
 Haru Urara | Complete, In progress | [Vacxy] (ep 1) + MTL (rest), [xct]
 Hishi Amazon | Complete | [UmaTL] ([noccu])☆
