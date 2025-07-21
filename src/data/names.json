@@ -274,7 +274,7 @@
     "キャロットマン": "Carrot Man",
     "ビューティー安心沢": "Beauty Anshinzawa",
     "スズカのトレーナー": "Suzuka's Trainer",
-    "フラッシュの父親": "Flash' Father",
+    "フラッシュの父親": "Flash's Father",
     "ツルマルツヨシ": "Tsurumaru Tsuyoshi",
     "ゲームNPC": "Game NPC",
     "飛行機の研究者": "Airplane Researcher",
@@ -461,6 +461,8 @@
     "生徒会のウマ娘B": "Student Council B",
     "レース研究家": "Racing Professor",
     "参加者のウマ娘": "Attendee Horsegirl",
+    "シラオキ様": "Divine Shiraoki",
+    "幼少のマチカネフクキタル": "Young Matikanefukukitaru",
     "船橋のエースウマ娘": "Funabashi Ace Horsegirl",
     "船橋のウマ娘": "Funabashi Horsegirl",
     "船橋のトレーナー": "Funabashi Trainer",
@@ -497,5 +499,7 @@
     "中堅トレーナーC": "Experienced Trainer C",
     "国王シャルル": "King Charlemagne",
     "聖騎士ローラン": "Holy Knight Roland",
-    "ビリーヴ": "Believe"
+    "ビリーヴ": "Believe",
+    "幼いフラッシュ": "Young Flash",
+    "フラッシュの母親": "Flash's Mother"
 }

@@ -5,7 +5,14 @@
 This project is a toolset to translate *Uma Musume Pretty Derby* to English. A few included scripts also let it function as a game patch using these tools.  
 It accomplishes this by modifying the master.mdb file and Unity assets, aided additionally with dll hijacking through [TLG].
 
-**⚠ UmaTL development will soon end in favor of using Hachimi. Translations will be continued in [our own hachimi translation repo](https://github.com/UmaTL/hachimi-tl-en).**
+> [!CAUTION]
+> For those looking to play the game translated:  
+> UmaTL translations have transitioned to [a separate translation repository](https://github.com/UmaTL/hachimi-tl-en), in a format useable by Hachimi. Check out the install instructions on that page instead!  
+> Development of translation tools will continue, patching functionality will not.
+
+> [!TIP]
+> This project takes a lot of time and effort, the vast majority of which my own.  
+> Please consider [supporting](#supporting-the-project) and receive some small bonuses.
 
 **[Translation progress and credits][tl-progress].**  
 If you encounter problems, check the troubleshooting section with each guide step first. Open an issue or ask in the Discord server if this doesn't solve it.
@@ -29,7 +36,7 @@ Supports translating:
 Other:
 - Deepl/fairseq integration for automatic machine translation
 - Story editor for easy translating with audio support (or simply reading along without patching)
-- Support for syncing with arbitrary framerates 
+- Support for syncing with arbitrary framerates
 - Adjustable reading speed
 - Basic file/asset management tools (wip)
 - Auto-updates
@@ -40,10 +47,9 @@ Toolset info: [scripts](#script-info)
 # Supporting the project
 This project has taken a lot of time and effort since 2021 that I can't afford to keep providing freely.  
 Work is continued, to the degree affordable and with a focus on translations, through the help of donations and supporters.  
-Monthly supporters gain the following benefits (based on tier & when available): 
-- Polls & requests
-- Translation notes & spotlights (small write-ups expanding upon some terms, culture, and translations)
-- Additional content (pakatube tl, …)
+Monthly supporters gain the following benefits (based on tier & when available):
+- Polls
+- Translation notes (expanding upon some terms, culture, and translations)
 
 If you'd like to donate or contribute as a supporter, please check the links at the top of this readme or at the right of the page.
 
@@ -85,7 +91,7 @@ The patching process consists of three parts that are intended to be used togeth
 The patch as a whole assume this is the case and works optimally that way.
 However, they can be used independently if so wished, with relatively minor downsides.
 
-Double click `patch.bat` and choose which parts to patch. 
+Double click `patch.bat` and choose which parts to patch.  
 **Patching UI translations requires that you chose to install TLG**.  
 You can run this at any time to patch other parts or apply new translations.
 - This can take a few minutes because there are many files, especially the first time.
@@ -100,7 +106,7 @@ More info (read first!) and troubleshooting for each part below.
 TLG itself can be updated by running the install script again from UmaTL's parent folder and choosing update mode, or by simply overwriting its 2 `.dll` files with the new one manually.
 
 ### Troubleshooting
-- If you get **errors** when starting the game: 
+- If you get **errors** when starting the game:
     - Make sure your `version.dll` is not 0kb (it should be ~7MB).
     - [Install vc++ X64](https://learn.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170) ([alterative link](https://github.com/abbodi1406/vcredist)) (you might need the X86 version as well)
 - If the game UI is **not translated**:
@@ -183,6 +189,7 @@ UmaTL's gracious supporters
 [tlg]: https://github.com/MinamiChiwa/Trainers-Legend-G
 [db-translate project]: https://github.com/noccu/umamusume-db-translate
 
-[tl-progress]: docs/tl-progress.md
+<!-- [tl-progress]: docs/tl-progress.md -->
+[tl-progress]: https://github.com/UmaTL/hachimi-tl-en/wiki/Translation-Progress
 [translating]: docs/translating.md
 [id-structure]: docs/id-structure.md
