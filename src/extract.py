@@ -1,17 +1,18 @@
 import csv
-import sqlite3
+import apsw
 from pathlib import Path, PurePath
 from typing import Optional, Union
 
 from Levenshtein import ratio as similarity
 
 from common import logger, patch
-from common.constants import GAME_ASSET_ROOT, GAME_META_FILE, TARGET_TYPES
+import common.constants as const
 from common.utils import sanitizeFilename
 from common.types import StoryId, GameBundle, TranslationFile
 import restore
 
-RESTORE_ARGS = restore.parseArgs(["--forcedl"])
+RESTORE_ARGS = None
+DB_OPEN_MODE = apsw.SQLITE_OPEN_URI | apsw.SQLITE_OPEN_READONLY
 
 def queryDB(db=None, storyId: StoryId = None):
     storyId = StoryId.queryfy(storyId)
@@ -29,8 +30,8 @@ def queryDB(db=None, storyId: StoryId = None):
 
     externalDb = bool(db)
     if not externalDb:
-        db = sqlite3.connect(GAME_META_FILE)
-    cur = db.execute(f"SELECT h, n FROM a WHERE n LIKE '{pattern}';")
+        db = apsw.Connection(f"file:{str(const.GAME_META_FILE)}?hexkey={const.DB_KEY}", DB_OPEN_MODE)
+    cur = db.execute(f"SELECT h, n, e FROM a WHERE n LIKE '{pattern}';")
     results = cur.fetchall()
     if not externalDb:
         db.close()
@@ -274,7 +275,7 @@ class DataTransfer:
                     group["origLen"] = targetBlock["animData"][i]["origLen"]
 
 
-def exportAsset(bundle: Optional[str], path: Union[str, PurePath], db=None):
+def exportAsset(bundle: Optional[str], path: Union[str, PurePath], db=None, bundle_key:int = 0):
     '''Exports an AssetBundle.
        :param path: internal Unity path
        :return: number of files changed'''
@@ -290,7 +291,7 @@ def exportAsset(bundle: Optional[str], path: Union[str, PurePath], db=None):
 
         storyId = StoryId.parse(args.type, tlFile.getStoryId())
         try:
-            bundle, _ = queryDB(db, storyId)[0]  # get the newest bundle hash/name
+            bundle, _, bundle_key = queryDB(db, storyId)[0]  # get the newest bundle hash/name
         except IndexError:
             logger.error(f"Error looking up {storyId}. Corrupt data or removed asset?")
             return 0
@@ -315,7 +316,7 @@ def exportAsset(bundle: Optional[str], path: Union[str, PurePath], db=None):
             logger.info(f"Skipping existing: {file.name}")
             return 0
 
-    asset = GameBundle.fromName(bundle, load=False)
+    asset = GameBundle.fromName(bundle, load=False, bundle_key=bundle_key)
     if not asset.exists:
         restored = restore.save(asset, RESTORE_ARGS)
         if restored == 0:
@@ -356,7 +357,7 @@ def parseArgs(args=None):
         "-upd",
         "--update",
         nargs="*",
-        choices=TARGET_TYPES,
+        choices=const.TARGET_TYPES,
         help=(
             "Re-extract existing files, optionally limited to given type.\n"
             "Implies -O, ignores -dst and -t"
@@ -388,7 +389,9 @@ def parseArgs(args=None):
             args.update = [args.type]
         # check if upd was given without type spec and use all types if so
         elif len(args.update) == 0:
-            args.update = TARGET_TYPES
+            args.update = const.TARGET_TYPES
+    global RESTORE_ARGS
+    RESTORE_ARGS = restore.parseArgs(["--forcedl"])
     return args
 
 
@@ -420,7 +423,7 @@ def main(_args: patch.Args = None):
     nTotal = nSuccess = nFailed = nSkipped = 0
     if args.update is not None:
         print(f"{'Upgrading' if args.upgrade else 'Updating'} exports...")
-        db = sqlite3.connect(GAME_META_FILE)
+        db = apsw.Connection(f"file:{str(const.GAME_META_FILE)}?hexkey={const.DB_KEY}", DB_OPEN_MODE)
         logger.setFile("extract.log")
         try:
             for type in args.update:  # set correctly by arg parsing
@@ -450,14 +453,14 @@ def main(_args: patch.Args = None):
     else:
         print(
             f"Extracting type {args.type}, set {args.set}, group {args.group}, id {args.id}, idx {args.idx} (overwrite: {args.overwrite})\n"
-            f"from {GAME_ASSET_ROOT} to {args.dst}"
+            f"from {const.GAME_ASSET_ROOT} to {args.dst}"
         )
         q = queryDB(storyId=StoryId(args.type, args.set, args.group, args.id, args.idx))
         nTotal = nSkipped = len(q)
         print(f"Found {nTotal} files.")
-        for bundle, path in q:
+        for bundle, path, bundle_key in q:
             try:
-                nSkipped -= exportAsset(bundle, path)
+                nSkipped -= exportAsset(bundle, path, bundle_key=bundle_key)
             except Exception:
                 nFailed += 1
     nSuccess = nTotal - nSkipped - nFailed
