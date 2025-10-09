@@ -435,7 +435,8 @@ class GameBundle:
         if not self.data:
             return
 
-        b = self.data.file.save() + self.patchData
+        b = self.data.file.save()
+        b = self._decrypt(b) # XOR-based, so should work the other way?
         fn = dstName or self.data.file.name
         fp = ((dstFolder / fn[0:2]) if dstFolder else self.bundlePath.parent) / fn
         fp.parent.mkdir(parents=True, exist_ok=True)
